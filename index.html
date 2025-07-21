@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>📘 نتيجة الطالب</title>
+  <style>
+    body {
+      font-family: "Cairo", sans-serif;
+      padding: 2em;
+      background: #f9f9f9;
+      text-align: right;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input, button {
+      font-size: 1.2em;
+      padding: 0.5em;
+      margin: 0.5em 0;
+      width: 100%;
+    }
+
+    .tabs {
+      display: flex;
+      margin-bottom: 1em;
+    }
+
+    .tabs button {
+      flex: 1;
+      font-size: 1em;
+      padding: 0.5em;
+      background: #ddd;
+      border: none;
+      cursor: pointer;
+    }
+
+    .tabs button.active {
+      background: #007bff;
+      color: white;
+    }
+
+    #results {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 1em;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>📘 نتيجة الطالب</h1>
+
+  <div class="tabs">
+    <button id="idTab" class="active">🔢 بحث بالرقم</button>
+    <button id="nameTab">🔤 بحث بالاسم</button>
+  </div>
+
+  <div id="idSearch">
+    <input id="idInput" type="number" placeholder="اكتب رقم الجلوس هنا">
+    <button onclick="searchById()">بحث</button>
+  </div>
+
+  <div id="nameSearch" style="display:none;">
+    <input id="nameInput" type="text" placeholder="اكتب الاسم كاملاً أو جزء منه">
+    <button onclick="searchByName()">بحث</button>
+  </div>
+
+  <div id="results"></div>
+
+  <script>
+    const idTab = document.getElementById('idTab');
+    const nameTab = document.getElementById('nameTab');
+    const idSearch = document.getElementById('idSearch');
+    const nameSearch = document.getElementById('nameSearch');
+    const resultsDiv = document.getElementById('results');
+
+    idTab.onclick = () => {
+      idTab.classList.add('active');
+      nameTab.classList.remove('active');
+      idSearch.style.display = 'block';
+      nameSearch.style.display = 'none';
+      resultsDiv.innerHTML = '';
+    };
+
+    nameTab.onclick = () => {
+      nameTab.classList.add('active');
+      idTab.classList.remove('active');
+      nameSearch.style.display = 'block';
+      idSearch.style.display = 'none';
+      resultsDiv.innerHTML = '';
+    };
+
+    // Arabic normalization rules
+    function normalizeArabic(text) {
+      return text
+        .replace(/\s+/g, '') // remove all spaces
+        .replace(/[إأآٱ]/g, 'ا')
+        .replace(/[ىی]/g, 'ي')
+        .replace(/[ة]/g, 'ه')
+        .replace(/ؤ/g, 'و')
+        .replace(/ئ/g, 'ي')
+        .replace(/ٓ|ْ|ٌ|ٍ|ً|ُ|ِ|َ|ّ/g, '') // remove diacritics if any
+        .toLowerCase();
+    }
+
+    function firstLetterHex(text) {
+      const norm = normalizeArabic(text.trim());
+      if (!norm) return '';
+      return norm[0].charCodeAt(0).toString(16).toUpperCase().padStart(4, '0');
+    }
+
+    async function searchById() {
+      const id = parseInt(document.getElementById('idInput').value);
+      if (isNaN(id)) return alert("❗ أدخل رقم صحيح");
+      resultsDiv.innerHTML = "⏳ جاري البحث...";
+
+      const groupIdx = Math.floor(id / 1000);
+      const filename = `jsons/group_${groupIdx.toString().padStart(4, '0')}.json`;
+
+      try {
+        const res = await fetch(filename);
+        const data = await res.json();
+        const student = data.find(entry => entry[0] == id);
+
+        if (student) {
+          resultsDiv.innerHTML = `
+            <h3>الاسم: ${student[1]}</h3>
+            <p>الدرجة: ${student[2]}</p>
+            <p>الحالة: ${student[3]}</p>
+          `;
+        } else {
+          resultsDiv.innerHTML = "❌ لم يتم العثور على الطالب.";
+        }
+      } catch (err) {
+        resultsDiv.innerHTML = "❌ حدث خطأ في تحميل البيانات.";
+      }
+    }
+
+    async function searchByName() {
+      const rawInput = document.getElementById('nameInput').value.trim();
+      if (!rawInput) return alert("❗ أدخل الاسم أولاً");
+      resultsDiv.innerHTML = "⏳ جاري البحث...";
+
+      const searchKey = normalizeArabic(rawInput);
+      const groupHex = firstLetterHex(searchKey);
+
+      if (!groupHex) return resultsDiv.innerHTML = "❌ لم يتم التعرف على أول حرف.";
+
+      const filename = `name_groups/group_${groupHex}.json`;
+
+      try {
+        const res = await fetch(filename);
+        const data = await res.json();
+
+        const matches = data.filter(student => {
+          const normName = normalizeArabic(student.name);
+          return normName.includes(searchKey);
+        });
+
+        if (matches.length === 0) {
+          resultsDiv.innerHTML = "❌ لم يتم العثور على نتائج.";
+        } else {
+          resultsDiv.innerHTML = matches.map(s => `
+            <div style="border-bottom:1px solid #ccc;margin-bottom:1em;">
+              <strong>الاسم:</strong> ${s.name}<br>
+              <strong>الرقم:</strong> ${s.id}<br>
+              <strong>الدرجة:</strong> ${s.score}<br>
+              <strong>الحالة:</strong> ${s.status}
+            </div>
+          `).join('');
+        }
+      } catch (err) {
+        resultsDiv.innerHTML = "❌ حدث خطأ في تحميل البيانات.";
+      }
+    }
+  </script>
+</body>
+</html>
