@@ -671,24 +671,26 @@
             showError(resultDiv, 'يرجى إدخال الاسم');
             return;
         }
-        
+
         showLoading(resultDiv);
-        
+
         try {
             const [hex1, hex2] = getFirstTwoLettersHex(name);
-            const matchingFiles = NAME_GROUP_FILES.filter(f => 
+            const matchingFiles = NAME_GROUP_FILES.filter(f =>
                 f.startsWith(`group_${hex1}_${hex2}_`)
             );
-            
+
             if (matchingFiles.length === 0) {
                 showError(resultDiv, 'لا توجد نتائج تطابق البحث');
                 return;
             }
-            
+
             let allMatches = [];
+
             for (const file of matchingFiles) {
                 const response = await fetch(`${Config.NAME_GROUPS_FOLDER}/${file}`);
                 if (!response.ok) continue;
+
                 const data = await response.json();
                 const matches = data.filter(s => {
                     let studentName = '';
@@ -699,20 +701,23 @@
                     }
                     return normalizeArabic(studentName).includes(normalizeArabic(name));
                 });
+
                 allMatches.push(...matches);
             }
-            allResults = allMatches;
-            
+
             if (allMatches.length === 0) {
                 showError(resultDiv, 'لا توجد نتائج تطابق البحث');
             } else {
-                showResults(resultDiv, allMatches,false);
+                allResults = allMatches;
+                currentPage = 1;
+                displayResults(); // this triggers the paginated display
             }
-        } catch (error) {
-            console.error('Search error:', error);
-            showError(resultDiv, 'حدث خطأ في تحميل البيانات');
+        } catch (err) {
+            console.error('Search error:', err);
+            showError(resultDiv, 'حدث خطأ أثناء البحث');
         }
     }
+
     
         
     function setupCharts() {
@@ -876,21 +881,22 @@
         allResults = results;
         totalResults = results.length;
         const totalPages = Math.ceil(totalResults / Config.RESULTS_PER_PAGE);
-        currentPage = 1;
-        
+
+        // ❌ REMOVE this line:
+        // currentPage = 1;
+
         const paginationDiv = document.getElementById('pagination');
         if (totalPages <= 1) {
             paginationDiv.style.display = 'none';
             return;
         }
-        
+
         paginationDiv.style.display = 'block';
         let html = '<div class="pagination-controls">';
-        
+
         // Previous button
         html += `<button ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})">السابق</button>`;
-        
-        // Page numbers
+
         for (let i = 1; i <= totalPages; i++) {
             if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
                 html += `<button class="${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
@@ -898,13 +904,14 @@
                 html += '<span class="pagination-dots">...</span>';
             }
         }
-        
+
         // Next button
         html += `<button ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})">التالي</button>`;
         html += '</div>';
-        
+
         paginationDiv.innerHTML = html;
     }
+
 
     function changePage(page) {
         currentPage = page;
@@ -915,50 +922,53 @@
         const start = (currentPage - 1) * Config.RESULTS_PER_PAGE;
         const end = start + Config.RESULTS_PER_PAGE;
         const paginatedResults = allResults.slice(start, end);
-        
+
         const resultsDiv = document.getElementById('searchResults');
-        resultsDiv.innerHTML = paginatedResults.map(student => {
-            // Handle various data formats
-            let name = '', id = '', score = '', status = '';
-            
-            if (Array.isArray(student)) {
-                name = student[1];
-                id = student[0];
-                score = student[2];
-                status = student[3];
-            } else {
-                name = student.name || student['اسم'] || student.arabic_name || '';
-                id = student.id || student['رقم الجلوس'] || student.seating_no || '';
-                score = student.score || student['درجة'] || student.total_degree || '';
-                status = student.status || student['الحالة'] || student.student_case_desc || '';
-            }
-            
-            return `
-                <div class="student-card">
-                    <div class="student-info">
-                        <h3>${name}</h3>
-                        <div class="info-row">
-                            <span class="label">رقم الجلوس:</span>
-                            <span class="value">${id}</span>
+        resultsDiv.innerHTML = `
+            <h4>عرض ${paginatedResults.length} من ${allResults.length} نتيجة</h4>
+            ${paginatedResults.map(student => {
+                let name = '', id = '', score = '', status = '';
+
+                if (Array.isArray(student)) {
+                    name = student[1];
+                    id = student[0];
+                    score = student[2];
+                    status = student[3];
+                } else {
+                    name = student.name || student['اسم'] || student.arabic_name || '';
+                    id = student.id || student['رقم الجلوس'] || student.seating_no || '';
+                    score = student.score || student['درجة'] || student.total_degree || '';
+                    status = student.status || student['الحالة'] || student.student_case_desc || '';
+                }
+
+                return `
+                    <div class="student-card">
+                        <div class="student-info">
+                            <h3>${name}</h3>
+                            <div class="info-row">
+                                <span class="label">رقم الجلوس:</span>
+                                <span class="value">${id}</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">الدرجة:</span>
+                                <span class="value">${score} / ${MAX_SCORE}</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">الحالة:</span>
+                                <span class="value">${status}</span>
+                            </div>
                         </div>
-                        <div class="info-row">
-                            <span class="label">الدرجة:</span>
-                            <span class="value">${score} / ${MAX_SCORE}</span>
-                        </div>
-                        <div class="info-row">
-                            <span class="label">الحالة:</span>
-                            <span class="value">${status}</span>
+                        <div class="score-visualization">
+                            ${createScoreCircle(score, MAX_SCORE)}
                         </div>
                     </div>
-                    <div class="score-visualization">
-                        ${createScoreCircle(score, MAX_SCORE)}
-                    </div>
-                </div>
-            `;
-        }).join('');
-        
+                `;
+            }).join('')}
+        `;
+
         setupPagination(allResults);
     }
+
     
         
     
@@ -1232,13 +1242,13 @@
             showError(element, 'لا توجد نتائج');
             return;
         }
-
+    
         // Clear any previous pagination
         document.getElementById('pagination').innerHTML = '';
-
+    
         const renderCard = (student) => {
             let name = '', id = '', score = '', status = '';
-
+    
             if (Array.isArray(student)) {
                 name = student[1];
                 id = student[0];
@@ -1250,9 +1260,9 @@
                 score = student.total_degree || student.score || student['درجة'] || '';
                 status = student.student_case_desc || student.status || student['الحالة'] || '';
             }
-            element.innerHTML = results.map(renderCard.join('')
+    
             const stats = getScoreStatistics(score);
-
+    
             return `
                 <div class="student-card">
                     <div class="student-info">
@@ -1294,14 +1304,11 @@
                 </div>
             `;
         };
+    
+        element.innerHTML = results.map(student => renderCard(student)).join('');
 
-        if (results.length > Config.RESULTS_PER_PAGE) {
-            setupPagination(results, renderCard);
-            displayResults();
-        } else {
-            element.innerHTML = results.map(renderCard).join('');
-        }
     }
+
 
 
     function setupEventListeners() {
