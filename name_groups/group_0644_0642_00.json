@@ -1,0 +1,1382 @@
+[
+  {
+    "seating_no": 1012213,
+    "arabic_name": "لقاء رضا افراج رضا",
+    "total_degree": 177.5
+  },
+  {
+    "seating_no": 1016634,
+    "arabic_name": "لقاء اسامه صلاح عبدالتواب يحيى",
+    "total_degree": 208.5
+  },
+  {
+    "seating_no": 1020389,
+    "arabic_name": "لقاء طه محمود محمد محمود الجنيدى",
+    "total_degree": 251.5
+  },
+  {
+    "seating_no": 1026435,
+    "arabic_name": "لقاء محمد شكر خلف",
+    "total_degree": 259.5
+  },
+  {
+    "seating_no": 1026740,
+    "arabic_name": "لقاء عبدالعزيز محمد صالح",
+    "total_degree": 233
+  },
+  {
+    "seating_no": 1026741,
+    "arabic_name": "لقاء محمد السيد ابراهيم",
+    "total_degree": 236
+  },
+  {
+    "seating_no": 1027018,
+    "arabic_name": "لقاء احمد وفاء عبدالعزيز",
+    "total_degree": 227.5
+  },
+  {
+    "seating_no": 1032384,
+    "arabic_name": "لقاء اشرف ناصف عبدالنبى",
+    "total_degree": 274
+  },
+  {
+    "seating_no": 1033694,
+    "arabic_name": "لقاء سعد خيري احمد",
+    "total_degree": 155
+  },
+  {
+    "seating_no": 1037278,
+    "arabic_name": "لقاء ابراهيم محمد محمود السيسى",
+    "total_degree": 250
+  },
+  {
+    "seating_no": 1039631,
+    "arabic_name": "لقاء صبرى طه محمود",
+    "total_degree": 127.5
+  },
+  {
+    "seating_no": 1046201,
+    "arabic_name": "لقاء ابراهيم شحاته ايوب جبه",
+    "total_degree": 170
+  },
+  {
+    "seating_no": 1048324,
+    "arabic_name": "لقاء رضا حسنى مصطفى الخولى",
+    "total_degree": 171.5
+  },
+  {
+    "seating_no": 1052189,
+    "arabic_name": "لقمان اسامه كرم عبدالمؤمن",
+    "total_degree": 248
+  },
+  {
+    "seating_no": 1058697,
+    "arabic_name": "لقاء سعيد محمد فرجانى",
+    "total_degree": 137.5
+  },
+  {
+    "seating_no": 1060061,
+    "arabic_name": "لقاء اسامه احمد عبدالرحمن",
+    "total_degree": 146
+  },
+  {
+    "seating_no": 1063861,
+    "arabic_name": "لقاء عادل محمد احمد حنفى",
+    "total_degree": 201.5
+  },
+  {
+    "seating_no": 1068243,
+    "arabic_name": "لقاء احمد وفدى محمود",
+    "total_degree": 228
+  },
+  {
+    "seating_no": 1081243,
+    "arabic_name": "لقاء مرتضى فايق عبدالمنعم",
+    "total_degree": 239.5
+  },
+  {
+    "seating_no": 1081974,
+    "arabic_name": "لقاء محمد كمال سيد",
+    "total_degree": 227
+  },
+  {
+    "seating_no": 1082223,
+    "arabic_name": "لقاء محمد صالح سلومه",
+    "total_degree": 251
+  },
+  {
+    "seating_no": 1085920,
+    "arabic_name": "لقاء عيد سيد سليمان",
+    "total_degree": 198.5
+  },
+  {
+    "seating_no": 1090556,
+    "arabic_name": "لقاء احمد محمود احمد",
+    "total_degree": 181
+  },
+  {
+    "seating_no": 1091548,
+    "arabic_name": "لقاء طه هاشم كامل",
+    "total_degree": 183.5
+  },
+  {
+    "seating_no": 1095374,
+    "arabic_name": "لقاء محمد علي عزيزالدين",
+    "total_degree": 211
+  },
+  {
+    "seating_no": 1096591,
+    "arabic_name": "لقاء سليم على محمد",
+    "total_degree": 147
+  },
+  {
+    "seating_no": 1119561,
+    "arabic_name": "لقاء كامل محمد كامل",
+    "total_degree": 178.5
+  },
+  {
+    "seating_no": 1120781,
+    "arabic_name": "لقاء حسام حسنى احمد",
+    "total_degree": 170
+  },
+  {
+    "seating_no": 1123996,
+    "arabic_name": "لقمان عبد القادر عثمان ا",
+    "total_degree": 199
+  },
+  {
+    "seating_no": 1127100,
+    "arabic_name": "لقاء احمد محمد السيد محمدالحباك",
+    "total_degree": 194.5
+  },
+  {
+    "seating_no": 1131959,
+    "arabic_name": "لقاء على محيى الطنطاوى محمد",
+    "total_degree": 276
+  },
+  {
+    "seating_no": 1133676,
+    "arabic_name": "لقاء السعيد رفعت السعيد احمد",
+    "total_degree": 220.5
+  },
+  {
+    "seating_no": 1135610,
+    "arabic_name": "لقمان نورالدين سعود مصطفى الخفيف",
+    "total_degree": 280
+  },
+  {
+    "seating_no": 1136827,
+    "arabic_name": "لقاء فخرى عبده سيد حسن",
+    "total_degree": 274.5
+  },
+  {
+    "seating_no": 1150066,
+    "arabic_name": "لقاء السيد حسن عبد التواب",
+    "total_degree": 221
+  },
+  {
+    "seating_no": 1165949,
+    "arabic_name": "لقاء ايمن يحى عبده محمد",
+    "total_degree": 285.5
+  },
+  {
+    "seating_no": 1170018,
+    "arabic_name": "لقاء مجدى سيد أسماعيل احمد",
+    "total_degree": 153.5
+  },
+  {
+    "seating_no": 1179194,
+    "arabic_name": "لقى احمد سعد سعيد الجوهرى",
+    "total_degree": 153.5
+  },
+  {
+    "seating_no": 1206604,
+    "arabic_name": "لقاء سمير محمد ابراهيم علام",
+    "total_degree": 0
+  },
+  {
+    "seating_no": 1212491,
+    "arabic_name": "لقاء طارق محمد حسين محمد",
+    "total_degree": 194.5
+  },
+  {
+    "seating_no": 1212724,
+    "arabic_name": "لقاء حماده عبدالله حماده سيد",
+    "total_degree": 257.5
+  },
+  {
+    "seating_no": 1215155,
+    "arabic_name": "لقاء عاصم محمد مرسى",
+    "total_degree": 222
+  },
+  {
+    "seating_no": 1220731,
+    "arabic_name": "لقاء اسامه عبدالحليم على محمد حامد",
+    "total_degree": 216.5
+  },
+  {
+    "seating_no": 1221726,
+    "arabic_name": "لقاء محمد رجب ابراهيم",
+    "total_degree": 201
+  },
+  {
+    "seating_no": 1227718,
+    "arabic_name": "لقاء طارق محمد محمد ابو يوسف",
+    "total_degree": 215.5
+  },
+  {
+    "seating_no": 1231573,
+    "arabic_name": "لقاء هانى محمد حسان",
+    "total_degree": 156
+  },
+  {
+    "seating_no": 1234556,
+    "arabic_name": "لقاء حسن سيد احمد سيد احمد الشرقاوى",
+    "total_degree": 137
+  },
+  {
+    "seating_no": 1239162,
+    "arabic_name": "لقاء وائل فاروق حسانين الخولى",
+    "total_degree": 182
+  },
+  {
+    "seating_no": 1239369,
+    "arabic_name": "لقاء وليد حامد محمد",
+    "total_degree": 149
+  },
+  {
+    "seating_no": 1248788,
+    "arabic_name": "لقاء محمد ابو ذكرى محمد خليل",
+    "total_degree": 278.5
+  },
+  {
+    "seating_no": 1255552,
+    "arabic_name": "لقاء محمد السيد محمد",
+    "total_degree": 291.5
+  },
+  {
+    "seating_no": 1260193,
+    "arabic_name": "لقاء محمد كمال محمد عماره",
+    "total_degree": 158.5
+  },
+  {
+    "seating_no": 1261065,
+    "arabic_name": "لقاء محمد عبدالحليم السيد حجى",
+    "total_degree": 244.5
+  },
+  {
+    "seating_no": 1265834,
+    "arabic_name": "لقاء ايمن سعيد السيد الغرابلى",
+    "total_degree": 186
+  },
+  {
+    "seating_no": 1270604,
+    "arabic_name": "لقاء اسامه ابراهيم محمد البقيرى",
+    "total_degree": 215.5
+  },
+  {
+    "seating_no": 1270778,
+    "arabic_name": "لقاء وليد السيد عبدالواحد جبريل",
+    "total_degree": 284
+  },
+  {
+    "seating_no": 1274089,
+    "arabic_name": "لقاء ايمن سعيد عبد الهادى محمد",
+    "total_degree": 180.5
+  },
+  {
+    "seating_no": 1275187,
+    "arabic_name": "لقاء احمد الزناتى عبد اللطيف طولان",
+    "total_degree": 120
+  },
+  {
+    "seating_no": 1278039,
+    "arabic_name": "لقاء محمد زيدان غازي زيدان",
+    "total_degree": 246
+  },
+  {
+    "seating_no": 1278655,
+    "arabic_name": "لقمان مصطفى احمد عبدالمجيد",
+    "total_degree": 224
+  },
+  {
+    "seating_no": 1279305,
+    "arabic_name": "لقاء احمد عبدالفتاح عبد العال بده",
+    "total_degree": 271.5
+  },
+  {
+    "seating_no": 1282734,
+    "arabic_name": "لقاء كارم محمود احمد",
+    "total_degree": 191
+  },
+  {
+    "seating_no": 1283888,
+    "arabic_name": "لقى هيثم ابوالسعود محمد سامى",
+    "total_degree": 166.5
+  },
+  {
+    "seating_no": 1285835,
+    "arabic_name": "لقاء صلاح فتحى عطيه ابراهيم",
+    "total_degree": 177
+  },
+  {
+    "seating_no": 1285875,
+    "arabic_name": "لقاء محمد عبدالحفيظ محمد حسن",
+    "total_degree": 141
+  },
+  {
+    "seating_no": 1288585,
+    "arabic_name": "لقاء سامى عبدالله محمد البنا",
+    "total_degree": 164.5
+  },
+  {
+    "seating_no": 1309214,
+    "arabic_name": "لقاء علاء محى الدين محمد عثمان",
+    "total_degree": 136
+  },
+  {
+    "seating_no": 1317199,
+    "arabic_name": "لقاء احمد حسن حافظ احمد ",
+    "total_degree": 264
+  },
+  {
+    "seating_no": 1321833,
+    "arabic_name": "لقاء عزالدين فوزى عفيفي",
+    "total_degree": 122.5
+  },
+  {
+    "seating_no": 1325477,
+    "arabic_name": "لقاء محمد هاشم عبدالفضيل على",
+    "total_degree": 156.5
+  },
+  {
+    "seating_no": 1330226,
+    "arabic_name": "لقاء جلال خلف شلقامى طلبه",
+    "total_degree": 127
+  },
+  {
+    "seating_no": 1335787,
+    "arabic_name": "لقاء عبدالسلام محسن عبدالسلام محمود",
+    "total_degree": 205.5
+  },
+  {
+    "seating_no": 1336140,
+    "arabic_name": "لقاء ابراهيم السيد فوزى مدبولى",
+    "total_degree": 208
+  },
+  {
+    "seating_no": 1338425,
+    "arabic_name": "لقاء محمود عزب سلامه محمد",
+    "total_degree": 206
+  },
+  {
+    "seating_no": 1342421,
+    "arabic_name": "لقاء هشام رزق عبدالرازق احمد",
+    "total_degree": 272
+  },
+  {
+    "seating_no": 1347047,
+    "arabic_name": "لقاء عبده محمد نجاح عبده عبدالمجيد",
+    "total_degree": 229
+  },
+  {
+    "seating_no": 1348130,
+    "arabic_name": "لقاء السيد ابراهيم محمد خميس",
+    "total_degree": 180
+  },
+  {
+    "seating_no": 1352615,
+    "arabic_name": "لقاء مجدي محمد عبدالنبى صالح",
+    "total_degree": 177.5
+  },
+  {
+    "seating_no": 1352699,
+    "arabic_name": "لقاء حسام محمد عزت فهمى النحال",
+    "total_degree": 207.5
+  },
+  {
+    "seating_no": 1353021,
+    "arabic_name": "لقاء احمد عبدالسلام محمد موسى شوك",
+    "total_degree": 153.5
+  },
+  {
+    "seating_no": 1353444,
+    "arabic_name": "لقاء نعيم عبداللطيف احمد الجندى",
+    "total_degree": 213
+  },
+  {
+    "seating_no": 1354598,
+    "arabic_name": "لقاء اشرف عزت محمود سيد احمد",
+    "total_degree": 215.5
+  },
+  {
+    "seating_no": 1357988,
+    "arabic_name": "لقاء محمد بهى الدين عبدالمجيد محمود عبيده",
+    "total_degree": 135
+  },
+  {
+    "seating_no": 1361778,
+    "arabic_name": "لقاء ايمن سيد احمد المحلاوي",
+    "total_degree": 161.5
+  },
+  {
+    "seating_no": 1367961,
+    "arabic_name": "لقاء محمد ابراهيم عبداللطيف محمد",
+    "total_degree": 204.5
+  },
+  {
+    "seating_no": 1367962,
+    "arabic_name": "لقاء محمد حمزه محمد يوسف",
+    "total_degree": 173
+  },
+  {
+    "seating_no": 1373372,
+    "arabic_name": "لقاء على عزوز على خلف الله",
+    "total_degree": 168
+  },
+  {
+    "seating_no": 1376754,
+    "arabic_name": "لقاء رجب عفيفى فرج عثمان",
+    "total_degree": 300
+  },
+  {
+    "seating_no": 1376983,
+    "arabic_name": "لقاء ياسر عبدالقادر احمد الخولي",
+    "total_degree": 196
+  },
+  {
+    "seating_no": 1377224,
+    "arabic_name": "لقاء اشرف محمد عباس عبدالعزيز",
+    "total_degree": 178.5
+  },
+  {
+    "seating_no": 1377296,
+    "arabic_name": "لقاء محمد كيلانى محمد كيلانى",
+    "total_degree": 147
+  },
+  {
+    "seating_no": 1380109,
+    "arabic_name": "لقاء سيد العربي كامل عبدالحميد حسن",
+    "total_degree": 207.5
+  },
+  {
+    "seating_no": 1385263,
+    "arabic_name": "لقاء حسن فاروق عبدالله محمد",
+    "total_degree": 266.5
+  },
+  {
+    "seating_no": 1400353,
+    "arabic_name": "لقاء عبدالله موسى محمود موسى ",
+    "total_degree": 139.5
+  },
+  {
+    "seating_no": 1401436,
+    "arabic_name": "لقاء محمد احمد محمد حسين",
+    "total_degree": 194.5
+  },
+  {
+    "seating_no": 1409965,
+    "arabic_name": "لقاء شكرى شعبان امام مدبولى",
+    "total_degree": 203.5
+  },
+  {
+    "seating_no": 1413259,
+    "arabic_name": "لقاء اشرف عبدالعظيم علوان زهران",
+    "total_degree": 160
+  },
+  {
+    "seating_no": 1420910,
+    "arabic_name": "لقاء فؤاد الشبراوى محمود البربرى",
+    "total_degree": 149
+  },
+  {
+    "seating_no": 1421120,
+    "arabic_name": "لقاء سمير عبدالرحمن حسن الجداوى",
+    "total_degree": 196.5
+  },
+  {
+    "seating_no": 1424068,
+    "arabic_name": "لقاء اشرف محمد عبده حسين",
+    "total_degree": 232
+  },
+  {
+    "seating_no": 1430629,
+    "arabic_name": "لقاء عماد محمد شوقي عريبي",
+    "total_degree": 198
+  },
+  {
+    "seating_no": 1433344,
+    "arabic_name": "لقاء محمد احمد ابراهيم احمد",
+    "total_degree": 190
+  },
+  {
+    "seating_no": 1436352,
+    "arabic_name": "لقاء المرسى عبدالبديع المغاوري العربى",
+    "total_degree": 277
+  },
+  {
+    "seating_no": 1437298,
+    "arabic_name": "لقاء محمد فوزى عبدالعزيز جادو",
+    "total_degree": 229
+  },
+  {
+    "seating_no": 1437389,
+    "arabic_name": "لقاء محمد عبدالحميد عبدالفتاح يونس",
+    "total_degree": 183.5
+  },
+  {
+    "seating_no": 1443727,
+    "arabic_name": "لقاء خالد عبدالله محمد القلشانى",
+    "total_degree": 154
+  },
+  {
+    "seating_no": 1452786,
+    "arabic_name": "لقاء طارق على محمود محمد",
+    "total_degree": 206.5
+  },
+  {
+    "seating_no": 1460462,
+    "arabic_name": "لقاء ابرهيم محمد عبدالحميد محمد",
+    "total_degree": 237
+  },
+  {
+    "seating_no": 1463729,
+    "arabic_name": "لقاء اشرف ابراهيم احمد عامر",
+    "total_degree": 277
+  },
+  {
+    "seating_no": 1464596,
+    "arabic_name": "لقاء حمادة حمادة محمد ندا",
+    "total_degree": 234.5
+  },
+  {
+    "seating_no": 1464856,
+    "arabic_name": "لقاء ابراهيم عبدالغفار صالح دشيش",
+    "total_degree": 256
+  },
+  {
+    "seating_no": 1477744,
+    "arabic_name": "لقاء حسن فؤاد حسن على",
+    "total_degree": 215.5
+  },
+  {
+    "seating_no": 1478343,
+    "arabic_name": "لقاء عبد الهادى محمد عبد الهادى عبد السلام",
+    "total_degree": 149.5
+  },
+  {
+    "seating_no": 1484205,
+    "arabic_name": "لقاء ياسر ابراهيم احمد السيد",
+    "total_degree": 162.5
+  },
+  {
+    "seating_no": 1489581,
+    "arabic_name": "لقاء احمد امين موسي",
+    "total_degree": 148
+  },
+  {
+    "seating_no": 1490516,
+    "arabic_name": "لقاء أحمد توفيق أحمد",
+    "total_degree": 180
+  },
+  {
+    "seating_no": 1491367,
+    "arabic_name": "لقاء عرفه رجب السيد",
+    "total_degree": 193
+  },
+  {
+    "seating_no": 1493470,
+    "arabic_name": "لقمان الحسين على محمد",
+    "total_degree": 150
+  },
+  {
+    "seating_no": 1496872,
+    "arabic_name": "لقى السيد عبده احمد عبد القادر",
+    "total_degree": 192
+  },
+  {
+    "seating_no": 1497004,
+    "arabic_name": "لقاء عصام محمد احمد فرج",
+    "total_degree": 231
+  },
+  {
+    "seating_no": 1497259,
+    "arabic_name": "لقاء محمد السيد مرسى موصلى",
+    "total_degree": 221
+  },
+  {
+    "seating_no": 1503176,
+    "arabic_name": "لقاء رضا جمال خاطر محمد",
+    "total_degree": 191.5
+  },
+  {
+    "seating_no": 1503177,
+    "arabic_name": "لقاء على فهمى معتمد",
+    "total_degree": 219
+  },
+  {
+    "seating_no": 1503534,
+    "arabic_name": "لقاء محمود السيد نور الدين عبد الرحيم",
+    "total_degree": 217
+  },
+  {
+    "seating_no": 1508376,
+    "arabic_name": "لقاء عماد حسين محمد إبراهيم",
+    "total_degree": 181.5
+  },
+  {
+    "seating_no": 1508912,
+    "arabic_name": "لقاء مظهر احمد على رزق",
+    "total_degree": 138
+  },
+  {
+    "seating_no": 1509080,
+    "arabic_name": "لقاء فؤاد محمد أحمد شرف",
+    "total_degree": 190.5
+  },
+  {
+    "seating_no": 1509858,
+    "arabic_name": "لقاء محمد شعبان محمد احمد الغنيمي",
+    "total_degree": 99
+  },
+  {
+    "seating_no": 1513084,
+    "arabic_name": "لقاء سعيد عبد المعطى حلمى عباس",
+    "total_degree": 146.5
+  },
+  {
+    "seating_no": 1522528,
+    "arabic_name": "لقاء كمال الدين محمد على مهنا",
+    "total_degree": 225
+  },
+  {
+    "seating_no": 1522529,
+    "arabic_name": "لقاء نعيم عبدالحميد نعيم شنيار",
+    "total_degree": 290.5
+  },
+  {
+    "seating_no": 1525269,
+    "arabic_name": "لقاء محمد احمد محمد زهران",
+    "total_degree": 293.5
+  },
+  {
+    "seating_no": 1527347,
+    "arabic_name": "لقى الحسن على محمد مسامير",
+    "total_degree": 185
+  },
+  {
+    "seating_no": 1530631,
+    "arabic_name": "لقاء اشرف عبد المهيمن محمد غلاب",
+    "total_degree": 278.5
+  },
+  {
+    "seating_no": 1531781,
+    "arabic_name": "لقاء صبري عبد الرحمن احمد الاعصر",
+    "total_degree": 170
+  },
+  {
+    "seating_no": 1532109,
+    "arabic_name": "لقاء محمود عبد الجليل عبد الجواد صالح",
+    "total_degree": 147
+  },
+  {
+    "seating_no": 1533814,
+    "arabic_name": "لقاء موسى رفيق محمود الخرادلى",
+    "total_degree": 251.5
+  },
+  {
+    "seating_no": 1534224,
+    "arabic_name": "لقاء محمد محمد عبد الرحيم الجمال",
+    "total_degree": 191
+  },
+  {
+    "seating_no": 1535967,
+    "arabic_name": "لقاء سامى سعد احمد عطيه",
+    "total_degree": 117
+  },
+  {
+    "seating_no": 1544832,
+    "arabic_name": "لقاء رمضان فتحى محمد",
+    "total_degree": 248
+  },
+  {
+    "seating_no": 1545081,
+    "arabic_name": "لقاء وجيه على يونس على",
+    "total_degree": 162.5
+  },
+  {
+    "seating_no": 1546928,
+    "arabic_name": "لقاء حربى عبدالحليم عبدالله خميس",
+    "total_degree": 180
+  },
+  {
+    "seating_no": 1546929,
+    "arabic_name": "لقاء حسين بن احمد بن يحى",
+    "total_degree": 178
+  },
+  {
+    "seating_no": 1555538,
+    "arabic_name": "لقى محمد عبد المجيد احمد حجازى",
+    "total_degree": 134.5
+  },
+  {
+    "seating_no": 1572222,
+    "arabic_name": "لقاء مسعد بدوى حامد مصطفى",
+    "total_degree": 157.5
+  },
+  {
+    "seating_no": 1577638,
+    "arabic_name": "لقاء محمد مرسى محمد الحديدى",
+    "total_degree": 254
+  },
+  {
+    "seating_no": 1581264,
+    "arabic_name": "لقاء ناجى على عبدالكريم زياده",
+    "total_degree": 273.5
+  },
+  {
+    "seating_no": 1581873,
+    "arabic_name": "لقاء عصام البسيونى مرزوق الزارع",
+    "total_degree": 194
+  },
+  {
+    "seating_no": 1583604,
+    "arabic_name": "لقاء جمال محمد الشبراوى",
+    "total_degree": 238.5
+  },
+  {
+    "seating_no": 1583843,
+    "arabic_name": "لقاء ميدوعبد الله احمد شنب",
+    "total_degree": 237.5
+  },
+  {
+    "seating_no": 1584900,
+    "arabic_name": "لقاء لامى السيد راغب شمه",
+    "total_degree": 302
+  },
+  {
+    "seating_no": 1586054,
+    "arabic_name": "لقاء عصام عبدالعزيز عبدالرحمن محمد",
+    "total_degree": 229.5
+  },
+  {
+    "seating_no": 1587092,
+    "arabic_name": "لقاء عصر على عصر يونس",
+    "total_degree": 106.5
+  },
+  {
+    "seating_no": 1587771,
+    "arabic_name": "لقاء احمد محمد أبو غزالة",
+    "total_degree": 147
+  },
+  {
+    "seating_no": 1589911,
+    "arabic_name": "لقاء ثروت السيد عبدالواحد السيد",
+    "total_degree": 259
+  },
+  {
+    "seating_no": 1590676,
+    "arabic_name": "لقاء تامر حسن خليل مطر",
+    "total_degree": 244.5
+  },
+  {
+    "seating_no": 1592896,
+    "arabic_name": "لقاء السيد محمد ربيع احمد السباعى الششتاوى",
+    "total_degree": 199.5
+  },
+  {
+    "seating_no": 1601674,
+    "arabic_name": "لقاء عاطف أحمد الرفاعى محمد",
+    "total_degree": 231
+  },
+  {
+    "seating_no": 1602483,
+    "arabic_name": "لقاء عبد الحكيم عبد الحكيم عبدالغفار قنديل",
+    "total_degree": 153.5
+  },
+  {
+    "seating_no": 1606598,
+    "arabic_name": "لقاء محمد المرسي المرسي النجيري",
+    "total_degree": 219.5
+  },
+  {
+    "seating_no": 1612806,
+    "arabic_name": "لقاء احمد محمد عبدالرازق سعدالدين",
+    "total_degree": 285.5
+  },
+  {
+    "seating_no": 1613433,
+    "arabic_name": "لقاء عاطف اسماعيل محمد اسماعيل",
+    "total_degree": 185.5
+  },
+  {
+    "seating_no": 1613638,
+    "arabic_name": "لقاء سيد احمد سعيد سيد احمد السيد",
+    "total_degree": 238.5
+  },
+  {
+    "seating_no": 1615286,
+    "arabic_name": "لقاء احمد سعيد سمره",
+    "total_degree": 277.5
+  },
+  {
+    "seating_no": 1617576,
+    "arabic_name": "لقاء خالد اسماعيل عطيه ابوالعزم",
+    "total_degree": 206
+  },
+  {
+    "seating_no": 1618921,
+    "arabic_name": "لقاء محمد أحمد عبد المعطي حسن",
+    "total_degree": 264
+  },
+  {
+    "seating_no": 1620685,
+    "arabic_name": "لقاء عبدالله زغلول عبدالله ابراهيم",
+    "total_degree": 228
+  },
+  {
+    "seating_no": 1620867,
+    "arabic_name": "لقاء ابراهيم عبدالحميد موسى النجار",
+    "total_degree": 209
+  },
+  {
+    "seating_no": 1621496,
+    "arabic_name": "لقاء عادل سعيد زهنى عطيه",
+    "total_degree": 220
+  },
+  {
+    "seating_no": 1624153,
+    "arabic_name": "لقاء زكريا محمد محمد على",
+    "total_degree": 207
+  },
+  {
+    "seating_no": 1631456,
+    "arabic_name": "لقاء السيد احمد شوقى السيد احمد",
+    "total_degree": 237.5
+  },
+  {
+    "seating_no": 1644919,
+    "arabic_name": "لقاء وائل سعد احمد وارثه",
+    "total_degree": 154.5
+  },
+  {
+    "seating_no": 1648277,
+    "arabic_name": "لقاء على العيسوى سليمان",
+    "total_degree": 223.5
+  },
+  {
+    "seating_no": 1649612,
+    "arabic_name": "لقاء خالد يحى خليفه يحى",
+    "total_degree": 237.5
+  },
+  {
+    "seating_no": 1651494,
+    "arabic_name": "لقمان علاء محمد نصر المرسى",
+    "total_degree": 261
+  },
+  {
+    "seating_no": 1656043,
+    "arabic_name": "لقاء حمدى عبد العزيز محمد عبد العزيز",
+    "total_degree": 221.5
+  },
+  {
+    "seating_no": 1658426,
+    "arabic_name": "لقاء عماد الزكى ابراهيم احمد على",
+    "total_degree": 170
+  },
+  {
+    "seating_no": 1659214,
+    "arabic_name": "لقاء حسن حسن البسيونى حسن",
+    "total_degree": 297.5
+  },
+  {
+    "seating_no": 1662908,
+    "arabic_name": "لقاء على محمد عبد الحى عوض",
+    "total_degree": 260.5
+  },
+  {
+    "seating_no": 1663763,
+    "arabic_name": "لقاء الشربينى السيد مرسى الشربينى",
+    "total_degree": 229
+  },
+  {
+    "seating_no": 1666135,
+    "arabic_name": "لقاء حماده محمد احمد جاب الله",
+    "total_degree": 229
+  },
+  {
+    "seating_no": 1668230,
+    "arabic_name": "لقاء عبد الرافع فاروق عبد الرافع محمد سكرانه",
+    "total_degree": 266.5
+  },
+  {
+    "seating_no": 1670657,
+    "arabic_name": "لقمان منصور كامل شهاب",
+    "total_degree": 184.5
+  },
+  {
+    "seating_no": 1673267,
+    "arabic_name": "لقاء الجزايرى رجب احمد النجار",
+    "total_degree": 168
+  },
+  {
+    "seating_no": 1674163,
+    "arabic_name": "لقاء حاتم محمد عبد الباسط محمد موسى البريش",
+    "total_degree": 154.5
+  },
+  {
+    "seating_no": 1674338,
+    "arabic_name": "لقاء محمد محمد عيسى حسن",
+    "total_degree": 249
+  },
+  {
+    "seating_no": 1675131,
+    "arabic_name": "لقاء احمد محمد سمير صابر عبد الهادى",
+    "total_degree": 267
+  },
+  {
+    "seating_no": 1677344,
+    "arabic_name": "لقاء لاشين الشحات مصطفى المنجى",
+    "total_degree": 240.5
+  },
+  {
+    "seating_no": 1678355,
+    "arabic_name": "لقاء سند مرزوق سند ابراهيم",
+    "total_degree": 241.5
+  },
+  {
+    "seating_no": 1680017,
+    "arabic_name": "لقاء محمد عوض على",
+    "total_degree": 210
+  },
+  {
+    "seating_no": 1680360,
+    "arabic_name": "لقاء ابراهيم احمد عبد الحليم احمد",
+    "total_degree": 235.5
+  },
+  {
+    "seating_no": 1681368,
+    "arabic_name": "لقاء عبد اللطيف عبد الوهاب عبد اللطيف احمد",
+    "total_degree": 259.5
+  },
+  {
+    "seating_no": 1685233,
+    "arabic_name": "لقاء مصطفى موسى انور على",
+    "total_degree": 219.5
+  },
+  {
+    "seating_no": 1685543,
+    "arabic_name": "لقاء سامى عبد القادر موسى الشامى",
+    "total_degree": 179
+  },
+  {
+    "seating_no": 1686043,
+    "arabic_name": "لقاء احمد سعد السيد احمد عامر",
+    "total_degree": 259
+  },
+  {
+    "seating_no": 1687529,
+    "arabic_name": "لقاء عصام محمد على محمد",
+    "total_degree": 184
+  },
+  {
+    "seating_no": 1691223,
+    "arabic_name": "لقاء محمد اشرف على احمد حامد",
+    "total_degree": 291.5
+  },
+  {
+    "seating_no": 1697256,
+    "arabic_name": "لقاء ابراهيم عبد الحميد عبد اللطيف الخميسى",
+    "total_degree": 288
+  },
+  {
+    "seating_no": 1701118,
+    "arabic_name": "لقاء سمير محمد مسعد على ابو العنين",
+    "total_degree": 263.5
+  },
+  {
+    "seating_no": 1717065,
+    "arabic_name": "لقاء يوسف عبده يوسف عبده",
+    "total_degree": 224.5
+  },
+  {
+    "seating_no": 1717410,
+    "arabic_name": "لقاء محمود محمد فوزى  راغب عامر",
+    "total_degree": 187.5
+  },
+  {
+    "seating_no": 1724830,
+    "arabic_name": "لقاء محمد سعد احمد السمنودى",
+    "total_degree": 265.5
+  },
+  {
+    "seating_no": 1725121,
+    "arabic_name": "لقاء خالد عبدالمنعم محمد امين",
+    "total_degree": 218
+  },
+  {
+    "seating_no": 1725825,
+    "arabic_name": "لقاء هشام صلاح الدين عبدالحميد محمد",
+    "total_degree": 220.5
+  },
+  {
+    "seating_no": 1727118,
+    "arabic_name": "لقاء اشرف عبدالسميع انور ابراهيم",
+    "total_degree": 188.5
+  },
+  {
+    "seating_no": 1727494,
+    "arabic_name": "لقاء ابراهيم عبدالسلام قطب منصور",
+    "total_degree": 251
+  },
+  {
+    "seating_no": 1727495,
+    "arabic_name": "لقاء سمير فكرى محمود يوسف",
+    "total_degree": 235
+  },
+  {
+    "seating_no": 1727496,
+    "arabic_name": "لقاء وائل محمد محمدى محمد",
+    "total_degree": 229
+  },
+  {
+    "seating_no": 1727727,
+    "arabic_name": "لقاء جلال ابوهاشم عبدالوهاب ابراهيم",
+    "total_degree": 172
+  },
+  {
+    "seating_no": 1728814,
+    "arabic_name": "لقاء احمد محمد امين عوض الله",
+    "total_degree": 204
+  },
+  {
+    "seating_no": 1737181,
+    "arabic_name": "لقاء عادل عبد التواب احمد وهيب",
+    "total_degree": 277
+  },
+  {
+    "seating_no": 1737682,
+    "arabic_name": "لقاء احمد ابراهيم عليوة حسين",
+    "total_degree": 203
+  },
+  {
+    "seating_no": 1739240,
+    "arabic_name": "لقاء يوسف عبد العزيز يوسف",
+    "total_degree": 114
+  },
+  {
+    "seating_no": 1743245,
+    "arabic_name": "لقاء عاطف حسن فهمي حسن",
+    "total_degree": 191.5
+  },
+  {
+    "seating_no": 1743380,
+    "arabic_name": "لقاء محمود الهادي احمد خليفه",
+    "total_degree": 104
+  },
+  {
+    "seating_no": 1744622,
+    "arabic_name": "لقاء عبدالوهاب هاشم ابوزيد يحيى",
+    "total_degree": 268.5
+  },
+  {
+    "seating_no": 1745987,
+    "arabic_name": "لقاء محمد حسن يوسف أبو خضره",
+    "total_degree": 142.5
+  },
+  {
+    "seating_no": 1746980,
+    "arabic_name": "لقاء سالم حسن سالم حسن",
+    "total_degree": 185
+  },
+  {
+    "seating_no": 1746981,
+    "arabic_name": "لقاء محمد سعيد طلبه عطيه",
+    "total_degree": 159.5
+  },
+  {
+    "seating_no": 1748991,
+    "arabic_name": "لقاء عبد الكريم محمد حسين احمد",
+    "total_degree": 215.5
+  },
+  {
+    "seating_no": 1755643,
+    "arabic_name": "لقاء وائل ابراهيم محمود احمد خليل",
+    "total_degree": 110
+  },
+  {
+    "seating_no": 1756549,
+    "arabic_name": "لقاء ابراهيم مهدى على محمد",
+    "total_degree": 227
+  },
+  {
+    "seating_no": 1756875,
+    "arabic_name": "لقاء ناصر محمد ابراهيم محمد",
+    "total_degree": 206.5
+  },
+  {
+    "seating_no": 1757602,
+    "arabic_name": "لقاء حسين محمود اسماعيل عبدالكريم",
+    "total_degree": 186.5
+  },
+  {
+    "seating_no": 1777968,
+    "arabic_name": "لقاء محمد جلال محمد مرشد",
+    "total_degree": 235
+  },
+  {
+    "seating_no": 1778422,
+    "arabic_name": "لقاء خالد توني عبد اللطيف",
+    "total_degree": 242.5
+  },
+  {
+    "seating_no": 1779117,
+    "arabic_name": "لقاء شريف جلال سيد محمد",
+    "total_degree": 218
+  },
+  {
+    "seating_no": 1779293,
+    "arabic_name": "لقاء محمد شحاته موسى محمد",
+    "total_degree": 194
+  },
+  {
+    "seating_no": 1780770,
+    "arabic_name": "لقاء بكر فتحى على",
+    "total_degree": 240.5
+  },
+  {
+    "seating_no": 1780889,
+    "arabic_name": "لقمان محمد حسني احمد",
+    "total_degree": 243
+  },
+  {
+    "seating_no": 1789090,
+    "arabic_name": "لقاء خميس ابراهيم عبدالفتاح",
+    "total_degree": 158.5
+  },
+  {
+    "seating_no": 1790150,
+    "arabic_name": "لقاء السيد ربيع السيد",
+    "total_degree": 214
+  },
+  {
+    "seating_no": 1795651,
+    "arabic_name": "لقاء احمد حمدى راشد",
+    "total_degree": 273.5
+  },
+  {
+    "seating_no": 1798127,
+    "arabic_name": "لقاء محمد فتحى محمد",
+    "total_degree": 213
+  },
+  {
+    "seating_no": 1798612,
+    "arabic_name": "لقاء محمد زكى على",
+    "total_degree": 288.5
+  },
+  {
+    "seating_no": 1798734,
+    "arabic_name": "لقاء شهاب الدين عبدالجليل سيد",
+    "total_degree": 200
+  },
+  {
+    "seating_no": 1807647,
+    "arabic_name": "لقاء عادل على غزالى",
+    "total_degree": 187
+  },
+  {
+    "seating_no": 1826105,
+    "arabic_name": "لقاء عبد القادر عمر احمد",
+    "total_degree": 131.5
+  },
+  {
+    "seating_no": 1866533,
+    "arabic_name": "لقاء اسماعيل طرزى جبالى",
+    "total_degree": 228.5
+  },
+  {
+    "seating_no": 1868958,
+    "arabic_name": "لقاء محمد حسين خليفة",
+    "total_degree": 177.5
+  },
+  {
+    "seating_no": 1874322,
+    "arabic_name": "لقاء علاء محمد احمد",
+    "total_degree": 295.5
+  },
+  {
+    "seating_no": 1879014,
+    "arabic_name": "لقاء سالمان عبدالموجود عبدالسلام",
+    "total_degree": 205
+  },
+  {
+    "seating_no": 1883858,
+    "arabic_name": "لقاء محمد سمور عبدالرحيم",
+    "total_degree": 296.5
+  },
+  {
+    "seating_no": 1892353,
+    "arabic_name": "لقاء محمد ابراهيم محمد",
+    "total_degree": 283
+  },
+  {
+    "seating_no": 1896728,
+    "arabic_name": "لقاء فرج محمد الصغير",
+    "total_degree": 277
+  },
+  {
+    "seating_no": 1898949,
+    "arabic_name": "لقاء أسعد نورالدين محمد",
+    "total_degree": 257
+  },
+  {
+    "seating_no": 1902441,
+    "arabic_name": "لقاء عزام عبدالباسط عبدالرحمن",
+    "total_degree": 293.5
+  },
+  {
+    "seating_no": 1910213,
+    "arabic_name": "لقاء محمود انور محمد",
+    "total_degree": 165
+  },
+  {
+    "seating_no": 1098238,
+    "arabic_name": "لقاء اشرف مصلح محفوظ عبداللطيف",
+    "total_degree": 150
+  },
+  {
+    "seating_no": 1099105,
+    "arabic_name": "لقاء عصام احمد نورالدين ابوالعلا",
+    "total_degree": 205
+  },
+  {
+    "seating_no": 1099649,
+    "arabic_name": "لقاء خالد السيد احمد خلاف",
+    "total_degree": 225.5
+  },
+  {
+    "seating_no": 1102030,
+    "arabic_name": "لقاء جمال محمود على",
+    "total_degree": 187.5
+  },
+  {
+    "seating_no": 1103771,
+    "arabic_name": "لقاء سيد احمد وصفى",
+    "total_degree": 283.5
+  },
+  {
+    "seating_no": 1191085,
+    "arabic_name": "لقاء تامر محمد رمضان",
+    "total_degree": 199.5
+  },
+  {
+    "seating_no": 1296982,
+    "arabic_name": "لقاء محمد عبدالمنعم حسن",
+    "total_degree": 133
+  },
+  {
+    "seating_no": 1297589,
+    "arabic_name": "لقاء سامى سعيد رجب حشكيل",
+    "total_degree": 205
+  },
+  {
+    "seating_no": 1297626,
+    "arabic_name": "لقاء سعد فوزى خطاب",
+    "total_degree": 211
+  },
+  {
+    "seating_no": 1298815,
+    "arabic_name": "لقاء عمر عبد الحق عبد الله",
+    "total_degree": 211.5
+  },
+  {
+    "seating_no": 1301065,
+    "arabic_name": "لقاء هانى عبدالرحيم شفيق على",
+    "total_degree": 189
+  },
+  {
+    "seating_no": 1392760,
+    "arabic_name": "لقاء احمد عبده حسين عبدالجبار",
+    "total_degree": 211
+  },
+  {
+    "seating_no": 1393006,
+    "arabic_name": "لقاء طارق جمعه محمد سرور",
+    "total_degree": 235
+  },
+  {
+    "seating_no": 1393303,
+    "arabic_name": "لقاء عبدالرؤف ذكي موسى",
+    "total_degree": 170.5
+  },
+  {
+    "seating_no": 1470419,
+    "arabic_name": "لقاء محمد محمود محمد",
+    "total_degree": 218.5
+  },
+  {
+    "seating_no": 1470941,
+    "arabic_name": "لقاء رمضان السيد عبد الجواد",
+    "total_degree": 206
+  },
+  {
+    "seating_no": 1472586,
+    "arabic_name": "لقاء خورشيد عبدالحميد السيد حرفوش",
+    "total_degree": 381
+  },
+  {
+    "seating_no": 1564202,
+    "arabic_name": "لقاء فضل يونس رزق عبد الله خليف",
+    "total_degree": 212
+  },
+  {
+    "seating_no": 1564475,
+    "arabic_name": "لقاء محمود السيد رجب حسن",
+    "total_degree": 386.5
+  },
+  {
+    "seating_no": 1565019,
+    "arabic_name": "لقاء شكرى محمد محمد",
+    "total_degree": 222
+  },
+  {
+    "seating_no": 1565058,
+    "arabic_name": "لقاء مجاهد جمال عبد المقصود محمد",
+    "total_degree": 217
+  },
+  {
+    "seating_no": 1635347,
+    "arabic_name": "لقاء احمد منصور شرويده حمدان",
+    "total_degree": 205
+  },
+  {
+    "seating_no": 1843594,
+    "arabic_name": "لقاء جمعه صابر زايد",
+    "total_degree": 269.5
+  },
+  {
+    "seating_no": 1844835,
+    "arabic_name": "لقاء عطفت على عبد العزيز",
+    "total_degree": 386
+  },
+  {
+    "seating_no": 1847418,
+    "arabic_name": "لقاء كمال وهيب يوسف",
+    "total_degree": 219
+  },
+  {
+    "seating_no": 1848681,
+    "arabic_name": "لقاء طايع عبد النعيم حسن",
+    "total_degree": 277
+  },
+  {
+    "seating_no": 1849030,
+    "arabic_name": "لقاء عبد العاطى محمد احمد",
+    "total_degree": 273.5
+  },
+  {
+    "seating_no": 1912892,
+    "arabic_name": "لقاء صبحى امام عبدالحميد",
+    "total_degree": 358
+  }
+]

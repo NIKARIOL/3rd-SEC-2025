@@ -1,0 +1,3215 @@
+{
+  "grade_distribution": {
+    "0.0": {
+      "equal": 27665,
+      "more": 779720,
+      "equal_or_more": 807385
+    },
+    "0.5": {
+      "equal": 3,
+      "more": 779717,
+      "equal_or_more": 779720
+    },
+    "1.0": {
+      "equal": 22,
+      "more": 779695,
+      "equal_or_more": 779717
+    },
+    "1.5": {
+      "equal": 5,
+      "more": 779690,
+      "equal_or_more": 779695
+    },
+    "2.0": {
+      "equal": 13,
+      "more": 779677,
+      "equal_or_more": 779690
+    },
+    "2.5": {
+      "equal": 3,
+      "more": 779674,
+      "equal_or_more": 779677
+    },
+    "3.0": {
+      "equal": 19,
+      "more": 779655,
+      "equal_or_more": 779674
+    },
+    "3.5": {
+      "equal": 4,
+      "more": 779651,
+      "equal_or_more": 779655
+    },
+    "4.0": {
+      "equal": 16,
+      "more": 779635,
+      "equal_or_more": 779651
+    },
+    "4.5": {
+      "equal": 5,
+      "more": 779630,
+      "equal_or_more": 779635
+    },
+    "5.0": {
+      "equal": 15,
+      "more": 779615,
+      "equal_or_more": 779630
+    },
+    "5.5": {
+      "equal": 2,
+      "more": 779613,
+      "equal_or_more": 779615
+    },
+    "6.0": {
+      "equal": 11,
+      "more": 779602,
+      "equal_or_more": 779613
+    },
+    "6.5": {
+      "equal": 5,
+      "more": 779597,
+      "equal_or_more": 779602
+    },
+    "7.0": {
+      "equal": 12,
+      "more": 779585,
+      "equal_or_more": 779597
+    },
+    "7.5": {
+      "equal": 3,
+      "more": 779582,
+      "equal_or_more": 779585
+    },
+    "8.0": {
+      "equal": 15,
+      "more": 779567,
+      "equal_or_more": 779582
+    },
+    "8.5": {
+      "equal": 7,
+      "more": 779560,
+      "equal_or_more": 779567
+    },
+    "9.0": {
+      "equal": 2,
+      "more": 779558,
+      "equal_or_more": 779560
+    },
+    "9.5": {
+      "equal": 2,
+      "more": 779556,
+      "equal_or_more": 779558
+    },
+    "10.0": {
+      "equal": 11,
+      "more": 779545,
+      "equal_or_more": 779556
+    },
+    "10.5": {
+      "equal": 2,
+      "more": 779543,
+      "equal_or_more": 779545
+    },
+    "11.0": {
+      "equal": 18,
+      "more": 779525,
+      "equal_or_more": 779543
+    },
+    "11.5": {
+      "equal": 4,
+      "more": 779521,
+      "equal_or_more": 779525
+    },
+    "12.0": {
+      "equal": 10,
+      "more": 779511,
+      "equal_or_more": 779521
+    },
+    "12.5": {
+      "equal": 4,
+      "more": 779507,
+      "equal_or_more": 779511
+    },
+    "13.0": {
+      "equal": 8,
+      "more": 779499,
+      "equal_or_more": 779507
+    },
+    "13.5": {
+      "equal": 6,
+      "more": 779493,
+      "equal_or_more": 779499
+    },
+    "14.0": {
+      "equal": 11,
+      "more": 779482,
+      "equal_or_more": 779493
+    },
+    "14.5": {
+      "equal": 5,
+      "more": 779477,
+      "equal_or_more": 779482
+    },
+    "15.0": {
+      "equal": 4,
+      "more": 779473,
+      "equal_or_more": 779477
+    },
+    "15.5": {
+      "equal": 6,
+      "more": 779467,
+      "equal_or_more": 779473
+    },
+    "16.0": {
+      "equal": 10,
+      "more": 779457,
+      "equal_or_more": 779467
+    },
+    "16.5": {
+      "equal": 3,
+      "more": 779454,
+      "equal_or_more": 779457
+    },
+    "17.0": {
+      "equal": 11,
+      "more": 779443,
+      "equal_or_more": 779454
+    },
+    "17.5": {
+      "equal": 4,
+      "more": 779439,
+      "equal_or_more": 779443
+    },
+    "18.0": {
+      "equal": 9,
+      "more": 779430,
+      "equal_or_more": 779439
+    },
+    "18.5": {
+      "equal": 2,
+      "more": 779428,
+      "equal_or_more": 779430
+    },
+    "19.0": {
+      "equal": 9,
+      "more": 779419,
+      "equal_or_more": 779428
+    },
+    "19.5": {
+      "equal": 4,
+      "more": 779415,
+      "equal_or_more": 779419
+    },
+    "20.0": {
+      "equal": 26,
+      "more": 779389,
+      "equal_or_more": 779415
+    },
+    "20.5": {
+      "equal": 5,
+      "more": 779384,
+      "equal_or_more": 779389
+    },
+    "21.0": {
+      "equal": 9,
+      "more": 779375,
+      "equal_or_more": 779384
+    },
+    "21.5": {
+      "equal": 3,
+      "more": 779372,
+      "equal_or_more": 779375
+    },
+    "22.0": {
+      "equal": 10,
+      "more": 779362,
+      "equal_or_more": 779372
+    },
+    "22.5": {
+      "equal": 5,
+      "more": 779357,
+      "equal_or_more": 779362
+    },
+    "23.0": {
+      "equal": 9,
+      "more": 779348,
+      "equal_or_more": 779357
+    },
+    "23.5": {
+      "equal": 2,
+      "more": 779346,
+      "equal_or_more": 779348
+    },
+    "24.0": {
+      "equal": 5,
+      "more": 779341,
+      "equal_or_more": 779346
+    },
+    "24.5": {
+      "equal": 2,
+      "more": 779339,
+      "equal_or_more": 779341
+    },
+    "25.0": {
+      "equal": 11,
+      "more": 779328,
+      "equal_or_more": 779339
+    },
+    "25.5": {
+      "equal": 2,
+      "more": 779326,
+      "equal_or_more": 779328
+    },
+    "26.0": {
+      "equal": 6,
+      "more": 779320,
+      "equal_or_more": 779326
+    },
+    "26.5": {
+      "equal": 3,
+      "more": 779317,
+      "equal_or_more": 779320
+    },
+    "27.0": {
+      "equal": 12,
+      "more": 779305,
+      "equal_or_more": 779317
+    },
+    "27.5": {
+      "equal": 6,
+      "more": 779299,
+      "equal_or_more": 779305
+    },
+    "28.0": {
+      "equal": 10,
+      "more": 779289,
+      "equal_or_more": 779299
+    },
+    "28.5": {
+      "equal": 3,
+      "more": 779286,
+      "equal_or_more": 779289
+    },
+    "29.0": {
+      "equal": 7,
+      "more": 779279,
+      "equal_or_more": 779286
+    },
+    "29.5": {
+      "equal": 7,
+      "more": 779272,
+      "equal_or_more": 779279
+    },
+    "30.0": {
+      "equal": 106,
+      "more": 779166,
+      "equal_or_more": 779272
+    },
+    "30.5": {
+      "equal": 13,
+      "more": 779153,
+      "equal_or_more": 779166
+    },
+    "31.0": {
+      "equal": 20,
+      "more": 779133,
+      "equal_or_more": 779153
+    },
+    "31.5": {
+      "equal": 11,
+      "more": 779122,
+      "equal_or_more": 779133
+    },
+    "32.0": {
+      "equal": 14,
+      "more": 779108,
+      "equal_or_more": 779122
+    },
+    "32.5": {
+      "equal": 9,
+      "more": 779099,
+      "equal_or_more": 779108
+    },
+    "33.0": {
+      "equal": 13,
+      "more": 779086,
+      "equal_or_more": 779099
+    },
+    "33.5": {
+      "equal": 3,
+      "more": 779083,
+      "equal_or_more": 779086
+    },
+    "34.0": {
+      "equal": 30,
+      "more": 779053,
+      "equal_or_more": 779083
+    },
+    "34.5": {
+      "equal": 6,
+      "more": 779047,
+      "equal_or_more": 779053
+    },
+    "35.0": {
+      "equal": 17,
+      "more": 779030,
+      "equal_or_more": 779047
+    },
+    "35.5": {
+      "equal": 4,
+      "more": 779026,
+      "equal_or_more": 779030
+    },
+    "36.0": {
+      "equal": 20,
+      "more": 779006,
+      "equal_or_more": 779026
+    },
+    "36.5": {
+      "equal": 5,
+      "more": 779001,
+      "equal_or_more": 779006
+    },
+    "37.0": {
+      "equal": 23,
+      "more": 778978,
+      "equal_or_more": 779001
+    },
+    "37.5": {
+      "equal": 5,
+      "more": 778973,
+      "equal_or_more": 778978
+    },
+    "38.0": {
+      "equal": 16,
+      "more": 778957,
+      "equal_or_more": 778973
+    },
+    "38.5": {
+      "equal": 4,
+      "more": 778953,
+      "equal_or_more": 778957
+    },
+    "39.0": {
+      "equal": 27,
+      "more": 778926,
+      "equal_or_more": 778953
+    },
+    "39.5": {
+      "equal": 8,
+      "more": 778918,
+      "equal_or_more": 778926
+    },
+    "40.0": {
+      "equal": 87,
+      "more": 778831,
+      "equal_or_more": 778918
+    },
+    "40.5": {
+      "equal": 12,
+      "more": 778819,
+      "equal_or_more": 778831
+    },
+    "41.0": {
+      "equal": 25,
+      "more": 778794,
+      "equal_or_more": 778819
+    },
+    "41.5": {
+      "equal": 8,
+      "more": 778786,
+      "equal_or_more": 778794
+    },
+    "42.0": {
+      "equal": 32,
+      "more": 778754,
+      "equal_or_more": 778786
+    },
+    "42.5": {
+      "equal": 13,
+      "more": 778741,
+      "equal_or_more": 778754
+    },
+    "43.0": {
+      "equal": 31,
+      "more": 778710,
+      "equal_or_more": 778741
+    },
+    "43.5": {
+      "equal": 15,
+      "more": 778695,
+      "equal_or_more": 778710
+    },
+    "44.0": {
+      "equal": 20,
+      "more": 778675,
+      "equal_or_more": 778695
+    },
+    "44.5": {
+      "equal": 22,
+      "more": 778653,
+      "equal_or_more": 778675
+    },
+    "45.0": {
+      "equal": 30,
+      "more": 778623,
+      "equal_or_more": 778653
+    },
+    "45.5": {
+      "equal": 17,
+      "more": 778606,
+      "equal_or_more": 778623
+    },
+    "46.0": {
+      "equal": 41,
+      "more": 778565,
+      "equal_or_more": 778606
+    },
+    "46.5": {
+      "equal": 18,
+      "more": 778547,
+      "equal_or_more": 778565
+    },
+    "47.0": {
+      "equal": 33,
+      "more": 778514,
+      "equal_or_more": 778547
+    },
+    "47.5": {
+      "equal": 20,
+      "more": 778494,
+      "equal_or_more": 778514
+    },
+    "48.0": {
+      "equal": 35,
+      "more": 778459,
+      "equal_or_more": 778494
+    },
+    "48.5": {
+      "equal": 21,
+      "more": 778438,
+      "equal_or_more": 778459
+    },
+    "49.0": {
+      "equal": 30,
+      "more": 778408,
+      "equal_or_more": 778438
+    },
+    "49.5": {
+      "equal": 16,
+      "more": 778392,
+      "equal_or_more": 778408
+    },
+    "50.0": {
+      "equal": 45,
+      "more": 778347,
+      "equal_or_more": 778392
+    },
+    "50.5": {
+      "equal": 23,
+      "more": 778324,
+      "equal_or_more": 778347
+    },
+    "51.0": {
+      "equal": 33,
+      "more": 778291,
+      "equal_or_more": 778324
+    },
+    "51.5": {
+      "equal": 19,
+      "more": 778272,
+      "equal_or_more": 778291
+    },
+    "52.0": {
+      "equal": 43,
+      "more": 778229,
+      "equal_or_more": 778272
+    },
+    "52.5": {
+      "equal": 22,
+      "more": 778207,
+      "equal_or_more": 778229
+    },
+    "53.0": {
+      "equal": 37,
+      "more": 778170,
+      "equal_or_more": 778207
+    },
+    "53.5": {
+      "equal": 20,
+      "more": 778150,
+      "equal_or_more": 778170
+    },
+    "54.0": {
+      "equal": 45,
+      "more": 778105,
+      "equal_or_more": 778150
+    },
+    "54.5": {
+      "equal": 14,
+      "more": 778091,
+      "equal_or_more": 778105
+    },
+    "55.0": {
+      "equal": 56,
+      "more": 778035,
+      "equal_or_more": 778091
+    },
+    "55.5": {
+      "equal": 18,
+      "more": 778017,
+      "equal_or_more": 778035
+    },
+    "56.0": {
+      "equal": 59,
+      "more": 777958,
+      "equal_or_more": 778017
+    },
+    "56.5": {
+      "equal": 25,
+      "more": 777933,
+      "equal_or_more": 777958
+    },
+    "57.0": {
+      "equal": 61,
+      "more": 777872,
+      "equal_or_more": 777933
+    },
+    "57.5": {
+      "equal": 15,
+      "more": 777857,
+      "equal_or_more": 777872
+    },
+    "58.0": {
+      "equal": 32,
+      "more": 777825,
+      "equal_or_more": 777857
+    },
+    "58.5": {
+      "equal": 25,
+      "more": 777800,
+      "equal_or_more": 777825
+    },
+    "59.0": {
+      "equal": 45,
+      "more": 777755,
+      "equal_or_more": 777800
+    },
+    "59.5": {
+      "equal": 28,
+      "more": 777727,
+      "equal_or_more": 777755
+    },
+    "60.0": {
+      "equal": 84,
+      "more": 777643,
+      "equal_or_more": 777727
+    },
+    "60.5": {
+      "equal": 22,
+      "more": 777621,
+      "equal_or_more": 777643
+    },
+    "61.0": {
+      "equal": 45,
+      "more": 777576,
+      "equal_or_more": 777621
+    },
+    "61.5": {
+      "equal": 27,
+      "more": 777549,
+      "equal_or_more": 777576
+    },
+    "62.0": {
+      "equal": 40,
+      "more": 777509,
+      "equal_or_more": 777549
+    },
+    "62.5": {
+      "equal": 43,
+      "more": 777466,
+      "equal_or_more": 777509
+    },
+    "63.0": {
+      "equal": 37,
+      "more": 777429,
+      "equal_or_more": 777466
+    },
+    "63.5": {
+      "equal": 28,
+      "more": 777401,
+      "equal_or_more": 777429
+    },
+    "64.0": {
+      "equal": 41,
+      "more": 777360,
+      "equal_or_more": 777401
+    },
+    "64.5": {
+      "equal": 23,
+      "more": 777337,
+      "equal_or_more": 777360
+    },
+    "65.0": {
+      "equal": 46,
+      "more": 777291,
+      "equal_or_more": 777337
+    },
+    "65.5": {
+      "equal": 37,
+      "more": 777254,
+      "equal_or_more": 777291
+    },
+    "66.0": {
+      "equal": 45,
+      "more": 777209,
+      "equal_or_more": 777254
+    },
+    "66.5": {
+      "equal": 34,
+      "more": 777175,
+      "equal_or_more": 777209
+    },
+    "67.0": {
+      "equal": 53,
+      "more": 777122,
+      "equal_or_more": 777175
+    },
+    "67.5": {
+      "equal": 39,
+      "more": 777083,
+      "equal_or_more": 777122
+    },
+    "68.0": {
+      "equal": 47,
+      "more": 777036,
+      "equal_or_more": 777083
+    },
+    "68.5": {
+      "equal": 38,
+      "more": 776998,
+      "equal_or_more": 777036
+    },
+    "69.0": {
+      "equal": 36,
+      "more": 776962,
+      "equal_or_more": 776998
+    },
+    "69.5": {
+      "equal": 38,
+      "more": 776924,
+      "equal_or_more": 776962
+    },
+    "70.0": {
+      "equal": 83,
+      "more": 776841,
+      "equal_or_more": 776924
+    },
+    "70.5": {
+      "equal": 49,
+      "more": 776792,
+      "equal_or_more": 776841
+    },
+    "71.0": {
+      "equal": 51,
+      "more": 776741,
+      "equal_or_more": 776792
+    },
+    "71.5": {
+      "equal": 47,
+      "more": 776694,
+      "equal_or_more": 776741
+    },
+    "72.0": {
+      "equal": 63,
+      "more": 776631,
+      "equal_or_more": 776694
+    },
+    "72.5": {
+      "equal": 54,
+      "more": 776577,
+      "equal_or_more": 776631
+    },
+    "73.0": {
+      "equal": 66,
+      "more": 776511,
+      "equal_or_more": 776577
+    },
+    "73.5": {
+      "equal": 48,
+      "more": 776463,
+      "equal_or_more": 776511
+    },
+    "74.0": {
+      "equal": 92,
+      "more": 776371,
+      "equal_or_more": 776463
+    },
+    "74.5": {
+      "equal": 46,
+      "more": 776325,
+      "equal_or_more": 776371
+    },
+    "75.0": {
+      "equal": 87,
+      "more": 776238,
+      "equal_or_more": 776325
+    },
+    "75.5": {
+      "equal": 50,
+      "more": 776188,
+      "equal_or_more": 776238
+    },
+    "76.0": {
+      "equal": 71,
+      "more": 776117,
+      "equal_or_more": 776188
+    },
+    "76.5": {
+      "equal": 48,
+      "more": 776069,
+      "equal_or_more": 776117
+    },
+    "77.0": {
+      "equal": 75,
+      "more": 775994,
+      "equal_or_more": 776069
+    },
+    "77.5": {
+      "equal": 55,
+      "more": 775939,
+      "equal_or_more": 775994
+    },
+    "78.0": {
+      "equal": 101,
+      "more": 775838,
+      "equal_or_more": 775939
+    },
+    "78.5": {
+      "equal": 51,
+      "more": 775787,
+      "equal_or_more": 775838
+    },
+    "79.0": {
+      "equal": 67,
+      "more": 775720,
+      "equal_or_more": 775787
+    },
+    "79.5": {
+      "equal": 64,
+      "more": 775656,
+      "equal_or_more": 775720
+    },
+    "80.0": {
+      "equal": 91,
+      "more": 775565,
+      "equal_or_more": 775656
+    },
+    "80.5": {
+      "equal": 50,
+      "more": 775515,
+      "equal_or_more": 775565
+    },
+    "81.0": {
+      "equal": 84,
+      "more": 775431,
+      "equal_or_more": 775515
+    },
+    "81.5": {
+      "equal": 62,
+      "more": 775369,
+      "equal_or_more": 775431
+    },
+    "82.0": {
+      "equal": 76,
+      "more": 775293,
+      "equal_or_more": 775369
+    },
+    "82.5": {
+      "equal": 72,
+      "more": 775221,
+      "equal_or_more": 775293
+    },
+    "83.0": {
+      "equal": 98,
+      "more": 775123,
+      "equal_or_more": 775221
+    },
+    "83.5": {
+      "equal": 87,
+      "more": 775036,
+      "equal_or_more": 775123
+    },
+    "84.0": {
+      "equal": 89,
+      "more": 774947,
+      "equal_or_more": 775036
+    },
+    "84.5": {
+      "equal": 73,
+      "more": 774874,
+      "equal_or_more": 774947
+    },
+    "85.0": {
+      "equal": 120,
+      "more": 774754,
+      "equal_or_more": 774874
+    },
+    "85.5": {
+      "equal": 89,
+      "more": 774665,
+      "equal_or_more": 774754
+    },
+    "86.0": {
+      "equal": 119,
+      "more": 774546,
+      "equal_or_more": 774665
+    },
+    "86.5": {
+      "equal": 100,
+      "more": 774446,
+      "equal_or_more": 774546
+    },
+    "87.0": {
+      "equal": 120,
+      "more": 774326,
+      "equal_or_more": 774446
+    },
+    "87.5": {
+      "equal": 107,
+      "more": 774219,
+      "equal_or_more": 774326
+    },
+    "88.0": {
+      "equal": 147,
+      "more": 774072,
+      "equal_or_more": 774219
+    },
+    "88.5": {
+      "equal": 94,
+      "more": 773978,
+      "equal_or_more": 774072
+    },
+    "89.0": {
+      "equal": 155,
+      "more": 773823,
+      "equal_or_more": 773978
+    },
+    "89.5": {
+      "equal": 82,
+      "more": 773741,
+      "equal_or_more": 773823
+    },
+    "90.0": {
+      "equal": 173,
+      "more": 773568,
+      "equal_or_more": 773741
+    },
+    "90.5": {
+      "equal": 112,
+      "more": 773456,
+      "equal_or_more": 773568
+    },
+    "91.0": {
+      "equal": 174,
+      "more": 773282,
+      "equal_or_more": 773456
+    },
+    "91.5": {
+      "equal": 121,
+      "more": 773161,
+      "equal_or_more": 773282
+    },
+    "92.0": {
+      "equal": 212,
+      "more": 772949,
+      "equal_or_more": 773161
+    },
+    "92.5": {
+      "equal": 131,
+      "more": 772818,
+      "equal_or_more": 772949
+    },
+    "93.0": {
+      "equal": 167,
+      "more": 772651,
+      "equal_or_more": 772818
+    },
+    "93.5": {
+      "equal": 135,
+      "more": 772516,
+      "equal_or_more": 772651
+    },
+    "94.0": {
+      "equal": 188,
+      "more": 772328,
+      "equal_or_more": 772516
+    },
+    "94.5": {
+      "equal": 135,
+      "more": 772193,
+      "equal_or_more": 772328
+    },
+    "95.0": {
+      "equal": 209,
+      "more": 771984,
+      "equal_or_more": 772193
+    },
+    "95.5": {
+      "equal": 131,
+      "more": 771853,
+      "equal_or_more": 771984
+    },
+    "96.0": {
+      "equal": 196,
+      "more": 771657,
+      "equal_or_more": 771853
+    },
+    "96.5": {
+      "equal": 154,
+      "more": 771503,
+      "equal_or_more": 771657
+    },
+    "97.0": {
+      "equal": 240,
+      "more": 771263,
+      "equal_or_more": 771503
+    },
+    "97.5": {
+      "equal": 177,
+      "more": 771086,
+      "equal_or_more": 771263
+    },
+    "98.0": {
+      "equal": 240,
+      "more": 770846,
+      "equal_or_more": 771086
+    },
+    "98.5": {
+      "equal": 165,
+      "more": 770681,
+      "equal_or_more": 770846
+    },
+    "99.0": {
+      "equal": 233,
+      "more": 770448,
+      "equal_or_more": 770681
+    },
+    "99.5": {
+      "equal": 194,
+      "more": 770254,
+      "equal_or_more": 770448
+    },
+    "100.0": {
+      "equal": 268,
+      "more": 769986,
+      "equal_or_more": 770254
+    },
+    "100.5": {
+      "equal": 204,
+      "more": 769782,
+      "equal_or_more": 769986
+    },
+    "101.0": {
+      "equal": 300,
+      "more": 769482,
+      "equal_or_more": 769782
+    },
+    "101.5": {
+      "equal": 210,
+      "more": 769272,
+      "equal_or_more": 769482
+    },
+    "102.0": {
+      "equal": 302,
+      "more": 768970,
+      "equal_or_more": 769272
+    },
+    "102.5": {
+      "equal": 211,
+      "more": 768759,
+      "equal_or_more": 768970
+    },
+    "103.0": {
+      "equal": 288,
+      "more": 768471,
+      "equal_or_more": 768759
+    },
+    "103.5": {
+      "equal": 240,
+      "more": 768231,
+      "equal_or_more": 768471
+    },
+    "104.0": {
+      "equal": 321,
+      "more": 767910,
+      "equal_or_more": 768231
+    },
+    "104.5": {
+      "equal": 245,
+      "more": 767665,
+      "equal_or_more": 767910
+    },
+    "105.0": {
+      "equal": 349,
+      "more": 767316,
+      "equal_or_more": 767665
+    },
+    "105.5": {
+      "equal": 282,
+      "more": 767034,
+      "equal_or_more": 767316
+    },
+    "106.0": {
+      "equal": 350,
+      "more": 766684,
+      "equal_or_more": 767034
+    },
+    "106.5": {
+      "equal": 250,
+      "more": 766434,
+      "equal_or_more": 766684
+    },
+    "107.0": {
+      "equal": 363,
+      "more": 766071,
+      "equal_or_more": 766434
+    },
+    "107.5": {
+      "equal": 230,
+      "more": 765841,
+      "equal_or_more": 766071
+    },
+    "108.0": {
+      "equal": 354,
+      "more": 765487,
+      "equal_or_more": 765841
+    },
+    "108.5": {
+      "equal": 275,
+      "more": 765212,
+      "equal_or_more": 765487
+    },
+    "109.0": {
+      "equal": 371,
+      "more": 764841,
+      "equal_or_more": 765212
+    },
+    "109.5": {
+      "equal": 289,
+      "more": 764552,
+      "equal_or_more": 764841
+    },
+    "110.0": {
+      "equal": 423,
+      "more": 764129,
+      "equal_or_more": 764552
+    },
+    "110.5": {
+      "equal": 286,
+      "more": 763843,
+      "equal_or_more": 764129
+    },
+    "111.0": {
+      "equal": 401,
+      "more": 763442,
+      "equal_or_more": 763843
+    },
+    "111.5": {
+      "equal": 310,
+      "more": 763132,
+      "equal_or_more": 763442
+    },
+    "112.0": {
+      "equal": 444,
+      "more": 762688,
+      "equal_or_more": 763132
+    },
+    "112.5": {
+      "equal": 270,
+      "more": 762418,
+      "equal_or_more": 762688
+    },
+    "113.0": {
+      "equal": 412,
+      "more": 762006,
+      "equal_or_more": 762418
+    },
+    "113.5": {
+      "equal": 299,
+      "more": 761707,
+      "equal_or_more": 762006
+    },
+    "114.0": {
+      "equal": 479,
+      "more": 761228,
+      "equal_or_more": 761707
+    },
+    "114.5": {
+      "equal": 338,
+      "more": 760890,
+      "equal_or_more": 761228
+    },
+    "115.0": {
+      "equal": 467,
+      "more": 760423,
+      "equal_or_more": 760890
+    },
+    "115.5": {
+      "equal": 372,
+      "more": 760051,
+      "equal_or_more": 760423
+    },
+    "116.0": {
+      "equal": 524,
+      "more": 759527,
+      "equal_or_more": 760051
+    },
+    "116.5": {
+      "equal": 379,
+      "more": 759148,
+      "equal_or_more": 759527
+    },
+    "117.0": {
+      "equal": 572,
+      "more": 758576,
+      "equal_or_more": 759148
+    },
+    "117.5": {
+      "equal": 401,
+      "more": 758175,
+      "equal_or_more": 758576
+    },
+    "118.0": {
+      "equal": 562,
+      "more": 757613,
+      "equal_or_more": 758175
+    },
+    "118.5": {
+      "equal": 414,
+      "more": 757199,
+      "equal_or_more": 757613
+    },
+    "119.0": {
+      "equal": 545,
+      "more": 756654,
+      "equal_or_more": 757199
+    },
+    "119.5": {
+      "equal": 446,
+      "more": 756208,
+      "equal_or_more": 756654
+    },
+    "120.0": {
+      "equal": 580,
+      "more": 755628,
+      "equal_or_more": 756208
+    },
+    "120.5": {
+      "equal": 475,
+      "more": 755153,
+      "equal_or_more": 755628
+    },
+    "121.0": {
+      "equal": 577,
+      "more": 754576,
+      "equal_or_more": 755153
+    },
+    "121.5": {
+      "equal": 450,
+      "more": 754126,
+      "equal_or_more": 754576
+    },
+    "122.0": {
+      "equal": 633,
+      "more": 753493,
+      "equal_or_more": 754126
+    },
+    "122.5": {
+      "equal": 500,
+      "more": 752993,
+      "equal_or_more": 753493
+    },
+    "123.0": {
+      "equal": 609,
+      "more": 752384,
+      "equal_or_more": 752993
+    },
+    "123.5": {
+      "equal": 479,
+      "more": 751905,
+      "equal_or_more": 752384
+    },
+    "124.0": {
+      "equal": 627,
+      "more": 751278,
+      "equal_or_more": 751905
+    },
+    "124.5": {
+      "equal": 473,
+      "more": 750805,
+      "equal_or_more": 751278
+    },
+    "125.0": {
+      "equal": 618,
+      "more": 750187,
+      "equal_or_more": 750805
+    },
+    "125.5": {
+      "equal": 446,
+      "more": 749741,
+      "equal_or_more": 750187
+    },
+    "126.0": {
+      "equal": 611,
+      "more": 749130,
+      "equal_or_more": 749741
+    },
+    "126.5": {
+      "equal": 506,
+      "more": 748624,
+      "equal_or_more": 749130
+    },
+    "127.0": {
+      "equal": 772,
+      "more": 747852,
+      "equal_or_more": 748624
+    },
+    "127.5": {
+      "equal": 527,
+      "more": 747325,
+      "equal_or_more": 747852
+    },
+    "128.0": {
+      "equal": 686,
+      "more": 746639,
+      "equal_or_more": 747325
+    },
+    "128.5": {
+      "equal": 522,
+      "more": 746117,
+      "equal_or_more": 746639
+    },
+    "129.0": {
+      "equal": 753,
+      "more": 745364,
+      "equal_or_more": 746117
+    },
+    "129.5": {
+      "equal": 542,
+      "more": 744822,
+      "equal_or_more": 745364
+    },
+    "130.0": {
+      "equal": 724,
+      "more": 744098,
+      "equal_or_more": 744822
+    },
+    "130.5": {
+      "equal": 559,
+      "more": 743539,
+      "equal_or_more": 744098
+    },
+    "131.0": {
+      "equal": 796,
+      "more": 742743,
+      "equal_or_more": 743539
+    },
+    "131.5": {
+      "equal": 625,
+      "more": 742118,
+      "equal_or_more": 742743
+    },
+    "132.0": {
+      "equal": 796,
+      "more": 741322,
+      "equal_or_more": 742118
+    },
+    "132.5": {
+      "equal": 535,
+      "more": 740787,
+      "equal_or_more": 741322
+    },
+    "133.0": {
+      "equal": 815,
+      "more": 739972,
+      "equal_or_more": 740787
+    },
+    "133.5": {
+      "equal": 588,
+      "more": 739384,
+      "equal_or_more": 739972
+    },
+    "134.0": {
+      "equal": 861,
+      "more": 738523,
+      "equal_or_more": 739384
+    },
+    "134.5": {
+      "equal": 653,
+      "more": 737870,
+      "equal_or_more": 738523
+    },
+    "135.0": {
+      "equal": 873,
+      "more": 736997,
+      "equal_or_more": 737870
+    },
+    "135.5": {
+      "equal": 664,
+      "more": 736333,
+      "equal_or_more": 736997
+    },
+    "136.0": {
+      "equal": 939,
+      "more": 735394,
+      "equal_or_more": 736333
+    },
+    "136.5": {
+      "equal": 680,
+      "more": 734714,
+      "equal_or_more": 735394
+    },
+    "137.0": {
+      "equal": 937,
+      "more": 733777,
+      "equal_or_more": 734714
+    },
+    "137.5": {
+      "equal": 703,
+      "more": 733074,
+      "equal_or_more": 733777
+    },
+    "138.0": {
+      "equal": 948,
+      "more": 732126,
+      "equal_or_more": 733074
+    },
+    "138.5": {
+      "equal": 755,
+      "more": 731371,
+      "equal_or_more": 732126
+    },
+    "139.0": {
+      "equal": 961,
+      "more": 730410,
+      "equal_or_more": 731371
+    },
+    "139.5": {
+      "equal": 753,
+      "more": 729657,
+      "equal_or_more": 730410
+    },
+    "140.0": {
+      "equal": 961,
+      "more": 728696,
+      "equal_or_more": 729657
+    },
+    "140.5": {
+      "equal": 750,
+      "more": 727946,
+      "equal_or_more": 728696
+    },
+    "141.0": {
+      "equal": 937,
+      "more": 727009,
+      "equal_or_more": 727946
+    },
+    "141.5": {
+      "equal": 750,
+      "more": 726259,
+      "equal_or_more": 727009
+    },
+    "142.0": {
+      "equal": 964,
+      "more": 725295,
+      "equal_or_more": 726259
+    },
+    "142.5": {
+      "equal": 763,
+      "more": 724532,
+      "equal_or_more": 725295
+    },
+    "143.0": {
+      "equal": 936,
+      "more": 723596,
+      "equal_or_more": 724532
+    },
+    "143.5": {
+      "equal": 818,
+      "more": 722778,
+      "equal_or_more": 723596
+    },
+    "144.0": {
+      "equal": 1012,
+      "more": 721766,
+      "equal_or_more": 722778
+    },
+    "144.5": {
+      "equal": 753,
+      "more": 721013,
+      "equal_or_more": 721766
+    },
+    "145.0": {
+      "equal": 1077,
+      "more": 719936,
+      "equal_or_more": 721013
+    },
+    "145.5": {
+      "equal": 828,
+      "more": 719108,
+      "equal_or_more": 719936
+    },
+    "146.0": {
+      "equal": 1159,
+      "more": 717949,
+      "equal_or_more": 719108
+    },
+    "146.5": {
+      "equal": 872,
+      "more": 717077,
+      "equal_or_more": 717949
+    },
+    "147.0": {
+      "equal": 1230,
+      "more": 715847,
+      "equal_or_more": 717077
+    },
+    "147.5": {
+      "equal": 914,
+      "more": 714933,
+      "equal_or_more": 715847
+    },
+    "148.0": {
+      "equal": 1273,
+      "more": 713660,
+      "equal_or_more": 714933
+    },
+    "148.5": {
+      "equal": 951,
+      "more": 712709,
+      "equal_or_more": 713660
+    },
+    "149.0": {
+      "equal": 1256,
+      "more": 711453,
+      "equal_or_more": 712709
+    },
+    "149.5": {
+      "equal": 929,
+      "more": 710524,
+      "equal_or_more": 711453
+    },
+    "150.0": {
+      "equal": 1275,
+      "more": 709249,
+      "equal_or_more": 710524
+    },
+    "150.5": {
+      "equal": 1038,
+      "more": 708211,
+      "equal_or_more": 709249
+    },
+    "151.0": {
+      "equal": 1424,
+      "more": 706787,
+      "equal_or_more": 708211
+    },
+    "151.5": {
+      "equal": 1075,
+      "more": 705712,
+      "equal_or_more": 706787
+    },
+    "152.0": {
+      "equal": 1396,
+      "more": 704316,
+      "equal_or_more": 705712
+    },
+    "152.5": {
+      "equal": 1073,
+      "more": 703243,
+      "equal_or_more": 704316
+    },
+    "153.0": {
+      "equal": 1414,
+      "more": 701829,
+      "equal_or_more": 703243
+    },
+    "153.5": {
+      "equal": 1147,
+      "more": 700682,
+      "equal_or_more": 701829
+    },
+    "154.0": {
+      "equal": 1240,
+      "more": 699442,
+      "equal_or_more": 700682
+    },
+    "154.5": {
+      "equal": 1089,
+      "more": 698353,
+      "equal_or_more": 699442
+    },
+    "155.0": {
+      "equal": 1393,
+      "more": 696960,
+      "equal_or_more": 698353
+    },
+    "155.5": {
+      "equal": 1190,
+      "more": 695770,
+      "equal_or_more": 696960
+    },
+    "156.0": {
+      "equal": 1313,
+      "more": 694457,
+      "equal_or_more": 695770
+    },
+    "156.5": {
+      "equal": 1162,
+      "more": 693295,
+      "equal_or_more": 694457
+    },
+    "157.0": {
+      "equal": 1295,
+      "more": 692000,
+      "equal_or_more": 693295
+    },
+    "157.5": {
+      "equal": 1126,
+      "more": 690874,
+      "equal_or_more": 692000
+    },
+    "158.0": {
+      "equal": 1302,
+      "more": 689572,
+      "equal_or_more": 690874
+    },
+    "158.5": {
+      "equal": 1204,
+      "more": 688368,
+      "equal_or_more": 689572
+    },
+    "159.0": {
+      "equal": 1321,
+      "more": 687047,
+      "equal_or_more": 688368
+    },
+    "159.5": {
+      "equal": 1198,
+      "more": 685849,
+      "equal_or_more": 687047
+    },
+    "160.0": {
+      "equal": 2189,
+      "more": 683660,
+      "equal_or_more": 685849
+    },
+    "160.5": {
+      "equal": 1278,
+      "more": 682382,
+      "equal_or_more": 683660
+    },
+    "161.0": {
+      "equal": 1601,
+      "more": 680781,
+      "equal_or_more": 682382
+    },
+    "161.5": {
+      "equal": 1399,
+      "more": 679382,
+      "equal_or_more": 680781
+    },
+    "162.0": {
+      "equal": 1629,
+      "more": 677753,
+      "equal_or_more": 679382
+    },
+    "162.5": {
+      "equal": 1395,
+      "more": 676358,
+      "equal_or_more": 677753
+    },
+    "163.0": {
+      "equal": 1758,
+      "more": 674600,
+      "equal_or_more": 676358
+    },
+    "163.5": {
+      "equal": 1454,
+      "more": 673146,
+      "equal_or_more": 674600
+    },
+    "164.0": {
+      "equal": 1797,
+      "more": 671349,
+      "equal_or_more": 673146
+    },
+    "164.5": {
+      "equal": 1465,
+      "more": 669884,
+      "equal_or_more": 671349
+    },
+    "165.0": {
+      "equal": 1796,
+      "more": 668088,
+      "equal_or_more": 669884
+    },
+    "165.5": {
+      "equal": 1537,
+      "more": 666551,
+      "equal_or_more": 668088
+    },
+    "166.0": {
+      "equal": 1787,
+      "more": 664764,
+      "equal_or_more": 666551
+    },
+    "166.5": {
+      "equal": 1528,
+      "more": 663236,
+      "equal_or_more": 664764
+    },
+    "167.0": {
+      "equal": 1823,
+      "more": 661413,
+      "equal_or_more": 663236
+    },
+    "167.5": {
+      "equal": 1619,
+      "more": 659794,
+      "equal_or_more": 661413
+    },
+    "168.0": {
+      "equal": 1983,
+      "more": 657811,
+      "equal_or_more": 659794
+    },
+    "168.5": {
+      "equal": 1660,
+      "more": 656151,
+      "equal_or_more": 657811
+    },
+    "169.0": {
+      "equal": 1942,
+      "more": 654209,
+      "equal_or_more": 656151
+    },
+    "169.5": {
+      "equal": 1704,
+      "more": 652505,
+      "equal_or_more": 654209
+    },
+    "170.0": {
+      "equal": 1992,
+      "more": 650513,
+      "equal_or_more": 652505
+    },
+    "170.5": {
+      "equal": 1777,
+      "more": 648736,
+      "equal_or_more": 650513
+    },
+    "171.0": {
+      "equal": 2047,
+      "more": 646689,
+      "equal_or_more": 648736
+    },
+    "171.5": {
+      "equal": 1735,
+      "more": 644954,
+      "equal_or_more": 646689
+    },
+    "172.0": {
+      "equal": 2134,
+      "more": 642820,
+      "equal_or_more": 644954
+    },
+    "172.5": {
+      "equal": 1804,
+      "more": 641016,
+      "equal_or_more": 642820
+    },
+    "173.0": {
+      "equal": 2050,
+      "more": 638966,
+      "equal_or_more": 641016
+    },
+    "173.5": {
+      "equal": 1813,
+      "more": 637153,
+      "equal_or_more": 638966
+    },
+    "174.0": {
+      "equal": 2236,
+      "more": 634917,
+      "equal_or_more": 637153
+    },
+    "174.5": {
+      "equal": 1896,
+      "more": 633021,
+      "equal_or_more": 634917
+    },
+    "175.0": {
+      "equal": 2219,
+      "more": 630802,
+      "equal_or_more": 633021
+    },
+    "175.5": {
+      "equal": 1967,
+      "more": 628835,
+      "equal_or_more": 630802
+    },
+    "176.0": {
+      "equal": 2295,
+      "more": 626540,
+      "equal_or_more": 628835
+    },
+    "176.5": {
+      "equal": 1945,
+      "more": 624595,
+      "equal_or_more": 626540
+    },
+    "177.0": {
+      "equal": 2249,
+      "more": 622346,
+      "equal_or_more": 624595
+    },
+    "177.5": {
+      "equal": 2009,
+      "more": 620337,
+      "equal_or_more": 622346
+    },
+    "178.0": {
+      "equal": 2234,
+      "more": 618103,
+      "equal_or_more": 620337
+    },
+    "178.5": {
+      "equal": 2046,
+      "more": 616057,
+      "equal_or_more": 618103
+    },
+    "179.0": {
+      "equal": 2233,
+      "more": 613824,
+      "equal_or_more": 616057
+    },
+    "179.5": {
+      "equal": 2121,
+      "more": 611703,
+      "equal_or_more": 613824
+    },
+    "180.0": {
+      "equal": 2333,
+      "more": 609370,
+      "equal_or_more": 611703
+    },
+    "180.5": {
+      "equal": 2205,
+      "more": 607165,
+      "equal_or_more": 609370
+    },
+    "181.0": {
+      "equal": 2350,
+      "more": 604815,
+      "equal_or_more": 607165
+    },
+    "181.5": {
+      "equal": 2172,
+      "more": 602643,
+      "equal_or_more": 604815
+    },
+    "182.0": {
+      "equal": 2391,
+      "more": 600252,
+      "equal_or_more": 602643
+    },
+    "182.5": {
+      "equal": 2257,
+      "more": 597995,
+      "equal_or_more": 600252
+    },
+    "183.0": {
+      "equal": 2525,
+      "more": 595470,
+      "equal_or_more": 597995
+    },
+    "183.5": {
+      "equal": 2282,
+      "more": 593188,
+      "equal_or_more": 595470
+    },
+    "184.0": {
+      "equal": 2572,
+      "more": 590616,
+      "equal_or_more": 593188
+    },
+    "184.5": {
+      "equal": 2343,
+      "more": 588273,
+      "equal_or_more": 590616
+    },
+    "185.0": {
+      "equal": 2691,
+      "more": 585582,
+      "equal_or_more": 588273
+    },
+    "185.5": {
+      "equal": 2384,
+      "more": 583198,
+      "equal_or_more": 585582
+    },
+    "186.0": {
+      "equal": 2723,
+      "more": 580475,
+      "equal_or_more": 583198
+    },
+    "186.5": {
+      "equal": 2402,
+      "more": 578073,
+      "equal_or_more": 580475
+    },
+    "187.0": {
+      "equal": 2856,
+      "more": 575217,
+      "equal_or_more": 578073
+    },
+    "187.5": {
+      "equal": 2649,
+      "more": 572568,
+      "equal_or_more": 575217
+    },
+    "188.0": {
+      "equal": 2990,
+      "more": 569578,
+      "equal_or_more": 572568
+    },
+    "188.5": {
+      "equal": 2563,
+      "more": 567015,
+      "equal_or_more": 569578
+    },
+    "189.0": {
+      "equal": 2962,
+      "more": 564053,
+      "equal_or_more": 567015
+    },
+    "189.5": {
+      "equal": 2623,
+      "more": 561430,
+      "equal_or_more": 564053
+    },
+    "190.0": {
+      "equal": 2823,
+      "more": 558607,
+      "equal_or_more": 561430
+    },
+    "190.5": {
+      "equal": 2560,
+      "more": 556047,
+      "equal_or_more": 558607
+    },
+    "191.0": {
+      "equal": 2840,
+      "more": 553207,
+      "equal_or_more": 556047
+    },
+    "191.5": {
+      "equal": 2571,
+      "more": 550636,
+      "equal_or_more": 553207
+    },
+    "192.0": {
+      "equal": 2818,
+      "more": 547818,
+      "equal_or_more": 550636
+    },
+    "192.5": {
+      "equal": 2582,
+      "more": 545236,
+      "equal_or_more": 547818
+    },
+    "193.0": {
+      "equal": 2742,
+      "more": 542494,
+      "equal_or_more": 545236
+    },
+    "193.5": {
+      "equal": 2638,
+      "more": 539856,
+      "equal_or_more": 542494
+    },
+    "194.0": {
+      "equal": 2847,
+      "more": 537009,
+      "equal_or_more": 539856
+    },
+    "194.5": {
+      "equal": 2646,
+      "more": 534363,
+      "equal_or_more": 537009
+    },
+    "195.0": {
+      "equal": 2806,
+      "more": 531557,
+      "equal_or_more": 534363
+    },
+    "195.5": {
+      "equal": 2716,
+      "more": 528841,
+      "equal_or_more": 531557
+    },
+    "196.0": {
+      "equal": 2782,
+      "more": 526059,
+      "equal_or_more": 528841
+    },
+    "196.5": {
+      "equal": 2616,
+      "more": 523443,
+      "equal_or_more": 526059
+    },
+    "197.0": {
+      "equal": 2788,
+      "more": 520655,
+      "equal_or_more": 523443
+    },
+    "197.5": {
+      "equal": 2693,
+      "more": 517962,
+      "equal_or_more": 520655
+    },
+    "198.0": {
+      "equal": 2798,
+      "more": 515164,
+      "equal_or_more": 517962
+    },
+    "198.5": {
+      "equal": 2625,
+      "more": 512539,
+      "equal_or_more": 515164
+    },
+    "199.0": {
+      "equal": 2804,
+      "more": 509735,
+      "equal_or_more": 512539
+    },
+    "199.5": {
+      "equal": 2691,
+      "more": 507044,
+      "equal_or_more": 509735
+    },
+    "200.0": {
+      "equal": 2843,
+      "more": 504201,
+      "equal_or_more": 507044
+    },
+    "200.5": {
+      "equal": 2613,
+      "more": 501588,
+      "equal_or_more": 504201
+    },
+    "201.0": {
+      "equal": 2771,
+      "more": 498817,
+      "equal_or_more": 501588
+    },
+    "201.5": {
+      "equal": 2699,
+      "more": 496118,
+      "equal_or_more": 498817
+    },
+    "202.0": {
+      "equal": 2759,
+      "more": 493359,
+      "equal_or_more": 496118
+    },
+    "202.5": {
+      "equal": 2687,
+      "more": 490672,
+      "equal_or_more": 493359
+    },
+    "203.0": {
+      "equal": 2791,
+      "more": 487881,
+      "equal_or_more": 490672
+    },
+    "203.5": {
+      "equal": 2625,
+      "more": 485256,
+      "equal_or_more": 487881
+    },
+    "204.0": {
+      "equal": 2815,
+      "more": 482441,
+      "equal_or_more": 485256
+    },
+    "204.5": {
+      "equal": 2687,
+      "more": 479754,
+      "equal_or_more": 482441
+    },
+    "205.0": {
+      "equal": 6690,
+      "more": 473064,
+      "equal_or_more": 479754
+    },
+    "205.5": {
+      "equal": 2873,
+      "more": 470191,
+      "equal_or_more": 473064
+    },
+    "206.0": {
+      "equal": 3428,
+      "more": 466763,
+      "equal_or_more": 470191
+    },
+    "206.5": {
+      "equal": 2907,
+      "more": 463856,
+      "equal_or_more": 466763
+    },
+    "207.0": {
+      "equal": 3315,
+      "more": 460541,
+      "equal_or_more": 463856
+    },
+    "207.5": {
+      "equal": 2966,
+      "more": 457575,
+      "equal_or_more": 460541
+    },
+    "208.0": {
+      "equal": 3228,
+      "more": 454347,
+      "equal_or_more": 457575
+    },
+    "208.5": {
+      "equal": 3011,
+      "more": 451336,
+      "equal_or_more": 454347
+    },
+    "209.0": {
+      "equal": 3325,
+      "more": 448011,
+      "equal_or_more": 451336
+    },
+    "209.5": {
+      "equal": 2941,
+      "more": 445070,
+      "equal_or_more": 448011
+    },
+    "210.0": {
+      "equal": 3189,
+      "more": 441881,
+      "equal_or_more": 445070
+    },
+    "210.5": {
+      "equal": 2984,
+      "more": 438897,
+      "equal_or_more": 441881
+    },
+    "211.0": {
+      "equal": 3155,
+      "more": 435742,
+      "equal_or_more": 438897
+    },
+    "211.5": {
+      "equal": 2879,
+      "more": 432863,
+      "equal_or_more": 435742
+    },
+    "212.0": {
+      "equal": 3185,
+      "more": 429678,
+      "equal_or_more": 432863
+    },
+    "212.5": {
+      "equal": 3005,
+      "more": 426673,
+      "equal_or_more": 429678
+    },
+    "213.0": {
+      "equal": 3243,
+      "more": 423430,
+      "equal_or_more": 426673
+    },
+    "213.5": {
+      "equal": 2864,
+      "more": 420566,
+      "equal_or_more": 423430
+    },
+    "214.0": {
+      "equal": 3134,
+      "more": 417432,
+      "equal_or_more": 420566
+    },
+    "214.5": {
+      "equal": 2967,
+      "more": 414465,
+      "equal_or_more": 417432
+    },
+    "215.0": {
+      "equal": 3059,
+      "more": 411406,
+      "equal_or_more": 414465
+    },
+    "215.5": {
+      "equal": 2928,
+      "more": 408478,
+      "equal_or_more": 411406
+    },
+    "216.0": {
+      "equal": 3015,
+      "more": 405463,
+      "equal_or_more": 408478
+    },
+    "216.5": {
+      "equal": 2804,
+      "more": 402659,
+      "equal_or_more": 405463
+    },
+    "217.0": {
+      "equal": 3013,
+      "more": 399646,
+      "equal_or_more": 402659
+    },
+    "217.5": {
+      "equal": 2766,
+      "more": 396880,
+      "equal_or_more": 399646
+    },
+    "218.0": {
+      "equal": 3005,
+      "more": 393875,
+      "equal_or_more": 396880
+    },
+    "218.5": {
+      "equal": 2872,
+      "more": 391003,
+      "equal_or_more": 393875
+    },
+    "219.0": {
+      "equal": 2929,
+      "more": 388074,
+      "equal_or_more": 391003
+    },
+    "219.5": {
+      "equal": 2884,
+      "more": 385190,
+      "equal_or_more": 388074
+    },
+    "220.0": {
+      "equal": 2958,
+      "more": 382232,
+      "equal_or_more": 385190
+    },
+    "220.5": {
+      "equal": 2806,
+      "more": 379426,
+      "equal_or_more": 382232
+    },
+    "221.0": {
+      "equal": 2924,
+      "more": 376502,
+      "equal_or_more": 379426
+    },
+    "221.5": {
+      "equal": 2897,
+      "more": 373605,
+      "equal_or_more": 376502
+    },
+    "222.0": {
+      "equal": 2820,
+      "more": 370785,
+      "equal_or_more": 373605
+    },
+    "222.5": {
+      "equal": 2800,
+      "more": 367985,
+      "equal_or_more": 370785
+    },
+    "223.0": {
+      "equal": 2859,
+      "more": 365126,
+      "equal_or_more": 367985
+    },
+    "223.5": {
+      "equal": 2714,
+      "more": 362412,
+      "equal_or_more": 365126
+    },
+    "224.0": {
+      "equal": 2871,
+      "more": 359541,
+      "equal_or_more": 362412
+    },
+    "224.5": {
+      "equal": 2756,
+      "more": 356785,
+      "equal_or_more": 359541
+    },
+    "225.0": {
+      "equal": 2889,
+      "more": 353896,
+      "equal_or_more": 356785
+    },
+    "225.5": {
+      "equal": 2858,
+      "more": 351038,
+      "equal_or_more": 353896
+    },
+    "226.0": {
+      "equal": 2867,
+      "more": 348171,
+      "equal_or_more": 351038
+    },
+    "226.5": {
+      "equal": 2689,
+      "more": 345482,
+      "equal_or_more": 348171
+    },
+    "227.0": {
+      "equal": 2822,
+      "more": 342660,
+      "equal_or_more": 345482
+    },
+    "227.5": {
+      "equal": 2675,
+      "more": 339985,
+      "equal_or_more": 342660
+    },
+    "228.0": {
+      "equal": 2841,
+      "more": 337144,
+      "equal_or_more": 339985
+    },
+    "228.5": {
+      "equal": 2699,
+      "more": 334445,
+      "equal_or_more": 337144
+    },
+    "229.0": {
+      "equal": 2670,
+      "more": 331775,
+      "equal_or_more": 334445
+    },
+    "229.5": {
+      "equal": 2708,
+      "more": 329067,
+      "equal_or_more": 331775
+    },
+    "230.0": {
+      "equal": 2720,
+      "more": 326347,
+      "equal_or_more": 329067
+    },
+    "230.5": {
+      "equal": 2727,
+      "more": 323620,
+      "equal_or_more": 326347
+    },
+    "231.0": {
+      "equal": 2752,
+      "more": 320868,
+      "equal_or_more": 323620
+    },
+    "231.5": {
+      "equal": 2701,
+      "more": 318167,
+      "equal_or_more": 320868
+    },
+    "232.0": {
+      "equal": 2697,
+      "more": 315470,
+      "equal_or_more": 318167
+    },
+    "232.5": {
+      "equal": 2664,
+      "more": 312806,
+      "equal_or_more": 315470
+    },
+    "233.0": {
+      "equal": 2722,
+      "more": 310084,
+      "equal_or_more": 312806
+    },
+    "233.5": {
+      "equal": 2695,
+      "more": 307389,
+      "equal_or_more": 310084
+    },
+    "234.0": {
+      "equal": 2670,
+      "more": 304719,
+      "equal_or_more": 307389
+    },
+    "234.5": {
+      "equal": 2638,
+      "more": 302081,
+      "equal_or_more": 304719
+    },
+    "235.0": {
+      "equal": 2692,
+      "more": 299389,
+      "equal_or_more": 302081
+    },
+    "235.5": {
+      "equal": 2568,
+      "more": 296821,
+      "equal_or_more": 299389
+    },
+    "236.0": {
+      "equal": 2657,
+      "more": 294164,
+      "equal_or_more": 296821
+    },
+    "236.5": {
+      "equal": 2644,
+      "more": 291520,
+      "equal_or_more": 294164
+    },
+    "237.0": {
+      "equal": 2596,
+      "more": 288924,
+      "equal_or_more": 291520
+    },
+    "237.5": {
+      "equal": 2598,
+      "more": 286326,
+      "equal_or_more": 288924
+    },
+    "238.0": {
+      "equal": 2612,
+      "more": 283714,
+      "equal_or_more": 286326
+    },
+    "238.5": {
+      "equal": 2576,
+      "more": 281138,
+      "equal_or_more": 283714
+    },
+    "239.0": {
+      "equal": 2618,
+      "more": 278520,
+      "equal_or_more": 281138
+    },
+    "239.5": {
+      "equal": 2565,
+      "more": 275955,
+      "equal_or_more": 278520
+    },
+    "240.0": {
+      "equal": 2645,
+      "more": 273310,
+      "equal_or_more": 275955
+    },
+    "240.5": {
+      "equal": 2570,
+      "more": 270740,
+      "equal_or_more": 273310
+    },
+    "241.0": {
+      "equal": 2614,
+      "more": 268126,
+      "equal_or_more": 270740
+    },
+    "241.5": {
+      "equal": 2429,
+      "more": 265697,
+      "equal_or_more": 268126
+    },
+    "242.0": {
+      "equal": 2569,
+      "more": 263128,
+      "equal_or_more": 265697
+    },
+    "242.5": {
+      "equal": 2531,
+      "more": 260597,
+      "equal_or_more": 263128
+    },
+    "243.0": {
+      "equal": 2647,
+      "more": 257950,
+      "equal_or_more": 260597
+    },
+    "243.5": {
+      "equal": 2546,
+      "more": 255404,
+      "equal_or_more": 257950
+    },
+    "244.0": {
+      "equal": 2594,
+      "more": 252810,
+      "equal_or_more": 255404
+    },
+    "244.5": {
+      "equal": 2614,
+      "more": 250196,
+      "equal_or_more": 252810
+    },
+    "245.0": {
+      "equal": 2563,
+      "more": 247633,
+      "equal_or_more": 250196
+    },
+    "245.5": {
+      "equal": 2524,
+      "more": 245109,
+      "equal_or_more": 247633
+    },
+    "246.0": {
+      "equal": 2571,
+      "more": 242538,
+      "equal_or_more": 245109
+    },
+    "246.5": {
+      "equal": 2530,
+      "more": 240008,
+      "equal_or_more": 242538
+    },
+    "247.0": {
+      "equal": 2566,
+      "more": 237442,
+      "equal_or_more": 240008
+    },
+    "247.5": {
+      "equal": 2477,
+      "more": 234965,
+      "equal_or_more": 237442
+    },
+    "248.0": {
+      "equal": 2543,
+      "more": 232422,
+      "equal_or_more": 234965
+    },
+    "248.5": {
+      "equal": 2493,
+      "more": 229929,
+      "equal_or_more": 232422
+    },
+    "249.0": {
+      "equal": 2453,
+      "more": 227476,
+      "equal_or_more": 229929
+    },
+    "249.5": {
+      "equal": 2450,
+      "more": 225026,
+      "equal_or_more": 227476
+    },
+    "250.0": {
+      "equal": 2498,
+      "more": 222528,
+      "equal_or_more": 225026
+    },
+    "250.5": {
+      "equal": 2441,
+      "more": 220087,
+      "equal_or_more": 222528
+    },
+    "251.0": {
+      "equal": 2568,
+      "more": 217519,
+      "equal_or_more": 220087
+    },
+    "251.5": {
+      "equal": 2408,
+      "more": 215111,
+      "equal_or_more": 217519
+    },
+    "252.0": {
+      "equal": 2610,
+      "more": 212501,
+      "equal_or_more": 215111
+    },
+    "252.5": {
+      "equal": 2448,
+      "more": 210053,
+      "equal_or_more": 212501
+    },
+    "253.0": {
+      "equal": 2501,
+      "more": 207552,
+      "equal_or_more": 210053
+    },
+    "253.5": {
+      "equal": 2428,
+      "more": 205124,
+      "equal_or_more": 207552
+    },
+    "254.0": {
+      "equal": 2389,
+      "more": 202735,
+      "equal_or_more": 205124
+    },
+    "254.5": {
+      "equal": 2459,
+      "more": 200276,
+      "equal_or_more": 202735
+    },
+    "255.0": {
+      "equal": 2408,
+      "more": 197868,
+      "equal_or_more": 200276
+    },
+    "255.5": {
+      "equal": 2381,
+      "more": 195487,
+      "equal_or_more": 197868
+    },
+    "256.0": {
+      "equal": 2369,
+      "more": 193118,
+      "equal_or_more": 195487
+    },
+    "256.5": {
+      "equal": 2359,
+      "more": 190759,
+      "equal_or_more": 193118
+    },
+    "257.0": {
+      "equal": 2403,
+      "more": 188356,
+      "equal_or_more": 190759
+    },
+    "257.5": {
+      "equal": 2404,
+      "more": 185952,
+      "equal_or_more": 188356
+    },
+    "258.0": {
+      "equal": 2364,
+      "more": 183588,
+      "equal_or_more": 185952
+    },
+    "258.5": {
+      "equal": 2376,
+      "more": 181212,
+      "equal_or_more": 183588
+    },
+    "259.0": {
+      "equal": 2384,
+      "more": 178828,
+      "equal_or_more": 181212
+    },
+    "259.5": {
+      "equal": 2425,
+      "more": 176403,
+      "equal_or_more": 178828
+    },
+    "260.0": {
+      "equal": 2393,
+      "more": 174010,
+      "equal_or_more": 176403
+    },
+    "260.5": {
+      "equal": 2352,
+      "more": 171658,
+      "equal_or_more": 174010
+    },
+    "261.0": {
+      "equal": 2266,
+      "more": 169392,
+      "equal_or_more": 171658
+    },
+    "261.5": {
+      "equal": 2387,
+      "more": 167005,
+      "equal_or_more": 169392
+    },
+    "262.0": {
+      "equal": 2393,
+      "more": 164612,
+      "equal_or_more": 167005
+    },
+    "262.5": {
+      "equal": 2318,
+      "more": 162294,
+      "equal_or_more": 164612
+    },
+    "263.0": {
+      "equal": 2325,
+      "more": 159969,
+      "equal_or_more": 162294
+    },
+    "263.5": {
+      "equal": 2315,
+      "more": 157654,
+      "equal_or_more": 159969
+    },
+    "264.0": {
+      "equal": 2256,
+      "more": 155398,
+      "equal_or_more": 157654
+    },
+    "264.5": {
+      "equal": 2248,
+      "more": 153150,
+      "equal_or_more": 155398
+    },
+    "265.0": {
+      "equal": 2321,
+      "more": 150829,
+      "equal_or_more": 153150
+    },
+    "265.5": {
+      "equal": 2266,
+      "more": 148563,
+      "equal_or_more": 150829
+    },
+    "266.0": {
+      "equal": 2333,
+      "more": 146230,
+      "equal_or_more": 148563
+    },
+    "266.5": {
+      "equal": 2302,
+      "more": 143928,
+      "equal_or_more": 146230
+    },
+    "267.0": {
+      "equal": 2307,
+      "more": 141621,
+      "equal_or_more": 143928
+    },
+    "267.5": {
+      "equal": 2225,
+      "more": 139396,
+      "equal_or_more": 141621
+    },
+    "268.0": {
+      "equal": 2276,
+      "more": 137120,
+      "equal_or_more": 139396
+    },
+    "268.5": {
+      "equal": 2203,
+      "more": 134917,
+      "equal_or_more": 137120
+    },
+    "269.0": {
+      "equal": 2213,
+      "more": 132704,
+      "equal_or_more": 134917
+    },
+    "269.5": {
+      "equal": 2149,
+      "more": 130555,
+      "equal_or_more": 132704
+    },
+    "270.0": {
+      "equal": 2218,
+      "more": 128337,
+      "equal_or_more": 130555
+    },
+    "270.5": {
+      "equal": 2105,
+      "more": 126232,
+      "equal_or_more": 128337
+    },
+    "271.0": {
+      "equal": 2242,
+      "more": 123990,
+      "equal_or_more": 126232
+    },
+    "271.5": {
+      "equal": 2154,
+      "more": 121836,
+      "equal_or_more": 123990
+    },
+    "272.0": {
+      "equal": 2172,
+      "more": 119664,
+      "equal_or_more": 121836
+    },
+    "272.5": {
+      "equal": 2172,
+      "more": 117492,
+      "equal_or_more": 119664
+    },
+    "273.0": {
+      "equal": 2258,
+      "more": 115234,
+      "equal_or_more": 117492
+    },
+    "273.5": {
+      "equal": 2160,
+      "more": 113074,
+      "equal_or_more": 115234
+    },
+    "274.0": {
+      "equal": 2180,
+      "more": 110894,
+      "equal_or_more": 113074
+    },
+    "274.5": {
+      "equal": 2175,
+      "more": 108719,
+      "equal_or_more": 110894
+    },
+    "275.0": {
+      "equal": 2152,
+      "more": 106567,
+      "equal_or_more": 108719
+    },
+    "275.5": {
+      "equal": 2120,
+      "more": 104447,
+      "equal_or_more": 106567
+    },
+    "276.0": {
+      "equal": 2097,
+      "more": 102350,
+      "equal_or_more": 104447
+    },
+    "276.5": {
+      "equal": 2051,
+      "more": 100299,
+      "equal_or_more": 102350
+    },
+    "277.0": {
+      "equal": 2124,
+      "more": 98175,
+      "equal_or_more": 100299
+    },
+    "277.5": {
+      "equal": 2045,
+      "more": 96130,
+      "equal_or_more": 98175
+    },
+    "278.0": {
+      "equal": 2026,
+      "more": 94104,
+      "equal_or_more": 96130
+    },
+    "278.5": {
+      "equal": 2078,
+      "more": 92026,
+      "equal_or_more": 94104
+    },
+    "279.0": {
+      "equal": 2104,
+      "more": 89922,
+      "equal_or_more": 92026
+    },
+    "279.5": {
+      "equal": 2118,
+      "more": 87804,
+      "equal_or_more": 89922
+    },
+    "280.0": {
+      "equal": 2097,
+      "more": 85707,
+      "equal_or_more": 87804
+    },
+    "280.5": {
+      "equal": 1999,
+      "more": 83708,
+      "equal_or_more": 85707
+    },
+    "281.0": {
+      "equal": 2094,
+      "more": 81614,
+      "equal_or_more": 83708
+    },
+    "281.5": {
+      "equal": 2038,
+      "more": 79576,
+      "equal_or_more": 81614
+    },
+    "282.0": {
+      "equal": 2072,
+      "more": 77504,
+      "equal_or_more": 79576
+    },
+    "282.5": {
+      "equal": 2073,
+      "more": 75431,
+      "equal_or_more": 77504
+    },
+    "283.0": {
+      "equal": 1998,
+      "more": 73433,
+      "equal_or_more": 75431
+    },
+    "283.5": {
+      "equal": 2033,
+      "more": 71400,
+      "equal_or_more": 73433
+    },
+    "284.0": {
+      "equal": 2040,
+      "more": 69360,
+      "equal_or_more": 71400
+    },
+    "284.5": {
+      "equal": 1954,
+      "more": 67406,
+      "equal_or_more": 69360
+    },
+    "285.0": {
+      "equal": 2088,
+      "more": 65318,
+      "equal_or_more": 67406
+    },
+    "285.5": {
+      "equal": 1972,
+      "more": 63346,
+      "equal_or_more": 65318
+    },
+    "286.0": {
+      "equal": 1988,
+      "more": 61358,
+      "equal_or_more": 63346
+    },
+    "286.5": {
+      "equal": 1954,
+      "more": 59404,
+      "equal_or_more": 61358
+    },
+    "287.0": {
+      "equal": 1950,
+      "more": 57454,
+      "equal_or_more": 59404
+    },
+    "287.5": {
+      "equal": 2032,
+      "more": 55422,
+      "equal_or_more": 57454
+    },
+    "288.0": {
+      "equal": 1931,
+      "more": 53491,
+      "equal_or_more": 55422
+    },
+    "288.5": {
+      "equal": 1910,
+      "more": 51581,
+      "equal_or_more": 53491
+    },
+    "289.0": {
+      "equal": 2016,
+      "more": 49565,
+      "equal_or_more": 51581
+    },
+    "289.5": {
+      "equal": 1939,
+      "more": 47626,
+      "equal_or_more": 49565
+    },
+    "290.0": {
+      "equal": 1938,
+      "more": 45688,
+      "equal_or_more": 47626
+    },
+    "290.5": {
+      "equal": 1824,
+      "more": 43864,
+      "equal_or_more": 45688
+    },
+    "291.0": {
+      "equal": 1907,
+      "more": 41957,
+      "equal_or_more": 43864
+    },
+    "291.5": {
+      "equal": 1840,
+      "more": 40117,
+      "equal_or_more": 41957
+    },
+    "292.0": {
+      "equal": 1911,
+      "more": 38206,
+      "equal_or_more": 40117
+    },
+    "292.5": {
+      "equal": 1855,
+      "more": 36351,
+      "equal_or_more": 38206
+    },
+    "293.0": {
+      "equal": 1904,
+      "more": 34447,
+      "equal_or_more": 36351
+    },
+    "293.5": {
+      "equal": 1763,
+      "more": 32684,
+      "equal_or_more": 34447
+    },
+    "294.0": {
+      "equal": 1805,
+      "more": 30879,
+      "equal_or_more": 32684
+    },
+    "294.5": {
+      "equal": 1684,
+      "more": 29195,
+      "equal_or_more": 30879
+    },
+    "295.0": {
+      "equal": 1781,
+      "more": 27414,
+      "equal_or_more": 29195
+    },
+    "295.5": {
+      "equal": 1675,
+      "more": 25739,
+      "equal_or_more": 27414
+    },
+    "296.0": {
+      "equal": 1586,
+      "more": 24153,
+      "equal_or_more": 25739
+    },
+    "296.5": {
+      "equal": 1468,
+      "more": 22685,
+      "equal_or_more": 24153
+    },
+    "297.0": {
+      "equal": 1478,
+      "more": 21207,
+      "equal_or_more": 22685
+    },
+    "297.5": {
+      "equal": 1360,
+      "more": 19847,
+      "equal_or_more": 21207
+    },
+    "298.0": {
+      "equal": 1462,
+      "more": 18385,
+      "equal_or_more": 19847
+    },
+    "298.5": {
+      "equal": 1278,
+      "more": 17107,
+      "equal_or_more": 18385
+    },
+    "299.0": {
+      "equal": 1310,
+      "more": 15797,
+      "equal_or_more": 17107
+    },
+    "299.5": {
+      "equal": 1180,
+      "more": 14617,
+      "equal_or_more": 15797
+    },
+    "300.0": {
+      "equal": 1090,
+      "more": 13527,
+      "equal_or_more": 14617
+    },
+    "300.5": {
+      "equal": 1046,
+      "more": 12481,
+      "equal_or_more": 13527
+    },
+    "301.0": {
+      "equal": 1004,
+      "more": 11477,
+      "equal_or_more": 12481
+    },
+    "301.5": {
+      "equal": 867,
+      "more": 10610,
+      "equal_or_more": 11477
+    },
+    "302.0": {
+      "equal": 921,
+      "more": 9689,
+      "equal_or_more": 10610
+    },
+    "302.5": {
+      "equal": 762,
+      "more": 8927,
+      "equal_or_more": 9689
+    },
+    "303.0": {
+      "equal": 784,
+      "more": 8143,
+      "equal_or_more": 8927
+    },
+    "303.5": {
+      "equal": 685,
+      "more": 7458,
+      "equal_or_more": 8143
+    },
+    "304.0": {
+      "equal": 712,
+      "more": 6746,
+      "equal_or_more": 7458
+    },
+    "304.5": {
+      "equal": 575,
+      "more": 6171,
+      "equal_or_more": 6746
+    },
+    "305.0": {
+      "equal": 656,
+      "more": 5515,
+      "equal_or_more": 6171
+    },
+    "305.5": {
+      "equal": 494,
+      "more": 5021,
+      "equal_or_more": 5515
+    },
+    "306.0": {
+      "equal": 534,
+      "more": 4487,
+      "equal_or_more": 5021
+    },
+    "306.5": {
+      "equal": 392,
+      "more": 4095,
+      "equal_or_more": 4487
+    },
+    "307.0": {
+      "equal": 445,
+      "more": 3650,
+      "equal_or_more": 4095
+    },
+    "307.5": {
+      "equal": 353,
+      "more": 3297,
+      "equal_or_more": 3650
+    },
+    "308.0": {
+      "equal": 383,
+      "more": 2914,
+      "equal_or_more": 3297
+    },
+    "308.5": {
+      "equal": 296,
+      "more": 2618,
+      "equal_or_more": 2914
+    },
+    "309.0": {
+      "equal": 309,
+      "more": 2309,
+      "equal_or_more": 2618
+    },
+    "309.5": {
+      "equal": 246,
+      "more": 2063,
+      "equal_or_more": 2309
+    },
+    "310.0": {
+      "equal": 261,
+      "more": 1802,
+      "equal_or_more": 2063
+    },
+    "310.5": {
+      "equal": 197,
+      "more": 1605,
+      "equal_or_more": 1802
+    },
+    "311.0": {
+      "equal": 203,
+      "more": 1402,
+      "equal_or_more": 1605
+    },
+    "311.5": {
+      "equal": 168,
+      "more": 1234,
+      "equal_or_more": 1402
+    },
+    "312.0": {
+      "equal": 146,
+      "more": 1088,
+      "equal_or_more": 1234
+    },
+    "312.5": {
+      "equal": 129,
+      "more": 959,
+      "equal_or_more": 1088
+    },
+    "313.0": {
+      "equal": 117,
+      "more": 842,
+      "equal_or_more": 959
+    },
+    "313.5": {
+      "equal": 98,
+      "more": 744,
+      "equal_or_more": 842
+    },
+    "314.0": {
+      "equal": 102,
+      "more": 642,
+      "equal_or_more": 744
+    },
+    "314.5": {
+      "equal": 76,
+      "more": 566,
+      "equal_or_more": 642
+    },
+    "315.0": {
+      "equal": 65,
+      "more": 501,
+      "equal_or_more": 566
+    },
+    "315.5": {
+      "equal": 81,
+      "more": 420,
+      "equal_or_more": 501
+    },
+    "316.0": {
+      "equal": 58,
+      "more": 362,
+      "equal_or_more": 420
+    },
+    "316.5": {
+      "equal": 55,
+      "more": 307,
+      "equal_or_more": 362
+    },
+    "317.0": {
+      "equal": 63,
+      "more": 244,
+      "equal_or_more": 307
+    },
+    "317.5": {
+      "equal": 43,
+      "more": 201,
+      "equal_or_more": 244
+    },
+    "318.0": {
+      "equal": 51,
+      "more": 150,
+      "equal_or_more": 201
+    },
+    "318.5": {
+      "equal": 42,
+      "more": 108,
+      "equal_or_more": 150
+    },
+    "319.0": {
+      "equal": 35,
+      "more": 73,
+      "equal_or_more": 108
+    },
+    "319.5": {
+      "equal": 29,
+      "more": 44,
+      "equal_or_more": 73
+    },
+    "320.0": {
+      "equal": 44,
+      "more": 0,
+      "equal_or_more": 44
+    }
+  },
+  "branches": {},
+  "regions": {},
+  "max_score": 320.0,
+  "grade_step": 0.5,
+  "total_students": 807385,
+  "average_score": 210.35
+}

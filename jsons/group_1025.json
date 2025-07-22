@@ -1,0 +1,4562 @@
+[
+  {
+    "seating_no": 1025000,
+    "arabic_name": "احمد ناصر عبدالوهاب منصور",
+    "total_degree": 185
+  },
+  {
+    "seating_no": 1025001,
+    "arabic_name": "ادهم خالد سمير عبدالفتاح",
+    "total_degree": 178
+  },
+  {
+    "seating_no": 1025002,
+    "arabic_name": "ادهم هانى حسين محمد",
+    "total_degree": 145.5
+  },
+  {
+    "seating_no": 1025003,
+    "arabic_name": "اسلام مجدي عوض ابوبكر",
+    "total_degree": 207
+  },
+  {
+    "seating_no": 1025004,
+    "arabic_name": "امجد مصطفى صبحي توفيق محمد",
+    "total_degree": 110
+  },
+  {
+    "seating_no": 1025005,
+    "arabic_name": "امين هانى عبدالعظيم احمد",
+    "total_degree": 125
+  },
+  {
+    "seating_no": 1025006,
+    "arabic_name": "انس عماد عبدالمحسن عبدالمنعم",
+    "total_degree": 128
+  },
+  {
+    "seating_no": 1025007,
+    "arabic_name": "باسل محمد صلاح الدين عباس",
+    "total_degree": 164
+  },
+  {
+    "seating_no": 1025008,
+    "arabic_name": "باسل وائل اسماعيل محمد",
+    "total_degree": 117
+  },
+  {
+    "seating_no": 1025009,
+    "arabic_name": "بسام عبده عمر محمد",
+    "total_degree": 157.5
+  },
+  {
+    "seating_no": 1025010,
+    "arabic_name": "بولا عماد لمعى عزيز",
+    "total_degree": 164
+  },
+  {
+    "seating_no": 1025011,
+    "arabic_name": "جرجس شحاته اسرائيل ميخائيل",
+    "total_degree": 161
+  },
+  {
+    "seating_no": 1025012,
+    "arabic_name": "جياد عزت عبدالرحمن الزهرى على",
+    "total_degree": 143.5
+  },
+  {
+    "seating_no": 1025013,
+    "arabic_name": "حازم محمود فتحى يوسف ابراهيم",
+    "total_degree": 158
+  },
+  {
+    "seating_no": 1025014,
+    "arabic_name": "حسام هانى صبرى احمد",
+    "total_degree": 157
+  },
+  {
+    "seating_no": 1025015,
+    "arabic_name": "حمزه حسن فرج حسن",
+    "total_degree": 115.5
+  },
+  {
+    "seating_no": 1025016,
+    "arabic_name": "رزق ماهر رزق داود",
+    "total_degree": 269.5
+  },
+  {
+    "seating_no": 1025017,
+    "arabic_name": "زياد احمد رشاد محمود احمد",
+    "total_degree": 198
+  },
+  {
+    "seating_no": 1025018,
+    "arabic_name": "زياد عصام عبدالعزيز محمد",
+    "total_degree": 199
+  },
+  {
+    "seating_no": 1025019,
+    "arabic_name": "زياد محمد عيد عبدالحميد",
+    "total_degree": 147.5
+  },
+  {
+    "seating_no": 1025020,
+    "arabic_name": "سيد هاني سعدالدين علي السيد",
+    "total_degree": 122.5
+  },
+  {
+    "seating_no": 1025021,
+    "arabic_name": "شاكر هانى شاكر عبدالله",
+    "total_degree": 80.5
+  },
+  {
+    "seating_no": 1025022,
+    "arabic_name": "شهاب بلال عدلي عبداللطيف",
+    "total_degree": 124
+  },
+  {
+    "seating_no": 1025023,
+    "arabic_name": "عامر هيثم السعيد جمعه يوسف الشيخ",
+    "total_degree": 271
+  },
+  {
+    "seating_no": 1025024,
+    "arabic_name": "عبدالرحمن اشرف احمد ابراهيم",
+    "total_degree": 149
+  },
+  {
+    "seating_no": 1025025,
+    "arabic_name": "عبدالرحمن صبحي سيد محمد",
+    "total_degree": 208.5
+  },
+  {
+    "seating_no": 1025026,
+    "arabic_name": "عبدالرحمن علاء جمال على",
+    "total_degree": 189
+  },
+  {
+    "seating_no": 1025027,
+    "arabic_name": "عبدالرحمن محمد عبدالرحمن حسن",
+    "total_degree": 139.5
+  },
+  {
+    "seating_no": 1025028,
+    "arabic_name": "عبدالرحمن ياسر جابر محمد عثمان",
+    "total_degree": 86.5
+  },
+  {
+    "seating_no": 1025029,
+    "arabic_name": "عبدالله احمد فاروق دهشان",
+    "total_degree": 117
+  },
+  {
+    "seating_no": 1025030,
+    "arabic_name": "عبدالله محمد مجدى السيد",
+    "total_degree": 120
+  },
+  {
+    "seating_no": 1025031,
+    "arabic_name": "عبدالله ياسر عبدالله احمد",
+    "total_degree": 141.5
+  },
+  {
+    "seating_no": 1025032,
+    "arabic_name": "عدى محمد مصطفى محمد احمد",
+    "total_degree": 94.5
+  },
+  {
+    "seating_no": 1025033,
+    "arabic_name": "علاء ميهوب احمد عبدالعزيز ميهوب",
+    "total_degree": 107
+  },
+  {
+    "seating_no": 1025034,
+    "arabic_name": "علاء ناصرعلي محمد علي",
+    "total_degree": 113.5
+  },
+  {
+    "seating_no": 1025035,
+    "arabic_name": "على احمد عبدالرحيم حسن",
+    "total_degree": 124
+  },
+  {
+    "seating_no": 1025036,
+    "arabic_name": "على جمال سليمان على طراد",
+    "total_degree": 153
+  },
+  {
+    "seating_no": 1025037,
+    "arabic_name": "علي عبدالناصر حسن نصر محمد",
+    "total_degree": 160
+  },
+  {
+    "seating_no": 1025038,
+    "arabic_name": "عمر اشرف ابراهيم عباس",
+    "total_degree": 174
+  },
+  {
+    "seating_no": 1025039,
+    "arabic_name": "عمر بيومى عوض بيومى مهدى",
+    "total_degree": 123
+  },
+  {
+    "seating_no": 1025040,
+    "arabic_name": "عمر خالد السيد خليل",
+    "total_degree": 150
+  },
+  {
+    "seating_no": 1025041,
+    "arabic_name": "عمر سيد ابراهيم عبدالفتاح",
+    "total_degree": 162.5
+  },
+  {
+    "seating_no": 1025042,
+    "arabic_name": "عمر ناصر محمد حسن",
+    "total_degree": 174
+  },
+  {
+    "seating_no": 1025043,
+    "arabic_name": "عمرو تامر شحاته محمود",
+    "total_degree": 127
+  },
+  {
+    "seating_no": 1025044,
+    "arabic_name": "عمرو محمد عبدالمجيد محمد مصطفى",
+    "total_degree": 170.5
+  },
+  {
+    "seating_no": 1025045,
+    "arabic_name": "عمرو ياسين ابراهيم عبدالحميد",
+    "total_degree": 160
+  },
+  {
+    "seating_no": 1025046,
+    "arabic_name": "فهد محمد نافع حسين عطيه",
+    "total_degree": 116
+  },
+  {
+    "seating_no": 1025047,
+    "arabic_name": "كريم كرم امام عبدالمجيد على",
+    "total_degree": 162
+  },
+  {
+    "seating_no": 1025048,
+    "arabic_name": "كريم محمد محمد عبدالمعطي السيد",
+    "total_degree": 184
+  },
+  {
+    "seating_no": 1025049,
+    "arabic_name": "كيرلس عماد خليفه امير",
+    "total_degree": 181.5
+  },
+  {
+    "seating_no": 1025050,
+    "arabic_name": "مازن ايمن عبدربه سالم",
+    "total_degree": 100
+  },
+  {
+    "seating_no": 1025051,
+    "arabic_name": "محمد احمد عبدالحميد محمد زهران",
+    "total_degree": 148
+  },
+  {
+    "seating_no": 1025052,
+    "arabic_name": "محمد احمد كليب عبدالحفيظ مسعود",
+    "total_degree": 210.5
+  },
+  {
+    "seating_no": 1025053,
+    "arabic_name": "محمد احمد محمد ربيع",
+    "total_degree": 200.5
+  },
+  {
+    "seating_no": 1025054,
+    "arabic_name": "محمد احمد محمد فتحى",
+    "total_degree": 145.5
+  },
+  {
+    "seating_no": 1025055,
+    "arabic_name": "محمد تامر طلبه عبدالرؤوف",
+    "total_degree": 163.5
+  },
+  {
+    "seating_no": 1025056,
+    "arabic_name": "محمد جمعه صابر عبدالعليم مصطفى",
+    "total_degree": 148.5
+  },
+  {
+    "seating_no": 1025057,
+    "arabic_name": "محمد حسين عبدالعال احمد",
+    "total_degree": 140
+  },
+  {
+    "seating_no": 1025058,
+    "arabic_name": "محمد طه محمد طه",
+    "total_degree": 131
+  },
+  {
+    "seating_no": 1025059,
+    "arabic_name": "محمد عادل رمضان عبدالله",
+    "total_degree": 0
+  },
+  {
+    "seating_no": 1025060,
+    "arabic_name": "محمد فارس السيد عبدالمجيد اسماعيل",
+    "total_degree": 136.5
+  },
+  {
+    "seating_no": 1025061,
+    "arabic_name": "محمد فرج الله ابوبكر عبدالعزيز المنيسي",
+    "total_degree": 174
+  },
+  {
+    "seating_no": 1025062,
+    "arabic_name": "محمد فكرى محمد داود",
+    "total_degree": 170.5
+  },
+  {
+    "seating_no": 1025063,
+    "arabic_name": "محمد نصرالدين محمد عبده على",
+    "total_degree": 157
+  },
+  {
+    "seating_no": 1025064,
+    "arabic_name": "محمد ياسر بكرى محمد",
+    "total_degree": 140
+  },
+  {
+    "seating_no": 1025065,
+    "arabic_name": "محمد ياسر محمد بدري عبدالباسط",
+    "total_degree": 149
+  },
+  {
+    "seating_no": 1025066,
+    "arabic_name": "محمد يسري محمد عبدالمؤمن يوسف",
+    "total_degree": 166
+  },
+  {
+    "seating_no": 1025067,
+    "arabic_name": "محمود اشرف محمود عبدالكريم محمود",
+    "total_degree": 160.5
+  },
+  {
+    "seating_no": 1025068,
+    "arabic_name": "محمود امين محمد امين عبدالرازق",
+    "total_degree": 146
+  },
+  {
+    "seating_no": 1025069,
+    "arabic_name": "محمود عبدالعزيز محمود على",
+    "total_degree": 160
+  },
+  {
+    "seating_no": 1025070,
+    "arabic_name": "محمود عصام محمد محمود عبدالله",
+    "total_degree": 155
+  },
+  {
+    "seating_no": 1025071,
+    "arabic_name": "محمود محمد محمود محمد عبدالعال",
+    "total_degree": 169.5
+  },
+  {
+    "seating_no": 1025072,
+    "arabic_name": "مروان ايمن اسعد محمد البمبى",
+    "total_degree": 176.5
+  },
+  {
+    "seating_no": 1025073,
+    "arabic_name": "مروان محسن عبدالله عبداللطيف",
+    "total_degree": 164.5
+  },
+  {
+    "seating_no": 1025074,
+    "arabic_name": "مروان محمد احمد محمد محمد البنا",
+    "total_degree": 150.5
+  },
+  {
+    "seating_no": 1025075,
+    "arabic_name": "مصطفى ايمن محمد عثمان",
+    "total_degree": 138.5
+  },
+  {
+    "seating_no": 1025076,
+    "arabic_name": "مصطفى غريب محمود محمد",
+    "total_degree": 158.5
+  },
+  {
+    "seating_no": 1025077,
+    "arabic_name": "مصطفى محمد ابراهيم محمد ابراهيم",
+    "total_degree": 148.5
+  },
+  {
+    "seating_no": 1025078,
+    "arabic_name": "مهند على عبدالقادر على",
+    "total_degree": 141
+  },
+  {
+    "seating_no": 1025079,
+    "arabic_name": "ياسين حسين صبرى عبدالحميد",
+    "total_degree": 167.5
+  },
+  {
+    "seating_no": 1025080,
+    "arabic_name": "يسى تامر جرجس عوزه",
+    "total_degree": 180
+  },
+  {
+    "seating_no": 1025081,
+    "arabic_name": "يوسف ابراهيم حسين ابوضيف",
+    "total_degree": 149.5
+  },
+  {
+    "seating_no": 1025082,
+    "arabic_name": "يوسف احمد عمر مغازي",
+    "total_degree": 164.5
+  },
+  {
+    "seating_no": 1025083,
+    "arabic_name": "يوسف خليل سيد خليل احمد",
+    "total_degree": 167.5
+  },
+  {
+    "seating_no": 1025084,
+    "arabic_name": "يوسف خميس ساعدى حسن عبدالله",
+    "total_degree": 263.5
+  },
+  {
+    "seating_no": 1025085,
+    "arabic_name": "يوسف دسوقى حسن ابراهيم",
+    "total_degree": 74.5
+  },
+  {
+    "seating_no": 1025086,
+    "arabic_name": "يوسف سامح سمير محمود",
+    "total_degree": 134
+  },
+  {
+    "seating_no": 1025087,
+    "arabic_name": "يوسف سيد عبدالمجيد امين سعداوي",
+    "total_degree": 127
+  },
+  {
+    "seating_no": 1025088,
+    "arabic_name": "يوسف شعبان حسن عبدالحكيم",
+    "total_degree": 123.5
+  },
+  {
+    "seating_no": 1025089,
+    "arabic_name": "يوسف شعبان سعيد حسين احمد",
+    "total_degree": 152.5
+  },
+  {
+    "seating_no": 1025090,
+    "arabic_name": "يوسف عبدربه حسين عبدربه رابح",
+    "total_degree": 157.5
+  },
+  {
+    "seating_no": 1025091,
+    "arabic_name": "يوسف محمد حسن السيد حسن",
+    "total_degree": 98.5
+  },
+  {
+    "seating_no": 1025092,
+    "arabic_name": "يوسف محمد على حسن",
+    "total_degree": 144.5
+  },
+  {
+    "seating_no": 1025093,
+    "arabic_name": "يوسف محمد محمد عبدالحليم",
+    "total_degree": 116.5
+  },
+  {
+    "seating_no": 1025094,
+    "arabic_name": "ابراهيم عبدالمعطي رزق عزالدين عبدالمعطي",
+    "total_degree": 136.5
+  },
+  {
+    "seating_no": 1025095,
+    "arabic_name": "احمد خالد السيد متولى",
+    "total_degree": 126.5
+  },
+  {
+    "seating_no": 1025096,
+    "arabic_name": "احمد صلاح الدين محمد صلاح",
+    "total_degree": 157.5
+  },
+  {
+    "seating_no": 1025097,
+    "arabic_name": "ادهم محمود عثمان محمود",
+    "total_degree": 90
+  },
+  {
+    "seating_no": 1025098,
+    "arabic_name": "اياد طارق محمد عماره العويسى",
+    "total_degree": 121
+  },
+  {
+    "seating_no": 1025099,
+    "arabic_name": "جمال عبدالنبى سيد على",
+    "total_degree": 151.5
+  },
+  {
+    "seating_no": 1025100,
+    "arabic_name": "سيف الدين محمد عبدالظاهر ابراهيم",
+    "total_degree": 99.5
+  },
+  {
+    "seating_no": 1025101,
+    "arabic_name": "عبدالرحمن سعد عبدالجميل محمود",
+    "total_degree": 128.5
+  },
+  {
+    "seating_no": 1025102,
+    "arabic_name": "عبدالرحمن على احمد عثمان",
+    "total_degree": 149
+  },
+  {
+    "seating_no": 1025103,
+    "arabic_name": "عمار وائل محمد صالح",
+    "total_degree": 189
+  },
+  {
+    "seating_no": 1025104,
+    "arabic_name": "عمر محمد السيد سلطان",
+    "total_degree": 133.5
+  },
+  {
+    "seating_no": 1025105,
+    "arabic_name": "عمر محمد سيد على",
+    "total_degree": 141
+  },
+  {
+    "seating_no": 1025106,
+    "arabic_name": "عمر محمود العربى محمد",
+    "total_degree": 235
+  },
+  {
+    "seating_no": 1025107,
+    "arabic_name": "كريم ايمن السيد عوض الله",
+    "total_degree": 87
+  },
+  {
+    "seating_no": 1025108,
+    "arabic_name": "مازن ايهاب يوسف عبدالله",
+    "total_degree": 122.5
+  },
+  {
+    "seating_no": 1025109,
+    "arabic_name": "محمد صابر وجيه صابر",
+    "total_degree": 173.5
+  },
+  {
+    "seating_no": 1025110,
+    "arabic_name": "محمد عصام عبدالحافظ زايد",
+    "total_degree": 154
+  },
+  {
+    "seating_no": 1025111,
+    "arabic_name": "محمد وجيه عبدالعزيز على",
+    "total_degree": 265
+  },
+  {
+    "seating_no": 1025112,
+    "arabic_name": "محمود رمضان ثابت فهيم",
+    "total_degree": 149.5
+  },
+  {
+    "seating_no": 1025113,
+    "arabic_name": "محمود سداد يوسف عبدالحميد نصر",
+    "total_degree": 123
+  },
+  {
+    "seating_no": 1025114,
+    "arabic_name": "مروان محمد جمال عبدالحميد محمد",
+    "total_degree": 125.5
+  },
+  {
+    "seating_no": 1025115,
+    "arabic_name": "مروان هشام عيد على",
+    "total_degree": 189
+  },
+  {
+    "seating_no": 1025116,
+    "arabic_name": "هشام اشرف مصطفى محمد",
+    "total_degree": 163.5
+  },
+  {
+    "seating_no": 1025117,
+    "arabic_name": "يوسف خالد جمال عبدالعال",
+    "total_degree": 182
+  },
+  {
+    "seating_no": 1025118,
+    "arabic_name": "يوسف سمير حسن صالح",
+    "total_degree": 171.5
+  },
+  {
+    "seating_no": 1025119,
+    "arabic_name": "يوسف نادر عبدالمطلب ابراهيم",
+    "total_degree": 136.5
+  },
+  {
+    "seating_no": 1025120,
+    "arabic_name": "يوسف ياسر سيد ابراهيم محمد",
+    "total_degree": 139
+  },
+  {
+    "seating_no": 1025121,
+    "arabic_name": "احمد محمد احمد السيد محمد",
+    "total_degree": 162.5
+  },
+  {
+    "seating_no": 1025122,
+    "arabic_name": "استيفن عزت اسحق حبيب",
+    "total_degree": 134
+  },
+  {
+    "seating_no": 1025123,
+    "arabic_name": "حسين محمد حسين زكي",
+    "total_degree": 141
+  },
+  {
+    "seating_no": 1025124,
+    "arabic_name": "حسين مصطفي حسين محمد احمد",
+    "total_degree": 96.5
+  },
+  {
+    "seating_no": 1025125,
+    "arabic_name": "زياد احمد عبدالقادر امام",
+    "total_degree": 133.5
+  },
+  {
+    "seating_no": 1025126,
+    "arabic_name": "زياد جابر عبدالجواد محمود",
+    "total_degree": 134
+  },
+  {
+    "seating_no": 1025127,
+    "arabic_name": "عبدالله جمال احمد محمد الشقيفي",
+    "total_degree": 150.5
+  },
+  {
+    "seating_no": 1025128,
+    "arabic_name": "عمرو احمد حسين ابراهيم",
+    "total_degree": 122
+  },
+  {
+    "seating_no": 1025129,
+    "arabic_name": "محمد احمد محمد محمد عبدالعال",
+    "total_degree": 135
+  },
+  {
+    "seating_no": 1025130,
+    "arabic_name": "محمد ربيع فتحى ربيع",
+    "total_degree": 170.5
+  },
+  {
+    "seating_no": 1025131,
+    "arabic_name": "نور محمد محمد حسن محمد",
+    "total_degree": 163.5
+  },
+  {
+    "seating_no": 1025132,
+    "arabic_name": "احمد سيد ابراهيم سيد",
+    "total_degree": 182.5
+  },
+  {
+    "seating_no": 1025133,
+    "arabic_name": "احمد ماهر على عبدالمنعم",
+    "total_degree": 176.5
+  },
+  {
+    "seating_no": 1025134,
+    "arabic_name": "احمد موسي حسن موسي",
+    "total_degree": 161.5
+  },
+  {
+    "seating_no": 1025135,
+    "arabic_name": "اياد خالد رياض محمود",
+    "total_degree": 129.5
+  },
+  {
+    "seating_no": 1025136,
+    "arabic_name": "بلال احمد شرف عبدالباسط",
+    "total_degree": 94
+  },
+  {
+    "seating_no": 1025137,
+    "arabic_name": "زياد محمد سمير حافظ",
+    "total_degree": 130
+  },
+  {
+    "seating_no": 1025138,
+    "arabic_name": "سالم على سالم احمد",
+    "total_degree": 163.5
+  },
+  {
+    "seating_no": 1025139,
+    "arabic_name": "سيف محمد هاني عبدالتواب",
+    "total_degree": 236
+  },
+  {
+    "seating_no": 1025140,
+    "arabic_name": "عبدالرحمن حسن خلف الله عبدالله",
+    "total_degree": 162.5
+  },
+  {
+    "seating_no": 1025141,
+    "arabic_name": "عبدالرحمن سيد محمود محمد",
+    "total_degree": 149.5
+  },
+  {
+    "seating_no": 1025142,
+    "arabic_name": "عبدالرحمن محمد عبدالرحيم السيد عبدالمولي",
+    "total_degree": 159
+  },
+  {
+    "seating_no": 1025143,
+    "arabic_name": "عبدالرحمن محمد عبدالله عمر",
+    "total_degree": 136
+  },
+  {
+    "seating_no": 1025144,
+    "arabic_name": "عبدالله محمد سيد احمد حسانين",
+    "total_degree": 171
+  },
+  {
+    "seating_no": 1025145,
+    "arabic_name": "عمر عادل بكرى على",
+    "total_degree": 166
+  },
+  {
+    "seating_no": 1025146,
+    "arabic_name": "عمر عادل ضافر عبدالله",
+    "total_degree": 107
+  },
+  {
+    "seating_no": 1025147,
+    "arabic_name": "عمير وليد حسنين محمود حسنين",
+    "total_degree": 124
+  },
+  {
+    "seating_no": 1025148,
+    "arabic_name": "فاروق منتصر فاروق جلال",
+    "total_degree": 146
+  },
+  {
+    "seating_no": 1025149,
+    "arabic_name": "محمد احمد غريب محمد",
+    "total_degree": 148
+  },
+  {
+    "seating_no": 1025150,
+    "arabic_name": "محمد محمد كمال سيد",
+    "total_degree": 123.5
+  },
+  {
+    "seating_no": 1025151,
+    "arabic_name": "محمد محمود محمد محمد",
+    "total_degree": 195.5
+  },
+  {
+    "seating_no": 1025152,
+    "arabic_name": "محمد هشام محمد محمود",
+    "total_degree": 191.5
+  },
+  {
+    "seating_no": 1025153,
+    "arabic_name": "هيثم وليد شعبان محمد",
+    "total_degree": 145.5
+  },
+  {
+    "seating_no": 1025154,
+    "arabic_name": "وليد عماد فرج حسن ابوالسعود",
+    "total_degree": 155.5
+  },
+  {
+    "seating_no": 1025155,
+    "arabic_name": "عاشور محمد عاشور على",
+    "total_degree": 131.5
+  },
+  {
+    "seating_no": 1025156,
+    "arabic_name": "مؤمن طارق محمد على",
+    "total_degree": 167.5
+  },
+  {
+    "seating_no": 1025157,
+    "arabic_name": "ياسين احمد عبدالرحيم سيد صالح",
+    "total_degree": 151
+  },
+  {
+    "seating_no": 1025158,
+    "arabic_name": "طه جمال طه قطب",
+    "total_degree": 113
+  },
+  {
+    "seating_no": 1025159,
+    "arabic_name": "كيرلس هاني فتحي امين عيسى",
+    "total_degree": 110.5
+  },
+  {
+    "seating_no": 1025160,
+    "arabic_name": "يوسف احمد السيد كريم الطويل",
+    "total_degree": 166
+  },
+  {
+    "seating_no": 1025161,
+    "arabic_name": "اسراء محمد احمد تونى",
+    "total_degree": 112.5
+  },
+  {
+    "seating_no": 1025162,
+    "arabic_name": "اسماء خليفه مختار محمد",
+    "total_degree": 145.5
+  },
+  {
+    "seating_no": 1025163,
+    "arabic_name": "امنيه محمد كمال عبدالعزيز",
+    "total_degree": 155
+  },
+  {
+    "seating_no": 1025164,
+    "arabic_name": "اميره عادل عبدالدايم هيكل",
+    "total_degree": 162.5
+  },
+  {
+    "seating_no": 1025165,
+    "arabic_name": "ايرينى علاء حمدى رزق",
+    "total_degree": 125
+  },
+  {
+    "seating_no": 1025166,
+    "arabic_name": "ايه محمدى حسن عبدالعليم ابراهيم",
+    "total_degree": 223
+  },
+  {
+    "seating_no": 1025167,
+    "arabic_name": "بسمله ايمن رمضان عبدالعزيز",
+    "total_degree": 152
+  },
+  {
+    "seating_no": 1025168,
+    "arabic_name": "بسمله طه عبدالرازق السيد احمد مصطفي",
+    "total_degree": 224.5
+  },
+  {
+    "seating_no": 1025169,
+    "arabic_name": "بسمله محمد شفيق نجيب احمد",
+    "total_degree": 138.5
+  },
+  {
+    "seating_no": 1025170,
+    "arabic_name": "بسمله محمد ناجى على",
+    "total_degree": 211.5
+  },
+  {
+    "seating_no": 1025171,
+    "arabic_name": "بسنت سعيد ابوسريع محمد",
+    "total_degree": 195.5
+  },
+  {
+    "seating_no": 1025172,
+    "arabic_name": "جنات ابراهيم عبدالهادى محمود",
+    "total_degree": 164
+  },
+  {
+    "seating_no": 1025173,
+    "arabic_name": "جنه محمد مصرى يمنى",
+    "total_degree": 154.5
+  },
+  {
+    "seating_no": 1025174,
+    "arabic_name": "جنى ايمن محمد الحسينى",
+    "total_degree": 195.5
+  },
+  {
+    "seating_no": 1025175,
+    "arabic_name": "جنى تامر محمد سالم ابراهيم",
+    "total_degree": 177.5
+  },
+  {
+    "seating_no": 1025176,
+    "arabic_name": "جنى عبدالمنعم محمد عبدالمنعم",
+    "total_degree": 163
+  },
+  {
+    "seating_no": 1025177,
+    "arabic_name": "جنى محمود محمد عبدالله محمد",
+    "total_degree": 121
+  },
+  {
+    "seating_no": 1025178,
+    "arabic_name": "حبيبه وليد توفيق ابراهيم",
+    "total_degree": 174
+  },
+  {
+    "seating_no": 1025179,
+    "arabic_name": "حلا سيد خلف حسن حسانين",
+    "total_degree": 148.5
+  },
+  {
+    "seating_no": 1025180,
+    "arabic_name": "حنان جمعه سليمان محمد سليمان",
+    "total_degree": 150
+  },
+  {
+    "seating_no": 1025181,
+    "arabic_name": "حنين اشرف ربيع حامد",
+    "total_degree": 133
+  },
+  {
+    "seating_no": 1025182,
+    "arabic_name": "حنين شريف جمعه حسن ابرهيم",
+    "total_degree": 141.5
+  },
+  {
+    "seating_no": 1025183,
+    "arabic_name": "حنين محمود حلمى عبدالمجيد",
+    "total_degree": 173
+  },
+  {
+    "seating_no": 1025184,
+    "arabic_name": "ديمه احمد على عبدالحميد",
+    "total_degree": 144.5
+  },
+  {
+    "seating_no": 1025185,
+    "arabic_name": "رحمه محمد جمال احمد اسماعيل",
+    "total_degree": 155.5
+  },
+  {
+    "seating_no": 1025186,
+    "arabic_name": "رقيه محمود عبدالقادر عبدالقادر",
+    "total_degree": 196
+  },
+  {
+    "seating_no": 1025187,
+    "arabic_name": "رنا عبدالمحسن عبدالوهاب محمد",
+    "total_degree": 167
+  },
+  {
+    "seating_no": 1025188,
+    "arabic_name": "ساميه سامح رأفت محمد",
+    "total_degree": 147.5
+  },
+  {
+    "seating_no": 1025189,
+    "arabic_name": "سلمى عماد غريب دكرورى محمد",
+    "total_degree": 175.5
+  },
+  {
+    "seating_no": 1025190,
+    "arabic_name": "سلمى عمرو محمد عبدالمجيد",
+    "total_degree": 177.5
+  },
+  {
+    "seating_no": 1025191,
+    "arabic_name": "سما الالفى سليم احمد سليم",
+    "total_degree": 217.5
+  },
+  {
+    "seating_no": 1025192,
+    "arabic_name": "سما صبحى سليمان عمر",
+    "total_degree": 145
+  },
+  {
+    "seating_no": 1025193,
+    "arabic_name": "سما محمود سعد محمد",
+    "total_degree": 148.5
+  },
+  {
+    "seating_no": 1025194,
+    "arabic_name": "سمر عوض عبدالله عبدالهادى",
+    "total_degree": 157.5
+  },
+  {
+    "seating_no": 1025195,
+    "arabic_name": "سندس على ابوالوفا حسن",
+    "total_degree": 155.5
+  },
+  {
+    "seating_no": 1025196,
+    "arabic_name": "شروق عبدالتواب عبدالمنعم احمد على",
+    "total_degree": 164.5
+  },
+  {
+    "seating_no": 1025197,
+    "arabic_name": "شروق عبدالحميد ابوبكر عبدالحميد",
+    "total_degree": 162.5
+  },
+  {
+    "seating_no": 1025198,
+    "arabic_name": "شهد احمد عبدالحليم حافظ عامر",
+    "total_degree": 140
+  },
+  {
+    "seating_no": 1025199,
+    "arabic_name": "شهد ايمن صالح ثابت",
+    "total_degree": 150.5
+  },
+  {
+    "seating_no": 1025200,
+    "arabic_name": "شهد بدر محمد محمد محمد",
+    "total_degree": 148
+  },
+  {
+    "seating_no": 1025201,
+    "arabic_name": "شهد عادل فتحى محمد محمود",
+    "total_degree": 140
+  },
+  {
+    "seating_no": 1025202,
+    "arabic_name": "شهد على حفنى مشرف",
+    "total_degree": 151
+  },
+  {
+    "seating_no": 1025205,
+    "arabic_name": "فاطمه كمال على محمد",
+    "total_degree": 132
+  },
+  {
+    "seating_no": 1025206,
+    "arabic_name": "فجر حسام محمد بيومى خليل",
+    "total_degree": 127
+  },
+  {
+    "seating_no": 1025207,
+    "arabic_name": "كريمه خالد على محمد احمد",
+    "total_degree": 162
+  },
+  {
+    "seating_no": 1025208,
+    "arabic_name": "لؤا سليم محمد سليم عطوه",
+    "total_degree": 146.5
+  },
+  {
+    "seating_no": 1025209,
+    "arabic_name": "لوجين هشام عبدالله ابوزيد حسن",
+    "total_degree": 120.5
+  },
+  {
+    "seating_no": 1025210,
+    "arabic_name": "مرفت عبدالله محمد مراد",
+    "total_degree": 168
+  },
+  {
+    "seating_no": 1025211,
+    "arabic_name": "مريم اشرف رمضان سليمان",
+    "total_degree": 174
+  },
+  {
+    "seating_no": 1025212,
+    "arabic_name": "مريم رمضان محمود محمد ابوالحسن",
+    "total_degree": 143
+  },
+  {
+    "seating_no": 1025213,
+    "arabic_name": "مريم شريف علي نصرالدين",
+    "total_degree": 175
+  },
+  {
+    "seating_no": 1025214,
+    "arabic_name": "مريم عمرو ابراهيم محمود",
+    "total_degree": 178.5
+  },
+  {
+    "seating_no": 1025215,
+    "arabic_name": "مريم محمود محمد عبدالعزيز",
+    "total_degree": 168.5
+  },
+  {
+    "seating_no": 1025216,
+    "arabic_name": "ملك محمد محمد حسن",
+    "total_degree": 115.5
+  },
+  {
+    "seating_no": 1025217,
+    "arabic_name": "ندا مصطفى غازى صالح",
+    "total_degree": 160
+  },
+  {
+    "seating_no": 1025218,
+    "arabic_name": "هاله هشام محمد على",
+    "total_degree": 180
+  },
+  {
+    "seating_no": 1025219,
+    "arabic_name": "هدى مصطفى سعيد محمود عبدالمطلب",
+    "total_degree": 175.5
+  },
+  {
+    "seating_no": 1025220,
+    "arabic_name": "يسر محمد سمير محمد",
+    "total_degree": 193
+  },
+  {
+    "seating_no": 1025221,
+    "arabic_name": "الاء فريد احمد فريد",
+    "total_degree": 119.5
+  },
+  {
+    "seating_no": 1025222,
+    "arabic_name": "انجى احمد عزالدين عسران",
+    "total_degree": 175
+  },
+  {
+    "seating_no": 1025223,
+    "arabic_name": "ايه محمود محمد نمرس عبدالصمد",
+    "total_degree": 136.5
+  },
+  {
+    "seating_no": 1025224,
+    "arabic_name": "بسمله محمد حسن عبدالله",
+    "total_degree": 195
+  },
+  {
+    "seating_no": 1025225,
+    "arabic_name": "بسمله مصطفى السيد فاضل السيد",
+    "total_degree": 124.5
+  },
+  {
+    "seating_no": 1025226,
+    "arabic_name": "بوسى محمد فريد احمد سيد",
+    "total_degree": 146
+  },
+  {
+    "seating_no": 1025227,
+    "arabic_name": "تقى عاشور البندارى عثمان",
+    "total_degree": 210.5
+  },
+  {
+    "seating_no": 1025228,
+    "arabic_name": "جنى حمزه نديم حمزه",
+    "total_degree": 145.5
+  },
+  {
+    "seating_no": 1025229,
+    "arabic_name": "جنى رضا السعيد محمود",
+    "total_degree": 160
+  },
+  {
+    "seating_no": 1025230,
+    "arabic_name": "حبيبه احمد على محمود",
+    "total_degree": 193.5
+  },
+  {
+    "seating_no": 1025231,
+    "arabic_name": "حبيبه ايمن فتحى محمد",
+    "total_degree": 166.5
+  },
+  {
+    "seating_no": 1025232,
+    "arabic_name": "حسنات الشاذلى ركابى يعقوب",
+    "total_degree": 181.5
+  },
+  {
+    "seating_no": 1025233,
+    "arabic_name": "حنين احمد عطيه عباس",
+    "total_degree": 193.5
+  },
+  {
+    "seating_no": 1025234,
+    "arabic_name": "رحمه محمد السيد عمر",
+    "total_degree": 171
+  },
+  {
+    "seating_no": 1025235,
+    "arabic_name": "روان احمد عبدالرحمن احمد",
+    "total_degree": 157
+  },
+  {
+    "seating_no": 1025236,
+    "arabic_name": "رويدا عصام شكرى سعد عوض",
+    "total_degree": 108
+  },
+  {
+    "seating_no": 1025237,
+    "arabic_name": "زينب سليمان غزالى حسن",
+    "total_degree": 165.5
+  },
+  {
+    "seating_no": 1025238,
+    "arabic_name": "سلمى كرم عيد سليم",
+    "total_degree": 166
+  },
+  {
+    "seating_no": 1025239,
+    "arabic_name": "سما جمال احمد عبدالجابر",
+    "total_degree": 141
+  },
+  {
+    "seating_no": 1025240,
+    "arabic_name": "سندس محمود عبدالعزيز محمد",
+    "total_degree": 99
+  },
+  {
+    "seating_no": 1025241,
+    "arabic_name": "شروق كرم عيد سليم",
+    "total_degree": 162
+  },
+  {
+    "seating_no": 1025242,
+    "arabic_name": "شروق محمد مصطفى حسن",
+    "total_degree": 166.5
+  },
+  {
+    "seating_no": 1025243,
+    "arabic_name": "شهد عمرو عبدالغنى احمد ابراهيم",
+    "total_degree": 237.5
+  },
+  {
+    "seating_no": 1025244,
+    "arabic_name": "شيماء محمد حسنى زكى",
+    "total_degree": 145
+  },
+  {
+    "seating_no": 1025245,
+    "arabic_name": "عاليه محمد حامد عبدالعزيز",
+    "total_degree": 146
+  },
+  {
+    "seating_no": 1025246,
+    "arabic_name": "عزه مصطفى عرفه عبدالصمد",
+    "total_degree": 160
+  },
+  {
+    "seating_no": 1025247,
+    "arabic_name": "عزيزه بشير حسن بشير محمد",
+    "total_degree": 192
+  },
+  {
+    "seating_no": 1025248,
+    "arabic_name": "فاطمه سيد تاج الدين محمد عبدالمولى",
+    "total_degree": 254
+  },
+  {
+    "seating_no": 1025249,
+    "arabic_name": "فاطمه طارق محمد عبدالله على",
+    "total_degree": 164.5
+  },
+  {
+    "seating_no": 1025250,
+    "arabic_name": "مريم احمد عفيفى احمد",
+    "total_degree": 153
+  },
+  {
+    "seating_no": 1025251,
+    "arabic_name": "مريم السيد محمد محمود",
+    "total_degree": 166
+  },
+  {
+    "seating_no": 1025252,
+    "arabic_name": "مريم حسين عبدالنبى حسين",
+    "total_degree": 193
+  },
+  {
+    "seating_no": 1025253,
+    "arabic_name": "مريم حمدى محمد محمود معوض",
+    "total_degree": 172.5
+  },
+  {
+    "seating_no": 1025254,
+    "arabic_name": "مريم سامح سعد كعبر",
+    "total_degree": 141.5
+  },
+  {
+    "seating_no": 1025255,
+    "arabic_name": "مريم محمد ابراهيم سيد موسى",
+    "total_degree": 273.5
+  },
+  {
+    "seating_no": 1025256,
+    "arabic_name": "مريم محمد عمر حسنى عمر",
+    "total_degree": 198.5
+  },
+  {
+    "seating_no": 1025257,
+    "arabic_name": "مريم مصطفى عبدالعال محمد",
+    "total_degree": 100.5
+  },
+  {
+    "seating_no": 1025258,
+    "arabic_name": "ملك محسن كامل محمد",
+    "total_degree": 199.5
+  },
+  {
+    "seating_no": 1025259,
+    "arabic_name": "ميرنا وليد خلف عبدالفضيل",
+    "total_degree": 119.5
+  },
+  {
+    "seating_no": 1025260,
+    "arabic_name": "ناريمان خالد محى الدين على محمد",
+    "total_degree": 152
+  },
+  {
+    "seating_no": 1025261,
+    "arabic_name": "ندى ابوالسعود احمد حافظ",
+    "total_degree": 162.5
+  },
+  {
+    "seating_no": 1025262,
+    "arabic_name": "نورا عبدالله محمد عبدالله سعد",
+    "total_degree": 184.5
+  },
+  {
+    "seating_no": 1025263,
+    "arabic_name": "هنا محمد رمضان اسماعيل",
+    "total_degree": 103.5
+  },
+  {
+    "seating_no": 1025264,
+    "arabic_name": "اسراء محمد عبدالستار محمد",
+    "total_degree": 125.5
+  },
+  {
+    "seating_no": 1025265,
+    "arabic_name": "اسماء ابوبكر على محمد على زيد",
+    "total_degree": 138
+  },
+  {
+    "seating_no": 1025266,
+    "arabic_name": "الاء احمد علام محمدين علام",
+    "total_degree": 206.5
+  },
+  {
+    "seating_no": 1025267,
+    "arabic_name": "الاء على محمود على بركات",
+    "total_degree": 118
+  },
+  {
+    "seating_no": 1025268,
+    "arabic_name": "الزهراء نادى فؤاد سالم عبداللطيف",
+    "total_degree": 156.5
+  },
+  {
+    "seating_no": 1025269,
+    "arabic_name": "امانى جمال مصطفى عبدالهادى",
+    "total_degree": 148
+  },
+  {
+    "seating_no": 1025270,
+    "arabic_name": "اميره ايمن حسين على",
+    "total_degree": 117.5
+  },
+  {
+    "seating_no": 1025271,
+    "arabic_name": "بسمله ايهاب عبدالمنعم محمد دياب",
+    "total_degree": 145.5
+  },
+  {
+    "seating_no": 1025272,
+    "arabic_name": "تقى ايمن ربيع احمد",
+    "total_degree": 228
+  },
+  {
+    "seating_no": 1025273,
+    "arabic_name": "جنه احمد عبدالسميع محمد",
+    "total_degree": 182
+  },
+  {
+    "seating_no": 1025274,
+    "arabic_name": "جنى ايمن طه عبدالعاطى",
+    "total_degree": 205.5
+  },
+  {
+    "seating_no": 1025275,
+    "arabic_name": "جنى خالد رمضان سيد",
+    "total_degree": 170
+  },
+  {
+    "seating_no": 1025276,
+    "arabic_name": "جنى سيد حسن احمد",
+    "total_degree": 157
+  },
+  {
+    "seating_no": 1025277,
+    "arabic_name": "جوليا سامر قطوش عجايبى دميان",
+    "total_degree": 202.5
+  },
+  {
+    "seating_no": 1025278,
+    "arabic_name": "جينا محمد سيد عبدالرسول",
+    "total_degree": 110.5
+  },
+  {
+    "seating_no": 1025279,
+    "arabic_name": "حبيبه ابراهيم عبدالحفيظ احمد",
+    "total_degree": 180
+  },
+  {
+    "seating_no": 1025280,
+    "arabic_name": "حبيبه ربيع رجب مختار محمد",
+    "total_degree": 177.5
+  },
+  {
+    "seating_no": 1025281,
+    "arabic_name": "حسيبه هشام على محمد",
+    "total_degree": 138
+  },
+  {
+    "seating_no": 1025282,
+    "arabic_name": "دنيا فرج لطفى ابراهيم",
+    "total_degree": 123.5
+  },
+  {
+    "seating_no": 1025283,
+    "arabic_name": "رباب محسن ابوالسعود عبدالنظير",
+    "total_degree": 141
+  },
+  {
+    "seating_no": 1025284,
+    "arabic_name": "رحمه عوض محمد بدراوى",
+    "total_degree": 158.5
+  },
+  {
+    "seating_no": 1025285,
+    "arabic_name": "رقيه محمد بسطاوي عبدالكريم بسطاوى",
+    "total_degree": 170.5
+  },
+  {
+    "seating_no": 1025286,
+    "arabic_name": "رقيه يحى عبدالعظيم محمد",
+    "total_degree": 126.5
+  },
+  {
+    "seating_no": 1025287,
+    "arabic_name": "روان اشرف مجدي محمد",
+    "total_degree": 105
+  },
+  {
+    "seating_no": 1025288,
+    "arabic_name": "زينب عبدالحليم سيد خليل",
+    "total_degree": 125.5
+  },
+  {
+    "seating_no": 1025289,
+    "arabic_name": "ساندرا سامر قطوش عجايبى دميان",
+    "total_degree": 196.5
+  },
+  {
+    "seating_no": 1025290,
+    "arabic_name": "سلمى حسين عبدالعال حسين",
+    "total_degree": 175.5
+  },
+  {
+    "seating_no": 1025291,
+    "arabic_name": "سلمى عمر احمد عبدالجليل ابراهيم",
+    "total_degree": 99
+  },
+  {
+    "seating_no": 1025292,
+    "arabic_name": "سلمى ناصر ابوالفضل ابوزيد",
+    "total_degree": 149
+  },
+  {
+    "seating_no": 1025293,
+    "arabic_name": "سما رفاعي علي رفاعي",
+    "total_degree": 190
+  },
+  {
+    "seating_no": 1025294,
+    "arabic_name": "سما عصام ابوالدهب محمد",
+    "total_degree": 240
+  },
+  {
+    "seating_no": 1025295,
+    "arabic_name": "سندس محمد عبدالرؤوف محمد",
+    "total_degree": 115.5
+  },
+  {
+    "seating_no": 1025296,
+    "arabic_name": "شاهنده محمد محمد عبدالعزيز",
+    "total_degree": 145
+  },
+  {
+    "seating_no": 1025297,
+    "arabic_name": "شذا محمد شعبان عبدالرحمن",
+    "total_degree": 137.5
+  },
+  {
+    "seating_no": 1025298,
+    "arabic_name": "شهد صلاح محمود سيد",
+    "total_degree": 184.5
+  },
+  {
+    "seating_no": 1025299,
+    "arabic_name": "شهد عادل محمد عبدالفتاح",
+    "total_degree": 188.5
+  },
+  {
+    "seating_no": 1025300,
+    "arabic_name": "شهد على عبدالوهاب على",
+    "total_degree": 126.5
+  },
+  {
+    "seating_no": 1025301,
+    "arabic_name": "شهد مختار السيد عبدالجليل الشاذلى",
+    "total_degree": 160
+  },
+  {
+    "seating_no": 1025302,
+    "arabic_name": "عبير خالد ونيس يس",
+    "total_degree": 187
+  },
+  {
+    "seating_no": 1025303,
+    "arabic_name": "فاطمه خالد سيد محمد امام الغزولى",
+    "total_degree": 173.5
+  },
+  {
+    "seating_no": 1025304,
+    "arabic_name": "فرح محمد عبدالعزيز اسماعيل",
+    "total_degree": 113
+  },
+  {
+    "seating_no": 1025305,
+    "arabic_name": "لوسندا عادل حسن محمد",
+    "total_degree": 170
+  },
+  {
+    "seating_no": 1025306,
+    "arabic_name": "مروه ممدوح احمد بخيت",
+    "total_degree": 186
+  },
+  {
+    "seating_no": 1025307,
+    "arabic_name": "مريم احمد عبدالسميع السيد",
+    "total_degree": 149.5
+  },
+  {
+    "seating_no": 1025308,
+    "arabic_name": "مريم رمضان كمال عبدالسلام",
+    "total_degree": 205.5
+  },
+  {
+    "seating_no": 1025309,
+    "arabic_name": "مريم عماد جمعه على",
+    "total_degree": 221
+  },
+  {
+    "seating_no": 1025310,
+    "arabic_name": "مريم محمد عبدالمنعم الهادي",
+    "total_degree": 188
+  },
+  {
+    "seating_no": 1025311,
+    "arabic_name": "مريم يسري سبع مهدي محمد",
+    "total_degree": 174
+  },
+  {
+    "seating_no": 1025312,
+    "arabic_name": "ملك احمد عبدالحميد عبدالعظيم",
+    "total_degree": 163
+  },
+  {
+    "seating_no": 1025313,
+    "arabic_name": "ملك اسامه شاهد عطيه",
+    "total_degree": 141
+  },
+  {
+    "seating_no": 1025314,
+    "arabic_name": "ملك السيد عبدالكريم جابر",
+    "total_degree": 172
+  },
+  {
+    "seating_no": 1025315,
+    "arabic_name": "ملك تامر صلاح محمد",
+    "total_degree": 179
+  },
+  {
+    "seating_no": 1025316,
+    "arabic_name": "ملك سامح عبدالحميد محمود",
+    "total_degree": 186.5
+  },
+  {
+    "seating_no": 1025317,
+    "arabic_name": "ملك عبدالفتاح يوسف سليمان",
+    "total_degree": 169
+  },
+  {
+    "seating_no": 1025318,
+    "arabic_name": "ملك عبدالنبى سيد احمد",
+    "total_degree": 173
+  },
+  {
+    "seating_no": 1025319,
+    "arabic_name": "ملك علاءالدين صابر على",
+    "total_degree": 226
+  },
+  {
+    "seating_no": 1025320,
+    "arabic_name": "ملك محمد توفيق مهران قاسم",
+    "total_degree": 151.5
+  },
+  {
+    "seating_no": 1025321,
+    "arabic_name": "ملك وائل عبدالحكم محمود الامام",
+    "total_degree": 142
+  },
+  {
+    "seating_no": 1025322,
+    "arabic_name": "مى مصطفى سيد حجاج",
+    "total_degree": 257.5
+  },
+  {
+    "seating_no": 1025323,
+    "arabic_name": "ميرنا اشرف السيد محمود",
+    "total_degree": 177.5
+  },
+  {
+    "seating_no": 1025324,
+    "arabic_name": "ندى عبدالله توفيق عبدالله",
+    "total_degree": 185.5
+  },
+  {
+    "seating_no": 1025325,
+    "arabic_name": "نهله ناصر عبدالمنعم الشاهد",
+    "total_degree": 156
+  },
+  {
+    "seating_no": 1025326,
+    "arabic_name": "نور محمد سعيد رزق رجب",
+    "total_degree": 267
+  },
+  {
+    "seating_no": 1025327,
+    "arabic_name": "نور هشام حسن محمد",
+    "total_degree": 174
+  },
+  {
+    "seating_no": 1025328,
+    "arabic_name": "هاجر ناصر محى الدين مصطفى",
+    "total_degree": 123.5
+  },
+  {
+    "seating_no": 1025329,
+    "arabic_name": "همسه حسن عبدالصمد علي",
+    "total_degree": 176.5
+  },
+  {
+    "seating_no": 1025330,
+    "arabic_name": "هنا عمرو سعيد عبدالحكيم",
+    "total_degree": 126
+  },
+  {
+    "seating_no": 1025331,
+    "arabic_name": "هنا محمد سليمان عبدالحميد",
+    "total_degree": 140.5
+  },
+  {
+    "seating_no": 1025332,
+    "arabic_name": "يارا احمد جمال عبدالناصر محمد",
+    "total_degree": 126.5
+  },
+  {
+    "seating_no": 1025333,
+    "arabic_name": "ياسمين سامى عبداللطيف عوض",
+    "total_degree": 169.5
+  },
+  {
+    "seating_no": 1025334,
+    "arabic_name": "احلام علاء محمد على",
+    "total_degree": 96.5
+  },
+  {
+    "seating_no": 1025335,
+    "arabic_name": "اروى خيرى احمد حسين احمد",
+    "total_degree": 137
+  },
+  {
+    "seating_no": 1025336,
+    "arabic_name": "اسراء عماد طه محمد خميس",
+    "total_degree": 102
+  },
+  {
+    "seating_no": 1025337,
+    "arabic_name": "اسراء مصطفى اسماعيل عبدالعليم",
+    "total_degree": 127
+  },
+  {
+    "seating_no": 1025338,
+    "arabic_name": "الاء عبدالرحمن احمد حسين",
+    "total_degree": 123
+  },
+  {
+    "seating_no": 1025339,
+    "arabic_name": "ايه اسامه طلعت عبدالعليم عبدالعال",
+    "total_degree": 79.5
+  },
+  {
+    "seating_no": 1025340,
+    "arabic_name": "ايه الله طارق سعد خليفه",
+    "total_degree": 111
+  },
+  {
+    "seating_no": 1025341,
+    "arabic_name": "ايه نزيه محمد سالم",
+    "total_degree": 157
+  },
+  {
+    "seating_no": 1025342,
+    "arabic_name": "بسمله احمد محمد عبدالمعطى",
+    "total_degree": 156.5
+  },
+  {
+    "seating_no": 1025343,
+    "arabic_name": "بسمله اشرف نعمان محمود عبدالرحيم",
+    "total_degree": 150.5
+  },
+  {
+    "seating_no": 1025344,
+    "arabic_name": "بسمله حاتم محمد سامى سليمان",
+    "total_degree": 131
+  },
+  {
+    "seating_no": 1025345,
+    "arabic_name": "بسمله محمد حنفى محمود",
+    "total_degree": 115
+  },
+  {
+    "seating_no": 1025346,
+    "arabic_name": "بسمله وائل عبدالله عبدالحميد",
+    "total_degree": 102.5
+  },
+  {
+    "seating_no": 1025347,
+    "arabic_name": "بسمه عادل صبحي حمدان",
+    "total_degree": 200.5
+  },
+  {
+    "seating_no": 1025348,
+    "arabic_name": "بسنت محمد احمد عليوه",
+    "total_degree": 168.5
+  },
+  {
+    "seating_no": 1025349,
+    "arabic_name": "جنه احمد نصر السيد",
+    "total_degree": 162
+  },
+  {
+    "seating_no": 1025350,
+    "arabic_name": "حبيبه طارق جلال محمد ابوريه",
+    "total_degree": 136
+  },
+  {
+    "seating_no": 1025351,
+    "arabic_name": "حبيبه محمد ابراهيم جبر",
+    "total_degree": 150.5
+  },
+  {
+    "seating_no": 1025352,
+    "arabic_name": "حبيبه محمد طه توفيق احمد",
+    "total_degree": 88.5
+  },
+  {
+    "seating_no": 1025353,
+    "arabic_name": "حبيبه محمد عاطف يونس",
+    "total_degree": 124
+  },
+  {
+    "seating_no": 1025354,
+    "arabic_name": "حبيبه وائل فوزى عبدالعزيز",
+    "total_degree": 91
+  },
+  {
+    "seating_no": 1025355,
+    "arabic_name": "حسناء شعبان اسماعيل عبداللطيف ابراهيم عمار",
+    "total_degree": 138
+  },
+  {
+    "seating_no": 1025356,
+    "arabic_name": "حنين اسامه عرفه احمد",
+    "total_degree": 96.5
+  },
+  {
+    "seating_no": 1025357,
+    "arabic_name": "حياه محمود على حسين",
+    "total_degree": 147.5
+  },
+  {
+    "seating_no": 1025358,
+    "arabic_name": "خلود جميل سنوسى دمينى",
+    "total_degree": 181
+  },
+  {
+    "seating_no": 1025359,
+    "arabic_name": "دميانه نادى توفيق شحاته",
+    "total_degree": 179
+  },
+  {
+    "seating_no": 1025360,
+    "arabic_name": "رحمه محمود محمد مبروك",
+    "total_degree": 112
+  },
+  {
+    "seating_no": 1025361,
+    "arabic_name": "رحمه ناصر عبدالرشيد عبداللاه",
+    "total_degree": 213.5
+  },
+  {
+    "seating_no": 1025362,
+    "arabic_name": "رميساء اسامه صالح حافظ",
+    "total_degree": 228
+  },
+  {
+    "seating_no": 1025363,
+    "arabic_name": "رنا جمال بكرى اسماعيل محمد",
+    "total_degree": 129.5
+  },
+  {
+    "seating_no": 1025364,
+    "arabic_name": "روان سيد خلف على",
+    "total_degree": 129.5
+  },
+  {
+    "seating_no": 1025365,
+    "arabic_name": "روداينا احمد محمد احمد مصطفى",
+    "total_degree": 117
+  },
+  {
+    "seating_no": 1025366,
+    "arabic_name": "رولا رضا عبدالتواب عبيد على",
+    "total_degree": 150
+  },
+  {
+    "seating_no": 1025367,
+    "arabic_name": "ريتاج ابراهيم عبدالله ابراهيم محمد",
+    "total_degree": 157.5
+  },
+  {
+    "seating_no": 1025368,
+    "arabic_name": "ساره سيد خلف على",
+    "total_degree": 151
+  },
+  {
+    "seating_no": 1025369,
+    "arabic_name": "سلمى احمد محمد عبدالمالك حسين",
+    "total_degree": 155
+  },
+  {
+    "seating_no": 1025370,
+    "arabic_name": "سلمى السيد جابر عبده",
+    "total_degree": 131.5
+  },
+  {
+    "seating_no": 1025371,
+    "arabic_name": "سلمى هاني فوزي محمد",
+    "total_degree": 123
+  },
+  {
+    "seating_no": 1025372,
+    "arabic_name": "سما وحيد سعيد كمال",
+    "total_degree": 140
+  },
+  {
+    "seating_no": 1025373,
+    "arabic_name": "سندس حماده محمود احمد",
+    "total_degree": 130.5
+  },
+  {
+    "seating_no": 1025374,
+    "arabic_name": "شروق محمد يوسف عبدالعظيم",
+    "total_degree": 93.5
+  },
+  {
+    "seating_no": 1025375,
+    "arabic_name": "شهد اشرف محمد سعد",
+    "total_degree": 134.5
+  },
+  {
+    "seating_no": 1025376,
+    "arabic_name": "شهد ايمن عادل عبدالعزيز",
+    "total_degree": 90
+  },
+  {
+    "seating_no": 1025377,
+    "arabic_name": "شهد حسن فؤاد محمد المنشاوى",
+    "total_degree": 183
+  },
+  {
+    "seating_no": 1025378,
+    "arabic_name": "شهد عبدالمعطي رشاد عبدالفتاح",
+    "total_degree": 103
+  },
+  {
+    "seating_no": 1025379,
+    "arabic_name": "عهد جمال على سيد جمعه",
+    "total_degree": 149.5
+  },
+  {
+    "seating_no": 1025380,
+    "arabic_name": "فاطمه عبدرب النبى محمد سيد",
+    "total_degree": 164
+  },
+  {
+    "seating_no": 1025381,
+    "arabic_name": "فاطمه محمد خلف الله عبدالقادر",
+    "total_degree": 186
+  },
+  {
+    "seating_no": 1025382,
+    "arabic_name": "فاطمه محمود حسين محمد ابراهيم",
+    "total_degree": 128
+  },
+  {
+    "seating_no": 1025383,
+    "arabic_name": "فاطمه محمود عبدالله سيد خطاب",
+    "total_degree": 237.5
+  },
+  {
+    "seating_no": 1025384,
+    "arabic_name": "فرح عماد عبدالمجيد احمد",
+    "total_degree": 99.5
+  },
+  {
+    "seating_no": 1025385,
+    "arabic_name": "فيروز السيد عبدالنعيم ابوزيد",
+    "total_degree": 269.5
+  },
+  {
+    "seating_no": 1025386,
+    "arabic_name": "مارينا ابراهيم حسني ابراهيم",
+    "total_degree": 177
+  },
+  {
+    "seating_no": 1025387,
+    "arabic_name": "مريم امين عبدالرشيد امين",
+    "total_degree": 140
+  },
+  {
+    "seating_no": 1025388,
+    "arabic_name": "مريم عادل فتحى شحات",
+    "total_degree": 126
+  },
+  {
+    "seating_no": 1025389,
+    "arabic_name": "مريم مصطفى ممدوح حسين احمد",
+    "total_degree": 118.5
+  },
+  {
+    "seating_no": 1025390,
+    "arabic_name": "مريم وائل عبدالعزيز خليفه",
+    "total_degree": 133
+  },
+  {
+    "seating_no": 1025391,
+    "arabic_name": "ملك محمد محمود محمد",
+    "total_degree": 121.5
+  },
+  {
+    "seating_no": 1025392,
+    "arabic_name": "منه الله محمد محمود سيد",
+    "total_degree": 141
+  },
+  {
+    "seating_no": 1025393,
+    "arabic_name": "ميرنا طلعت شحاته على الديك",
+    "total_degree": 157
+  },
+  {
+    "seating_no": 1025394,
+    "arabic_name": "ميرنا ياسر محمد عبدالجيد",
+    "total_degree": 138.5
+  },
+  {
+    "seating_no": 1025395,
+    "arabic_name": "ندى محمد عبدالواحد شحات عبدالعال",
+    "total_degree": 133.5
+  },
+  {
+    "seating_no": 1025396,
+    "arabic_name": "نور محمد سيد صديق",
+    "total_degree": 120
+  },
+  {
+    "seating_no": 1025397,
+    "arabic_name": "نورهان محمد ابراهيم احمد",
+    "total_degree": 121
+  },
+  {
+    "seating_no": 1025398,
+    "arabic_name": "هاجر رمضان محمود محمد ابوالحسن",
+    "total_degree": 127.5
+  },
+  {
+    "seating_no": 1025399,
+    "arabic_name": "هاجر فتحى عبدالعزيز ابراهيم",
+    "total_degree": 140.5
+  },
+  {
+    "seating_no": 1025400,
+    "arabic_name": "هاجر ياسر عبدالتواب سيد احمد",
+    "total_degree": 113
+  },
+  {
+    "seating_no": 1025401,
+    "arabic_name": "هنا رجب محمد عبدالمهدى",
+    "total_degree": 132
+  },
+  {
+    "seating_no": 1025402,
+    "arabic_name": "هنا محمد محمد عطيه",
+    "total_degree": 150
+  },
+  {
+    "seating_no": 1025403,
+    "arabic_name": "وعد زكريا حسن محمد",
+    "total_degree": 131
+  },
+  {
+    "seating_no": 1025404,
+    "arabic_name": "يوستينا نادر صبرى جميل",
+    "total_degree": 134
+  },
+  {
+    "seating_no": 1025405,
+    "arabic_name": "اسماء محمد فاروق عبدالودود عبدالله",
+    "total_degree": 125
+  },
+  {
+    "seating_no": 1025406,
+    "arabic_name": "افنان وائل حسانين حسن",
+    "total_degree": 122
+  },
+  {
+    "seating_no": 1025407,
+    "arabic_name": "بسمله حاتم محمد بهاءالدين السيد",
+    "total_degree": 147.5
+  },
+  {
+    "seating_no": 1025408,
+    "arabic_name": "جنات احمد رجب ابراهيم بدوى",
+    "total_degree": 113
+  },
+  {
+    "seating_no": 1025409,
+    "arabic_name": "جنات محمد نصر صالح",
+    "total_degree": 140
+  },
+  {
+    "seating_no": 1025410,
+    "arabic_name": "جومانه طارق حسن عبدالمقصود",
+    "total_degree": 110
+  },
+  {
+    "seating_no": 1025411,
+    "arabic_name": "حبيبه حسين مسعود بلال",
+    "total_degree": 188.5
+  },
+  {
+    "seating_no": 1025412,
+    "arabic_name": "حبيبه رأفت سيد حافظ",
+    "total_degree": 142.5
+  },
+  {
+    "seating_no": 1025413,
+    "arabic_name": "حبيبه رسلان فراج خفاجى",
+    "total_degree": 144
+  },
+  {
+    "seating_no": 1025414,
+    "arabic_name": "حبيبه مصطفى محمد عبدالمبدى",
+    "total_degree": 146
+  },
+  {
+    "seating_no": 1025415,
+    "arabic_name": "حنين احمد محمد عبدالمجيد",
+    "total_degree": 225.5
+  },
+  {
+    "seating_no": 1025416,
+    "arabic_name": "حنين رمضان عبدالحميد محمد",
+    "total_degree": 137
+  },
+  {
+    "seating_no": 1025417,
+    "arabic_name": "حياه اسامه محمود حسن",
+    "total_degree": 145
+  },
+  {
+    "seating_no": 1025418,
+    "arabic_name": "دعاء اشرف صادق عبدالشافى السمان",
+    "total_degree": 142
+  },
+  {
+    "seating_no": 1025419,
+    "arabic_name": "دميانه جرجس عبدالملاك عياد",
+    "total_degree": 135
+  },
+  {
+    "seating_no": 1025420,
+    "arabic_name": "رحمه جميل حمدان مرسى",
+    "total_degree": 120.5
+  },
+  {
+    "seating_no": 1025421,
+    "arabic_name": "رودينه مصطفى احمد محمد",
+    "total_degree": 113.5
+  },
+  {
+    "seating_no": 1025422,
+    "arabic_name": "ساره عبدالحميد محمود موسي",
+    "total_degree": 122
+  },
+  {
+    "seating_no": 1025423,
+    "arabic_name": "سلمى حسن ابراهيم عباس",
+    "total_degree": 120
+  },
+  {
+    "seating_no": 1025424,
+    "arabic_name": "سلمى محمود محمد عبدالله",
+    "total_degree": 179.5
+  },
+  {
+    "seating_no": 1025425,
+    "arabic_name": "سماء عصام محمود رمضان",
+    "total_degree": 129
+  },
+  {
+    "seating_no": 1025426,
+    "arabic_name": "سندس مدحت فوزى محمد",
+    "total_degree": 132
+  },
+  {
+    "seating_no": 1025427,
+    "arabic_name": "شاهندا رمضان محمد محمد",
+    "total_degree": 113.5
+  },
+  {
+    "seating_no": 1025428,
+    "arabic_name": "شهد بدوي خلف احمد علي",
+    "total_degree": 131.5
+  },
+  {
+    "seating_no": 1025429,
+    "arabic_name": "شهد معتصم كمال عبدالحميد",
+    "total_degree": 108.5
+  },
+  {
+    "seating_no": 1025430,
+    "arabic_name": "شيماء امين عبدالوهاب على",
+    "total_degree": 131
+  },
+  {
+    "seating_no": 1025431,
+    "arabic_name": "شيماء محروص ابراهيم عبدالمعز",
+    "total_degree": 130
+  },
+  {
+    "seating_no": 1025432,
+    "arabic_name": "غاده عادل ابراهيم محمد امين",
+    "total_degree": 114
+  },
+  {
+    "seating_no": 1025433,
+    "arabic_name": "فاطمه الزهراء عبدالناصر على طه",
+    "total_degree": 120
+  },
+  {
+    "seating_no": 1025434,
+    "arabic_name": "فاطمه سامح عبدالمحسن سلامه",
+    "total_degree": 126
+  },
+  {
+    "seating_no": 1025435,
+    "arabic_name": "كريمه اسحق عيد صادق",
+    "total_degree": 107.5
+  },
+  {
+    "seating_no": 1025436,
+    "arabic_name": "كنزى جلال احمد عبدالصادق",
+    "total_degree": 104.5
+  },
+  {
+    "seating_no": 1025437,
+    "arabic_name": "كنوز على محمود على",
+    "total_degree": 116
+  },
+  {
+    "seating_no": 1025438,
+    "arabic_name": "مارلى حازم صدقى توفيق",
+    "total_degree": 135
+  },
+  {
+    "seating_no": 1025439,
+    "arabic_name": "مريم خلف سعيد نون",
+    "total_degree": 135.5
+  },
+  {
+    "seating_no": 1025440,
+    "arabic_name": "مريم وليم نسيم ابراهيم",
+    "total_degree": 152.5
+  },
+  {
+    "seating_no": 1025441,
+    "arabic_name": "مغفره مجدى احمد حافظ الصايغ",
+    "total_degree": 108.5
+  },
+  {
+    "seating_no": 1025442,
+    "arabic_name": "ملك سالم فتحى جاب الله محمد",
+    "total_degree": 92
+  },
+  {
+    "seating_no": 1025443,
+    "arabic_name": "ملك محمود حسن بيومى جمعه",
+    "total_degree": 108
+  },
+  {
+    "seating_no": 1025444,
+    "arabic_name": "مى ربيع محمد سيد محمد",
+    "total_degree": 71.5
+  },
+  {
+    "seating_no": 1025445,
+    "arabic_name": "ميرام احمد محمود محمد",
+    "total_degree": 144.5
+  },
+  {
+    "seating_no": 1025446,
+    "arabic_name": "نانسى احمد محمود عبدالعزيز",
+    "total_degree": 115
+  },
+  {
+    "seating_no": 1025447,
+    "arabic_name": "ندى محمد عبدالمولى عبدالهادى",
+    "total_degree": 74
+  },
+  {
+    "seating_no": 1025448,
+    "arabic_name": "نور حسين طه محمود الديب",
+    "total_degree": 150.5
+  },
+  {
+    "seating_no": 1025449,
+    "arabic_name": "نورهان علي فاروق محمد حسن",
+    "total_degree": 186
+  },
+  {
+    "seating_no": 1025450,
+    "arabic_name": "هاجر احمد عادل عبدالباقى",
+    "total_degree": 162
+  },
+  {
+    "seating_no": 1025451,
+    "arabic_name": "هاجر احمد محمود محمود على سليمان",
+    "total_degree": 161.5
+  },
+  {
+    "seating_no": 1025452,
+    "arabic_name": "هاجر محمد فاضل وزيري",
+    "total_degree": 99
+  },
+  {
+    "seating_no": 1025453,
+    "arabic_name": "هدى نبيل محمد عبدالهادى",
+    "total_degree": 97.5
+  },
+  {
+    "seating_no": 1025454,
+    "arabic_name": "اسماء عبدالودود احمد علي",
+    "total_degree": 127
+  },
+  {
+    "seating_no": 1025455,
+    "arabic_name": "بسمله عصام سلومه محمد",
+    "total_degree": 136
+  },
+  {
+    "seating_no": 1025456,
+    "arabic_name": "بسنت محمود على حسن",
+    "total_degree": 119
+  },
+  {
+    "seating_no": 1025457,
+    "arabic_name": "جنى حاتم عبدالفتاح عبدالغنى عبدالفتاح",
+    "total_degree": 152
+  },
+  {
+    "seating_no": 1025458,
+    "arabic_name": "جنى محمد عبدالحسيب احمد",
+    "total_degree": 177.5
+  },
+  {
+    "seating_no": 1025459,
+    "arabic_name": "جومانا علاء محمد زكي مهاود",
+    "total_degree": 165
+  },
+  {
+    "seating_no": 1025460,
+    "arabic_name": "حبيبه احمد على احمد",
+    "total_degree": 120.5
+  },
+  {
+    "seating_no": 1025461,
+    "arabic_name": "حبيبه احمد فتحى واعر",
+    "total_degree": 132.5
+  },
+  {
+    "seating_no": 1025462,
+    "arabic_name": "حبيبه غريب عبدالعاطى زريعه",
+    "total_degree": 149.5
+  },
+  {
+    "seating_no": 1025463,
+    "arabic_name": "حبيبه كرم محمد على حسن",
+    "total_degree": 183.5
+  },
+  {
+    "seating_no": 1025464,
+    "arabic_name": "حلا اشرف سيد عبدالرحيم",
+    "total_degree": 112.5
+  },
+  {
+    "seating_no": 1025465,
+    "arabic_name": "حنين ياسر سيد انور",
+    "total_degree": 142
+  },
+  {
+    "seating_no": 1025466,
+    "arabic_name": "دعاء محمد سعد جاد",
+    "total_degree": 109.5
+  },
+  {
+    "seating_no": 1025467,
+    "arabic_name": "دعاء ممدوح حسن محمد",
+    "total_degree": 152.5
+  },
+  {
+    "seating_no": 1025468,
+    "arabic_name": "دعاء هاشم عبده موسى محمد",
+    "total_degree": 141.5
+  },
+  {
+    "seating_no": 1025469,
+    "arabic_name": "راكان محمد متولى محمود",
+    "total_degree": 148
+  },
+  {
+    "seating_no": 1025470,
+    "arabic_name": "رحمه وليد فرج عبدالعظيم",
+    "total_degree": 129
+  },
+  {
+    "seating_no": 1025471,
+    "arabic_name": "ردينا ياسر عبدالعزيز احمد علي",
+    "total_degree": 163.5
+  },
+  {
+    "seating_no": 1025472,
+    "arabic_name": "رضوى محمود عبدالله عطيه",
+    "total_degree": 138
+  },
+  {
+    "seating_no": 1025473,
+    "arabic_name": "رقيه طارق نبيه محمود العشماوى",
+    "total_degree": 131
+  },
+  {
+    "seating_no": 1025474,
+    "arabic_name": "رقيه مجدى عبدالعزيز سعد",
+    "total_degree": 137
+  },
+  {
+    "seating_no": 1025475,
+    "arabic_name": "رهام محمد ماهر جراده",
+    "total_degree": 162
+  },
+  {
+    "seating_no": 1025476,
+    "arabic_name": "زينه محمود توفيق محمود",
+    "total_degree": 188.5
+  },
+  {
+    "seating_no": 1025477,
+    "arabic_name": "ساره ابراهيم مصطفى محمد",
+    "total_degree": 134
+  },
+  {
+    "seating_no": 1025478,
+    "arabic_name": "ساره حامد محمد محمد",
+    "total_degree": 207.5
+  },
+  {
+    "seating_no": 1025479,
+    "arabic_name": "سلمى يسرى سلامه احمد ابراهيم",
+    "total_degree": 103
+  },
+  {
+    "seating_no": 1025480,
+    "arabic_name": "سما ابراهيم محمد كامل",
+    "total_degree": 123.5
+  },
+  {
+    "seating_no": 1025481,
+    "arabic_name": "سميره منتصر محمد ابوزيد",
+    "total_degree": 133
+  },
+  {
+    "seating_no": 1025482,
+    "arabic_name": "سندس اسماعيل عبدالمعطى احمد",
+    "total_degree": 163
+  },
+  {
+    "seating_no": 1025483,
+    "arabic_name": "سيمون موريس كمال دواد سليمان",
+    "total_degree": 175
+  },
+  {
+    "seating_no": 1025484,
+    "arabic_name": "شهد سيد عبدالسلام عبدالتواب",
+    "total_degree": 177
+  },
+  {
+    "seating_no": 1025485,
+    "arabic_name": "شيماء محمد سيد محمد",
+    "total_degree": 179
+  },
+  {
+    "seating_no": 1025486,
+    "arabic_name": "فاطمه احمد حسن عثمان",
+    "total_degree": 126
+  },
+  {
+    "seating_no": 1025487,
+    "arabic_name": "فاطمه على جابر محمد",
+    "total_degree": 92.5
+  },
+  {
+    "seating_no": 1025488,
+    "arabic_name": "فاطمه عمر محمود عبدالباقى",
+    "total_degree": 163.5
+  },
+  {
+    "seating_no": 1025489,
+    "arabic_name": "فيولا ماهر صليب بشاى",
+    "total_degree": 256
+  },
+  {
+    "seating_no": 1025490,
+    "arabic_name": "مريم رمضان محمد نصر",
+    "total_degree": 127.5
+  },
+  {
+    "seating_no": 1025491,
+    "arabic_name": "مريم عادل يشوع عزيز",
+    "total_degree": 100
+  },
+  {
+    "seating_no": 1025492,
+    "arabic_name": "مريم وليد محمد جمال",
+    "total_degree": 183.5
+  },
+  {
+    "seating_no": 1025493,
+    "arabic_name": "مريم وليد محمد عبده",
+    "total_degree": 141
+  },
+  {
+    "seating_no": 1025494,
+    "arabic_name": "ملك احمد كليب احمد",
+    "total_degree": 152
+  },
+  {
+    "seating_no": 1025495,
+    "arabic_name": "ملك سيد رجب عقيلى",
+    "total_degree": 169
+  },
+  {
+    "seating_no": 1025496,
+    "arabic_name": "ملك عبدالحميد كمال عبدالحميد",
+    "total_degree": 109.5
+  },
+  {
+    "seating_no": 1025497,
+    "arabic_name": "ملك عبدالكريم جلال كرار",
+    "total_degree": 124
+  },
+  {
+    "seating_no": 1025498,
+    "arabic_name": "ملك محمود صابر محمود صابر",
+    "total_degree": 127
+  },
+  {
+    "seating_no": 1025499,
+    "arabic_name": "ملك وليد عواد عمر سالم",
+    "total_degree": 134
+  },
+  {
+    "seating_no": 1025500,
+    "arabic_name": "منه الله امير ممدوح حسين",
+    "total_degree": 184.5
+  },
+  {
+    "seating_no": 1025501,
+    "arabic_name": "منه الله محمد رمضان فرغلى صديق",
+    "total_degree": 277.5
+  },
+  {
+    "seating_no": 1025502,
+    "arabic_name": "منه عادل عطيه السيد احمد",
+    "total_degree": 121.5
+  },
+  {
+    "seating_no": 1025503,
+    "arabic_name": "مها ابراهيم سيد عبدالسميع",
+    "total_degree": 90
+  },
+  {
+    "seating_no": 1025504,
+    "arabic_name": "ميار احمد خلف عبدالباسط",
+    "total_degree": 100
+  },
+  {
+    "seating_no": 1025505,
+    "arabic_name": "ميرنا ياسر باريز ابراهيم",
+    "total_degree": 88
+  },
+  {
+    "seating_no": 1025506,
+    "arabic_name": "ندا يسرى سيد عبدالرحمن",
+    "total_degree": 161.5
+  },
+  {
+    "seating_no": 1025507,
+    "arabic_name": "ندى سيفين حسنى ابراهيم",
+    "total_degree": 157
+  },
+  {
+    "seating_no": 1025508,
+    "arabic_name": "ندى شنوده برتى فرج",
+    "total_degree": 181
+  },
+  {
+    "seating_no": 1025509,
+    "arabic_name": "ندى عبدالجواد عبدالرحمن مصطفى",
+    "total_degree": 162
+  },
+  {
+    "seating_no": 1025510,
+    "arabic_name": "ندى محمود محمد محمدسليم",
+    "total_degree": 161.5
+  },
+  {
+    "seating_no": 1025511,
+    "arabic_name": "هاجر عبدالله خلف غانم سالم",
+    "total_degree": 118.5
+  },
+  {
+    "seating_no": 1025512,
+    "arabic_name": "هاجر محمود مصطفى محمود",
+    "total_degree": 151
+  },
+  {
+    "seating_no": 1025513,
+    "arabic_name": "هايدى احمد ابوالفتوح عبدالله",
+    "total_degree": 160
+  },
+  {
+    "seating_no": 1025514,
+    "arabic_name": "وفاء محمد رجب باهى مجاور",
+    "total_degree": 108
+  },
+  {
+    "seating_no": 1025515,
+    "arabic_name": "ولاء عبدالعزيز حمدى عبدالعزيز",
+    "total_degree": 121.5
+  },
+  {
+    "seating_no": 1025516,
+    "arabic_name": "يارا فؤاد سيد احمد",
+    "total_degree": 129
+  },
+  {
+    "seating_no": 1025517,
+    "arabic_name": "ياسمين خالد فراج عطيه",
+    "total_degree": 128.5
+  },
+  {
+    "seating_no": 1025518,
+    "arabic_name": "بسمله ايمن محمد ابراهيم",
+    "total_degree": 169.5
+  },
+  {
+    "seating_no": 1025519,
+    "arabic_name": "حنين عادل حامد حسن",
+    "total_degree": 147.5
+  },
+  {
+    "seating_no": 1025520,
+    "arabic_name": "شهد محمد عربى محمد محمود",
+    "total_degree": 124
+  },
+  {
+    "seating_no": 1025521,
+    "arabic_name": "بسمله مصطفى احمد السيد",
+    "total_degree": 108
+  },
+  {
+    "seating_no": 1025522,
+    "arabic_name": "بسمه عمرو رفاعى محمد",
+    "total_degree": 130.5
+  },
+  {
+    "seating_no": 1025523,
+    "arabic_name": "رحاب احمد درويش مصطفى",
+    "total_degree": 129
+  },
+  {
+    "seating_no": 1025524,
+    "arabic_name": "سندس محمود احمد احمد",
+    "total_degree": 108.5
+  },
+  {
+    "seating_no": 1025525,
+    "arabic_name": "شروق عشرى مرزوق عبدالمقصود محمد",
+    "total_degree": 155
+  },
+  {
+    "seating_no": 1025526,
+    "arabic_name": "شهد احمد ابراهيم توفيق",
+    "total_degree": 148
+  },
+  {
+    "seating_no": 1025527,
+    "arabic_name": "ابراهيم محمد محمد محمد ابراهيم",
+    "total_degree": 163
+  },
+  {
+    "seating_no": 1025528,
+    "arabic_name": "احمد محمد مصطفى محمد",
+    "total_degree": 116
+  },
+  {
+    "seating_no": 1025529,
+    "arabic_name": "الحسين احمد عبدالمنعم رفاعى",
+    "total_degree": 265.5
+  },
+  {
+    "seating_no": 1025530,
+    "arabic_name": "بيتر رفيق عطيه يوسف ابراهيم",
+    "total_degree": 133.5
+  },
+  {
+    "seating_no": 1025531,
+    "arabic_name": "عبدالرحمن محمد احمد عبدالله سيد",
+    "total_degree": 93
+  },
+  {
+    "seating_no": 1025532,
+    "arabic_name": "علاء محمد عبد العاطي محمد",
+    "total_degree": 198.5
+  },
+  {
+    "seating_no": 1025533,
+    "arabic_name": "علي حسن عبدالعزيز محمد",
+    "total_degree": 103
+  },
+  {
+    "seating_no": 1025534,
+    "arabic_name": "محمد خالد خلف الله محمد",
+    "total_degree": 193.5
+  },
+  {
+    "seating_no": 1025535,
+    "arabic_name": "محمد عمرو على السيد",
+    "total_degree": 122
+  },
+  {
+    "seating_no": 1025536,
+    "arabic_name": "يحيى نصر كمال الدين شحات",
+    "total_degree": 143
+  },
+  {
+    "seating_no": 1025537,
+    "arabic_name": "ادم محمد علي ابو العلا على",
+    "total_degree": 179.5
+  },
+  {
+    "seating_no": 1025538,
+    "arabic_name": "محمد سيد حافظ على على ولهان",
+    "total_degree": 141.5
+  },
+  {
+    "seating_no": 1025539,
+    "arabic_name": "احمد ايمن كمال عبدالله سعيد",
+    "total_degree": 188
+  },
+  {
+    "seating_no": 1025540,
+    "arabic_name": "حسام الدين نادى بدر عبدالحميد فرغلي",
+    "total_degree": 234
+  },
+  {
+    "seating_no": 1025541,
+    "arabic_name": "سعيد محمد عبدالله يونس على",
+    "total_degree": 87
+  },
+  {
+    "seating_no": 1025542,
+    "arabic_name": "عبدالرحمن ممتاز كمال فؤاد",
+    "total_degree": 113
+  },
+  {
+    "seating_no": 1025543,
+    "arabic_name": "محمد صلاح محمد بغدادى",
+    "total_degree": 126
+  },
+  {
+    "seating_no": 1025544,
+    "arabic_name": "يوسف محمد عبدالعال محمد عبدالعال",
+    "total_degree": 133
+  },
+  {
+    "seating_no": 1025545,
+    "arabic_name": "السيد انور السيد ابراهيم",
+    "total_degree": 81
+  },
+  {
+    "seating_no": 1025546,
+    "arabic_name": "مؤمن حسن عبدالعزيز محمد حسن",
+    "total_degree": 104
+  },
+  {
+    "seating_no": 1025547,
+    "arabic_name": "محمد محسن رمضان سالم عبدالله",
+    "total_degree": 148
+  },
+  {
+    "seating_no": 1025548,
+    "arabic_name": "حمزة شريف صلاح الدين على درويش",
+    "total_degree": 106.5
+  },
+  {
+    "seating_no": 1025549,
+    "arabic_name": "محمد احمد سالم حسن جدع",
+    "total_degree": 109
+  },
+  {
+    "seating_no": 1025550,
+    "arabic_name": "مهند خالد سيد مهدى",
+    "total_degree": 139
+  },
+  {
+    "seating_no": 1025552,
+    "arabic_name": "يوسف كارم فتحي عبدالحميد",
+    "total_degree": 173
+  },
+  {
+    "seating_no": 1025553,
+    "arabic_name": "على محمد حنفى محمد الطويل",
+    "total_degree": 141.5
+  },
+  {
+    "seating_no": 1025554,
+    "arabic_name": "اسلام وائل جمال محمد",
+    "total_degree": 76
+  },
+  {
+    "seating_no": 1025555,
+    "arabic_name": "يوسف دياب دياب سلامه",
+    "total_degree": 100
+  },
+  {
+    "seating_no": 1025556,
+    "arabic_name": "شمس الدين احمد مجدى اسماعيل",
+    "total_degree": 100
+  },
+  {
+    "seating_no": 1025557,
+    "arabic_name": "معتز وائل محمد محمود",
+    "total_degree": 150.5
+  },
+  {
+    "seating_no": 1025607,
+    "arabic_name": "اسراء رافت سعد محمد",
+    "total_degree": 259
+  },
+  {
+    "seating_no": 1025608,
+    "arabic_name": "ايمان احمد فرحات على",
+    "total_degree": 106.5
+  },
+  {
+    "seating_no": 1025609,
+    "arabic_name": "جمانه محمد يسرى عبدالعظيم محمد",
+    "total_degree": 148
+  },
+  {
+    "seating_no": 1025610,
+    "arabic_name": "جنه محمد حسنى عويس السيد",
+    "total_degree": 171.5
+  },
+  {
+    "seating_no": 1025611,
+    "arabic_name": "حبيبه حمدي محمد عبدالحميد",
+    "total_degree": 156.5
+  },
+  {
+    "seating_no": 1025612,
+    "arabic_name": "حبيبه عبدالعزيز زكريا محمود",
+    "total_degree": 192.5
+  },
+  {
+    "seating_no": 1025613,
+    "arabic_name": "دعاء احمد عبدالصمد عبدالعظيم",
+    "total_degree": 212.5
+  },
+  {
+    "seating_no": 1025614,
+    "arabic_name": "رحمه سامح سالم عبدالعزيز منصور",
+    "total_degree": 207.5
+  },
+  {
+    "seating_no": 1025615,
+    "arabic_name": "رضوى زايد غانم مصري",
+    "total_degree": 252.5
+  },
+  {
+    "seating_no": 1025616,
+    "arabic_name": "ساره محمود سيد صادق",
+    "total_degree": 170
+  },
+  {
+    "seating_no": 1025617,
+    "arabic_name": "ساره وجدى وزيرى بحر",
+    "total_degree": 178.5
+  },
+  {
+    "seating_no": 1025618,
+    "arabic_name": "سلمى سيد سرحان محروس فراج",
+    "total_degree": 93
+  },
+  {
+    "seating_no": 1025619,
+    "arabic_name": "سلمى هيثم محمد احمد",
+    "total_degree": 165.5
+  },
+  {
+    "seating_no": 1025620,
+    "arabic_name": "سما عمرو كمال طنطاوى",
+    "total_degree": 193.5
+  },
+  {
+    "seating_no": 1025621,
+    "arabic_name": "شروق يسرى احمد عبدالرحيم",
+    "total_degree": 193
+  },
+  {
+    "seating_no": 1025622,
+    "arabic_name": "شهد اشرف سالم حسين",
+    "total_degree": 237
+  },
+  {
+    "seating_no": 1025623,
+    "arabic_name": "عطا حسن فاروز السيد",
+    "total_degree": 116.5
+  },
+  {
+    "seating_no": 1025624,
+    "arabic_name": "لوسيان حسام الدين مصطفى احمد مصطفى",
+    "total_degree": 160
+  },
+  {
+    "seating_no": 1025625,
+    "arabic_name": "مروه سليمى ابوالقاسم سليمان",
+    "total_degree": 158
+  },
+  {
+    "seating_no": 1025626,
+    "arabic_name": "مريانا وليد فوزى زكى",
+    "total_degree": 168
+  },
+  {
+    "seating_no": 1025627,
+    "arabic_name": "مريم تامر مصطفى محمد",
+    "total_degree": 204.5
+  },
+  {
+    "seating_no": 1025628,
+    "arabic_name": "مريم مصطفي محمد عبدالواحد",
+    "total_degree": 141.5
+  },
+  {
+    "seating_no": 1025629,
+    "arabic_name": "ملك حمدى عبداللطيف عبدالعزيز محمد",
+    "total_degree": 223.5
+  },
+  {
+    "seating_no": 1025630,
+    "arabic_name": "ملك محمد احمد محمد",
+    "total_degree": 194
+  },
+  {
+    "seating_no": 1025631,
+    "arabic_name": "منه الله محمد خلف عبد الرحيم محمد",
+    "total_degree": 167
+  },
+  {
+    "seating_no": 1025632,
+    "arabic_name": "منه الله هشام محمد محمود دعبس",
+    "total_degree": 145
+  },
+  {
+    "seating_no": 1025633,
+    "arabic_name": "نورسين رزق عبدالسيد فرج شهيد",
+    "total_degree": 150
+  },
+  {
+    "seating_no": 1025634,
+    "arabic_name": "هاجر احمد حسانين سيد عبدالمجيد",
+    "total_degree": 130
+  },
+  {
+    "seating_no": 1025635,
+    "arabic_name": "هاجر محمد رمضان احمد محمد",
+    "total_degree": 115
+  },
+  {
+    "seating_no": 1025636,
+    "arabic_name": "يمنى شريف على طه",
+    "total_degree": 194.5
+  },
+  {
+    "seating_no": 1025637,
+    "arabic_name": "حبيبه كامل يوسف ابراهيم",
+    "total_degree": 188.5
+  },
+  {
+    "seating_no": 1025638,
+    "arabic_name": "حنين حمدي رشاد عبدالعليم خاطر",
+    "total_degree": 129
+  },
+  {
+    "seating_no": 1025639,
+    "arabic_name": "روميساء اشرف عبدالرحيم محمد",
+    "total_degree": 147
+  },
+  {
+    "seating_no": 1025640,
+    "arabic_name": "سلمي مجدي رشاد قرني محمد",
+    "total_degree": 169
+  },
+  {
+    "seating_no": 1025641,
+    "arabic_name": "سلمى مجدى عبدالحليم عبدالقوى",
+    "total_degree": 194.5
+  },
+  {
+    "seating_no": 1025642,
+    "arabic_name": "شذي بهاء عبدالمحسن محمد",
+    "total_degree": 167
+  },
+  {
+    "seating_no": 1025643,
+    "arabic_name": "صباح كامل عبدالله مصطفى",
+    "total_degree": 135.5
+  },
+  {
+    "seating_no": 1025644,
+    "arabic_name": "كارين جمال شنوده ميخائيل مرجان",
+    "total_degree": 198
+  },
+  {
+    "seating_no": 1025645,
+    "arabic_name": "مريم طارق جامع ركابى",
+    "total_degree": 169
+  },
+  {
+    "seating_no": 1025646,
+    "arabic_name": "نورهان محمد عبدالحميد محمد ابو عليو",
+    "total_degree": 159.5
+  },
+  {
+    "seating_no": 1025647,
+    "arabic_name": "الاء فايز خلف محمد",
+    "total_degree": 176
+  },
+  {
+    "seating_no": 1025648,
+    "arabic_name": "بسمله بلال عبدالمحسن ابراهيم",
+    "total_degree": 203.5
+  },
+  {
+    "seating_no": 1025649,
+    "arabic_name": "تقي احمد محمد محمد ابوالنجا",
+    "total_degree": 194.5
+  },
+  {
+    "seating_no": 1025650,
+    "arabic_name": "جنه حسن خليفه محمد",
+    "total_degree": 150
+  },
+  {
+    "seating_no": 1025651,
+    "arabic_name": "رؤي حسين مهران حسين",
+    "total_degree": 134.5
+  },
+  {
+    "seating_no": 1025652,
+    "arabic_name": "ريناد ياسر مشرف نبوى",
+    "total_degree": 157
+  },
+  {
+    "seating_no": 1025653,
+    "arabic_name": "فرح عادل احمد محمود قناوى",
+    "total_degree": 168.5
+  },
+  {
+    "seating_no": 1025654,
+    "arabic_name": "لوجين عبدالناصر احمد عبده برعى",
+    "total_degree": 212
+  },
+  {
+    "seating_no": 1025655,
+    "arabic_name": "مريم احمد محمود ابراهيم عيد الشيخ",
+    "total_degree": 183.5
+  },
+  {
+    "seating_no": 1025656,
+    "arabic_name": "هاجر مصطفى ابراهيم يوسف",
+    "total_degree": 175
+  },
+  {
+    "seating_no": 1025657,
+    "arabic_name": "نيجار هانى محمد حسن",
+    "total_degree": 187.5
+  },
+  {
+    "seating_no": 1025658,
+    "arabic_name": "بسمله خالد محمد عبده",
+    "total_degree": 83
+  },
+  {
+    "seating_no": 1025659,
+    "arabic_name": "بسمله محمود احمد عبدالرحمن حسنين",
+    "total_degree": 97
+  },
+  {
+    "seating_no": 1025660,
+    "arabic_name": "جومانه هانى زينهم كامل",
+    "total_degree": 144.5
+  },
+  {
+    "seating_no": 1025661,
+    "arabic_name": "سلمى سيد مصطفى انور عثمان",
+    "total_degree": 160
+  },
+  {
+    "seating_no": 1025662,
+    "arabic_name": "فاطمه محمد ابراهيم على",
+    "total_degree": 80
+  },
+  {
+    "seating_no": 1025663,
+    "arabic_name": "مريم مصطفي محمد سليم محمد",
+    "total_degree": 133.5
+  },
+  {
+    "seating_no": 1025664,
+    "arabic_name": "منى معاز جمعه سيد",
+    "total_degree": 128
+  },
+  {
+    "seating_no": 1025665,
+    "arabic_name": "يارا عصام سعد عبدالناصر",
+    "total_degree": 111
+  },
+  {
+    "seating_no": 1025666,
+    "arabic_name": "الاء محمد عبد الرازق بدرى",
+    "total_degree": 122
+  },
+  {
+    "seating_no": 1025667,
+    "arabic_name": "جنه محمد حسين محمد",
+    "total_degree": 115
+  },
+  {
+    "seating_no": 1025668,
+    "arabic_name": "سماء جابر محمد مصطفى",
+    "total_degree": 146
+  },
+  {
+    "seating_no": 1025669,
+    "arabic_name": "هاجر علاء عبداللطيف مصري",
+    "total_degree": 134.5
+  },
+  {
+    "seating_no": 1025670,
+    "arabic_name": "ياسمين محمود حمدي محمد",
+    "total_degree": 109
+  },
+  {
+    "seating_no": 1025672,
+    "arabic_name": "ايه رجب محمد سليم بركات",
+    "total_degree": 146
+  },
+  {
+    "seating_no": 1025673,
+    "arabic_name": "حبيبة أحمد هاشم زيان",
+    "total_degree": 94.5
+  },
+  {
+    "seating_no": 1025674,
+    "arabic_name": "شهد رضا زكريا علي",
+    "total_degree": 93
+  },
+  {
+    "seating_no": 1025675,
+    "arabic_name": "غاده احمد طه عوض محمد محمد",
+    "total_degree": 132
+  },
+  {
+    "seating_no": 1025676,
+    "arabic_name": "مريم هانى عاطف عبدالرحمن",
+    "total_degree": 128
+  },
+  {
+    "seating_no": 1025677,
+    "arabic_name": "منه اشرف سعيد طه",
+    "total_degree": 134
+  },
+  {
+    "seating_no": 1025678,
+    "arabic_name": "يوستينا ثابت ملقى سعيد",
+    "total_degree": 124.5
+  },
+  {
+    "seating_no": 1025679,
+    "arabic_name": "سندس عبدالعظيم محمد محمد",
+    "total_degree": 171.5
+  },
+  {
+    "seating_no": 1025680,
+    "arabic_name": "مى محمد عبدالمالك محمود",
+    "total_degree": 118.5
+  },
+  {
+    "seating_no": 1025681,
+    "arabic_name": "هديل سعد على عثمان ادم",
+    "total_degree": 104.5
+  },
+  {
+    "seating_no": 1025682,
+    "arabic_name": "همسه اشرف خالد احمد",
+    "total_degree": 208.5
+  },
+  {
+    "seating_no": 1025683,
+    "arabic_name": "ريوان عمرو فتحى عبدالغفارمحمد",
+    "total_degree": 167.5
+  },
+  {
+    "seating_no": 1025684,
+    "arabic_name": "هاجر يوسف عبدالحى حسن محمد",
+    "total_degree": 109.5
+  },
+  {
+    "seating_no": 1025685,
+    "arabic_name": "الهام محمد رفعت بخيت",
+    "total_degree": 0
+  },
+  {
+    "seating_no": 1025686,
+    "arabic_name": "حنين احمد السيد احمد السيد",
+    "total_degree": 99
+  },
+  {
+    "seating_no": 1025687,
+    "arabic_name": "مريم احمد سلامه احمد محمد سراج",
+    "total_degree": 134.5
+  },
+  {
+    "seating_no": 1025688,
+    "arabic_name": "اسراء محمد سعيد عبد الحميد",
+    "total_degree": 136
+  },
+  {
+    "seating_no": 1025689,
+    "arabic_name": "نورهان محمد احمد محمد",
+    "total_degree": 100.5
+  },
+  {
+    "seating_no": 1025690,
+    "arabic_name": "هاجر محمد احمد محمد",
+    "total_degree": 90
+  },
+  {
+    "seating_no": 1025691,
+    "arabic_name": "شهد محمد محمد سميرعطيه",
+    "total_degree": 104.5
+  },
+  {
+    "seating_no": 1025692,
+    "arabic_name": "مريم عصام حسين محمد",
+    "total_degree": 158.5
+  },
+  {
+    "seating_no": 1025693,
+    "arabic_name": "شهد عمرو ابراهيم على",
+    "total_degree": 98.5
+  },
+  {
+    "seating_no": 1025694,
+    "arabic_name": "شروق محمد فوزى محمد",
+    "total_degree": 136
+  },
+  {
+    "seating_no": 1025695,
+    "arabic_name": "جودى احمد امام على",
+    "total_degree": 184
+  },
+  {
+    "seating_no": 1025696,
+    "arabic_name": "ندى اسامه مكرم اسعد مسعود",
+    "total_degree": 92
+  },
+  {
+    "seating_no": 1025697,
+    "arabic_name": "ضحى تامر سيد احمد لطفى مصطفى",
+    "total_degree": 126.5
+  },
+  {
+    "seating_no": 1025730,
+    "arabic_name": "ابراهيم محمد احمد فهيم احمد",
+    "total_degree": 285.5
+  },
+  {
+    "seating_no": 1025731,
+    "arabic_name": "احمد ابراهيم عبدالعظيم محمد عبيد",
+    "total_degree": 276.5
+  },
+  {
+    "seating_no": 1025732,
+    "arabic_name": "احمد احمد مجاهد محمود احمد",
+    "total_degree": 199.5
+  },
+  {
+    "seating_no": 1025733,
+    "arabic_name": "احمد جمعه مصطفى محمد مصطفى",
+    "total_degree": 248.5
+  },
+  {
+    "seating_no": 1025734,
+    "arabic_name": "احمد دسوقى جابر محمود محمد",
+    "total_degree": 246.5
+  },
+  {
+    "seating_no": 1025735,
+    "arabic_name": "احمد عاطف لطفى سلطان محمد",
+    "total_degree": 123
+  },
+  {
+    "seating_no": 1025736,
+    "arabic_name": "احمد محمد فوزي محمد تمام",
+    "total_degree": 228.5
+  },
+  {
+    "seating_no": 1025737,
+    "arabic_name": "ادم محمود عطيه محمود إبراهيم الديب",
+    "total_degree": 216.5
+  },
+  {
+    "seating_no": 1025738,
+    "arabic_name": "ادهم اشرف محمد محمد سعيد حمد",
+    "total_degree": 208
+  },
+  {
+    "seating_no": 1025739,
+    "arabic_name": "اسلام اسامه حسين حسوبه",
+    "total_degree": 258.5
+  },
+  {
+    "seating_no": 1025740,
+    "arabic_name": "اسلام رجب سعد سلامه زياده",
+    "total_degree": 193
+  },
+  {
+    "seating_no": 1025741,
+    "arabic_name": "انس علي جبر حسن عبدالهادي",
+    "total_degree": 207.5
+  },
+  {
+    "seating_no": 1025742,
+    "arabic_name": "باسم تامر عبدالعزيز سالم سليمان",
+    "total_degree": 240.5
+  },
+  {
+    "seating_no": 1025743,
+    "arabic_name": "زياد سيد على احمد ابراهيم",
+    "total_degree": 261
+  },
+  {
+    "seating_no": 1025744,
+    "arabic_name": "زياد عصام احمد محمد حمدى",
+    "total_degree": 199
+  },
+  {
+    "seating_no": 1025745,
+    "arabic_name": "زياد محمد عبدالرحمن محمد فتح الله",
+    "total_degree": 241.5
+  },
+  {
+    "seating_no": 1025746,
+    "arabic_name": "سعيد خالد عبدالعزيز احمد سيد احمد",
+    "total_degree": 267.5
+  },
+  {
+    "seating_no": 1025747,
+    "arabic_name": "شعبان حنفى شعبان حنفى حسن خطاب",
+    "total_degree": 255.5
+  },
+  {
+    "seating_no": 1025748,
+    "arabic_name": "طارق ايمن سعد عبده سيد احمد",
+    "total_degree": 197
+  },
+  {
+    "seating_no": 1025749,
+    "arabic_name": "عبدالرحمن على عبدالعال بشندى حسين",
+    "total_degree": 198
+  },
+  {
+    "seating_no": 1025750,
+    "arabic_name": "عبدالرحمن كمال على محمد الكارته",
+    "total_degree": 211
+  },
+  {
+    "seating_no": 1025751,
+    "arabic_name": "عبدالرحمن محمد عبدالقوي بدوى محمد",
+    "total_degree": 202.5
+  },
+  {
+    "seating_no": 1025752,
+    "arabic_name": "عبدالرحمن ياسر محمد محمود احمد",
+    "total_degree": 218.5
+  },
+  {
+    "seating_no": 1025754,
+    "arabic_name": "على حسين عبدالفتاح عبدالملك حسين",
+    "total_degree": 188
+  },
+  {
+    "seating_no": 1025755,
+    "arabic_name": "على رمضان على عبدالعال عوض الله",
+    "total_degree": 183.5
+  },
+  {
+    "seating_no": 1025756,
+    "arabic_name": "عمار سلامه محمد على محمد",
+    "total_degree": 206
+  },
+  {
+    "seating_no": 1025757,
+    "arabic_name": "عمر خالد محمد ابوبكر درويش على",
+    "total_degree": 197.5
+  },
+  {
+    "seating_no": 1025758,
+    "arabic_name": "عمر عبدالرحمن شاكر على محمد ابوشوشه",
+    "total_degree": 165
+  },
+  {
+    "seating_no": 1025759,
+    "arabic_name": "عمر وليد محي الدين محمد لطفي",
+    "total_degree": 222.5
+  },
+  {
+    "seating_no": 1025760,
+    "arabic_name": "عمرو تامر سليمان صالح محمد",
+    "total_degree": 225.5
+  },
+  {
+    "seating_no": 1025761,
+    "arabic_name": "عمرو فتحى محمد عبدالوهاب عبدالجيد",
+    "total_degree": 263
+  },
+  {
+    "seating_no": 1025762,
+    "arabic_name": "عيد جمال عيد محمد مشرف",
+    "total_degree": 281.5
+  },
+  {
+    "seating_no": 1025763,
+    "arabic_name": "كريم عبدالحميد جمعه عكاشه جلال",
+    "total_degree": 194
+  },
+  {
+    "seating_no": 1025764,
+    "arabic_name": "مؤمن خالد فوزى عبدالحميد مكرم",
+    "total_degree": 239.5
+  },
+  {
+    "seating_no": 1025765,
+    "arabic_name": "ماذن محمد سيد محمد احمد",
+    "total_degree": 209
+  },
+  {
+    "seating_no": 1025766,
+    "arabic_name": "محمد احمد احمد عبدالفتاح محمد",
+    "total_degree": 149.5
+  },
+  {
+    "seating_no": 1025767,
+    "arabic_name": "محمد احمد السيد فوزي العفيفى احمد",
+    "total_degree": 178.5
+  },
+  {
+    "seating_no": 1025768,
+    "arabic_name": "محمد احمد عبدالفتاح احمد حسانين",
+    "total_degree": 173
+  },
+  {
+    "seating_no": 1025769,
+    "arabic_name": "محمد احمد محمود عباس",
+    "total_degree": 210
+  },
+  {
+    "seating_no": 1025770,
+    "arabic_name": "محمد اشرف عدلى حسان عدلى",
+    "total_degree": 172.5
+  },
+  {
+    "seating_no": 1025771,
+    "arabic_name": "محمد جلال معوض إبراهيم صقر",
+    "total_degree": 208
+  },
+  {
+    "seating_no": 1025772,
+    "arabic_name": "محمد حاتم محمد علي حسن",
+    "total_degree": 207.5
+  },
+  {
+    "seating_no": 1025773,
+    "arabic_name": "محمد خالد محمد محمود احمد",
+    "total_degree": 204
+  },
+  {
+    "seating_no": 1025774,
+    "arabic_name": "محمد صلاح الدين سعد إبراهيم مأمون",
+    "total_degree": 198.5
+  },
+  {
+    "seating_no": 1025775,
+    "arabic_name": "محمد عبدالسلام سالم عبدالسلام جاد",
+    "total_degree": 217
+  },
+  {
+    "seating_no": 1025776,
+    "arabic_name": "محمد عبدالقوى محمد عبدالقوى محمد",
+    "total_degree": 183
+  },
+  {
+    "seating_no": 1025777,
+    "arabic_name": "محمد محمود عبدالفتاح احمد اسماعيل",
+    "total_degree": 250
+  },
+  {
+    "seating_no": 1025778,
+    "arabic_name": "محمد محمود علي امين يوسف",
+    "total_degree": 186
+  },
+  {
+    "seating_no": 1025779,
+    "arabic_name": "محمد ناصر توفيق عبدالمجيد محمد",
+    "total_degree": 191.5
+  },
+  {
+    "seating_no": 1025780,
+    "arabic_name": "محمد هانى عبدالله محمد حسن",
+    "total_degree": 178.5
+  },
+  {
+    "seating_no": 1025781,
+    "arabic_name": "محمود بكر حسن عبدالرحيم",
+    "total_degree": 176.5
+  },
+  {
+    "seating_no": 1025782,
+    "arabic_name": "محمود سعيد حسين محمد إبراهيم",
+    "total_degree": 188
+  },
+  {
+    "seating_no": 1025783,
+    "arabic_name": "مروان حماده عبدالله علي عبد القادر",
+    "total_degree": 193
+  },
+  {
+    "seating_no": 1025784,
+    "arabic_name": "مصطفي محمد علي عبدالعظيم حموده",
+    "total_degree": 236.5
+  },
+  {
+    "seating_no": 1025785,
+    "arabic_name": "مصطفى يوسف سباعى عبدالباسط يوسف",
+    "total_degree": 171.5
+  },
+  {
+    "seating_no": 1025786,
+    "arabic_name": "معاذ يحيى عباس محمد عباس",
+    "total_degree": 191
+  },
+  {
+    "seating_no": 1025787,
+    "arabic_name": "يوسف ايمن ابراهيم علي نعمه الله",
+    "total_degree": 201.5
+  },
+  {
+    "seating_no": 1025788,
+    "arabic_name": "يوسف حمدي عبدالعزيز احمد سلام",
+    "total_degree": 196
+  },
+  {
+    "seating_no": 1025789,
+    "arabic_name": "يوسف عبدالغنى محمد عبدالغنى محمد",
+    "total_degree": 221.5
+  },
+  {
+    "seating_no": 1025790,
+    "arabic_name": "يوسف عمادالدين مختار محمد",
+    "total_degree": 160.5
+  },
+  {
+    "seating_no": 1025791,
+    "arabic_name": "يوسف عمرو ابراهيم محمد إبراهيم",
+    "total_degree": 194
+  },
+  {
+    "seating_no": 1025792,
+    "arabic_name": "يوسف محمد عبدالنبى حسين يحى",
+    "total_degree": 173.5
+  },
+  {
+    "seating_no": 1025793,
+    "arabic_name": "احمد سمير احمد محمود احمد",
+    "total_degree": 188.5
+  },
+  {
+    "seating_no": 1025794,
+    "arabic_name": "احمد محمد سمير سيد عبد الرحمن",
+    "total_degree": 214.5
+  },
+  {
+    "seating_no": 1025795,
+    "arabic_name": "احمد محمد عوض الله حسن على",
+    "total_degree": 190
+  },
+  {
+    "seating_no": 1025796,
+    "arabic_name": "احمد موسي محمد موسي الحساينه",
+    "total_degree": 237.5
+  },
+  {
+    "seating_no": 1025797,
+    "arabic_name": "اسلام احمد عبدالرحمن على محمد",
+    "total_degree": 218
+  },
+  {
+    "seating_no": 1025798,
+    "arabic_name": "اسلام محمد عبدالوارث محمد",
+    "total_degree": 217
+  },
+  {
+    "seating_no": 1025799,
+    "arabic_name": "اياد عماد زينهم زينهم محمد",
+    "total_degree": 154
+  },
+  {
+    "seating_no": 1025800,
+    "arabic_name": "بلال خليفه محمد خليفه يونس",
+    "total_degree": 214.5
+  },
+  {
+    "seating_no": 1025801,
+    "arabic_name": "بيومى نادر بيومى حسن بيومى",
+    "total_degree": 219.5
+  },
+  {
+    "seating_no": 1025802,
+    "arabic_name": "حسام الدين مصطفى احمد المصرى محمد",
+    "total_degree": 234.5
+  },
+  {
+    "seating_no": 1025803,
+    "arabic_name": "حسن ابراهيم حسن وهبه حسن",
+    "total_degree": 165
+  },
+  {
+    "seating_no": 1025804,
+    "arabic_name": "رامز وائل ابراهيم ابراهيم الغزالى",
+    "total_degree": 159.5
+  },
+  {
+    "seating_no": 1025805,
+    "arabic_name": "رضا محمد رضا عوض",
+    "total_degree": 201
+  },
+  {
+    "seating_no": 1025806,
+    "arabic_name": "زياد رضا حسن كامل محمد زيدان",
+    "total_degree": 231.5
+  },
+  {
+    "seating_no": 1025807,
+    "arabic_name": "زياد محمد سيد عبدالمغيث شكل",
+    "total_degree": 186.5
+  },
+  {
+    "seating_no": 1025808,
+    "arabic_name": "زياد نبيل سيد محمد حسين",
+    "total_degree": 181
+  },
+  {
+    "seating_no": 1025809,
+    "arabic_name": "سيف الدين محمد عيد عبدالعال",
+    "total_degree": 205
+  },
+  {
+    "seating_no": 1025810,
+    "arabic_name": "عبدالرحمن سعيد محمد عبدالمجيد",
+    "total_degree": 72.5
+  },
+  {
+    "seating_no": 1025811,
+    "arabic_name": "عبدالرحمن محمد يحيى رمضان",
+    "total_degree": 177.5
+  },
+  {
+    "seating_no": 1025812,
+    "arabic_name": "عبدالعزيز صابر امين راضى",
+    "total_degree": 106.5
+  },
+  {
+    "seating_no": 1025813,
+    "arabic_name": "عبدالله احمد صبري حسن",
+    "total_degree": 180
+  },
+  {
+    "seating_no": 1025814,
+    "arabic_name": "عبدالله هيثم احمد محمد",
+    "total_degree": 222
+  },
+  {
+    "seating_no": 1025815,
+    "arabic_name": "عبدالوهاب عصام محمد عطا",
+    "total_degree": 285
+  },
+  {
+    "seating_no": 1025816,
+    "arabic_name": "عزالدين هشام سيد احمد على",
+    "total_degree": 241
+  },
+  {
+    "seating_no": 1025817,
+    "arabic_name": "على عمرو على حسنين",
+    "total_degree": 218.5
+  },
+  {
+    "seating_no": 1025818,
+    "arabic_name": "على كامل محمد فاضل",
+    "total_degree": 208
+  },
+  {
+    "seating_no": 1025819,
+    "arabic_name": "عمر شريف عبدالحميد محمد شلتوت",
+    "total_degree": 220
+  },
+  {
+    "seating_no": 1025820,
+    "arabic_name": "عمر طارق عباس ابوالحديد",
+    "total_degree": 187.5
+  },
+  {
+    "seating_no": 1025821,
+    "arabic_name": "عمر عادل علي حلمي محمد",
+    "total_degree": 198
+  },
+  {
+    "seating_no": 1025822,
+    "arabic_name": "عمر عبدالجليل حامد عطيه علي",
+    "total_degree": 291
+  },
+  {
+    "seating_no": 1025823,
+    "arabic_name": "عمر عبدالعزيز احمد تغيان",
+    "total_degree": 189.5
+  },
+  {
+    "seating_no": 1025824,
+    "arabic_name": "عمر عبدالعزيز شعبان حنفى حسن",
+    "total_degree": 208.5
+  },
+  {
+    "seating_no": 1025825,
+    "arabic_name": "عمر محمد حنفي حسن",
+    "total_degree": 168.5
+  },
+  {
+    "seating_no": 1025826,
+    "arabic_name": "عمرو احمد قرني عبدالحسيب",
+    "total_degree": 206.5
+  },
+  {
+    "seating_no": 1025827,
+    "arabic_name": "كريم احمد محمد على امين",
+    "total_degree": 242
+  },
+  {
+    "seating_no": 1025828,
+    "arabic_name": "مؤمن احمد سيد عواد محمد",
+    "total_degree": 180.5
+  },
+  {
+    "seating_no": 1025829,
+    "arabic_name": "محمد الفنجرى عبدالرحمن احمد ابوشوك",
+    "total_degree": 220
+  },
+  {
+    "seating_no": 1025830,
+    "arabic_name": "محمد رجب محمد حافظ",
+    "total_degree": 185
+  },
+  {
+    "seating_no": 1025831,
+    "arabic_name": "محمد طلعت محمد صادق",
+    "total_degree": 258.5
+  },
+  {
+    "seating_no": 1025832,
+    "arabic_name": "محمد عبدالرحيم احمد محمد محمد جبريل",
+    "total_degree": 147.5
+  },
+  {
+    "seating_no": 1025833,
+    "arabic_name": "محمد مصطفى عبدالمنعم حنفي محمد",
+    "total_degree": 193
+  },
+  {
+    "seating_no": 1025834,
+    "arabic_name": "محمد هانى على خلف",
+    "total_degree": 253.5
+  },
+  {
+    "seating_no": 1025835,
+    "arabic_name": "محمود السيد موسى عبدالوهاب",
+    "total_degree": 261
+  },
+  {
+    "seating_no": 1025836,
+    "arabic_name": "مصطفى احمد محمد ابراهيم الحديدى",
+    "total_degree": 270.5
+  },
+  {
+    "seating_no": 1025837,
+    "arabic_name": "مصطفى وائل سعيد محمد",
+    "total_degree": 213.5
+  },
+  {
+    "seating_no": 1025838,
+    "arabic_name": "مهاب عصام حسن احمد يوسف",
+    "total_degree": 207.5
+  },
+  {
+    "seating_no": 1025839,
+    "arabic_name": "نبيل عادل نبيل كمال",
+    "total_degree": 164
+  },
+  {
+    "seating_no": 1025840,
+    "arabic_name": "ياسين ابراهيم السيد محمد",
+    "total_degree": 182.5
+  },
+  {
+    "seating_no": 1025841,
+    "arabic_name": "يوسف وليد عطاالله ابوالحمد",
+    "total_degree": 227
+  },
+  {
+    "seating_no": 1025842,
+    "arabic_name": "احمد ايمن احمد محمود",
+    "total_degree": 224
+  },
+  {
+    "seating_no": 1025843,
+    "arabic_name": "احمد سامح احمد محمد",
+    "total_degree": 275.5
+  },
+  {
+    "seating_no": 1025844,
+    "arabic_name": "احمد عبدالرحمن محمد عبدالرحمن",
+    "total_degree": 297
+  },
+  {
+    "seating_no": 1025845,
+    "arabic_name": "احمد علاء محمد احمد",
+    "total_degree": 265
+  },
+  {
+    "seating_no": 1025846,
+    "arabic_name": "احمد محمود عبدالمجيد محمد",
+    "total_degree": 262.5
+  },
+  {
+    "seating_no": 1025847,
+    "arabic_name": "احمد مشعل السيد عبده",
+    "total_degree": 200.5
+  },
+  {
+    "seating_no": 1025848,
+    "arabic_name": "احمد ناصر فهمى عبدالعال",
+    "total_degree": 226
+  },
+  {
+    "seating_no": 1025849,
+    "arabic_name": "ادهم منصور توفيق راغب",
+    "total_degree": 206
+  },
+  {
+    "seating_no": 1025850,
+    "arabic_name": "اشرف سعيد حسين سيد",
+    "total_degree": 263.5
+  },
+  {
+    "seating_no": 1025851,
+    "arabic_name": "اياد عمرو محمد على",
+    "total_degree": 268
+  },
+  {
+    "seating_no": 1025852,
+    "arabic_name": "حازم رجب محمود على",
+    "total_degree": 225.5
+  },
+  {
+    "seating_no": 1025853,
+    "arabic_name": "حسام حسن رمضان محمود حسن",
+    "total_degree": 277
+  },
+  {
+    "seating_no": 1025854,
+    "arabic_name": "حسين عبدالناصر حسين على",
+    "total_degree": 281
+  },
+  {
+    "seating_no": 1025855,
+    "arabic_name": "زياد رمضان بدوي ابراهيم",
+    "total_degree": 215.5
+  },
+  {
+    "seating_no": 1025856,
+    "arabic_name": "زياد محمد حسن سيد",
+    "total_degree": 204
+  },
+  {
+    "seating_no": 1025857,
+    "arabic_name": "سامي محمد سامي علي",
+    "total_degree": 220
+  },
+  {
+    "seating_no": 1025858,
+    "arabic_name": "سعيد اشرف سعيد مصلحى",
+    "total_degree": 225
+  },
+  {
+    "seating_no": 1025859,
+    "arabic_name": "سمير احمد سمير احمد",
+    "total_degree": 225
+  },
+  {
+    "seating_no": 1025860,
+    "arabic_name": "طارق محمد ابراهيم محمد",
+    "total_degree": 225.5
+  },
+  {
+    "seating_no": 1025861,
+    "arabic_name": "عبدالرحمن ايمن ابوزيد محمود",
+    "total_degree": 244.5
+  },
+  {
+    "seating_no": 1025862,
+    "arabic_name": "عبدالرحمن محمد عاطف رمضان",
+    "total_degree": 223
+  },
+  {
+    "seating_no": 1025863,
+    "arabic_name": "عبدالله سمير عبدالله صادق",
+    "total_degree": 202.5
+  },
+  {
+    "seating_no": 1025864,
+    "arabic_name": "عبدالله محمد سعد محمد",
+    "total_degree": 241.5
+  },
+  {
+    "seating_no": 1025865,
+    "arabic_name": "على نبيل حسن سيد محمود",
+    "total_degree": 261.5
+  },
+  {
+    "seating_no": 1025866,
+    "arabic_name": "عماد عباس محمد عباس السيد عرابى",
+    "total_degree": 248.5
+  },
+  {
+    "seating_no": 1025867,
+    "arabic_name": "عمار صلاح مبارك عامر",
+    "total_degree": 192.5
+  },
+  {
+    "seating_no": 1025868,
+    "arabic_name": "عمر ابراهيم زيدان منعاز",
+    "total_degree": 116
+  },
+  {
+    "seating_no": 1025869,
+    "arabic_name": "عمرو حسام سعيد مدكور السيد",
+    "total_degree": 236.5
+  },
+  {
+    "seating_no": 1025870,
+    "arabic_name": "عمرو حسين حسن حسين",
+    "total_degree": 306
+  },
+  {
+    "seating_no": 1025871,
+    "arabic_name": "فهد محمد بهجت محمد",
+    "total_degree": 185
+  },
+  {
+    "seating_no": 1025872,
+    "arabic_name": "كريم محمد منير عبدالسلام",
+    "total_degree": 211
+  },
+  {
+    "seating_no": 1025873,
+    "arabic_name": "كريم محمد هاشم محمد",
+    "total_degree": 185
+  },
+  {
+    "seating_no": 1025874,
+    "arabic_name": "مازن احمد ضاحى احمد",
+    "total_degree": 225.5
+  },
+  {
+    "seating_no": 1025875,
+    "arabic_name": "محمد احمد عبدالغنى غزالى عبدالمولى",
+    "total_degree": 220
+  },
+  {
+    "seating_no": 1025876,
+    "arabic_name": "محمد رضا عبدالقادر شعبان",
+    "total_degree": 214
+  },
+  {
+    "seating_no": 1025877,
+    "arabic_name": "محمد محمود محمد عبدالحميد",
+    "total_degree": 282
+  },
+  {
+    "seating_no": 1025878,
+    "arabic_name": "محمد وائل محمود حسين",
+    "total_degree": 212
+  },
+  {
+    "seating_no": 1025879,
+    "arabic_name": "مصطفى عماد شكرى محمود ابوالعطا",
+    "total_degree": 168
+  },
+  {
+    "seating_no": 1025880,
+    "arabic_name": "معاذ هشام جمعه محمد",
+    "total_degree": 216
+  },
+  {
+    "seating_no": 1025881,
+    "arabic_name": "مهند ياسر محمد راغب",
+    "total_degree": 222
+  },
+  {
+    "seating_no": 1025882,
+    "arabic_name": "ناصر سيد فتحي طه",
+    "total_degree": 261
+  },
+  {
+    "seating_no": 1025883,
+    "arabic_name": "هانى محمد محمود محمد",
+    "total_degree": 230
+  },
+  {
+    "seating_no": 1025884,
+    "arabic_name": "وليد خالد شوقى محمد",
+    "total_degree": 201
+  },
+  {
+    "seating_no": 1025885,
+    "arabic_name": "يس محمد عدلي الرفاعى",
+    "total_degree": 293.5
+  },
+  {
+    "seating_no": 1025886,
+    "arabic_name": "يوسف حسن السيد يحيى",
+    "total_degree": 240.5
+  },
+  {
+    "seating_no": 1025887,
+    "arabic_name": "يوسف محمد سيد محمود",
+    "total_degree": 216
+  },
+  {
+    "seating_no": 1025888,
+    "arabic_name": "احمد الانور العربي عبدالمجيد",
+    "total_degree": 270.5
+  },
+  {
+    "seating_no": 1025889,
+    "arabic_name": "احمد محمد عبدالحى محمود الجوهرى",
+    "total_degree": 238.5
+  },
+  {
+    "seating_no": 1025890,
+    "arabic_name": "احمد محمد فاهم ابراهيم السعيد",
+    "total_degree": 271.5
+  },
+  {
+    "seating_no": 1025891,
+    "arabic_name": "احمد مصطفى محمد عبدالحليم على عبدالسلام",
+    "total_degree": 249.5
+  },
+  {
+    "seating_no": 1025892,
+    "arabic_name": "اياد مصطفى حسين بكر",
+    "total_degree": 227
+  },
+  {
+    "seating_no": 1025893,
+    "arabic_name": "حسن محمد حسن على حسن",
+    "total_degree": 243.5
+  },
+  {
+    "seating_no": 1025894,
+    "arabic_name": "حسين شعبان رمضان دسوقى ابراهيم",
+    "total_degree": 300.5
+  },
+  {
+    "seating_no": 1025895,
+    "arabic_name": "عادل امجد عادل عبدالهادى",
+    "total_degree": 222
+  },
+  {
+    "seating_no": 1025896,
+    "arabic_name": "عاصم محمد عاصم محمود محمود الشافعى",
+    "total_degree": 262
+  },
+  {
+    "seating_no": 1025897,
+    "arabic_name": "عبدالرحمن ايمن محمد محمد على",
+    "total_degree": 218
+  },
+  {
+    "seating_no": 1025898,
+    "arabic_name": "عبدالرحمن محمد حامد حسين",
+    "total_degree": 219
+  },
+  {
+    "seating_no": 1025899,
+    "arabic_name": "عبدالرحمن محمد عبدالعزيز عبدالرحمن",
+    "total_degree": 207
+  },
+  {
+    "seating_no": 1025900,
+    "arabic_name": "عمرو طارق حنفى محمود احمد",
+    "total_degree": 247
+  },
+  {
+    "seating_no": 1025901,
+    "arabic_name": "مازن محمد ابوسريع ابراهيم",
+    "total_degree": 245
+  },
+  {
+    "seating_no": 1025902,
+    "arabic_name": "مايكل ثابت وهيب عبدالملاك",
+    "total_degree": 239
+  },
+  {
+    "seating_no": 1025903,
+    "arabic_name": "محمد ابراهيم احمد احمد عبدالرحمن",
+    "total_degree": 238.5
+  },
+  {
+    "seating_no": 1025904,
+    "arabic_name": "محمد احمد محمد عرابي",
+    "total_degree": 224
+  },
+  {
+    "seating_no": 1025905,
+    "arabic_name": "محمد السيد على السيد على",
+    "total_degree": 211.5
+  },
+  {
+    "seating_no": 1025906,
+    "arabic_name": "محمد حسام عبدالرحمن السيد",
+    "total_degree": 250.5
+  },
+  {
+    "seating_no": 1025907,
+    "arabic_name": "محمد ممدوح فتحى ابراهيم",
+    "total_degree": 245
+  },
+  {
+    "seating_no": 1025908,
+    "arabic_name": "مروان مصطفى ذكى حنفى",
+    "total_degree": 231
+  },
+  {
+    "seating_no": 1025909,
+    "arabic_name": "معاذ الديب جلال صديق",
+    "total_degree": 228
+  },
+  {
+    "seating_no": 1025910,
+    "arabic_name": "يوسف احمد عبدالغفار السيد",
+    "total_degree": 196
+  },
+  {
+    "seating_no": 1025911,
+    "arabic_name": "يوسف السيد محمد عبدالباقي",
+    "total_degree": 210.5
+  },
+  {
+    "seating_no": 1025912,
+    "arabic_name": "ابراهيم الخطيب عبدالحافظ ابراهيم",
+    "total_degree": 165
+  },
+  {
+    "seating_no": 1025913,
+    "arabic_name": "ابراهيم عثمان ابراهيم احمد",
+    "total_degree": 205.5
+  },
+  {
+    "seating_no": 1025914,
+    "arabic_name": "ابراهيم عصام ابراهيم السيد",
+    "total_degree": 119
+  },
+  {
+    "seating_no": 1025915,
+    "arabic_name": "احمد ابراهيم سامى صقر",
+    "total_degree": 201.5
+  },
+  {
+    "seating_no": 1025916,
+    "arabic_name": "احمد اسماعيل احمد محمد اسماعيل",
+    "total_degree": 218
+  },
+  {
+    "seating_no": 1025917,
+    "arabic_name": "احمد حامد سيد حامد",
+    "total_degree": 274.5
+  },
+  {
+    "seating_no": 1025918,
+    "arabic_name": "احمد خالد عبدالوهاب سيد محمد",
+    "total_degree": 162.5
+  },
+  {
+    "seating_no": 1025919,
+    "arabic_name": "احمد رفعت عبدالمبدى عمر حفني",
+    "total_degree": 167.5
+  },
+  {
+    "seating_no": 1025920,
+    "arabic_name": "احمد رفعت محمد السيد على",
+    "total_degree": 233.5
+  },
+  {
+    "seating_no": 1025921,
+    "arabic_name": "احمد رمضان فهمي عبدالعال",
+    "total_degree": 264
+  },
+  {
+    "seating_no": 1025922,
+    "arabic_name": "احمد شريف جمعه محمد",
+    "total_degree": 171.5
+  },
+  {
+    "seating_no": 1025923,
+    "arabic_name": "احمد شعبان فولى محمد",
+    "total_degree": 223.5
+  },
+  {
+    "seating_no": 1025924,
+    "arabic_name": "احمد عبدالشافى امين عبدالرحمن",
+    "total_degree": 165
+  },
+  {
+    "seating_no": 1025925,
+    "arabic_name": "احمد عبدالعليم عبدالعظيم عبدالعليم سلومه",
+    "total_degree": 134.5
+  },
+  {
+    "seating_no": 1025926,
+    "arabic_name": "احمد عبدالناصر فهمى احمد حامد",
+    "total_degree": 160.5
+  },
+  {
+    "seating_no": 1025927,
+    "arabic_name": "احمد محمد السيد محمد محمد هيبه",
+    "total_degree": 209
+  },
+  {
+    "seating_no": 1025928,
+    "arabic_name": "احمد محمد عمر احمد على",
+    "total_degree": 181.5
+  },
+  {
+    "seating_no": 1025929,
+    "arabic_name": "احمد محمد قناوى جاد الكريم",
+    "total_degree": 149.5
+  },
+  {
+    "seating_no": 1025930,
+    "arabic_name": "احمد مختار احمد قاسم",
+    "total_degree": 168.5
+  },
+  {
+    "seating_no": 1025931,
+    "arabic_name": "احمد مصطفى عبدالعال خلاف",
+    "total_degree": 192
+  },
+  {
+    "seating_no": 1025932,
+    "arabic_name": "ادهم ايمن اسماعيل كامل",
+    "total_degree": 142.5
+  },
+  {
+    "seating_no": 1025933,
+    "arabic_name": "اياد احمد سمير ابراهيم",
+    "total_degree": 181.5
+  },
+  {
+    "seating_no": 1025934,
+    "arabic_name": "اياد عبدالحميد على عبدالحميد",
+    "total_degree": 167
+  },
+  {
+    "seating_no": 1025935,
+    "arabic_name": "باسل عصام سليمان محمد سليمان",
+    "total_degree": 187.5
+  },
+  {
+    "seating_no": 1025936,
+    "arabic_name": "بلال محمد محمد فتحى يوسف",
+    "total_degree": 165
+  },
+  {
+    "seating_no": 1025937,
+    "arabic_name": "حازم محمد هاشم مصطفى",
+    "total_degree": 156.5
+  },
+  {
+    "seating_no": 1025938,
+    "arabic_name": "حسام الدين ممدوح محمد عبدالمحسن",
+    "total_degree": 158.5
+  },
+  {
+    "seating_no": 1025939,
+    "arabic_name": "حسن محمد حسن احمد ابوالغيط",
+    "total_degree": 190
+  },
+  {
+    "seating_no": 1025940,
+    "arabic_name": "حلمى مهدى حلمى الوردانى احمد",
+    "total_degree": 184.5
+  },
+  {
+    "seating_no": 1025941,
+    "arabic_name": "ذياد محمد محمد عبدالعظيم كزك",
+    "total_degree": 151.5
+  },
+  {
+    "seating_no": 1025942,
+    "arabic_name": "زياد احمد السيد سليم",
+    "total_degree": 172.5
+  },
+  {
+    "seating_no": 1025943,
+    "arabic_name": "زياد اسماعيل عبدالعظيم عبدالعزيز",
+    "total_degree": 185
+  },
+  {
+    "seating_no": 1025944,
+    "arabic_name": "زياد عياد عبدالحليم سالم عمر",
+    "total_degree": 139.5
+  },
+  {
+    "seating_no": 1025945,
+    "arabic_name": "زياد عيسى احمد عيسى على",
+    "total_degree": 148.5
+  },
+  {
+    "seating_no": 1025946,
+    "arabic_name": "سيف علاء محمد حسين",
+    "total_degree": 172.5
+  },
+  {
+    "seating_no": 1025947,
+    "arabic_name": "سيفين على احمد على",
+    "total_degree": 195
+  },
+  {
+    "seating_no": 1025948,
+    "arabic_name": "صالح محمد صالح سالم احمد",
+    "total_degree": 197.5
+  },
+  {
+    "seating_no": 1025950,
+    "arabic_name": "عبدالرحمن احمد عبدالغفار معتوق",
+    "total_degree": 209
+  },
+  {
+    "seating_no": 1025951,
+    "arabic_name": "عبدالرحمن ايمن فتحي محمد",
+    "total_degree": 185.5
+  },
+  {
+    "seating_no": 1025952,
+    "arabic_name": "عبدالرحمن ايمن يوسف العراقى جمعه",
+    "total_degree": 176
+  },
+  {
+    "seating_no": 1025953,
+    "arabic_name": "عبدالرحمن حسين محمد محمد",
+    "total_degree": 189
+  },
+  {
+    "seating_no": 1025954,
+    "arabic_name": "عبدالرحمن رضا سرور سلامه سرور",
+    "total_degree": 257.5
+  },
+  {
+    "seating_no": 1025955,
+    "arabic_name": "عبدالرحمن زكريا محمد عبدالتواب",
+    "total_degree": 146.5
+  },
+  {
+    "seating_no": 1025956,
+    "arabic_name": "عبدالرحمن ماهر محمد صديق سعيد",
+    "total_degree": 133.5
+  },
+  {
+    "seating_no": 1025957,
+    "arabic_name": "عبدالرحمن محمد ابراهيم ابراهيم خلف",
+    "total_degree": 236
+  },
+  {
+    "seating_no": 1025958,
+    "arabic_name": "عبدالرحمن محمد حسن على محمد",
+    "total_degree": 195.5
+  },
+  {
+    "seating_no": 1025959,
+    "arabic_name": "عبدالرحمن محمد رجب امين",
+    "total_degree": 105
+  },
+  {
+    "seating_no": 1025960,
+    "arabic_name": "عبدالرحمن محمد فتح الله عبدالعزيز",
+    "total_degree": 235.5
+  },
+  {
+    "seating_no": 1025961,
+    "arabic_name": "عبدالفتاح احمد يونس معتوق",
+    "total_degree": 180.5
+  },
+  {
+    "seating_no": 1025962,
+    "arabic_name": "عبدالكريم محمد احمد علي",
+    "total_degree": 169
+  },
+  {
+    "seating_no": 1025963,
+    "arabic_name": "عبدالله اشرف اسماعيل احمد",
+    "total_degree": 166.5
+  },
+  {
+    "seating_no": 1025964,
+    "arabic_name": "عبدالله محمد جمعه محمد صبره",
+    "total_degree": 170.5
+  },
+  {
+    "seating_no": 1025965,
+    "arabic_name": "عبدالمنعم سمير عبدالمنعم قناوى على",
+    "total_degree": 193
+  },
+  {
+    "seating_no": 1025966,
+    "arabic_name": "على رفعت محمد السيد على",
+    "total_degree": 172
+  },
+  {
+    "seating_no": 1025967,
+    "arabic_name": "على شعبان رمضان على سعيد",
+    "total_degree": 155.5
+  },
+  {
+    "seating_no": 1025968,
+    "arabic_name": "على عبدالمطلب على عبدالمطلب",
+    "total_degree": 172.5
+  },
+  {
+    "seating_no": 1025969,
+    "arabic_name": "على محمد على حسن على",
+    "total_degree": 180.5
+  },
+  {
+    "seating_no": 1025970,
+    "arabic_name": "عماد حمدى حسن جاد اسماعيل",
+    "total_degree": 111
+  },
+  {
+    "seating_no": 1025971,
+    "arabic_name": "عمر محمد احمد محمد احمد ابراهيم",
+    "total_degree": 170.5
+  },
+  {
+    "seating_no": 1025972,
+    "arabic_name": "عمر هشام احمد درويش",
+    "total_degree": 173
+  },
+  {
+    "seating_no": 1025973,
+    "arabic_name": "عمرو مجدى عبدالرحيم ياسين رضوان",
+    "total_degree": 167.5
+  },
+  {
+    "seating_no": 1025974,
+    "arabic_name": "عمرو محمد عبدالبديع عبدالبديع مهران",
+    "total_degree": 198
+  },
+  {
+    "seating_no": 1025975,
+    "arabic_name": "فادى سامي رفعت وردي",
+    "total_degree": 216
+  },
+  {
+    "seating_no": 1025976,
+    "arabic_name": "فارس عبدالمنعم ابراهيم عبدالمنعم",
+    "total_degree": 146.5
+  },
+  {
+    "seating_no": 1025977,
+    "arabic_name": "كريم جابر رضوان عبدالقوى",
+    "total_degree": 198.5
+  },
+  {
+    "seating_no": 1025979,
+    "arabic_name": "ماذن بدوى سليمان بدوى عبدالعاطى",
+    "total_degree": 156.5
+  },
+  {
+    "seating_no": 1025980,
+    "arabic_name": "مازن حسام الدين محمد حنفى",
+    "total_degree": 190.5
+  },
+  {
+    "seating_no": 1025981,
+    "arabic_name": "مازن عمرو محمد حافظ",
+    "total_degree": 174
+  },
+  {
+    "seating_no": 1025982,
+    "arabic_name": "مازن محمود حسن سلطان حسانين",
+    "total_degree": 209
+  },
+  {
+    "seating_no": 1025983,
+    "arabic_name": "محمد احمد حسن على محمد",
+    "total_degree": 161
+  },
+  {
+    "seating_no": 1025984,
+    "arabic_name": "محمد احمد حسين يوسف",
+    "total_degree": 233
+  },
+  {
+    "seating_no": 1025985,
+    "arabic_name": "محمد احمد فضل عبدالفتاح مهدى",
+    "total_degree": 219
+  },
+  {
+    "seating_no": 1025986,
+    "arabic_name": "محمد احمد مازن محمود عبدالكريم",
+    "total_degree": 181.5
+  },
+  {
+    "seating_no": 1025987,
+    "arabic_name": "محمد اسامه عبدالمنعم العزب",
+    "total_degree": 167
+  },
+  {
+    "seating_no": 1025988,
+    "arabic_name": "محمد اشرف حسن حسن",
+    "total_degree": 171.5
+  },
+  {
+    "seating_no": 1025989,
+    "arabic_name": "محمد امير عبدالسلام على سحلول",
+    "total_degree": 155
+  },
+  {
+    "seating_no": 1025990,
+    "arabic_name": "محمد ثروت مسعود محمد عبدالقادر",
+    "total_degree": 173
+  },
+  {
+    "seating_no": 1025991,
+    "arabic_name": "محمد جمال محمد سيد",
+    "total_degree": 175.5
+  },
+  {
+    "seating_no": 1025992,
+    "arabic_name": "محمد جمال محمد محمد",
+    "total_degree": 156.5
+  },
+  {
+    "seating_no": 1025993,
+    "arabic_name": "محمد حسن كامل احمد",
+    "total_degree": 175
+  },
+  {
+    "seating_no": 1025994,
+    "arabic_name": "محمد حمدى على احمد محمد",
+    "total_degree": 150.5
+  },
+  {
+    "seating_no": 1025995,
+    "arabic_name": "محمد خالد حميده كيلاني عبدالهادي",
+    "total_degree": 117.5
+  },
+  {
+    "seating_no": 1025996,
+    "arabic_name": "محمد خالد سيد شعبان سيد",
+    "total_degree": 0
+  },
+  {
+    "seating_no": 1025997,
+    "arabic_name": "محمد خالد عيد مجاهد",
+    "total_degree": 135
+  },
+  {
+    "seating_no": 1025998,
+    "arabic_name": "محمد رجب حافظ عبدالوهاب عمار",
+    "total_degree": 136
+  },
+  {
+    "seating_no": 1025999,
+    "arabic_name": "محمد رضا محمد اسماعيل",
+    "total_degree": 241.5
+  }
+]

@@ -1,180 +1,1422 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>📘 نتيجة الطالب</title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📘 نتيجة الطالب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        
+    :root {
+        --primary: #3498db;
+        --success: #2ecc71;
+        --warning: #f39c12;
+        --danger: #e74c3c;
+        --background: #f8f9fa;
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
     body {
-      font-family: "Cairo", sans-serif;
-      padding: 2em;
-      background: #f9f9f9;
-      text-align: right;
+        font-family: 'Cairo', sans-serif;
+        background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+        color: #333;
+        min-height: 100vh;
+        padding: 20px;
+        line-height: 1.6;
     }
-
-    h1 {
-      text-align: center;
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
     }
-
-    input, button {
-      font-size: 1.2em;
-      padding: 0.5em;
-      margin: 0.5em 0;
-      width: 100%;
+    
+    header {
+        background: linear-gradient(to right, var(--primary), #2c3e50);
+        color: white;
+        padding: 25px 30px;
+        text-align: center;
     }
-
+    
     .tabs {
-      display: flex;
-      margin-bottom: 1em;
+        display: flex;
+        background: var(--background);
+        border-radius: 12px;
+        margin: 20px;
+        overflow: hidden;
     }
-
+    
     .tabs button {
-      flex: 1;
-      font-size: 1em;
-      padding: 0.5em;
-      background: #ddd;
-      border: none;
-      cursor: pointer;
+        flex: 1;
+        padding: 15px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s;
     }
-
+    
     .tabs button.active {
-      background: #007bff;
-      color: white;
+        background: var(--primary);
+        color: white;
+    }
+    
+    .search-section {
+        padding: 20px;
+    }
+    
+    .input-group {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    input {
+        flex: 1;
+        padding: 12px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+    
+    button {
+        padding: 12px 25px;
+        background: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    .student-card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        margin: 15px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .student-info {
+        flex: 1;
+        min-width: 250px;
+    }
+    
+    .score-visualization {
+        flex: 0 0 180px;
     }
 
-    #results {
-      background: white;
-      border: 1px solid #ccc;
-      padding: 1em;
-      margin-top: 1em;
+    .circle-container {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;       /* 🔴 Ensures perfect circle */
+        overflow: visible;        /* ⬅ Make sure no glow or shadow is clipped */
+        background: transparent;  /* ⬅ No background color that might appear as a box */
     }
-  </style>
+
+
+    .circle-bg {
+    fill: none;
+    stroke: #222;
+    stroke-width: 12;
+    opacity: 0.3;
+    }
+
+    .circle-progress {
+    fill: none;
+    stroke-width: 12;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dashoffset 0.5s ease;
+    stroke: crimson;
+    }
+
+    /* Intensity levels */
+    .fire-intensity-1 {
+    stroke: #ff3333;
+    filter: drop-shadow(0 0 4px red);
+    }
+
+    .fire-intensity-2 {
+    stroke: #ff0000;
+    filter: drop-shadow(0 0 8px red) drop-shadow(0 0 4px orange);
+    }
+
+    .fire-intensity-3 {
+        stroke: #ff0000;
+        filter: drop-shadow(0 0 10px red) drop-shadow(0 0 20px orange);
+        animation: flicker-opacity 0.15s infinite alternate;
+    }
+
+    @keyframes flicker-opacity {
+        from {
+            opacity: 0.85;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    .circle-text {
+    position: absolute;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 5px red;
+    }
+
+    .circle-text.fire-intensity-3 {
+    color: #fff0f0;
+    text-shadow: 0 0 10px red, 0 0 20px orange;
+    }
+
+
+
+
+
+    .sort-controls {
+        display: flex;
+        gap: 10px;
+        padding: 10px 20px;
+        background: #f5f5f5;
+        border-radius: 8px;
+        margin: 0 20px 20px;
+    }
+
+    .sort-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    background: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark text */
+    border: 1px solid #ccc; /* Visible border */
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s ease;
+}
+
+.sort-button:hover {
+    background: #e9e9e9; /* Slightly darker on hover */
+    border-color: #999;
+}
+
+.sort-button.active {
+    background: #3498db; /* Blue background when active */
+    color: white; /* White text when active */
+    border-color: #2980b9;
+}
+
+.sort-button .arrow {
+    font-size: 0.8em;
+    color: inherit; /* Arrow color matches text */
+}
+
+/* Dark mode variation if needed */
+@media (prefers-color-scheme: dark) {
+    .sort-button {
+        background: #333;
+        color: #eee;
+        border-color: #555;
+    }
+    .sort-button:hover {
+        background: #444;
+    }
+}
+
+    .sort-button.active {
+        background: var(--primary);
+        color: white;
+        border-color: var(--primary);
+    }
+
+    .sort-button .arrow {
+        font-size: 0.8em;
+    }
+    
+    .info-row {
+        display: flex;
+        margin: 10px 0;
+    }
+    
+    .label {
+        font-weight: bold;
+        width: 120px;
+    }
+    
+    .value {
+        flex: 1;
+    }
+    
+    .chart-container {
+        padding: 20px;
+        background: white;
+        border-radius: 12px;
+        margin: 15px 0;
+    }
+    
+    .stats-summary {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 20px;
+    }
+    
+    .stat-card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    
+    .stat-value {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--primary);
+        margin-top: 10px;
+    }
+    
+    .error-message {
+        background: #ffebee;
+        color: #b71c1c;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .loading {
+        text-align: center;
+        padding: 30px;
+    }
+    .grade-table-container {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    /* Single pagination bar at bottom - wider and more prominent */
+    .table-pagination {
+        width: 100%;
+        padding: 8px 0;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        flex-wrap: wrap;
+        background: #f8f9fa;
+        border-top: 1px solid #ddd;
+        border-radius: 0 0 8px 8px;
+    }
+
+    /* Wider buttons with better spacing */
+    .table-pagination button {
+        min-width: 40px;
+        padding: 8px 12px;
+        margin: 0 2px;
+        background: #f1f1f1;
+        border: 2px solid #d1d1d1;
+        border-radius: 6px;
+        color: #333;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    /* Hover effects */
+    .table-pagination button:hover:not(:disabled) {
+        background: #e0e0e0;
+        border-color: #b0b0b0;
+        transform: translateY(-1px);
+    }
+
+    /* Active page styling */
+    .table-pagination button.active {
+        background: #007BFF;
+        color: white;
+        border-color: #0056b3;
+        box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+    }
+
+    /* Disabled buttons */
+    .table-pagination button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none !important;
+    }
+
+    /* Ellipsis styling */
+    .pagination-dots {
+        padding: 8px 4px;
+        color: #666;
+        font-weight: bold;
+    }
+
+    /* Table scroll area */
+    .table-scroll {
+        overflow-y: auto;
+        max-height: 400px;
+        width: 100%;
+        border: 1px solid #eee;
+        border-radius: 8px 8px 0 0;
+    }
+
+    /* Table styling */
+    .grade-distribution-table {
+        width: 100%;
+        min-width: 600px; /* Ensures table doesn't get too narrow */
+        border-collapse: collapse;
+    }
+
+    .grade-distribution-table th {
+        position: sticky;
+        top: 0;
+        background: #f8f9fa;
+        padding: 12px;
+        text-align: center;
+        border-bottom: 2px solid #ddd;
+        font-weight: bold;
+        z-index: 2;
+    }
+
+    .grade-distribution-table td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    .grade-distribution-table tr:hover {
+        background-color: #f5f5f5;
+    }
+
+
+    .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-left-color: var(--primary);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 15px;
+    }
+    
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+    
+    .pagination-controls {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin: 20px 0;
+    }
+    
+    .pagination-controls button {
+        min-width: 40px;
+        padding: 8px 12px;
+    }
+    
+    .pagination-controls button.active {
+        background: #2c3e50;
+    }
+    
+    .pagination-dots {
+        padding: 8px 12px;
+    }
+    
+    @media (max-width: 768px) {
+        .input-group {
+            flex-direction: column;
+        }
+        
+        .container {
+            margin: 10px;
+            border-radius: 15px;
+        }
+        
+        .student-card {
+            flex-direction: column;
+        }
+        
+        .score-visualization {
+            margin: 0 auto;
+        }
+        
+        header {
+            padding: 15px;
+        }
+        
+        .tabs {
+            margin: 10px;
+        }
+    }
+    
+    </style>
 </head>
 <body>
-  <h1>📘 نتيجة الطالب</h1>
+    <div class="container">
+        <header>
+            <h1>📘 نتيجة الطالب</h1>
+            <p>ابحث عن نتائج الطلاب باستخدام رقم الجلوس أو الاسم الكامل</p>
+            <div class="timestamp">آخر تحديث: 2025-07-22 21:09:10</div>
+        </header>
+        
+        <div class="tabs">
+            <button id="searchTab" class="active">🔍 بحث</button>
+            <button id="statsTab">📊 إحصائيات</button>
+        </div>
+        
+        <div id="searchContent" class="tab-content active">
+            <div class="search-options">
+                <button id="idSearchBtn" class="active">بحث بالرقم</button>
+                <button id="nameSearchBtn">بحث بالاسم</button>
+            </div>
+            
+            <div id="idSearchSection" class="search-section">
+                <div class="input-group">
+                    <input type="number" id="idInput" placeholder="اكتب رقم الجلوس">
+                    <button onclick="searchById()">بحث</button>
+                </div>
+            </div>
+            
+            <div id="nameSearchSection" class="search-section" style="display:none;">
+                <div class="input-group">
+                    <input type="text" id="nameInput" placeholder="اكتب الاسم">
+                    <button onclick="searchByName()">بحث</button>
+                </div>
+            </div>
+            <div class="sort-controls">
+                <button class="sort-button" data-sort="id" onclick="sortResults('id')">
+                    رقم الجلوس <span class="arrow">↕</span>
+                </button>
+                <button class="sort-button" data-sort="name" onclick="sortResults('name')">
+                    الاسم <span class="arrow">↕</span>
+                </button>
+                <button class="sort-button" data-sort="score" onclick="sortResults('score')">
+                    الدرجة <span class="arrow">↕</span>
+                </button>
+            </div>
+            <div id="searchResults"></div>
+            <div id="pagination"></div>
+        </div>
+        
+        <div id="statsContent" class="tab-content">
+            <div class="stats-summary">
+            
+                <div class="stat-card">
+                    <h3>إجمالي الطلاب</h3>
+                    <div class="stat-value" id="totalStudents">-</div>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>الدرجة القصوى</h3>
+                    <div class="stat-value" id="maxScore">-</div>
+                </div>
+                <div class="stat-card">
+                    <h3>متوسط الدرجات</h3>
+                    <div class="stat-value" id="avgScore">-</div>
+                </div>
+            </div>
+            
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <canvas id="gradeChart"></canvas>
+                    <div id="gradeTableContainer"></div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="branchChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="regionChart"></canvas>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <div class="tabs">
-    <button id="idTab" class="active">🔢 بحث بالرقم</button>
-    <button id="nameTab">🔤 بحث بالاسم</button>
-  </div>
+    <script>
+        // Injected data
+        const Config = {
+            ID_GROUPS_FOLDER: "jsons",
+            NAME_GROUPS_FOLDER: "name_groups",
+            RESULTS_PER_PAGE: 25
+        };
+        let currentGradePage = 1;
+        const gradesPerPage = 25;
+        let allResults = [];
+        let currentSort = { field: null, direction: 'asc' };
+        let currentPage = 1;
+        const STATISTICS = {"grade_distribution": {"0.0": {"equal": 27665, "more": 779720, "equal_or_more": 807385}, "0.5": {"equal": 3, "more": 779717, "equal_or_more": 779720}, "1.0": {"equal": 22, "more": 779695, "equal_or_more": 779717}, "1.5": {"equal": 5, "more": 779690, "equal_or_more": 779695}, "2.0": {"equal": 13, "more": 779677, "equal_or_more": 779690}, "2.5": {"equal": 3, "more": 779674, "equal_or_more": 779677}, "3.0": {"equal": 19, "more": 779655, "equal_or_more": 779674}, "3.5": {"equal": 4, "more": 779651, "equal_or_more": 779655}, "4.0": {"equal": 16, "more": 779635, "equal_or_more": 779651}, "4.5": {"equal": 5, "more": 779630, "equal_or_more": 779635}, "5.0": {"equal": 15, "more": 779615, "equal_or_more": 779630}, "5.5": {"equal": 2, "more": 779613, "equal_or_more": 779615}, "6.0": {"equal": 11, "more": 779602, "equal_or_more": 779613}, "6.5": {"equal": 5, "more": 779597, "equal_or_more": 779602}, "7.0": {"equal": 12, "more": 779585, "equal_or_more": 779597}, "7.5": {"equal": 3, "more": 779582, "equal_or_more": 779585}, "8.0": {"equal": 15, "more": 779567, "equal_or_more": 779582}, "8.5": {"equal": 7, "more": 779560, "equal_or_more": 779567}, "9.0": {"equal": 2, "more": 779558, "equal_or_more": 779560}, "9.5": {"equal": 2, "more": 779556, "equal_or_more": 779558}, "10.0": {"equal": 11, "more": 779545, "equal_or_more": 779556}, "10.5": {"equal": 2, "more": 779543, "equal_or_more": 779545}, "11.0": {"equal": 18, "more": 779525, "equal_or_more": 779543}, "11.5": {"equal": 4, "more": 779521, "equal_or_more": 779525}, "12.0": {"equal": 10, "more": 779511, "equal_or_more": 779521}, "12.5": {"equal": 4, "more": 779507, "equal_or_more": 779511}, "13.0": {"equal": 8, "more": 779499, "equal_or_more": 779507}, "13.5": {"equal": 6, "more": 779493, "equal_or_more": 779499}, "14.0": {"equal": 11, "more": 779482, "equal_or_more": 779493}, "14.5": {"equal": 5, "more": 779477, "equal_or_more": 779482}, "15.0": {"equal": 4, "more": 779473, "equal_or_more": 779477}, "15.5": {"equal": 6, "more": 779467, "equal_or_more": 779473}, "16.0": {"equal": 10, "more": 779457, "equal_or_more": 779467}, "16.5": {"equal": 3, "more": 779454, "equal_or_more": 779457}, "17.0": {"equal": 11, "more": 779443, "equal_or_more": 779454}, "17.5": {"equal": 4, "more": 779439, "equal_or_more": 779443}, "18.0": {"equal": 9, "more": 779430, "equal_or_more": 779439}, "18.5": {"equal": 2, "more": 779428, "equal_or_more": 779430}, "19.0": {"equal": 9, "more": 779419, "equal_or_more": 779428}, "19.5": {"equal": 4, "more": 779415, "equal_or_more": 779419}, "20.0": {"equal": 26, "more": 779389, "equal_or_more": 779415}, "20.5": {"equal": 5, "more": 779384, "equal_or_more": 779389}, "21.0": {"equal": 9, "more": 779375, "equal_or_more": 779384}, "21.5": {"equal": 3, "more": 779372, "equal_or_more": 779375}, "22.0": {"equal": 10, "more": 779362, "equal_or_more": 779372}, "22.5": {"equal": 5, "more": 779357, "equal_or_more": 779362}, "23.0": {"equal": 9, "more": 779348, "equal_or_more": 779357}, "23.5": {"equal": 2, "more": 779346, "equal_or_more": 779348}, "24.0": {"equal": 5, "more": 779341, "equal_or_more": 779346}, "24.5": {"equal": 2, "more": 779339, "equal_or_more": 779341}, "25.0": {"equal": 11, "more": 779328, "equal_or_more": 779339}, "25.5": {"equal": 2, "more": 779326, "equal_or_more": 779328}, "26.0": {"equal": 6, "more": 779320, "equal_or_more": 779326}, "26.5": {"equal": 3, "more": 779317, "equal_or_more": 779320}, "27.0": {"equal": 12, "more": 779305, "equal_or_more": 779317}, "27.5": {"equal": 6, "more": 779299, "equal_or_more": 779305}, "28.0": {"equal": 10, "more": 779289, "equal_or_more": 779299}, "28.5": {"equal": 3, "more": 779286, "equal_or_more": 779289}, "29.0": {"equal": 7, "more": 779279, "equal_or_more": 779286}, "29.5": {"equal": 7, "more": 779272, "equal_or_more": 779279}, "30.0": {"equal": 106, "more": 779166, "equal_or_more": 779272}, "30.5": {"equal": 13, "more": 779153, "equal_or_more": 779166}, "31.0": {"equal": 20, "more": 779133, "equal_or_more": 779153}, "31.5": {"equal": 11, "more": 779122, "equal_or_more": 779133}, "32.0": {"equal": 14, "more": 779108, "equal_or_more": 779122}, "32.5": {"equal": 9, "more": 779099, "equal_or_more": 779108}, "33.0": {"equal": 13, "more": 779086, "equal_or_more": 779099}, "33.5": {"equal": 3, "more": 779083, "equal_or_more": 779086}, "34.0": {"equal": 30, "more": 779053, "equal_or_more": 779083}, "34.5": {"equal": 6, "more": 779047, "equal_or_more": 779053}, "35.0": {"equal": 17, "more": 779030, "equal_or_more": 779047}, "35.5": {"equal": 4, "more": 779026, "equal_or_more": 779030}, "36.0": {"equal": 20, "more": 779006, "equal_or_more": 779026}, "36.5": {"equal": 5, "more": 779001, "equal_or_more": 779006}, "37.0": {"equal": 23, "more": 778978, "equal_or_more": 779001}, "37.5": {"equal": 5, "more": 778973, "equal_or_more": 778978}, "38.0": {"equal": 16, "more": 778957, "equal_or_more": 778973}, "38.5": {"equal": 4, "more": 778953, "equal_or_more": 778957}, "39.0": {"equal": 27, "more": 778926, "equal_or_more": 778953}, "39.5": {"equal": 8, "more": 778918, "equal_or_more": 778926}, "40.0": {"equal": 87, "more": 778831, "equal_or_more": 778918}, "40.5": {"equal": 12, "more": 778819, "equal_or_more": 778831}, "41.0": {"equal": 25, "more": 778794, "equal_or_more": 778819}, "41.5": {"equal": 8, "more": 778786, "equal_or_more": 778794}, "42.0": {"equal": 32, "more": 778754, "equal_or_more": 778786}, "42.5": {"equal": 13, "more": 778741, "equal_or_more": 778754}, "43.0": {"equal": 31, "more": 778710, "equal_or_more": 778741}, "43.5": {"equal": 15, "more": 778695, "equal_or_more": 778710}, "44.0": {"equal": 20, "more": 778675, "equal_or_more": 778695}, "44.5": {"equal": 22, "more": 778653, "equal_or_more": 778675}, "45.0": {"equal": 30, "more": 778623, "equal_or_more": 778653}, "45.5": {"equal": 17, "more": 778606, "equal_or_more": 778623}, "46.0": {"equal": 41, "more": 778565, "equal_or_more": 778606}, "46.5": {"equal": 18, "more": 778547, "equal_or_more": 778565}, "47.0": {"equal": 33, "more": 778514, "equal_or_more": 778547}, "47.5": {"equal": 20, "more": 778494, "equal_or_more": 778514}, "48.0": {"equal": 35, "more": 778459, "equal_or_more": 778494}, "48.5": {"equal": 21, "more": 778438, "equal_or_more": 778459}, "49.0": {"equal": 30, "more": 778408, "equal_or_more": 778438}, "49.5": {"equal": 16, "more": 778392, "equal_or_more": 778408}, "50.0": {"equal": 45, "more": 778347, "equal_or_more": 778392}, "50.5": {"equal": 23, "more": 778324, "equal_or_more": 778347}, "51.0": {"equal": 33, "more": 778291, "equal_or_more": 778324}, "51.5": {"equal": 19, "more": 778272, "equal_or_more": 778291}, "52.0": {"equal": 43, "more": 778229, "equal_or_more": 778272}, "52.5": {"equal": 22, "more": 778207, "equal_or_more": 778229}, "53.0": {"equal": 37, "more": 778170, "equal_or_more": 778207}, "53.5": {"equal": 20, "more": 778150, "equal_or_more": 778170}, "54.0": {"equal": 45, "more": 778105, "equal_or_more": 778150}, "54.5": {"equal": 14, "more": 778091, "equal_or_more": 778105}, "55.0": {"equal": 56, "more": 778035, "equal_or_more": 778091}, "55.5": {"equal": 18, "more": 778017, "equal_or_more": 778035}, "56.0": {"equal": 59, "more": 777958, "equal_or_more": 778017}, "56.5": {"equal": 25, "more": 777933, "equal_or_more": 777958}, "57.0": {"equal": 61, "more": 777872, "equal_or_more": 777933}, "57.5": {"equal": 15, "more": 777857, "equal_or_more": 777872}, "58.0": {"equal": 32, "more": 777825, "equal_or_more": 777857}, "58.5": {"equal": 25, "more": 777800, "equal_or_more": 777825}, "59.0": {"equal": 45, "more": 777755, "equal_or_more": 777800}, "59.5": {"equal": 28, "more": 777727, "equal_or_more": 777755}, "60.0": {"equal": 84, "more": 777643, "equal_or_more": 777727}, "60.5": {"equal": 22, "more": 777621, "equal_or_more": 777643}, "61.0": {"equal": 45, "more": 777576, "equal_or_more": 777621}, "61.5": {"equal": 27, "more": 777549, "equal_or_more": 777576}, "62.0": {"equal": 40, "more": 777509, "equal_or_more": 777549}, "62.5": {"equal": 43, "more": 777466, "equal_or_more": 777509}, "63.0": {"equal": 37, "more": 777429, "equal_or_more": 777466}, "63.5": {"equal": 28, "more": 777401, "equal_or_more": 777429}, "64.0": {"equal": 41, "more": 777360, "equal_or_more": 777401}, "64.5": {"equal": 23, "more": 777337, "equal_or_more": 777360}, "65.0": {"equal": 46, "more": 777291, "equal_or_more": 777337}, "65.5": {"equal": 37, "more": 777254, "equal_or_more": 777291}, "66.0": {"equal": 45, "more": 777209, "equal_or_more": 777254}, "66.5": {"equal": 34, "more": 777175, "equal_or_more": 777209}, "67.0": {"equal": 53, "more": 777122, "equal_or_more": 777175}, "67.5": {"equal": 39, "more": 777083, "equal_or_more": 777122}, "68.0": {"equal": 47, "more": 777036, "equal_or_more": 777083}, "68.5": {"equal": 38, "more": 776998, "equal_or_more": 777036}, "69.0": {"equal": 36, "more": 776962, "equal_or_more": 776998}, "69.5": {"equal": 38, "more": 776924, "equal_or_more": 776962}, "70.0": {"equal": 83, "more": 776841, "equal_or_more": 776924}, "70.5": {"equal": 49, "more": 776792, "equal_or_more": 776841}, "71.0": {"equal": 51, "more": 776741, "equal_or_more": 776792}, "71.5": {"equal": 47, "more": 776694, "equal_or_more": 776741}, "72.0": {"equal": 63, "more": 776631, "equal_or_more": 776694}, "72.5": {"equal": 54, "more": 776577, "equal_or_more": 776631}, "73.0": {"equal": 66, "more": 776511, "equal_or_more": 776577}, "73.5": {"equal": 48, "more": 776463, "equal_or_more": 776511}, "74.0": {"equal": 92, "more": 776371, "equal_or_more": 776463}, "74.5": {"equal": 46, "more": 776325, "equal_or_more": 776371}, "75.0": {"equal": 87, "more": 776238, "equal_or_more": 776325}, "75.5": {"equal": 50, "more": 776188, "equal_or_more": 776238}, "76.0": {"equal": 71, "more": 776117, "equal_or_more": 776188}, "76.5": {"equal": 48, "more": 776069, "equal_or_more": 776117}, "77.0": {"equal": 75, "more": 775994, "equal_or_more": 776069}, "77.5": {"equal": 55, "more": 775939, "equal_or_more": 775994}, "78.0": {"equal": 101, "more": 775838, "equal_or_more": 775939}, "78.5": {"equal": 51, "more": 775787, "equal_or_more": 775838}, "79.0": {"equal": 67, "more": 775720, "equal_or_more": 775787}, "79.5": {"equal": 64, "more": 775656, "equal_or_more": 775720}, "80.0": {"equal": 91, "more": 775565, "equal_or_more": 775656}, "80.5": {"equal": 50, "more": 775515, "equal_or_more": 775565}, "81.0": {"equal": 84, "more": 775431, "equal_or_more": 775515}, "81.5": {"equal": 62, "more": 775369, "equal_or_more": 775431}, "82.0": {"equal": 76, "more": 775293, "equal_or_more": 775369}, "82.5": {"equal": 72, "more": 775221, "equal_or_more": 775293}, "83.0": {"equal": 98, "more": 775123, "equal_or_more": 775221}, "83.5": {"equal": 87, "more": 775036, "equal_or_more": 775123}, "84.0": {"equal": 89, "more": 774947, "equal_or_more": 775036}, "84.5": {"equal": 73, "more": 774874, "equal_or_more": 774947}, "85.0": {"equal": 120, "more": 774754, "equal_or_more": 774874}, "85.5": {"equal": 89, "more": 774665, "equal_or_more": 774754}, "86.0": {"equal": 119, "more": 774546, "equal_or_more": 774665}, "86.5": {"equal": 100, "more": 774446, "equal_or_more": 774546}, "87.0": {"equal": 120, "more": 774326, "equal_or_more": 774446}, "87.5": {"equal": 107, "more": 774219, "equal_or_more": 774326}, "88.0": {"equal": 147, "more": 774072, "equal_or_more": 774219}, "88.5": {"equal": 94, "more": 773978, "equal_or_more": 774072}, "89.0": {"equal": 155, "more": 773823, "equal_or_more": 773978}, "89.5": {"equal": 82, "more": 773741, "equal_or_more": 773823}, "90.0": {"equal": 173, "more": 773568, "equal_or_more": 773741}, "90.5": {"equal": 112, "more": 773456, "equal_or_more": 773568}, "91.0": {"equal": 174, "more": 773282, "equal_or_more": 773456}, "91.5": {"equal": 121, "more": 773161, "equal_or_more": 773282}, "92.0": {"equal": 212, "more": 772949, "equal_or_more": 773161}, "92.5": {"equal": 131, "more": 772818, "equal_or_more": 772949}, "93.0": {"equal": 167, "more": 772651, "equal_or_more": 772818}, "93.5": {"equal": 135, "more": 772516, "equal_or_more": 772651}, "94.0": {"equal": 188, "more": 772328, "equal_or_more": 772516}, "94.5": {"equal": 135, "more": 772193, "equal_or_more": 772328}, "95.0": {"equal": 209, "more": 771984, "equal_or_more": 772193}, "95.5": {"equal": 131, "more": 771853, "equal_or_more": 771984}, "96.0": {"equal": 196, "more": 771657, "equal_or_more": 771853}, "96.5": {"equal": 154, "more": 771503, "equal_or_more": 771657}, "97.0": {"equal": 240, "more": 771263, "equal_or_more": 771503}, "97.5": {"equal": 177, "more": 771086, "equal_or_more": 771263}, "98.0": {"equal": 240, "more": 770846, "equal_or_more": 771086}, "98.5": {"equal": 165, "more": 770681, "equal_or_more": 770846}, "99.0": {"equal": 233, "more": 770448, "equal_or_more": 770681}, "99.5": {"equal": 194, "more": 770254, "equal_or_more": 770448}, "100.0": {"equal": 268, "more": 769986, "equal_or_more": 770254}, "100.5": {"equal": 204, "more": 769782, "equal_or_more": 769986}, "101.0": {"equal": 300, "more": 769482, "equal_or_more": 769782}, "101.5": {"equal": 210, "more": 769272, "equal_or_more": 769482}, "102.0": {"equal": 302, "more": 768970, "equal_or_more": 769272}, "102.5": {"equal": 211, "more": 768759, "equal_or_more": 768970}, "103.0": {"equal": 288, "more": 768471, "equal_or_more": 768759}, "103.5": {"equal": 240, "more": 768231, "equal_or_more": 768471}, "104.0": {"equal": 321, "more": 767910, "equal_or_more": 768231}, "104.5": {"equal": 245, "more": 767665, "equal_or_more": 767910}, "105.0": {"equal": 349, "more": 767316, "equal_or_more": 767665}, "105.5": {"equal": 282, "more": 767034, "equal_or_more": 767316}, "106.0": {"equal": 350, "more": 766684, "equal_or_more": 767034}, "106.5": {"equal": 250, "more": 766434, "equal_or_more": 766684}, "107.0": {"equal": 363, "more": 766071, "equal_or_more": 766434}, "107.5": {"equal": 230, "more": 765841, "equal_or_more": 766071}, "108.0": {"equal": 354, "more": 765487, "equal_or_more": 765841}, "108.5": {"equal": 275, "more": 765212, "equal_or_more": 765487}, "109.0": {"equal": 371, "more": 764841, "equal_or_more": 765212}, "109.5": {"equal": 289, "more": 764552, "equal_or_more": 764841}, "110.0": {"equal": 423, "more": 764129, "equal_or_more": 764552}, "110.5": {"equal": 286, "more": 763843, "equal_or_more": 764129}, "111.0": {"equal": 401, "more": 763442, "equal_or_more": 763843}, "111.5": {"equal": 310, "more": 763132, "equal_or_more": 763442}, "112.0": {"equal": 444, "more": 762688, "equal_or_more": 763132}, "112.5": {"equal": 270, "more": 762418, "equal_or_more": 762688}, "113.0": {"equal": 412, "more": 762006, "equal_or_more": 762418}, "113.5": {"equal": 299, "more": 761707, "equal_or_more": 762006}, "114.0": {"equal": 479, "more": 761228, "equal_or_more": 761707}, "114.5": {"equal": 338, "more": 760890, "equal_or_more": 761228}, "115.0": {"equal": 467, "more": 760423, "equal_or_more": 760890}, "115.5": {"equal": 372, "more": 760051, "equal_or_more": 760423}, "116.0": {"equal": 524, "more": 759527, "equal_or_more": 760051}, "116.5": {"equal": 379, "more": 759148, "equal_or_more": 759527}, "117.0": {"equal": 572, "more": 758576, "equal_or_more": 759148}, "117.5": {"equal": 401, "more": 758175, "equal_or_more": 758576}, "118.0": {"equal": 562, "more": 757613, "equal_or_more": 758175}, "118.5": {"equal": 414, "more": 757199, "equal_or_more": 757613}, "119.0": {"equal": 545, "more": 756654, "equal_or_more": 757199}, "119.5": {"equal": 446, "more": 756208, "equal_or_more": 756654}, "120.0": {"equal": 580, "more": 755628, "equal_or_more": 756208}, "120.5": {"equal": 475, "more": 755153, "equal_or_more": 755628}, "121.0": {"equal": 577, "more": 754576, "equal_or_more": 755153}, "121.5": {"equal": 450, "more": 754126, "equal_or_more": 754576}, "122.0": {"equal": 633, "more": 753493, "equal_or_more": 754126}, "122.5": {"equal": 500, "more": 752993, "equal_or_more": 753493}, "123.0": {"equal": 609, "more": 752384, "equal_or_more": 752993}, "123.5": {"equal": 479, "more": 751905, "equal_or_more": 752384}, "124.0": {"equal": 627, "more": 751278, "equal_or_more": 751905}, "124.5": {"equal": 473, "more": 750805, "equal_or_more": 751278}, "125.0": {"equal": 618, "more": 750187, "equal_or_more": 750805}, "125.5": {"equal": 446, "more": 749741, "equal_or_more": 750187}, "126.0": {"equal": 611, "more": 749130, "equal_or_more": 749741}, "126.5": {"equal": 506, "more": 748624, "equal_or_more": 749130}, "127.0": {"equal": 772, "more": 747852, "equal_or_more": 748624}, "127.5": {"equal": 527, "more": 747325, "equal_or_more": 747852}, "128.0": {"equal": 686, "more": 746639, "equal_or_more": 747325}, "128.5": {"equal": 522, "more": 746117, "equal_or_more": 746639}, "129.0": {"equal": 753, "more": 745364, "equal_or_more": 746117}, "129.5": {"equal": 542, "more": 744822, "equal_or_more": 745364}, "130.0": {"equal": 724, "more": 744098, "equal_or_more": 744822}, "130.5": {"equal": 559, "more": 743539, "equal_or_more": 744098}, "131.0": {"equal": 796, "more": 742743, "equal_or_more": 743539}, "131.5": {"equal": 625, "more": 742118, "equal_or_more": 742743}, "132.0": {"equal": 796, "more": 741322, "equal_or_more": 742118}, "132.5": {"equal": 535, "more": 740787, "equal_or_more": 741322}, "133.0": {"equal": 815, "more": 739972, "equal_or_more": 740787}, "133.5": {"equal": 588, "more": 739384, "equal_or_more": 739972}, "134.0": {"equal": 861, "more": 738523, "equal_or_more": 739384}, "134.5": {"equal": 653, "more": 737870, "equal_or_more": 738523}, "135.0": {"equal": 873, "more": 736997, "equal_or_more": 737870}, "135.5": {"equal": 664, "more": 736333, "equal_or_more": 736997}, "136.0": {"equal": 939, "more": 735394, "equal_or_more": 736333}, "136.5": {"equal": 680, "more": 734714, "equal_or_more": 735394}, "137.0": {"equal": 937, "more": 733777, "equal_or_more": 734714}, "137.5": {"equal": 703, "more": 733074, "equal_or_more": 733777}, "138.0": {"equal": 948, "more": 732126, "equal_or_more": 733074}, "138.5": {"equal": 755, "more": 731371, "equal_or_more": 732126}, "139.0": {"equal": 961, "more": 730410, "equal_or_more": 731371}, "139.5": {"equal": 753, "more": 729657, "equal_or_more": 730410}, "140.0": {"equal": 961, "more": 728696, "equal_or_more": 729657}, "140.5": {"equal": 750, "more": 727946, "equal_or_more": 728696}, "141.0": {"equal": 937, "more": 727009, "equal_or_more": 727946}, "141.5": {"equal": 750, "more": 726259, "equal_or_more": 727009}, "142.0": {"equal": 964, "more": 725295, "equal_or_more": 726259}, "142.5": {"equal": 763, "more": 724532, "equal_or_more": 725295}, "143.0": {"equal": 936, "more": 723596, "equal_or_more": 724532}, "143.5": {"equal": 818, "more": 722778, "equal_or_more": 723596}, "144.0": {"equal": 1012, "more": 721766, "equal_or_more": 722778}, "144.5": {"equal": 753, "more": 721013, "equal_or_more": 721766}, "145.0": {"equal": 1077, "more": 719936, "equal_or_more": 721013}, "145.5": {"equal": 828, "more": 719108, "equal_or_more": 719936}, "146.0": {"equal": 1159, "more": 717949, "equal_or_more": 719108}, "146.5": {"equal": 872, "more": 717077, "equal_or_more": 717949}, "147.0": {"equal": 1230, "more": 715847, "equal_or_more": 717077}, "147.5": {"equal": 914, "more": 714933, "equal_or_more": 715847}, "148.0": {"equal": 1273, "more": 713660, "equal_or_more": 714933}, "148.5": {"equal": 951, "more": 712709, "equal_or_more": 713660}, "149.0": {"equal": 1256, "more": 711453, "equal_or_more": 712709}, "149.5": {"equal": 929, "more": 710524, "equal_or_more": 711453}, "150.0": {"equal": 1275, "more": 709249, "equal_or_more": 710524}, "150.5": {"equal": 1038, "more": 708211, "equal_or_more": 709249}, "151.0": {"equal": 1424, "more": 706787, "equal_or_more": 708211}, "151.5": {"equal": 1075, "more": 705712, "equal_or_more": 706787}, "152.0": {"equal": 1396, "more": 704316, "equal_or_more": 705712}, "152.5": {"equal": 1073, "more": 703243, "equal_or_more": 704316}, "153.0": {"equal": 1414, "more": 701829, "equal_or_more": 703243}, "153.5": {"equal": 1147, "more": 700682, "equal_or_more": 701829}, "154.0": {"equal": 1240, "more": 699442, "equal_or_more": 700682}, "154.5": {"equal": 1089, "more": 698353, "equal_or_more": 699442}, "155.0": {"equal": 1393, "more": 696960, "equal_or_more": 698353}, "155.5": {"equal": 1190, "more": 695770, "equal_or_more": 696960}, "156.0": {"equal": 1313, "more": 694457, "equal_or_more": 695770}, "156.5": {"equal": 1162, "more": 693295, "equal_or_more": 694457}, "157.0": {"equal": 1295, "more": 692000, "equal_or_more": 693295}, "157.5": {"equal": 1126, "more": 690874, "equal_or_more": 692000}, "158.0": {"equal": 1302, "more": 689572, "equal_or_more": 690874}, "158.5": {"equal": 1204, "more": 688368, "equal_or_more": 689572}, "159.0": {"equal": 1321, "more": 687047, "equal_or_more": 688368}, "159.5": {"equal": 1198, "more": 685849, "equal_or_more": 687047}, "160.0": {"equal": 2189, "more": 683660, "equal_or_more": 685849}, "160.5": {"equal": 1278, "more": 682382, "equal_or_more": 683660}, "161.0": {"equal": 1601, "more": 680781, "equal_or_more": 682382}, "161.5": {"equal": 1399, "more": 679382, "equal_or_more": 680781}, "162.0": {"equal": 1629, "more": 677753, "equal_or_more": 679382}, "162.5": {"equal": 1395, "more": 676358, "equal_or_more": 677753}, "163.0": {"equal": 1758, "more": 674600, "equal_or_more": 676358}, "163.5": {"equal": 1454, "more": 673146, "equal_or_more": 674600}, "164.0": {"equal": 1797, "more": 671349, "equal_or_more": 673146}, "164.5": {"equal": 1465, "more": 669884, "equal_or_more": 671349}, "165.0": {"equal": 1796, "more": 668088, "equal_or_more": 669884}, "165.5": {"equal": 1537, "more": 666551, "equal_or_more": 668088}, "166.0": {"equal": 1787, "more": 664764, "equal_or_more": 666551}, "166.5": {"equal": 1528, "more": 663236, "equal_or_more": 664764}, "167.0": {"equal": 1823, "more": 661413, "equal_or_more": 663236}, "167.5": {"equal": 1619, "more": 659794, "equal_or_more": 661413}, "168.0": {"equal": 1983, "more": 657811, "equal_or_more": 659794}, "168.5": {"equal": 1660, "more": 656151, "equal_or_more": 657811}, "169.0": {"equal": 1942, "more": 654209, "equal_or_more": 656151}, "169.5": {"equal": 1704, "more": 652505, "equal_or_more": 654209}, "170.0": {"equal": 1992, "more": 650513, "equal_or_more": 652505}, "170.5": {"equal": 1777, "more": 648736, "equal_or_more": 650513}, "171.0": {"equal": 2047, "more": 646689, "equal_or_more": 648736}, "171.5": {"equal": 1735, "more": 644954, "equal_or_more": 646689}, "172.0": {"equal": 2134, "more": 642820, "equal_or_more": 644954}, "172.5": {"equal": 1804, "more": 641016, "equal_or_more": 642820}, "173.0": {"equal": 2050, "more": 638966, "equal_or_more": 641016}, "173.5": {"equal": 1813, "more": 637153, "equal_or_more": 638966}, "174.0": {"equal": 2236, "more": 634917, "equal_or_more": 637153}, "174.5": {"equal": 1896, "more": 633021, "equal_or_more": 634917}, "175.0": {"equal": 2219, "more": 630802, "equal_or_more": 633021}, "175.5": {"equal": 1967, "more": 628835, "equal_or_more": 630802}, "176.0": {"equal": 2295, "more": 626540, "equal_or_more": 628835}, "176.5": {"equal": 1945, "more": 624595, "equal_or_more": 626540}, "177.0": {"equal": 2249, "more": 622346, "equal_or_more": 624595}, "177.5": {"equal": 2009, "more": 620337, "equal_or_more": 622346}, "178.0": {"equal": 2234, "more": 618103, "equal_or_more": 620337}, "178.5": {"equal": 2046, "more": 616057, "equal_or_more": 618103}, "179.0": {"equal": 2233, "more": 613824, "equal_or_more": 616057}, "179.5": {"equal": 2121, "more": 611703, "equal_or_more": 613824}, "180.0": {"equal": 2333, "more": 609370, "equal_or_more": 611703}, "180.5": {"equal": 2205, "more": 607165, "equal_or_more": 609370}, "181.0": {"equal": 2350, "more": 604815, "equal_or_more": 607165}, "181.5": {"equal": 2172, "more": 602643, "equal_or_more": 604815}, "182.0": {"equal": 2391, "more": 600252, "equal_or_more": 602643}, "182.5": {"equal": 2257, "more": 597995, "equal_or_more": 600252}, "183.0": {"equal": 2525, "more": 595470, "equal_or_more": 597995}, "183.5": {"equal": 2282, "more": 593188, "equal_or_more": 595470}, "184.0": {"equal": 2572, "more": 590616, "equal_or_more": 593188}, "184.5": {"equal": 2343, "more": 588273, "equal_or_more": 590616}, "185.0": {"equal": 2691, "more": 585582, "equal_or_more": 588273}, "185.5": {"equal": 2384, "more": 583198, "equal_or_more": 585582}, "186.0": {"equal": 2723, "more": 580475, "equal_or_more": 583198}, "186.5": {"equal": 2402, "more": 578073, "equal_or_more": 580475}, "187.0": {"equal": 2856, "more": 575217, "equal_or_more": 578073}, "187.5": {"equal": 2649, "more": 572568, "equal_or_more": 575217}, "188.0": {"equal": 2990, "more": 569578, "equal_or_more": 572568}, "188.5": {"equal": 2563, "more": 567015, "equal_or_more": 569578}, "189.0": {"equal": 2962, "more": 564053, "equal_or_more": 567015}, "189.5": {"equal": 2623, "more": 561430, "equal_or_more": 564053}, "190.0": {"equal": 2823, "more": 558607, "equal_or_more": 561430}, "190.5": {"equal": 2560, "more": 556047, "equal_or_more": 558607}, "191.0": {"equal": 2840, "more": 553207, "equal_or_more": 556047}, "191.5": {"equal": 2571, "more": 550636, "equal_or_more": 553207}, "192.0": {"equal": 2818, "more": 547818, "equal_or_more": 550636}, "192.5": {"equal": 2582, "more": 545236, "equal_or_more": 547818}, "193.0": {"equal": 2742, "more": 542494, "equal_or_more": 545236}, "193.5": {"equal": 2638, "more": 539856, "equal_or_more": 542494}, "194.0": {"equal": 2847, "more": 537009, "equal_or_more": 539856}, "194.5": {"equal": 2646, "more": 534363, "equal_or_more": 537009}, "195.0": {"equal": 2806, "more": 531557, "equal_or_more": 534363}, "195.5": {"equal": 2716, "more": 528841, "equal_or_more": 531557}, "196.0": {"equal": 2782, "more": 526059, "equal_or_more": 528841}, "196.5": {"equal": 2616, "more": 523443, "equal_or_more": 526059}, "197.0": {"equal": 2788, "more": 520655, "equal_or_more": 523443}, "197.5": {"equal": 2693, "more": 517962, "equal_or_more": 520655}, "198.0": {"equal": 2798, "more": 515164, "equal_or_more": 517962}, "198.5": {"equal": 2625, "more": 512539, "equal_or_more": 515164}, "199.0": {"equal": 2804, "more": 509735, "equal_or_more": 512539}, "199.5": {"equal": 2691, "more": 507044, "equal_or_more": 509735}, "200.0": {"equal": 2843, "more": 504201, "equal_or_more": 507044}, "200.5": {"equal": 2613, "more": 501588, "equal_or_more": 504201}, "201.0": {"equal": 2771, "more": 498817, "equal_or_more": 501588}, "201.5": {"equal": 2699, "more": 496118, "equal_or_more": 498817}, "202.0": {"equal": 2759, "more": 493359, "equal_or_more": 496118}, "202.5": {"equal": 2687, "more": 490672, "equal_or_more": 493359}, "203.0": {"equal": 2791, "more": 487881, "equal_or_more": 490672}, "203.5": {"equal": 2625, "more": 485256, "equal_or_more": 487881}, "204.0": {"equal": 2815, "more": 482441, "equal_or_more": 485256}, "204.5": {"equal": 2687, "more": 479754, "equal_or_more": 482441}, "205.0": {"equal": 6690, "more": 473064, "equal_or_more": 479754}, "205.5": {"equal": 2873, "more": 470191, "equal_or_more": 473064}, "206.0": {"equal": 3428, "more": 466763, "equal_or_more": 470191}, "206.5": {"equal": 2907, "more": 463856, "equal_or_more": 466763}, "207.0": {"equal": 3315, "more": 460541, "equal_or_more": 463856}, "207.5": {"equal": 2966, "more": 457575, "equal_or_more": 460541}, "208.0": {"equal": 3228, "more": 454347, "equal_or_more": 457575}, "208.5": {"equal": 3011, "more": 451336, "equal_or_more": 454347}, "209.0": {"equal": 3325, "more": 448011, "equal_or_more": 451336}, "209.5": {"equal": 2941, "more": 445070, "equal_or_more": 448011}, "210.0": {"equal": 3189, "more": 441881, "equal_or_more": 445070}, "210.5": {"equal": 2984, "more": 438897, "equal_or_more": 441881}, "211.0": {"equal": 3155, "more": 435742, "equal_or_more": 438897}, "211.5": {"equal": 2879, "more": 432863, "equal_or_more": 435742}, "212.0": {"equal": 3185, "more": 429678, "equal_or_more": 432863}, "212.5": {"equal": 3005, "more": 426673, "equal_or_more": 429678}, "213.0": {"equal": 3243, "more": 423430, "equal_or_more": 426673}, "213.5": {"equal": 2864, "more": 420566, "equal_or_more": 423430}, "214.0": {"equal": 3134, "more": 417432, "equal_or_more": 420566}, "214.5": {"equal": 2967, "more": 414465, "equal_or_more": 417432}, "215.0": {"equal": 3059, "more": 411406, "equal_or_more": 414465}, "215.5": {"equal": 2928, "more": 408478, "equal_or_more": 411406}, "216.0": {"equal": 3015, "more": 405463, "equal_or_more": 408478}, "216.5": {"equal": 2804, "more": 402659, "equal_or_more": 405463}, "217.0": {"equal": 3013, "more": 399646, "equal_or_more": 402659}, "217.5": {"equal": 2766, "more": 396880, "equal_or_more": 399646}, "218.0": {"equal": 3005, "more": 393875, "equal_or_more": 396880}, "218.5": {"equal": 2872, "more": 391003, "equal_or_more": 393875}, "219.0": {"equal": 2929, "more": 388074, "equal_or_more": 391003}, "219.5": {"equal": 2884, "more": 385190, "equal_or_more": 388074}, "220.0": {"equal": 2958, "more": 382232, "equal_or_more": 385190}, "220.5": {"equal": 2806, "more": 379426, "equal_or_more": 382232}, "221.0": {"equal": 2924, "more": 376502, "equal_or_more": 379426}, "221.5": {"equal": 2897, "more": 373605, "equal_or_more": 376502}, "222.0": {"equal": 2820, "more": 370785, "equal_or_more": 373605}, "222.5": {"equal": 2800, "more": 367985, "equal_or_more": 370785}, "223.0": {"equal": 2859, "more": 365126, "equal_or_more": 367985}, "223.5": {"equal": 2714, "more": 362412, "equal_or_more": 365126}, "224.0": {"equal": 2871, "more": 359541, "equal_or_more": 362412}, "224.5": {"equal": 2756, "more": 356785, "equal_or_more": 359541}, "225.0": {"equal": 2889, "more": 353896, "equal_or_more": 356785}, "225.5": {"equal": 2858, "more": 351038, "equal_or_more": 353896}, "226.0": {"equal": 2867, "more": 348171, "equal_or_more": 351038}, "226.5": {"equal": 2689, "more": 345482, "equal_or_more": 348171}, "227.0": {"equal": 2822, "more": 342660, "equal_or_more": 345482}, "227.5": {"equal": 2675, "more": 339985, "equal_or_more": 342660}, "228.0": {"equal": 2841, "more": 337144, "equal_or_more": 339985}, "228.5": {"equal": 2699, "more": 334445, "equal_or_more": 337144}, "229.0": {"equal": 2670, "more": 331775, "equal_or_more": 334445}, "229.5": {"equal": 2708, "more": 329067, "equal_or_more": 331775}, "230.0": {"equal": 2720, "more": 326347, "equal_or_more": 329067}, "230.5": {"equal": 2727, "more": 323620, "equal_or_more": 326347}, "231.0": {"equal": 2752, "more": 320868, "equal_or_more": 323620}, "231.5": {"equal": 2701, "more": 318167, "equal_or_more": 320868}, "232.0": {"equal": 2697, "more": 315470, "equal_or_more": 318167}, "232.5": {"equal": 2664, "more": 312806, "equal_or_more": 315470}, "233.0": {"equal": 2722, "more": 310084, "equal_or_more": 312806}, "233.5": {"equal": 2695, "more": 307389, "equal_or_more": 310084}, "234.0": {"equal": 2670, "more": 304719, "equal_or_more": 307389}, "234.5": {"equal": 2638, "more": 302081, "equal_or_more": 304719}, "235.0": {"equal": 2692, "more": 299389, "equal_or_more": 302081}, "235.5": {"equal": 2568, "more": 296821, "equal_or_more": 299389}, "236.0": {"equal": 2657, "more": 294164, "equal_or_more": 296821}, "236.5": {"equal": 2644, "more": 291520, "equal_or_more": 294164}, "237.0": {"equal": 2596, "more": 288924, "equal_or_more": 291520}, "237.5": {"equal": 2598, "more": 286326, "equal_or_more": 288924}, "238.0": {"equal": 2612, "more": 283714, "equal_or_more": 286326}, "238.5": {"equal": 2576, "more": 281138, "equal_or_more": 283714}, "239.0": {"equal": 2618, "more": 278520, "equal_or_more": 281138}, "239.5": {"equal": 2565, "more": 275955, "equal_or_more": 278520}, "240.0": {"equal": 2645, "more": 273310, "equal_or_more": 275955}, "240.5": {"equal": 2570, "more": 270740, "equal_or_more": 273310}, "241.0": {"equal": 2614, "more": 268126, "equal_or_more": 270740}, "241.5": {"equal": 2429, "more": 265697, "equal_or_more": 268126}, "242.0": {"equal": 2569, "more": 263128, "equal_or_more": 265697}, "242.5": {"equal": 2531, "more": 260597, "equal_or_more": 263128}, "243.0": {"equal": 2647, "more": 257950, "equal_or_more": 260597}, "243.5": {"equal": 2546, "more": 255404, "equal_or_more": 257950}, "244.0": {"equal": 2594, "more": 252810, "equal_or_more": 255404}, "244.5": {"equal": 2614, "more": 250196, "equal_or_more": 252810}, "245.0": {"equal": 2563, "more": 247633, "equal_or_more": 250196}, "245.5": {"equal": 2524, "more": 245109, "equal_or_more": 247633}, "246.0": {"equal": 2571, "more": 242538, "equal_or_more": 245109}, "246.5": {"equal": 2530, "more": 240008, "equal_or_more": 242538}, "247.0": {"equal": 2566, "more": 237442, "equal_or_more": 240008}, "247.5": {"equal": 2477, "more": 234965, "equal_or_more": 237442}, "248.0": {"equal": 2543, "more": 232422, "equal_or_more": 234965}, "248.5": {"equal": 2493, "more": 229929, "equal_or_more": 232422}, "249.0": {"equal": 2453, "more": 227476, "equal_or_more": 229929}, "249.5": {"equal": 2450, "more": 225026, "equal_or_more": 227476}, "250.0": {"equal": 2498, "more": 222528, "equal_or_more": 225026}, "250.5": {"equal": 2441, "more": 220087, "equal_or_more": 222528}, "251.0": {"equal": 2568, "more": 217519, "equal_or_more": 220087}, "251.5": {"equal": 2408, "more": 215111, "equal_or_more": 217519}, "252.0": {"equal": 2610, "more": 212501, "equal_or_more": 215111}, "252.5": {"equal": 2448, "more": 210053, "equal_or_more": 212501}, "253.0": {"equal": 2501, "more": 207552, "equal_or_more": 210053}, "253.5": {"equal": 2428, "more": 205124, "equal_or_more": 207552}, "254.0": {"equal": 2389, "more": 202735, "equal_or_more": 205124}, "254.5": {"equal": 2459, "more": 200276, "equal_or_more": 202735}, "255.0": {"equal": 2408, "more": 197868, "equal_or_more": 200276}, "255.5": {"equal": 2381, "more": 195487, "equal_or_more": 197868}, "256.0": {"equal": 2369, "more": 193118, "equal_or_more": 195487}, "256.5": {"equal": 2359, "more": 190759, "equal_or_more": 193118}, "257.0": {"equal": 2403, "more": 188356, "equal_or_more": 190759}, "257.5": {"equal": 2404, "more": 185952, "equal_or_more": 188356}, "258.0": {"equal": 2364, "more": 183588, "equal_or_more": 185952}, "258.5": {"equal": 2376, "more": 181212, "equal_or_more": 183588}, "259.0": {"equal": 2384, "more": 178828, "equal_or_more": 181212}, "259.5": {"equal": 2425, "more": 176403, "equal_or_more": 178828}, "260.0": {"equal": 2393, "more": 174010, "equal_or_more": 176403}, "260.5": {"equal": 2352, "more": 171658, "equal_or_more": 174010}, "261.0": {"equal": 2266, "more": 169392, "equal_or_more": 171658}, "261.5": {"equal": 2387, "more": 167005, "equal_or_more": 169392}, "262.0": {"equal": 2393, "more": 164612, "equal_or_more": 167005}, "262.5": {"equal": 2318, "more": 162294, "equal_or_more": 164612}, "263.0": {"equal": 2325, "more": 159969, "equal_or_more": 162294}, "263.5": {"equal": 2315, "more": 157654, "equal_or_more": 159969}, "264.0": {"equal": 2256, "more": 155398, "equal_or_more": 157654}, "264.5": {"equal": 2248, "more": 153150, "equal_or_more": 155398}, "265.0": {"equal": 2321, "more": 150829, "equal_or_more": 153150}, "265.5": {"equal": 2266, "more": 148563, "equal_or_more": 150829}, "266.0": {"equal": 2333, "more": 146230, "equal_or_more": 148563}, "266.5": {"equal": 2302, "more": 143928, "equal_or_more": 146230}, "267.0": {"equal": 2307, "more": 141621, "equal_or_more": 143928}, "267.5": {"equal": 2225, "more": 139396, "equal_or_more": 141621}, "268.0": {"equal": 2276, "more": 137120, "equal_or_more": 139396}, "268.5": {"equal": 2203, "more": 134917, "equal_or_more": 137120}, "269.0": {"equal": 2213, "more": 132704, "equal_or_more": 134917}, "269.5": {"equal": 2149, "more": 130555, "equal_or_more": 132704}, "270.0": {"equal": 2218, "more": 128337, "equal_or_more": 130555}, "270.5": {"equal": 2105, "more": 126232, "equal_or_more": 128337}, "271.0": {"equal": 2242, "more": 123990, "equal_or_more": 126232}, "271.5": {"equal": 2154, "more": 121836, "equal_or_more": 123990}, "272.0": {"equal": 2172, "more": 119664, "equal_or_more": 121836}, "272.5": {"equal": 2172, "more": 117492, "equal_or_more": 119664}, "273.0": {"equal": 2258, "more": 115234, "equal_or_more": 117492}, "273.5": {"equal": 2160, "more": 113074, "equal_or_more": 115234}, "274.0": {"equal": 2180, "more": 110894, "equal_or_more": 113074}, "274.5": {"equal": 2175, "more": 108719, "equal_or_more": 110894}, "275.0": {"equal": 2152, "more": 106567, "equal_or_more": 108719}, "275.5": {"equal": 2120, "more": 104447, "equal_or_more": 106567}, "276.0": {"equal": 2097, "more": 102350, "equal_or_more": 104447}, "276.5": {"equal": 2051, "more": 100299, "equal_or_more": 102350}, "277.0": {"equal": 2124, "more": 98175, "equal_or_more": 100299}, "277.5": {"equal": 2045, "more": 96130, "equal_or_more": 98175}, "278.0": {"equal": 2026, "more": 94104, "equal_or_more": 96130}, "278.5": {"equal": 2078, "more": 92026, "equal_or_more": 94104}, "279.0": {"equal": 2104, "more": 89922, "equal_or_more": 92026}, "279.5": {"equal": 2118, "more": 87804, "equal_or_more": 89922}, "280.0": {"equal": 2097, "more": 85707, "equal_or_more": 87804}, "280.5": {"equal": 1999, "more": 83708, "equal_or_more": 85707}, "281.0": {"equal": 2094, "more": 81614, "equal_or_more": 83708}, "281.5": {"equal": 2038, "more": 79576, "equal_or_more": 81614}, "282.0": {"equal": 2072, "more": 77504, "equal_or_more": 79576}, "282.5": {"equal": 2073, "more": 75431, "equal_or_more": 77504}, "283.0": {"equal": 1998, "more": 73433, "equal_or_more": 75431}, "283.5": {"equal": 2033, "more": 71400, "equal_or_more": 73433}, "284.0": {"equal": 2040, "more": 69360, "equal_or_more": 71400}, "284.5": {"equal": 1954, "more": 67406, "equal_or_more": 69360}, "285.0": {"equal": 2088, "more": 65318, "equal_or_more": 67406}, "285.5": {"equal": 1972, "more": 63346, "equal_or_more": 65318}, "286.0": {"equal": 1988, "more": 61358, "equal_or_more": 63346}, "286.5": {"equal": 1954, "more": 59404, "equal_or_more": 61358}, "287.0": {"equal": 1950, "more": 57454, "equal_or_more": 59404}, "287.5": {"equal": 2032, "more": 55422, "equal_or_more": 57454}, "288.0": {"equal": 1931, "more": 53491, "equal_or_more": 55422}, "288.5": {"equal": 1910, "more": 51581, "equal_or_more": 53491}, "289.0": {"equal": 2016, "more": 49565, "equal_or_more": 51581}, "289.5": {"equal": 1939, "more": 47626, "equal_or_more": 49565}, "290.0": {"equal": 1938, "more": 45688, "equal_or_more": 47626}, "290.5": {"equal": 1824, "more": 43864, "equal_or_more": 45688}, "291.0": {"equal": 1907, "more": 41957, "equal_or_more": 43864}, "291.5": {"equal": 1840, "more": 40117, "equal_or_more": 41957}, "292.0": {"equal": 1911, "more": 38206, "equal_or_more": 40117}, "292.5": {"equal": 1855, "more": 36351, "equal_or_more": 38206}, "293.0": {"equal": 1904, "more": 34447, "equal_or_more": 36351}, "293.5": {"equal": 1763, "more": 32684, "equal_or_more": 34447}, "294.0": {"equal": 1805, "more": 30879, "equal_or_more": 32684}, "294.5": {"equal": 1684, "more": 29195, "equal_or_more": 30879}, "295.0": {"equal": 1781, "more": 27414, "equal_or_more": 29195}, "295.5": {"equal": 1675, "more": 25739, "equal_or_more": 27414}, "296.0": {"equal": 1586, "more": 24153, "equal_or_more": 25739}, "296.5": {"equal": 1468, "more": 22685, "equal_or_more": 24153}, "297.0": {"equal": 1478, "more": 21207, "equal_or_more": 22685}, "297.5": {"equal": 1360, "more": 19847, "equal_or_more": 21207}, "298.0": {"equal": 1462, "more": 18385, "equal_or_more": 19847}, "298.5": {"equal": 1278, "more": 17107, "equal_or_more": 18385}, "299.0": {"equal": 1310, "more": 15797, "equal_or_more": 17107}, "299.5": {"equal": 1180, "more": 14617, "equal_or_more": 15797}, "300.0": {"equal": 1090, "more": 13527, "equal_or_more": 14617}, "300.5": {"equal": 1046, "more": 12481, "equal_or_more": 13527}, "301.0": {"equal": 1004, "more": 11477, "equal_or_more": 12481}, "301.5": {"equal": 867, "more": 10610, "equal_or_more": 11477}, "302.0": {"equal": 921, "more": 9689, "equal_or_more": 10610}, "302.5": {"equal": 762, "more": 8927, "equal_or_more": 9689}, "303.0": {"equal": 784, "more": 8143, "equal_or_more": 8927}, "303.5": {"equal": 685, "more": 7458, "equal_or_more": 8143}, "304.0": {"equal": 712, "more": 6746, "equal_or_more": 7458}, "304.5": {"equal": 575, "more": 6171, "equal_or_more": 6746}, "305.0": {"equal": 656, "more": 5515, "equal_or_more": 6171}, "305.5": {"equal": 494, "more": 5021, "equal_or_more": 5515}, "306.0": {"equal": 534, "more": 4487, "equal_or_more": 5021}, "306.5": {"equal": 392, "more": 4095, "equal_or_more": 4487}, "307.0": {"equal": 445, "more": 3650, "equal_or_more": 4095}, "307.5": {"equal": 353, "more": 3297, "equal_or_more": 3650}, "308.0": {"equal": 383, "more": 2914, "equal_or_more": 3297}, "308.5": {"equal": 296, "more": 2618, "equal_or_more": 2914}, "309.0": {"equal": 309, "more": 2309, "equal_or_more": 2618}, "309.5": {"equal": 246, "more": 2063, "equal_or_more": 2309}, "310.0": {"equal": 261, "more": 1802, "equal_or_more": 2063}, "310.5": {"equal": 197, "more": 1605, "equal_or_more": 1802}, "311.0": {"equal": 203, "more": 1402, "equal_or_more": 1605}, "311.5": {"equal": 168, "more": 1234, "equal_or_more": 1402}, "312.0": {"equal": 146, "more": 1088, "equal_or_more": 1234}, "312.5": {"equal": 129, "more": 959, "equal_or_more": 1088}, "313.0": {"equal": 117, "more": 842, "equal_or_more": 959}, "313.5": {"equal": 98, "more": 744, "equal_or_more": 842}, "314.0": {"equal": 102, "more": 642, "equal_or_more": 744}, "314.5": {"equal": 76, "more": 566, "equal_or_more": 642}, "315.0": {"equal": 65, "more": 501, "equal_or_more": 566}, "315.5": {"equal": 81, "more": 420, "equal_or_more": 501}, "316.0": {"equal": 58, "more": 362, "equal_or_more": 420}, "316.5": {"equal": 55, "more": 307, "equal_or_more": 362}, "317.0": {"equal": 63, "more": 244, "equal_or_more": 307}, "317.5": {"equal": 43, "more": 201, "equal_or_more": 244}, "318.0": {"equal": 51, "more": 150, "equal_or_more": 201}, "318.5": {"equal": 42, "more": 108, "equal_or_more": 150}, "319.0": {"equal": 35, "more": 73, "equal_or_more": 108}, "319.5": {"equal": 29, "more": 44, "equal_or_more": 73}, "320.0": {"equal": 44, "more": 0, "equal_or_more": 44}}, "branches": {}, "regions": {}, "max_score": 320.0, "grade_step": 0.5, "total_students": 807385, "average_score": 210.35};
+        const ID_GROUP_FILES = ["group_1001.json", "group_1002.json", "group_1003.json", "group_1004.json", "group_1005.json", "group_1006.json", "group_1007.json", "group_1008.json", "group_1009.json", "group_1010.json", "group_1011.json", "group_1012.json", "group_1013.json", "group_1014.json", "group_1015.json", "group_1016.json", "group_1017.json", "group_1018.json", "group_1019.json", "group_1020.json", "group_1021.json", "group_1022.json", "group_1023.json", "group_1024.json", "group_1025.json", "group_1026.json", "group_1027.json", "group_1028.json", "group_1029.json", "group_1030.json", "group_1031.json", "group_1032.json", "group_1033.json", "group_1034.json", "group_1035.json", "group_1036.json", "group_1037.json", "group_1038.json", "group_1039.json", "group_1040.json", "group_1041.json", "group_1042.json", "group_1043.json", "group_1044.json", "group_1045.json", "group_1046.json", "group_1047.json", "group_1048.json", "group_1049.json", "group_1050.json", "group_1051.json", "group_1052.json", "group_1053.json", "group_1054.json", "group_1055.json", "group_1056.json", "group_1057.json", "group_1058.json", "group_1059.json", "group_1060.json", "group_1061.json", "group_1062.json", "group_1063.json", "group_1064.json", "group_1065.json", "group_1066.json", "group_1067.json", "group_1068.json", "group_1069.json", "group_1070.json", "group_1071.json", "group_1072.json", "group_1073.json", "group_1074.json", "group_1075.json", "group_1076.json", "group_1077.json", "group_1078.json", "group_1079.json", "group_1080.json", "group_1081.json", "group_1082.json", "group_1083.json", "group_1084.json", "group_1085.json", "group_1086.json", "group_1087.json", "group_1088.json", "group_1089.json", "group_1090.json", "group_1091.json", "group_1092.json", "group_1093.json", "group_1094.json", "group_1095.json", "group_1096.json", "group_1097.json", "group_1098.json", "group_1099.json", "group_1100.json", "group_1101.json", "group_1102.json", "group_1103.json", "group_1104.json", "group_1105.json", "group_1106.json", "group_1107.json", "group_1108.json", "group_1109.json", "group_1114.json", "group_1115.json", "group_1116.json", "group_1117.json", "group_1118.json", "group_1119.json", "group_1120.json", "group_1121.json", "group_1122.json", "group_1123.json", "group_1124.json", "group_1125.json", "group_1126.json", "group_1127.json", "group_1128.json", "group_1129.json", "group_1130.json", "group_1131.json", "group_1132.json", "group_1133.json", "group_1134.json", "group_1135.json", "group_1136.json", "group_1137.json", "group_1138.json", "group_1139.json", "group_1140.json", "group_1141.json", "group_1142.json", "group_1143.json", "group_1144.json", "group_1145.json", "group_1146.json", "group_1147.json", "group_1148.json", "group_1149.json", "group_1150.json", "group_1151.json", "group_1152.json", "group_1153.json", "group_1154.json", "group_1155.json", "group_1156.json", "group_1157.json", "group_1158.json", "group_1159.json", "group_1160.json", "group_1161.json", "group_1162.json", "group_1163.json", "group_1164.json", "group_1165.json", "group_1166.json", "group_1167.json", "group_1168.json", "group_1169.json", "group_1170.json", "group_1171.json", "group_1172.json", "group_1173.json", "group_1174.json", "group_1175.json", "group_1176.json", "group_1177.json", "group_1178.json", "group_1179.json", "group_1180.json", "group_1181.json", "group_1182.json", "group_1183.json", "group_1184.json", "group_1185.json", "group_1186.json", "group_1187.json", "group_1188.json", "group_1190.json", "group_1191.json", "group_1192.json", "group_1193.json", "group_1194.json", "group_1195.json", "group_1196.json", "group_1198.json", "group_1205.json", "group_1206.json", "group_1207.json", "group_1208.json", "group_1209.json", "group_1210.json", "group_1211.json", "group_1212.json", "group_1213.json", "group_1214.json", "group_1215.json", "group_1216.json", "group_1217.json", "group_1218.json", "group_1219.json", "group_1220.json", "group_1221.json", "group_1222.json", "group_1223.json", "group_1224.json", "group_1225.json", "group_1226.json", "group_1227.json", "group_1228.json", "group_1229.json", "group_1230.json", "group_1231.json", "group_1232.json", "group_1233.json", "group_1234.json", "group_1235.json", "group_1236.json", "group_1237.json", "group_1238.json", "group_1239.json", "group_1240.json", "group_1241.json", "group_1242.json", "group_1243.json", "group_1244.json", "group_1245.json", "group_1246.json", "group_1247.json", "group_1248.json", "group_1249.json", "group_1250.json", "group_1251.json", "group_1252.json", "group_1253.json", "group_1254.json", "group_1255.json", "group_1256.json", "group_1257.json", "group_1258.json", "group_1259.json", "group_1260.json", "group_1261.json", "group_1262.json", "group_1263.json", "group_1264.json", "group_1265.json", "group_1266.json", "group_1267.json", "group_1268.json", "group_1269.json", "group_1270.json", "group_1271.json", "group_1272.json", "group_1273.json", "group_1274.json", "group_1275.json", "group_1276.json", "group_1277.json", "group_1278.json", "group_1279.json", "group_1280.json", "group_1281.json", "group_1282.json", "group_1283.json", "group_1284.json", "group_1285.json", "group_1286.json", "group_1287.json", "group_1288.json", "group_1289.json", "group_1290.json", "group_1291.json", "group_1292.json", "group_1293.json", "group_1295.json", "group_1296.json", "group_1297.json", "group_1298.json", "group_1299.json", "group_1300.json", "group_1301.json", "group_1302.json", "group_1303.json", "group_1304.json", "group_1305.json", "group_1306.json", "group_1307.json", "group_1308.json", "group_1309.json", "group_1310.json", "group_1311.json", "group_1312.json", "group_1313.json", "group_1314.json", "group_1315.json", "group_1316.json", "group_1317.json", "group_1318.json", "group_1319.json", "group_1320.json", "group_1321.json", "group_1322.json", "group_1323.json", "group_1324.json", "group_1325.json", "group_1326.json", "group_1327.json", "group_1328.json", "group_1329.json", "group_1330.json", "group_1331.json", "group_1332.json", "group_1333.json", "group_1334.json", "group_1335.json", "group_1336.json", "group_1337.json", "group_1338.json", "group_1339.json", "group_1340.json", "group_1341.json", "group_1342.json", "group_1343.json", "group_1344.json", "group_1345.json", "group_1346.json", "group_1347.json", "group_1348.json", "group_1349.json", "group_1350.json", "group_1351.json", "group_1352.json", "group_1353.json", "group_1354.json", "group_1355.json", "group_1356.json", "group_1357.json", "group_1358.json", "group_1359.json", "group_1360.json", "group_1361.json", "group_1362.json", "group_1363.json", "group_1364.json", "group_1365.json", "group_1366.json", "group_1367.json", "group_1368.json", "group_1369.json", "group_1370.json", "group_1371.json", "group_1372.json", "group_1373.json", "group_1374.json", "group_1375.json", "group_1376.json", "group_1377.json", "group_1378.json", "group_1379.json", "group_1380.json", "group_1381.json", "group_1382.json", "group_1383.json", "group_1384.json", "group_1385.json", "group_1386.json", "group_1387.json", "group_1388.json", "group_1389.json", "group_1390.json", "group_1391.json", "group_1392.json", "group_1393.json", "group_1394.json", "group_1395.json", "group_1396.json", "group_1397.json", "group_1398.json", "group_1399.json", "group_1400.json", "group_1401.json", "group_1402.json", "group_1403.json", "group_1404.json", "group_1405.json", "group_1406.json", "group_1407.json", "group_1408.json", "group_1409.json", "group_1410.json", "group_1411.json", "group_1412.json", "group_1413.json", "group_1414.json", "group_1415.json", "group_1416.json", "group_1417.json", "group_1418.json", "group_1419.json", "group_1420.json", "group_1421.json", "group_1422.json", "group_1423.json", "group_1424.json", "group_1425.json", "group_1426.json", "group_1427.json", "group_1428.json", "group_1429.json", "group_1430.json", "group_1431.json", "group_1432.json", "group_1433.json", "group_1434.json", "group_1435.json", "group_1436.json", "group_1437.json", "group_1438.json", "group_1439.json", "group_1440.json", "group_1441.json", "group_1442.json", "group_1443.json", "group_1444.json", "group_1445.json", "group_1446.json", "group_1447.json", "group_1448.json", "group_1449.json", "group_1450.json", "group_1451.json", "group_1452.json", "group_1453.json", "group_1454.json", "group_1455.json", "group_1456.json", "group_1457.json", "group_1458.json", "group_1459.json", "group_1460.json", "group_1461.json", "group_1462.json", "group_1463.json", "group_1464.json", "group_1465.json", "group_1466.json", "group_1467.json", "group_1468.json", "group_1469.json", "group_1470.json", "group_1471.json", "group_1472.json", "group_1473.json", "group_1474.json", "group_1475.json", "group_1476.json", "group_1477.json", "group_1478.json", "group_1479.json", "group_1480.json", "group_1481.json", "group_1482.json", "group_1483.json", "group_1484.json", "group_1485.json", "group_1486.json", "group_1487.json", "group_1488.json", "group_1489.json", "group_1490.json", "group_1491.json", "group_1492.json", "group_1493.json", "group_1494.json", "group_1495.json", "group_1496.json", "group_1497.json", "group_1498.json", "group_1499.json", "group_1500.json", "group_1501.json", "group_1502.json", "group_1503.json", "group_1504.json", "group_1505.json", "group_1506.json", "group_1507.json", "group_1508.json", "group_1509.json", "group_1510.json", "group_1511.json", "group_1512.json", "group_1513.json", "group_1514.json", "group_1515.json", "group_1516.json", "group_1517.json", "group_1518.json", "group_1519.json", "group_1520.json", "group_1521.json", "group_1522.json", "group_1523.json", "group_1524.json", "group_1525.json", "group_1526.json", "group_1527.json", "group_1528.json", "group_1529.json", "group_1530.json", "group_1531.json", "group_1532.json", "group_1533.json", "group_1534.json", "group_1535.json", "group_1536.json", "group_1537.json", "group_1538.json", "group_1539.json", "group_1540.json", "group_1541.json", "group_1542.json", "group_1543.json", "group_1544.json", "group_1545.json", "group_1546.json", "group_1547.json", "group_1548.json", "group_1549.json", "group_1550.json", "group_1551.json", "group_1552.json", "group_1553.json", "group_1554.json", "group_1555.json", "group_1556.json", "group_1557.json", "group_1558.json", "group_1559.json", "group_1560.json", "group_1561.json", "group_1562.json", "group_1563.json", "group_1564.json", "group_1565.json", "group_1566.json", "group_1567.json", "group_1568.json", "group_1569.json", "group_1570.json", "group_1571.json", "group_1572.json", "group_1573.json", "group_1574.json", "group_1575.json", "group_1576.json", "group_1577.json", "group_1578.json", "group_1579.json", "group_1580.json", "group_1581.json", "group_1582.json", "group_1583.json", "group_1584.json", "group_1585.json", "group_1586.json", "group_1587.json", "group_1588.json", "group_1589.json", "group_1590.json", "group_1591.json", "group_1592.json", "group_1593.json", "group_1594.json", "group_1595.json", "group_1596.json", "group_1597.json", "group_1598.json", "group_1599.json", "group_1600.json", "group_1601.json", "group_1602.json", "group_1603.json", "group_1604.json", "group_1605.json", "group_1606.json", "group_1607.json", "group_1608.json", "group_1610.json", "group_1611.json", "group_1612.json", "group_1613.json", "group_1614.json", "group_1615.json", "group_1616.json", "group_1617.json", "group_1618.json", "group_1619.json", "group_1620.json", "group_1621.json", "group_1622.json", "group_1623.json", "group_1624.json", "group_1625.json", "group_1626.json", "group_1627.json", "group_1628.json", "group_1629.json", "group_1630.json", "group_1631.json", "group_1632.json", "group_1633.json", "group_1634.json", "group_1635.json", "group_1636.json", "group_1640.json", "group_1641.json", "group_1642.json", "group_1643.json", "group_1644.json", "group_1645.json", "group_1646.json", "group_1647.json", "group_1648.json", "group_1649.json", "group_1650.json", "group_1651.json", "group_1652.json", "group_1653.json", "group_1654.json", "group_1655.json", "group_1656.json", "group_1657.json", "group_1658.json", "group_1659.json", "group_1660.json", "group_1661.json", "group_1662.json", "group_1663.json", "group_1664.json", "group_1665.json", "group_1666.json", "group_1667.json", "group_1668.json", "group_1669.json", "group_1670.json", "group_1671.json", "group_1672.json", "group_1673.json", "group_1674.json", "group_1675.json", "group_1676.json", "group_1677.json", "group_1678.json", "group_1679.json", "group_1680.json", "group_1681.json", "group_1682.json", "group_1683.json", "group_1684.json", "group_1685.json", "group_1686.json", "group_1687.json", "group_1688.json", "group_1689.json", "group_1690.json", "group_1691.json", "group_1692.json", "group_1693.json", "group_1694.json", "group_1695.json", "group_1696.json", "group_1697.json", "group_1698.json", "group_1699.json", "group_1700.json", "group_1701.json", "group_1702.json", "group_1703.json", "group_1705.json", "group_1706.json", "group_1710.json", "group_1711.json", "group_1712.json", "group_1713.json", "group_1714.json", "group_1715.json", "group_1716.json", "group_1717.json", "group_1718.json", "group_1719.json", "group_1720.json", "group_1721.json", "group_1722.json", "group_1723.json", "group_1724.json", "group_1725.json", "group_1726.json", "group_1727.json", "group_1728.json", "group_1729.json", "group_1730.json", "group_1731.json", "group_1732.json", "group_1733.json", "group_1734.json", "group_1735.json", "group_1736.json", "group_1737.json", "group_1738.json", "group_1739.json", "group_1740.json", "group_1741.json", "group_1742.json", "group_1743.json", "group_1744.json", "group_1745.json", "group_1746.json", "group_1747.json", "group_1748.json", "group_1749.json", "group_1750.json", "group_1751.json", "group_1752.json", "group_1753.json", "group_1754.json", "group_1755.json", "group_1756.json", "group_1757.json", "group_1758.json", "group_1759.json", "group_1760.json", "group_1761.json", "group_1762.json", "group_1763.json", "group_1764.json", "group_1765.json", "group_1766.json", "group_1767.json", "group_1770.json", "group_1771.json", "group_1772.json", "group_1775.json", "group_1776.json", "group_1777.json", "group_1778.json", "group_1779.json", "group_1780.json", "group_1781.json", "group_1782.json", "group_1783.json", "group_1784.json", "group_1785.json", "group_1786.json", "group_1787.json", "group_1788.json", "group_1789.json", "group_1790.json", "group_1791.json", "group_1792.json", "group_1793.json", "group_1794.json", "group_1795.json", "group_1796.json", "group_1797.json", "group_1798.json", "group_1799.json", "group_1800.json", "group_1801.json", "group_1802.json", "group_1803.json", "group_1804.json", "group_1805.json", "group_1806.json", "group_1807.json", "group_1808.json", "group_1809.json", "group_1810.json", "group_1811.json", "group_1812.json", "group_1813.json", "group_1814.json", "group_1815.json", "group_1816.json", "group_1817.json", "group_1818.json", "group_1819.json", "group_1820.json", "group_1821.json", "group_1822.json", "group_1823.json", "group_1824.json", "group_1825.json", "group_1826.json", "group_1827.json", "group_1828.json", "group_1829.json", "group_1830.json", "group_1831.json", "group_1832.json", "group_1833.json", "group_1834.json", "group_1835.json", "group_1836.json", "group_1839.json", "group_1840.json", "group_1841.json", "group_1842.json", "group_1843.json", "group_1844.json", "group_1845.json", "group_1846.json", "group_1847.json", "group_1848.json", "group_1849.json", "group_1850.json", "group_1852.json", "group_1855.json", "group_1856.json", "group_1857.json", "group_1858.json", "group_1859.json", "group_1860.json", "group_1861.json", "group_1862.json", "group_1863.json", "group_1864.json", "group_1865.json", "group_1866.json", "group_1867.json", "group_1868.json", "group_1869.json", "group_1870.json", "group_1871.json", "group_1872.json", "group_1873.json", "group_1874.json", "group_1875.json", "group_1876.json", "group_1877.json", "group_1878.json", "group_1879.json", "group_1880.json", "group_1881.json", "group_1882.json", "group_1883.json", "group_1884.json", "group_1885.json", "group_1886.json", "group_1887.json", "group_1888.json", "group_1889.json", "group_1890.json", "group_1891.json", "group_1892.json", "group_1893.json", "group_1894.json", "group_1895.json", "group_1896.json", "group_1897.json", "group_1898.json", "group_1899.json", "group_1900.json", "group_1901.json", "group_1902.json", "group_1903.json", "group_1904.json", "group_1905.json", "group_1906.json", "group_1907.json", "group_1908.json", "group_1909.json", "group_1910.json", "group_1911.json", "group_1912.json", "group_1913.json", "group_1914.json", "group_1915.json", "group_1916.json", "group_1917.json"];
+        const NAME_GROUP_FILES = ["group_0621_0627_00.json", "group_0627_0626_00.json", "group_0627_0628_00.json", "group_0627_0628_01.json", "group_0627_0628_02.json", "group_0627_0628_03.json", "group_0627_0628_04.json", "group_0627_0628_05.json", "group_0627_0628_06.json", "group_0627_0628_07.json", "group_0627_062A_00.json", "group_0627_062B_00.json", "group_0627_062C_00.json", "group_0627_062D_00.json", "group_0627_062D_01.json", "group_0627_062D_02.json", "group_0627_062D_03.json", "group_0627_062D_04.json", "group_0627_062D_05.json", "group_0627_062D_06.json", "group_0627_062D_07.json", "group_0627_062D_08.json", "group_0627_062D_09.json", "group_0627_062D_10.json", "group_0627_062D_11.json", "group_0627_062D_12.json", "group_0627_062D_13.json", "group_0627_062D_14.json", "group_0627_062D_15.json", "group_0627_062D_16.json", "group_0627_062D_17.json", "group_0627_062D_18.json", "group_0627_062D_19.json", "group_0627_062D_20.json", "group_0627_062D_21.json", "group_0627_062D_22.json", "group_0627_062D_23.json", "group_0627_062D_24.json", "group_0627_062D_25.json", "group_0627_062D_26.json", "group_0627_062D_27.json", "group_0627_062D_28.json", "group_0627_062D_29.json", "group_0627_062D_30.json", "group_0627_062D_31.json", "group_0627_062D_32.json", "group_0627_062D_33.json", "group_0627_062D_34.json", "group_0627_062D_35.json", "group_0627_062D_36.json", "group_0627_062D_37.json", "group_0627_062D_38.json", "group_0627_062D_39.json", "group_0627_062D_40.json", "group_0627_062D_41.json", "group_0627_062D_42.json", "group_0627_062D_43.json", "group_0627_062D_44.json", "group_0627_062E_00.json", "group_0627_062F_00.json", "group_0627_062F_01.json", "group_0627_062F_02.json", "group_0627_062F_03.json", "group_0627_062F_04.json", "group_0627_0630_00.json", "group_0627_0631_00.json", "group_0627_0631_01.json", "group_0627_0631_02.json", "group_0627_0632_00.json", "group_0627_0633_00.json", "group_0627_0633_01.json", "group_0627_0633_02.json", "group_0627_0633_03.json", "group_0627_0633_04.json", "group_0627_0633_05.json", "group_0627_0633_06.json", "group_0627_0633_07.json", "group_0627_0633_08.json", "group_0627_0633_09.json", "group_0627_0633_10.json", "group_0627_0633_11.json", "group_0627_0633_12.json", "group_0627_0633_13.json", "group_0627_0633_14.json", "group_0627_0633_15.json", "group_0627_0633_16.json", "group_0627_0633_17.json", "group_0627_0633_18.json", "group_0627_0633_19.json", "group_0627_0633_20.json", "group_0627_0634_00.json", "group_0627_0634_01.json", "group_0627_0635_00.json", "group_0627_0636_00.json", "group_0627_0639_00.json", "group_0627_063A_00.json", "group_0627_0641_00.json", "group_0627_0642_00.json", "group_0627_0643_00.json", "group_0627_0644_00.json", "group_0627_0644_01.json", "group_0627_0644_02.json", "group_0627_0644_03.json", "group_0627_0644_04.json", "group_0627_0644_05.json", "group_0627_0644_06.json", "group_0627_0644_07.json", "group_0627_0644_08.json", "group_0627_0644_09.json", "group_0627_0644_10.json", "group_0627_0644_11.json", "group_0627_0645_00.json", "group_0627_0645_01.json", "group_0627_0645_02.json", "group_0627_0645_03.json", "group_0627_0645_04.json", "group_0627_0645_05.json", "group_0627_0645_06.json", "group_0627_0645_07.json", "group_0627_0645_08.json", "group_0627_0645_09.json", "group_0627_0645_10.json", "group_0627_0645_11.json", "group_0627_0645_12.json", "group_0627_0645_13.json", "group_0627_0646_00.json", "group_0627_0646_01.json", "group_0627_0646_02.json", "group_0627_0646_03.json", "group_0627_0647_00.json", "group_0627_0648_00.json", "group_0627_064A_00.json", "group_0627_064A_01.json", "group_0627_064A_02.json", "group_0627_064A_03.json", "group_0627_064A_04.json", "group_0627_064A_05.json", "group_0627_064A_06.json", "group_0627_064A_07.json", "group_0627_064A_08.json", "group_0627_064A_09.json", "group_0627_064A_10.json", "group_0627_064A_11.json", "group_0627_064A_12.json", "group_0627_064A_13.json", "group_0627_064A_14.json", "group_0627_064A_15.json", "group_0627_064A_16.json", "group_0627_064A_17.json", "group_0627_064A_18.json", "group_0627_064A_19.json", "group_0627_064A_20.json", "group_0627_064A_21.json", "group_0627_064B_00.json", "group_0627_064C_00.json", "group_0627_064E_00.json", "group_0627_0651_00.json", "group_0628_0627_00.json", "group_0628_0627_01.json", "group_0628_0628_00.json", "group_0628_062A_00.json", "group_0628_062B_00.json", "group_0628_062C_00.json", "group_0628_062D_00.json", "group_0628_062E_00.json", "group_0628_062F_00.json", "group_0628_0631_00.json", "group_0628_0633_00.json", "group_0628_0633_01.json", "group_0628_0633_02.json", "group_0628_0633_03.json", "group_0628_0633_04.json", "group_0628_0633_05.json", "group_0628_0633_06.json", "group_0628_0633_07.json", "group_0628_0633_08.json", "group_0628_0633_09.json", "group_0628_0633_10.json", "group_0628_0633_11.json", "group_0628_0633_12.json", "group_0628_0633_13.json", "group_0628_0634_00.json", "group_0628_0635_00.json", "group_0628_0636_00.json", "group_0628_0637_00.json", "group_0628_063A_00.json", "group_0628_0641_00.json", "group_0628_0642_00.json", "group_0628_0643_00.json", "group_0628_0644_00.json", "group_0628_0644_01.json", "group_0628_0645_00.json", "group_0628_0646_00.json", "group_0628_0647_00.json", "group_0628_0648_00.json", "group_0628_064A_00.json", "group_0628_064A_01.json", "group_062A_0624_00.json", "group_062A_0627_00.json", "group_062A_0628_00.json", "group_062A_062C_00.json", "group_062A_062D_00.json", "group_062A_062F_00.json", "group_062A_0631_00.json", "group_062A_0633_00.json", "group_062A_0633_01.json", "group_062A_0634_00.json", "group_062A_063A_00.json", "group_062A_0641_00.json", "group_062A_0642_00.json", "group_062A_0642_01.json", "group_062A_0643_00.json", "group_062A_0644_00.json", "group_062A_0645_00.json", "group_062A_0646_00.json", "group_062A_0647_00.json", "group_062A_0648_00.json", "group_062A_064A_00.json", "group_062B_0627_00.json", "group_062B_0631_00.json", "group_062B_0644_00.json", "group_062B_0645_00.json", "group_062B_0646_00.json", "group_062B_0648_00.json", "group_062B_064A_00.json", "group_062C_0627_00.json", "group_062C_0627_01.json", "group_062C_0628_00.json", "group_062C_062F_00.json", "group_062C_0631_00.json", "group_062C_0633_00.json", "group_062C_0634_00.json", "group_062C_0639_00.json", "group_062C_0641_00.json", "group_062C_0644_00.json", "group_062C_0645_00.json", "group_062C_0645_01.json", "group_062C_0646_00.json", "group_062C_0646_01.json", "group_062C_0646_02.json", "group_062C_0646_03.json", "group_062C_0646_04.json", "group_062C_0646_05.json", "group_062C_0646_06.json", "group_062C_0646_07.json", "group_062C_0646_08.json", "group_062C_0646_09.json", "group_062C_0646_10.json", "group_062C_0646_11.json", "group_062C_0646_12.json", "group_062C_0646_13.json", "group_062C_0647_00.json", "group_062C_0648_00.json", "group_062C_0648_01.json", "group_062C_0648_02.json", "group_062C_0648_03.json", "group_062C_0648_04.json", "group_062C_0648_05.json", "group_062C_064A_00.json", "group_062D_0627_00.json", "group_062D_0627_01.json", "group_062D_0627_02.json", "group_062D_0628_00.json", "group_062D_0628_01.json", "group_062D_0628_02.json", "group_062D_0628_03.json", "group_062D_0628_04.json", "group_062D_0628_05.json", "group_062D_0628_06.json", "group_062D_0628_07.json", "group_062D_0628_08.json", "group_062D_0628_09.json", "group_062D_0628_10.json", "group_062D_0628_11.json", "group_062D_0628_12.json", "group_062D_0628_13.json", "group_062D_0628_14.json", "group_062D_062C_00.json", "group_062D_062F_00.json", "group_062D_0630_00.json", "group_062D_0631_00.json", "group_062D_0632_00.json", "group_062D_0633_00.json", "group_062D_0633_01.json", "group_062D_0633_02.json", "group_062D_0633_03.json", "group_062D_0633_04.json", "group_062D_0633_05.json", "group_062D_0633_06.json", "group_062D_0633_07.json", "group_062D_0634_00.json", "group_062D_0635_00.json", "group_062D_0641_00.json", "group_062D_0643_00.json", "group_062D_0644_00.json", "group_062D_0644_01.json", "group_062D_0645_00.json", "group_062D_0645_01.json", "group_062D_0645_02.json", "group_062D_0646_00.json", "group_062D_0646_01.json", "group_062D_0646_02.json", "group_062D_0646_03.json", "group_062D_0646_04.json", "group_062D_0646_05.json", "group_062D_0646_06.json", "group_062D_0646_07.json", "group_062D_0646_08.json", "group_062D_0648_00.json", "group_062D_064A_00.json", "group_062E_0627_00.json", "group_062E_0627_01.json", "group_062E_0627_02.json", "group_062E_0627_03.json", "group_062E_0628_00.json", "group_062E_062A_00.json", "group_062E_062F_00.json", "group_062E_0631_00.json", "group_062E_0634_00.json", "group_062E_0636_00.json", "group_062E_0637_00.json", "group_062E_0641_00.json", "group_062E_0644_00.json", "group_062E_0644_01.json", "group_062E_0645_00.json", "group_062E_0646_00.json", "group_062E_0648_00.json", "group_062E_064A_00.json", "group_062F_0627_00.json", "group_062F_0627_01.json", "group_062F_0628_00.json", "group_062F_062C_00.json", "group_062F_0631_00.json", "group_062F_0633_00.json", "group_062F_0639_00.json", "group_062F_0639_01.json", "group_062F_0639_02.json", "group_062F_0641_00.json", "group_062F_0643_00.json", "group_062F_0644_00.json", "group_062F_0645_00.json", "group_062F_0646_00.json", "group_062F_0646_01.json", "group_062F_0646_02.json", "group_062F_0647_00.json", "group_062F_0648_00.json", "group_062F_064A_00.json", "group_062F_064A_01.json", "group_062F_064A_02.json", "group_0630_0627_00.json", "group_0630_0643_00.json", "group_0630_0647_00.json", "group_0630_0648_00.json", "group_0630_064A_00.json", "group_0631_0020_00.json", "group_0631_0624_00.json", "group_0631_0624_01.json", "group_0631_0626_00.json", "group_0631_0627_00.json", "group_0631_0627_01.json", "group_0631_0627_02.json", "group_0631_0628_00.json", "group_0631_062A_00.json", "group_0631_062C_00.json", "group_0631_062D_00.json", "group_0631_062D_01.json", "group_0631_062D_02.json", "group_0631_062D_03.json", "group_0631_062D_04.json", "group_0631_062D_05.json", "group_0631_062D_06.json", "group_0631_062D_07.json", "group_0631_062D_08.json", "group_0631_062F_00.json", "group_0631_0630_00.json", "group_0631_0632_00.json", "group_0631_0633_00.json", "group_0631_0634_00.json", "group_0631_0635_00.json", "group_0631_0636_00.json", "group_0631_0636_01.json", "group_0631_0636_02.json", "group_0631_0639_00.json", "group_0631_063A_00.json", "group_0631_0641_00.json", "group_0631_0642_00.json", "group_0631_0642_01.json", "group_0631_0642_02.json", "group_0631_0643_00.json", "group_0631_0645_00.json", "group_0631_0646_00.json", "group_0631_0646_01.json", "group_0631_0646_02.json", "group_0631_0646_03.json", "group_0631_0647_00.json", "group_0631_0648_00.json", "group_0631_0648_01.json", "group_0631_0648_02.json", "group_0631_0648_03.json", "group_0631_0648_04.json", "group_0631_0648_05.json", "group_0631_0648_06.json", "group_0631_0648_07.json", "group_0631_0648_08.json", "group_0631_0648_09.json", "group_0631_0648_10.json", "group_0631_0648_11.json", "group_0631_0648_12.json", "group_0631_064A_00.json", "group_0631_064A_01.json", "group_0631_064A_02.json", "group_0631_064A_03.json", "group_0631_064A_04.json", "group_0631_064A_05.json", "group_0631_064A_06.json", "group_0631_064A_07.json", "group_0631_064F_00.json", "group_0632_0020_00.json", "group_0632_0627_00.json", "group_0632_0628_00.json", "group_0632_062F_00.json", "group_0632_0631_00.json", "group_0632_0639_00.json", "group_0632_063A_00.json", "group_0632_0643_00.json", "group_0632_0644_00.json", "group_0632_0645_00.json", "group_0632_0647_00.json", "group_0632_0648_00.json", "group_0632_064A_00.json", "group_0632_064A_01.json", "group_0632_064A_02.json", "group_0632_064A_03.json", "group_0632_064A_04.json", "group_0632_064A_05.json", "group_0632_064A_06.json", "group_0632_064A_07.json", "group_0632_064A_08.json", "group_0632_064A_09.json", "group_0632_064A_10.json", "group_0632_064A_11.json", "group_0632_064A_12.json", "group_0632_064A_13.json", "group_0632_064A_14.json", "group_0632_064A_15.json", "group_0633_0624_00.json", "group_0633_0627_00.json", "group_0633_0627_01.json", "group_0633_0627_02.json", "group_0633_0627_03.json", "group_0633_0627_04.json", "group_0633_0627_05.json", "group_0633_0627_06.json", "group_0633_0627_07.json", "group_0633_0627_08.json", "group_0633_0627_09.json", "group_0633_0627_10.json", "group_0633_0627_11.json", "group_0633_0628_00.json", "group_0633_062A_00.json", "group_0633_062C_00.json", "group_0633_062D_00.json", "group_0633_062F_00.json", "group_0633_0631_00.json", "group_0633_0639_00.json", "group_0633_0639_01.json", "group_0633_0639_02.json", "group_0633_0640_00.json", "group_0633_0641_00.json", "group_0633_0642_00.json", "group_0633_0643_00.json", "group_0633_0644_00.json", "group_0633_0644_01.json", "group_0633_0644_02.json", "group_0633_0644_03.json", "group_0633_0644_04.json", "group_0633_0644_05.json", "group_0633_0644_06.json", "group_0633_0644_07.json", "group_0633_0644_08.json", "group_0633_0644_09.json", "group_0633_0644_10.json", "group_0633_0644_11.json", "group_0633_0645_00.json", "group_0633_0645_01.json", "group_0633_0645_02.json", "group_0633_0645_03.json", "group_0633_0645_04.json", "group_0633_0645_05.json", "group_0633_0645_06.json", "group_0633_0645_07.json", "group_0633_0645_08.json", "group_0633_0646_00.json", "group_0633_0646_01.json", "group_0633_0646_02.json", "group_0633_0647_00.json", "group_0633_0647_01.json", "group_0633_0647_02.json", "group_0633_0648_00.json", "group_0633_064A_00.json", "group_0633_064A_01.json", "group_0633_064A_02.json", "group_0633_064A_03.json", "group_0633_064A_04.json", "group_0633_064A_05.json", "group_0634_0627_00.json", "group_0634_0627_01.json", "group_0634_0628_00.json", "group_0634_062A_00.json", "group_0634_062C_00.json", "group_0634_062D_00.json", "group_0634_062F_00.json", "group_0634_0630_00.json", "group_0634_0631_00.json", "group_0634_0631_01.json", "group_0634_0631_02.json", "group_0634_0631_03.json", "group_0634_0631_04.json", "group_0634_0631_05.json", "group_0634_0639_00.json", "group_0634_063A_00.json", "group_0634_0640_00.json", "group_0634_0641_00.json", "group_0634_0643_00.json", "group_0634_0644_00.json", "group_0634_0645_00.json", "group_0634_0645_01.json", "group_0634_0646_00.json", "group_0634_0647_00.json", "group_0634_0647_01.json", "group_0634_0647_02.json", "group_0634_0647_03.json", "group_0634_0647_04.json", "group_0634_0647_05.json", "group_0634_0647_06.json", "group_0634_0647_07.json", "group_0634_0647_08.json", "group_0634_0647_09.json", "group_0634_0647_10.json", "group_0634_0647_11.json", "group_0634_0647_12.json", "group_0634_0647_13.json", "group_0634_0647_14.json", "group_0634_0647_15.json", "group_0634_0647_16.json", "group_0634_0648_00.json", "group_0634_064A_00.json", "group_0634_064A_01.json", "group_0634_064A_02.json", "group_0634_064A_03.json", "group_0634_064A_04.json", "group_0635_0627_00.json", "group_0635_0628_00.json", "group_0635_062E_00.json", "group_0635_062F_00.json", "group_0635_0631_00.json", "group_0635_0639_00.json", "group_0635_0641_00.json", "group_0635_0641_01.json", "group_0635_0642_00.json", "group_0635_0644_00.json", "group_0635_0645_00.json", "group_0635_0647_00.json", "group_0635_0648_00.json", "group_0635_064A_00.json", "group_0636_0627_00.json", "group_0636_062D_00.json", "group_0636_062D_01.json", "group_0636_064A_00.json", "group_0637_0627_00.json", "group_0637_0627_01.json", "group_0637_0631_00.json", "group_0637_0644_00.json", "group_0637_0646_00.json", "group_0637_0647_00.json", "group_0637_0648_00.json", "group_0637_064A_00.json", "group_0638_0631_00.json", "group_0638_0644_00.json", "group_0638_0647_00.json", "group_0639_0627_00.json", "group_0639_0627_01.json", "group_0639_0627_02.json", "group_0639_0628_00.json", "group_0639_0628_01.json", "group_0639_0628_02.json", "group_0639_0628_03.json", "group_0639_0628_04.json", "group_0639_0628_05.json", "group_0639_0628_06.json", "group_0639_0628_07.json", "group_0639_0628_08.json", "group_0639_0628_09.json", "group_0639_0628_10.json", "group_0639_0628_11.json", "group_0639_0628_12.json", "group_0639_0628_13.json", "group_0639_0628_14.json", "group_0639_0628_15.json", "group_0639_0628_16.json", "group_0639_0628_17.json", "group_0639_0628_18.json", "group_0639_0628_19.json", "group_0639_0628_20.json", "group_0639_0628_21.json", "group_0639_0628_22.json", "group_0639_0628_23.json", "group_0639_0628_24.json", "group_0639_0628_25.json", "group_0639_0628_26.json", "group_0639_0628_27.json", "group_0639_0628_28.json", "group_0639_0628_29.json", "group_0639_0628_30.json", "group_0639_0628_31.json", "group_0639_0628_32.json", "group_0639_0628_33.json", "group_0639_0628_34.json", "group_0639_062A_00.json", "group_0639_062B_00.json", "group_0639_062C_00.json", "group_0639_062F_00.json", "group_0639_0630_00.json", "group_0639_0631_00.json", "group_0639_0632_00.json", "group_0639_0632_01.json", "group_0639_0633_00.json", "group_0639_0634_00.json", "group_0639_0635_00.json", "group_0639_0637_00.json", "group_0639_0638_00.json", "group_0639_0640_00.json", "group_0639_0641_00.json", "group_0639_0642_00.json", "group_0639_0643_00.json", "group_0639_0644_00.json", "group_0639_0644_01.json", "group_0639_0644_02.json", "group_0639_0644_03.json", "group_0639_0644_04.json", "group_0639_0644_05.json", "group_0639_0644_06.json", "group_0639_0644_07.json", "group_0639_0644_08.json", "group_0639_0644_09.json", "group_0639_0645_00.json", "group_0639_0645_01.json", "group_0639_0645_02.json", "group_0639_0645_03.json", "group_0639_0645_04.json", "group_0639_0645_05.json", "group_0639_0645_06.json", "group_0639_0645_07.json", "group_0639_0645_08.json", "group_0639_0645_09.json", "group_0639_0645_10.json", "group_0639_0645_11.json", "group_0639_0645_12.json", "group_0639_0645_13.json", "group_0639_0645_14.json", "group_0639_0645_15.json", "group_0639_0645_16.json", "group_0639_0645_17.json", "group_0639_0645_18.json", "group_0639_0645_19.json", "group_0639_0645_20.json", "group_0639_0645_21.json", "group_0639_0645_22.json", "group_0639_0645_23.json", "group_0639_0646_00.json", "group_0639_0647_00.json", "group_0639_0648_00.json", "group_0639_064A_00.json", "group_063A_0627_00.json", "group_063A_0628_00.json", "group_063A_062F_00.json", "group_063A_0631_00.json", "group_063A_0632_00.json", "group_063A_0633_00.json", "group_063A_0635_00.json", "group_063A_0637_00.json", "group_063A_0641_00.json", "group_063A_0644_00.json", "group_063A_0645_00.json", "group_063A_0646_00.json", "group_063A_0648_00.json", "group_063A_064A_00.json", "group_0641_0624_00.json", "group_0641_0627_00.json", "group_0641_0627_01.json", "group_0641_0627_02.json", "group_0641_0627_03.json", "group_0641_0627_04.json", "group_0641_0627_05.json", "group_0641_0627_06.json", "group_0641_0627_07.json", "group_0641_0627_08.json", "group_0641_0627_09.json", "group_0641_0627_10.json", "group_0641_0627_11.json", "group_0641_0627_12.json", "group_0641_0627_13.json", "group_0641_0627_14.json", "group_0641_0628_00.json", "group_0641_062A_00.json", "group_0641_062C_00.json", "group_0641_062E_00.json", "group_0641_062F_00.json", "group_0641_0631_00.json", "group_0641_0631_01.json", "group_0641_0631_02.json", "group_0641_0631_03.json", "group_0641_0631_04.json", "group_0641_0631_05.json", "group_0641_0636_00.json", "group_0641_0637_00.json", "group_0641_0641_00.json", "group_0641_0643_00.json", "group_0641_0644_00.json", "group_0641_0646_00.json", "group_0641_0647_00.json", "group_0641_0648_00.json", "group_0641_064A_00.json", "group_0641_064A_01.json", "group_0642_0627_00.json", "group_0642_0628_00.json", "group_0642_062A_00.json", "group_0642_062F_00.json", "group_0642_0631_00.json", "group_0642_0632_00.json", "group_0642_0633_00.json", "group_0642_0635_00.json", "group_0642_0637_00.json", "group_0642_0639_00.json", "group_0642_0644_00.json", "group_0642_0645_00.json", "group_0642_0646_00.json", "group_0642_0648_00.json", "group_0642_064A_00.json", "group_0643_0627_00.json", "group_0643_0627_01.json", "group_0643_0628_00.json", "group_0643_062D_00.json", "group_0643_062F_00.json", "group_0643_0631_00.json", "group_0643_0631_01.json", "group_0643_0631_02.json", "group_0643_0631_03.json", "group_0643_0631_04.json", "group_0643_0631_05.json", "group_0643_0631_06.json", "group_0643_0633_00.json", "group_0643_0641_00.json", "group_0643_0644_00.json", "group_0643_0645_00.json", "group_0643_0646_00.json", "group_0643_0646_01.json", "group_0643_0647_00.json", "group_0643_0648_00.json", "group_0643_064A_00.json", "group_0643_064A_01.json", "group_0643_064A_02.json", "group_0644_0624_00.json", "group_0644_0627_00.json", "group_0644_0628_00.json", "group_0644_062A_00.json", "group_0644_062C_00.json", "group_0644_062D_00.json", "group_0644_062F_00.json", "group_0644_0637_00.json", "group_0644_0641_00.json", "group_0644_0642_00.json", "group_0644_0644_00.json", "group_0644_0645_00.json", "group_0644_0646_00.json", "group_0644_0648_00.json", "group_0644_0648_01.json", "group_0644_064A_00.json", "group_0644_064A_01.json", "group_0645_0624_00.json", "group_0645_0624_01.json", "group_0645_0626_00.json", "group_0645_0627_00.json", "group_0645_0627_01.json", "group_0645_0627_02.json", "group_0645_0627_03.json", "group_0645_0627_04.json", "group_0645_0627_05.json", "group_0645_0627_06.json", "group_0645_0627_07.json", "group_0645_0627_08.json", "group_0645_0627_09.json", "group_0645_0627_10.json", "group_0645_0628_00.json", "group_0645_062A_00.json", "group_0645_062B_00.json", "group_0645_062C_00.json", "group_0645_062D_00.json", "group_0645_062D_01.json", "group_0645_062D_02.json", "group_0645_062D_03.json", "group_0645_062D_04.json", "group_0645_062D_05.json", "group_0645_062D_06.json", "group_0645_062D_07.json", "group_0645_062D_08.json", "group_0645_062D_09.json", "group_0645_062D_10.json", "group_0645_062D_11.json", "group_0645_062D_12.json", "group_0645_062D_13.json", "group_0645_062D_14.json", "group_0645_062D_15.json", "group_0645_062D_16.json", "group_0645_062D_17.json", "group_0645_062D_18.json", "group_0645_062D_19.json", "group_0645_062D_20.json", "group_0645_062D_21.json", "group_0645_062D_22.json", "group_0645_062D_23.json", "group_0645_062D_24.json", "group_0645_062D_25.json", "group_0645_062D_26.json", "group_0645_062D_27.json", "group_0645_062D_28.json", "group_0645_062D_29.json", "group_0645_062D_30.json", "group_0645_062D_31.json", "group_0645_062D_32.json", "group_0645_062D_33.json", "group_0645_062D_34.json", "group_0645_062D_35.json", "group_0645_062D_36.json", "group_0645_062D_37.json", "group_0645_062D_38.json", "group_0645_062D_39.json", "group_0645_062D_40.json", "group_0645_062D_41.json", "group_0645_062D_42.json", "group_0645_062D_43.json", "group_0645_062D_44.json", "group_0645_062D_45.json", "group_0645_062D_46.json", "group_0645_062D_47.json", "group_0645_062D_48.json", "group_0645_062D_49.json", "group_0645_062D_50.json", "group_0645_062D_51.json", "group_0645_062D_52.json", "group_0645_062D_53.json", "group_0645_062D_54.json", "group_0645_062D_55.json", "group_0645_062D_56.json", "group_0645_062D_57.json", "group_0645_062D_58.json", "group_0645_062D_59.json", "group_0645_062D_60.json", "group_0645_062D_61.json", "group_0645_062D_62.json", "group_0645_062D_63.json", "group_0645_062D_64.json", "group_0645_062D_65.json", "group_0645_062D_66.json", "group_0645_062D_67.json", "group_0645_062D_68.json", "group_0645_062D_69.json", "group_0645_062D_70.json", "group_0645_062D_71.json", "group_0645_062D_72.json", "group_0645_062D_73.json", "group_0645_062D_74.json", "group_0645_062D_75.json", "group_0645_062D_76.json", "group_0645_062D_77.json", "group_0645_062D_78.json", "group_0645_062D_79.json", "group_0645_062E_00.json", "group_0645_062F_00.json", "group_0645_0630_00.json", "group_0645_0631_00.json", "group_0645_0631_01.json", "group_0645_0631_02.json", "group_0645_0631_03.json", "group_0645_0631_04.json", "group_0645_0631_05.json", "group_0645_0631_06.json", "group_0645_0631_07.json", "group_0645_0631_08.json", "group_0645_0631_09.json", "group_0645_0631_10.json", "group_0645_0631_11.json", "group_0645_0631_12.json", "group_0645_0631_13.json", "group_0645_0631_14.json", "group_0645_0631_15.json", "group_0645_0631_16.json", "group_0645_0631_17.json", "group_0645_0631_18.json", "group_0645_0631_19.json", "group_0645_0631_20.json", "group_0645_0631_21.json", "group_0645_0631_22.json", "group_0645_0631_23.json", "group_0645_0631_24.json", "group_0645_0631_25.json", "group_0645_0631_26.json", "group_0645_0631_27.json", "group_0645_0631_28.json", "group_0645_0631_29.json", "group_0645_0631_30.json", "group_0645_0631_31.json", "group_0645_0631_32.json", "group_0645_0631_33.json", "group_0645_0632_00.json", "group_0645_0633_00.json", "group_0645_0634_00.json", "group_0645_0635_00.json", "group_0645_0635_01.json", "group_0645_0635_02.json", "group_0645_0635_03.json", "group_0645_0635_04.json", "group_0645_0635_05.json", "group_0645_0635_06.json", "group_0645_0635_07.json", "group_0645_0635_08.json", "group_0645_0635_09.json", "group_0645_0635_10.json", "group_0645_0636_00.json", "group_0645_0637_00.json", "group_0645_0638_00.json", "group_0645_0639_00.json", "group_0645_0639_01.json", "group_0645_0639_02.json", "group_0645_0639_03.json", "group_0645_063A_00.json", "group_0645_0640_00.json", "group_0645_0641_00.json", "group_0645_0642_00.json", "group_0645_0643_00.json", "group_0645_0644_00.json", "group_0645_0644_01.json", "group_0645_0644_02.json", "group_0645_0644_03.json", "group_0645_0644_04.json", "group_0645_0644_05.json", "group_0645_0644_06.json", "group_0645_0644_07.json", "group_0645_0644_08.json", "group_0645_0644_09.json", "group_0645_0644_10.json", "group_0645_0644_11.json", "group_0645_0644_12.json", "group_0645_0644_13.json", "group_0645_0644_14.json", "group_0645_0644_15.json", "group_0645_0644_16.json", "group_0645_0644_17.json", "group_0645_0645_00.json", "group_0645_0646_00.json", "group_0645_0646_01.json", "group_0645_0646_02.json", "group_0645_0646_03.json", "group_0645_0646_04.json", "group_0645_0646_05.json", "group_0645_0646_06.json", "group_0645_0646_07.json", "group_0645_0646_08.json", "group_0645_0646_09.json", "group_0645_0646_10.json", "group_0645_0646_11.json", "group_0645_0646_12.json", "group_0645_0646_13.json", "group_0645_0646_14.json", "group_0645_0646_15.json", "group_0645_0646_16.json", "group_0645_0646_17.json", "group_0645_0646_18.json", "group_0645_0646_19.json", "group_0645_0646_20.json", "group_0645_0646_21.json", "group_0645_0646_22.json", "group_0645_0647_00.json", "group_0645_0647_01.json", "group_0645_0647_02.json", "group_0645_0647_03.json", "group_0645_0648_00.json", "group_0645_064A_00.json", "group_0645_064A_01.json", "group_0645_064A_02.json", "group_0645_064A_03.json", "group_0645_064A_04.json", "group_0645_064A_05.json", "group_0645_064A_06.json", "group_0645_064A_07.json", "group_0645_064A_08.json", "group_0645_064A_09.json", "group_0645_064A_10.json", "group_0646_0627_00.json", "group_0646_0627_01.json", "group_0646_0627_02.json", "group_0646_0627_03.json", "group_0646_0628_00.json", "group_0646_062A_00.json", "group_0646_062B_00.json", "group_0646_062C_00.json", "group_0646_062D_00.json", "group_0646_062F_00.json", "group_0646_062F_01.json", "group_0646_062F_02.json", "group_0646_062F_03.json", "group_0646_062F_04.json", "group_0646_062F_05.json", "group_0646_062F_06.json", "group_0646_062F_07.json", "group_0646_062F_08.json", "group_0646_062F_09.json", "group_0646_062F_10.json", "group_0646_062F_11.json", "group_0646_062F_12.json", "group_0646_0630_00.json", "group_0646_0631_00.json", "group_0646_0632_00.json", "group_0646_0633_00.json", "group_0646_0634_00.json", "group_0646_0635_00.json", "group_0646_0636_00.json", "group_0646_0638_00.json", "group_0646_0639_00.json", "group_0646_063A_00.json", "group_0646_0640_00.json", "group_0646_0641_00.json", "group_0646_0642_00.json", "group_0646_0645_00.json", "group_0646_0647_00.json", "group_0646_0647_01.json", "group_0646_0648_00.json", "group_0646_0648_01.json", "group_0646_0648_02.json", "group_0646_0648_03.json", "group_0646_0648_04.json", "group_0646_0648_05.json", "group_0646_0648_06.json", "group_0646_0648_07.json", "group_0646_0648_08.json", "group_0646_0648_09.json", "group_0646_0648_10.json", "group_0646_0648_11.json", "group_0646_0648_12.json", "group_0646_0648_13.json", "group_0646_0648_14.json", "group_0646_0648_15.json", "group_0646_0648_16.json", "group_0646_064A_00.json", "group_0646_064A_01.json", "group_0647_0627_00.json", "group_0647_0627_01.json", "group_0647_0627_02.json", "group_0647_0627_03.json", "group_0647_0627_04.json", "group_0647_0627_05.json", "group_0647_0627_06.json", "group_0647_0627_07.json", "group_0647_0627_08.json", "group_0647_0627_09.json", "group_0647_0628_00.json", "group_0647_0628_01.json", "group_0647_0628_02.json", "group_0647_062A_00.json", "group_0647_062C_00.json", "group_0647_062F_00.json", "group_0647_062F_01.json", "group_0647_062F_02.json", "group_0647_062F_03.json", "group_0647_0631_00.json", "group_0647_0634_00.json", "group_0647_0640_00.json", "group_0647_0644_00.json", "group_0647_0645_00.json", "group_0647_0646_00.json", "group_0647_0646_01.json", "group_0647_0646_02.json", "group_0647_0646_03.json", "group_0647_0646_04.json", "group_0647_0646_05.json", "group_0647_0646_06.json", "group_0647_0648_00.json", "group_0647_064A_00.json", "group_0648_0626_00.json", "group_0648_0627_00.json", "group_0648_062A_00.json", "group_0648_062B_00.json", "group_0648_062C_00.json", "group_0648_062D_00.json", "group_0648_062F_00.json", "group_0648_0631_00.json", "group_0648_0632_00.json", "group_0648_0633_00.json", "group_0648_0635_00.json", "group_0648_0636_00.json", "group_0648_0637_00.json", "group_0648_0639_00.json", "group_0648_0641_00.json", "group_0648_0643_00.json", "group_0648_0644_00.json", "group_0648_0644_01.json", "group_0648_0645_00.json", "group_0648_0646_00.json", "group_0648_0647_00.json", "group_0648_064A_00.json", "group_064A_0624_00.json", "group_064A_0627_00.json", "group_064A_0627_01.json", "group_064A_0627_02.json", "group_064A_0627_03.json", "group_064A_0627_04.json", "group_064A_0627_05.json", "group_064A_0627_06.json", "group_064A_0627_07.json", "group_064A_0627_08.json", "group_064A_0627_09.json", "group_064A_0627_10.json", "group_064A_0627_11.json", "group_064A_0627_12.json", "group_064A_062B_00.json", "group_064A_062D_00.json", "group_064A_062D_01.json", "group_064A_0632_00.json", "group_064A_0633_00.json", "group_064A_0633_01.json", "group_064A_0634_00.json", "group_064A_0639_00.json", "group_064A_0640_00.json", "group_064A_0642_00.json", "group_064A_0644_00.json", "group_064A_0645_00.json", "group_064A_0645_01.json", "group_064A_0646_00.json", "group_064A_0647_00.json", "group_064A_0648_00.json", "group_064A_0648_01.json", "group_064A_0648_02.json", "group_064A_0648_03.json", "group_064A_0648_04.json", "group_064A_0648_05.json", "group_064A_0648_06.json", "group_064A_0648_07.json", "group_064A_0648_08.json", "group_064A_0648_09.json", "group_064A_0648_10.json", "group_064A_0648_11.json", "group_064A_0648_12.json", "group_064A_0648_13.json", "group_064A_0648_14.json", "group_064A_0648_15.json", "group_064A_0648_16.json", "group_064A_0648_17.json", "group_064A_0648_18.json", "group_064A_0648_19.json", "group_064A_0648_20.json", "group_064A_0648_21.json", "group_064A_0648_22.json", "group_064A_0648_23.json", "group_064A_0648_24.json", "group_064A_0648_25.json", "group_064A_0648_26.json", "group_064A_0648_27.json", "group_064A_0648_28.json"];
+        const MAX_SCORE = 320.0;
+        const GRADE_STEP = 0.5;
+        const RESULTS_PER_PAGE = 25;
+        
+        // Include all JavaScript functions
+        
+    function createScoreCircle(score, maxScore) {
+        const scoreNum = parseFloat(score);
+        if (isNaN(scoreNum)) return '';
 
-  <div id="idSearch">
-    <input id="idInput" type="number" placeholder="اكتب رقم الجلوس هنا">
-    <button onclick="searchById()">بحث</button>
-  </div>
+        const percentage = Math.min(100, (scoreNum / maxScore) * 100);
+        const radius = 70;
+        const circumference = 2 * Math.PI * radius;
+        const offset = circumference * (1 - percentage / 100);
 
-  <div id="nameSearch" style="display:none;">
-    <input id="nameInput" type="text" placeholder="اكتب الاسم كاملاً أو جزء منه">
-    <button onclick="searchByName()">بحث</button>
-  </div>
+        // Get ranking stats
+        const stats = getScoreStatistics(score);
+        const topPercentage = stats ? parseFloat(stats.percentage) : 100;
 
-  <div id="results"></div>
-
-  <script>
-    const idTab = document.getElementById('idTab');
-    const nameTab = document.getElementById('nameTab');
-    const idSearch = document.getElementById('idSearch');
-    const nameSearch = document.getElementById('nameSearch');
-    const resultsDiv = document.getElementById('results');
-
-    idTab.onclick = () => {
-      idTab.classList.add('active');
-      nameTab.classList.remove('active');
-      idSearch.style.display = 'block';
-      nameSearch.style.display = 'none';
-      resultsDiv.innerHTML = '';
-    };
-
-    nameTab.onclick = () => {
-      nameTab.classList.add('active');
-      idTab.classList.remove('active');
-      nameSearch.style.display = 'block';
-      idSearch.style.display = 'none';
-      resultsDiv.innerHTML = '';
-    };
-
-    // Arabic normalization rules
-    function normalizeArabic(text) {
-      return text
-        .replace(/\s+/g, '') // remove all spaces
-        .replace(/[إأآٱ]/g, 'ا')
-        .replace(/[ىی]/g, 'ي')
-        .replace(/[ة]/g, 'ه')
-        .replace(/ؤ/g, 'و')
-        .replace(/ئ/g, 'ي')
-        .replace(/ٓ|ْ|ٌ|ٍ|ً|ُ|ِ|َ|ّ/g, '') // remove diacritics if any
-        .toLowerCase();
-    }
-
-    function firstLetterHex(text) {
-      const norm = normalizeArabic(text.trim());
-      if (!norm) return '';
-      return norm[0].charCodeAt(0).toString(16).toUpperCase().padStart(4, '0');
-    }
-
-    async function searchById() {
-      const id = parseInt(document.getElementById('idInput').value);
-      if (isNaN(id)) return alert("❗ أدخل رقم صحيح");
-      resultsDiv.innerHTML = "⏳ جاري البحث...";
-
-      const groupIdx = Math.floor(id / 1000);
-      const filename = `jsons/group_${groupIdx.toString().padStart(4, '0')}.json`;
-
-      try {
-        const res = await fetch(filename);
-        const data = await res.json();
-        const student = data.find(entry => entry[0] == id);
-
-        if (student) {
-          resultsDiv.innerHTML = `
-            <h3>الاسم: ${student[1]}</h3>
-            <p>الدرجة: ${student[2]}</p>
-            <p>الحالة: ${student[3]}</p>
-          `;
-        } else {
-          resultsDiv.innerHTML = "❌ لم يتم العثور على الطالب.";
+        // Determine fire intensity class
+        let fireClass = '';
+        if (topPercentage <= 1) {
+            fireClass = 'fire-intensity-3'; // 🔥 Legendary
+        } else if (topPercentage <= 5) {
+            fireClass = 'fire-intensity-2';
+        } else if (topPercentage <= 10) {
+            fireClass = 'fire-intensity-1';
         }
-      } catch (err) {
-        resultsDiv.innerHTML = "❌ حدث خطأ في تحميل البيانات.";
-      }
+
+        return `
+            <div class="circle-container">
+                <svg width="180" height="180" viewBox="0 0 160 160">
+                    <circle class="circle-bg" cx="80" cy="80" r="${radius}"></circle>
+                    <circle class="circle-progress ${fireClass}"
+                            cx="80" cy="80" r="${radius}"
+                            stroke-dasharray="${circumference}"
+                            stroke-dashoffset="${offset.toFixed(2)}">
+                    </circle>
+                </svg>
+                <div class="circle-text ${fireClass}">${percentage.toFixed(2)}%</div>
+            </div>
+        `;
+    }
+
+
+    
+        
+    async function searchById() {
+        const id = document.getElementById('idInput').value.trim();
+        const resultDiv = document.getElementById('searchResults');
+        
+        if (!id) {
+            showError(resultDiv, 'يرجى إدخال رقم الجلوس');
+            return;
+        }
+        
+        showLoading(resultDiv);
+        
+        try {
+            const groupIdx = Math.floor(parseInt(id) / 1000);
+            const fileName = `group_${String(groupIdx).padStart(4, '0')}.json`;
+            const response = await fetch(`${Config.ID_GROUPS_FOLDER}/${fileName}`);
+            if (!response.ok) {
+                showError(resultDiv, 'لم يتم العثور على ملف المجموعة');
+                return;
+            }
+            const data = await response.json();
+            
+            // Support various ID field names
+            const student = data.find(s => {
+                if (Array.isArray(s)) {
+                    return s[0] == id;
+                } else {
+                    return s.id == id || 
+                           s['رقم الجلوس'] == id || 
+                           s.seating_no == id || 
+                           s['seating_no'] == id;
+                }
+            });
+            
+            if (student) {
+                showStudent(resultDiv, student);
+            } else {
+                showError(resultDiv, 'لم يتم العثور على الطالب');
+            }
+        } catch (error) {
+            console.error('Search error:', error);
+            showError(resultDiv, 'حدث خطأ في تحميل البيانات');
+        }
     }
 
     async function searchByName() {
-      const rawInput = document.getElementById('nameInput').value.trim();
-      if (!rawInput) return alert("❗ أدخل الاسم أولاً");
-      resultsDiv.innerHTML = "⏳ جاري البحث...";
+        const name = document.getElementById('nameInput').value.trim();
+        const resultDiv = document.getElementById('searchResults');
+        
+        if (!name) {
+            showError(resultDiv, 'يرجى إدخال الاسم');
+            return;
+        }
+        
+        showLoading(resultDiv);
+        
+        try {
+            const [hex1, hex2] = getFirstTwoLettersHex(name);
+            const matchingFiles = NAME_GROUP_FILES.filter(f => 
+                f.startsWith(`group_${hex1}_${hex2}_`)
+            );
+            
+            if (matchingFiles.length === 0) {
+                showError(resultDiv, 'لا توجد نتائج تطابق البحث');
+                return;
+            }
+            
+            let allMatches = [];
+            for (const file of matchingFiles) {
+                const response = await fetch(`${Config.NAME_GROUPS_FOLDER}/${file}`);
+                if (!response.ok) continue;
+                const data = await response.json();
+                const matches = data.filter(s => {
+                    let studentName = '';
+                    if (Array.isArray(s)) {
+                        studentName = s[1];
+                    } else {
+                        studentName = s.name || s['اسم'] || s.arabic_name || '';
+                    }
+                    return normalizeArabic(studentName).includes(normalizeArabic(name));
+                });
+                allMatches.push(...matches);
+            }
+            
+            if (allMatches.length === 0) {
+                showError(resultDiv, 'لا توجد نتائج تطابق البحث');
+            } else {
+                showResults(resultDiv, allMatches);
+            }
+        } catch (error) {
+            console.error('Search error:', error);
+            showError(resultDiv, 'حدث خطأ في تحميل البيانات');
+        }
+    }
+    
+        
+    function setupCharts() {
+        // Safely destroy existing charts
+        if (window.gradeChart && typeof window.gradeChart.destroy === 'function') {
+            window.gradeChart.destroy();
+        }
+        if (window.branchChart && typeof window.branchChart.destroy === 'function') {
+            window.branchChart.destroy();
+        }
+        if (window.regionChart && typeof window.regionChart.destroy === 'function') {
+            window.regionChart.destroy();
+        }
 
-      const searchKey = normalizeArabic(rawInput);
-      const groupHex = firstLetterHex(searchKey);
+        // Grade Distribution Chart
+        const gradeCtx = document.getElementById('gradeChart');
+        if (!gradeCtx) return;
+        
+        const gradeLabels = Object.keys(STATISTICS.grade_distribution || {});
+        const gradeData = gradeLabels.map(g => STATISTICS.grade_distribution[g].equal);
+        const gradeMoreData = gradeLabels.map(g => STATISTICS.grade_distribution[g].more);
 
-      if (!groupHex) return resultsDiv.innerHTML = "❌ لم يتم التعرف على أول حرف.";
-
-      const filename = `name_groups/group_${groupHex}.json`;
-
-      try {
-        const res = await fetch(filename);
-        const data = await res.json();
-
-        const matches = data.filter(student => {
-          const normName = normalizeArabic(student.name);
-          return normName.includes(searchKey);
+        window.gradeChart = new Chart(gradeCtx.getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: gradeLabels,
+                datasets: [
+                    {
+                        label: 'عدد الطلاب',
+                        data: gradeData,
+                        backgroundColor: 'rgba(52, 152, 219, 0.5)',
+                        borderColor: 'rgba(52, 152, 219, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'أكثر من',
+                        data: gradeMoreData,
+                        backgroundColor: 'rgba(46, 204, 113, 0.5)',
+                        borderColor: 'rgba(46, 204, 113, 1)',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'عدد الطلاب'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'الدرجات'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'توزيع درجات الطلاب'
+                    },
+                    legend: {
+                        position: 'top'
+                    }
+                }
+            }
         });
 
-        if (matches.length === 0) {
-          resultsDiv.innerHTML = "❌ لم يتم العثور على نتائج.";
-        } else {
-          resultsDiv.innerHTML = matches.map(s => `
-            <div style="border-bottom:1px solid #ccc;margin-bottom:1em;">
-              <strong>الاسم:</strong> ${s.name}<br>
-              <strong>الرقم:</strong> ${s.id}<br>
-              <strong>الدرجة:</strong> ${s.score}<br>
-              <strong>الحالة:</strong> ${s.status}
-            </div>
-          `).join('');
+        // Branch Distribution Chart
+        if (STATISTICS.branches) {
+            const branchCtx = document.getElementById('branchChart');
+            if (branchCtx) {
+                const branchLabels = Object.keys(STATISTICS.branches);
+                const branchData = branchLabels.map(b => STATISTICS.branches[b].count);
+
+                window.branchChart = new Chart(branchCtx.getContext('2d'), {
+                    type: 'pie',
+                    data: {
+                        labels: branchLabels,
+                        datasets: [{
+                            data: branchData,
+                            backgroundColor: [
+                                'rgba(52, 152, 219, 0.7)',
+                                'rgba(46, 204, 113, 0.7)',
+                                'rgba(155, 89, 182, 0.7)',
+                                'rgba(241, 196, 15, 0.7)',
+                                'rgba(231, 76, 60, 0.7)',
+                                'rgba(26, 188, 156, 0.7)',
+                                'rgba(230, 126, 34, 0.7)'
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'توزيع الطلاب حسب الفروع'
+                            },
+                            legend: {
+                                position: 'bottom'
+                            }
+                        }
+                    }
+                });
+            }
         }
-      } catch (err) {
-        resultsDiv.innerHTML = "❌ حدث خطأ في تحميل البيانات.";
-      }
+
+        // Region Distribution Chart
+        if (STATISTICS.regions) {
+            const regionCtx = document.getElementById('regionChart');
+            if (regionCtx) {
+                const regionLabels = Object.keys(STATISTICS.regions);
+                const regionData = regionLabels.map(r => STATISTICS.regions[r].count);
+
+                window.regionChart = new Chart(regionCtx.getContext('2d'), {
+                    type: 'pie',
+                    data: {
+                        labels: regionLabels,
+                        datasets: [{
+                            data: regionData,
+                            backgroundColor: [
+                                'rgba(52, 152, 219, 0.7)',
+                                'rgba(46, 204, 113, 0.7)',
+                                'rgba(155, 89, 182, 0.7)',
+                                'rgba(241, 196, 15, 0.7)',
+                                'rgba(231, 76, 60, 0.7)',
+                                'rgba(26, 188, 156, 0.7)',
+                                'rgba(230, 126, 34, 0.7)'
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'توزيع الطلاب حسب المناطق'
+                            },
+                            legend: {
+                                position: 'bottom'
+                            }
+                        }
+                    }
+                });
+            }
+        }
     }
-  </script>
+    
+        
+    
+    const resultsPerPage = 25;
+    let totalResults = 0;
+    
+
+    function setupPagination(results) {
+        allResults = results;
+        totalResults = results.length;
+        const totalPages = Math.ceil(totalResults / Config.RESULTS_PER_PAGE);
+        currentPage = 1;
+        
+        const paginationDiv = document.getElementById('pagination');
+        if (totalPages <= 1) {
+            paginationDiv.style.display = 'none';
+            return;
+        }
+        
+        paginationDiv.style.display = 'block';
+        let html = '<div class="pagination-controls">';
+        
+        // Previous button
+        html += `<button ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})">السابق</button>`;
+        
+        // Page numbers
+        for (let i = 1; i <= totalPages; i++) {
+            if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+                html += `<button class="${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+            } else if (i === currentPage - 3 || i === currentPage + 3) {
+                html += '<span class="pagination-dots">...</span>';
+            }
+        }
+        
+        // Next button
+        html += `<button ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})">التالي</button>`;
+        html += '</div>';
+        
+        paginationDiv.innerHTML = html;
+    }
+
+    function changePage(page) {
+        currentPage = page;
+        displayResults();
+    }
+
+    function displayResults() {
+        const start = (currentPage - 1) * Config.RESULTS_PER_PAGE;
+        const end = start + Config.RESULTS_PER_PAGE;
+        const paginatedResults = allResults.slice(start, end);
+        
+        const resultsDiv = document.getElementById('searchResults');
+        resultsDiv.innerHTML = paginatedResults.map(student => {
+            // Handle various data formats
+            let name = '', id = '', score = '', status = '';
+            
+            if (Array.isArray(student)) {
+                name = student[1];
+                id = student[0];
+                score = student[2];
+                status = student[3];
+            } else {
+                name = student.name || student['اسم'] || student.arabic_name || '';
+                id = student.id || student['رقم الجلوس'] || student.seating_no || '';
+                score = student.score || student['درجة'] || student.total_degree || '';
+                status = student.status || student['الحالة'] || student.student_case_desc || '';
+            }
+            
+            return `
+                <div class="student-card">
+                    <div class="student-info">
+                        <h3>${name}</h3>
+                        <div class="info-row">
+                            <span class="label">رقم الجلوس:</span>
+                            <span class="value">${id}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">الدرجة:</span>
+                            <span class="value">${score} / ${MAX_SCORE}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">الحالة:</span>
+                            <span class="value">${status}</span>
+                        </div>
+                    </div>
+                    <div class="score-visualization">
+                        ${createScoreCircle(score, MAX_SCORE)}
+                    </div>
+                </div>
+            `;
+        }).join('');
+        
+        setupPagination(allResults);
+    }
+    
+        
+    
+    function changeGradePage(page) {
+        currentGradePage = page;
+        document.getElementById('gradeTableContainer').innerHTML = generateGradeDistributionTable();
+        }
+    function generateGradeDistributionTable() {
+        if (!STATISTICS?.grade_distribution) {
+            return '<div class="error-message">لا توجد بيانات توزيع الدرجات متاحة</div>';
+        }
+
+        // Configuration
+        const gradesPerPage = 15;
+        const maxVisiblePages = 5;
+
+        // Get and sort grades (descending)
+        const grades = Object.keys(STATISTICS.grade_distribution)
+            .map(Number)
+            .sort((a, b) => b - a)
+            .filter(grade => !isNaN(grade));
+
+        if (grades.length === 0) {
+            return '<div class="error-message">لا توجد بيانات صالحة للعرض</div>';
+        }
+
+        // Calculate pagination
+        const totalPages = Math.ceil(grades.length / gradesPerPage);
+        const startIdx = (currentGradePage - 1) * gradesPerPage;
+        const visibleGrades = grades.slice(startIdx, startIdx + gradesPerPage);
+
+        // Generate table rows
+        const rows = visibleGrades.map(grade => {
+            const gradeKey = grade.toFixed(1);
+            const data = STATISTICS.grade_distribution[gradeKey] || {};
+            
+            const equal = data.equal || 0;
+            const more = data.more || 0;
+            const equal_or_more = data.equal_or_more || (equal + more);
+            const percentage = STATISTICS.total_students 
+                ? ((equal_or_more / STATISTICS.total_students) * 100).toFixed(2) 
+                : '0.00';
+
+            return `
+                <tr>
+                    <td>${gradeKey}</td>
+                    <td>${equal}</td>
+                    <td>${more}</td>
+                    <td>${equal_or_more}</td>
+                    <td>${percentage}%</td>
+                </tr>`;
+        }).join('');
+
+        // Generate smart pagination controls (only at bottom)
+        let paginationButtons = [];
+        const halfWay = Math.floor(maxVisiblePages / 2);
+        
+        // Always show first page
+        paginationButtons.push(1);
+        
+        // Determine range of pages to show
+        let startPage = Math.max(2, currentGradePage - halfWay);
+        let endPage = Math.min(totalPages - 1, currentGradePage + halfWay);
+        
+        // Adjust if we're near the start or end
+        if (currentGradePage <= halfWay + 1) {
+            endPage = Math.min(maxVisiblePages, totalPages - 1);
+        }
+        if (currentGradePage >= totalPages - halfWay) {
+            startPage = Math.max(totalPages - maxVisiblePages + 1, 2);
+        }
+        
+        // Add middle pages
+        if (startPage > 2) paginationButtons.push('...');
+        for (let i = startPage; i <= endPage; i++) {
+            if (i > 1 && i < totalPages) paginationButtons.push(i);
+        }
+        if (endPage < totalPages - 1) paginationButtons.push('...');
+        
+        // Always show last page if there are multiple pages
+        if (totalPages > 1) paginationButtons.push(totalPages);
+
+        const pagination = totalPages > 1 ? `
+            <div class="table-pagination">
+                ${currentGradePage > 1 
+                    ? `<button onclick="changeGradePage(${currentGradePage - 1})">السابق</button>` 
+                    : '<button disabled>السابق</button>'}
+                
+                ${paginationButtons.map(page => 
+                    page === '...' 
+                        ? '<span class="pagination-dots">...</span>'
+                        : `<button ${page === currentGradePage ? 'class="active"' : ''}
+                            onclick="changeGradePage(${page})">
+                            ${page}
+                        </button>`
+                ).join('')}
+                
+                ${currentGradePage < totalPages 
+                    ? `<button onclick="changeGradePage(${currentGradePage + 1})">التالي</button>` 
+                    : '<button disabled>التالي</button>'}
+            </div>` : '';
+
+        return `
+            <div class="grade-table-container">
+                <h3>توزيع الدرجات (كل ${GRADE_STEP} درجة)</h3>
+                <div class="table-scroll">
+                    <table class="grade-distribution-table">
+                        <thead>
+                            <tr>
+                                <th>الدرجة</th>
+                                <th>عدد الطلاب</th>
+                                <th>أكثر من</th>
+                                <th>يساوي أو أكثر</th>
+                                <th>النسبة %</th>
+                            </tr>
+                        </thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>
+                ${pagination}
+            </div>`;
+    }
+
+    function getScoreStatistics(score) {
+        if (!STATISTICS.grade_distribution || !score) return null;
+        
+        const roundedScore = Math.round(parseFloat(score) * 2) / 2;
+        if (roundedScore > MAX_SCORE) return null; // Don't show stats if score > max
+        
+        const scoreKey = roundedScore.toFixed(1);
+        
+        if (STATISTICS.grade_distribution[scoreKey]) {
+            const stats = STATISTICS.grade_distribution[scoreKey];
+            const percentage = ((stats.equal_or_more / STATISTICS.total_students) * 100).toFixed(2);
+            return {
+                equal: stats.equal,
+                more: stats.more,
+                equal_or_more: stats.equal_or_more,
+                percentage: percentage
+            };
+        }
+        return null;
+    }
+
+    function sortResults(field) {
+        const buttons = document.querySelectorAll('.sort-button');
+        buttons.forEach(btn => {
+            if (btn.dataset.sort === field) {
+                const arrow = btn.querySelector('.arrow');
+                if (currentSort.field === field) {
+                    currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+                    arrow.textContent = currentSort.direction === 'asc' ? '↑' : '↓';
+                } else {
+                    arrow.textContent = '↑';
+                    currentSort.direction = 'asc';
+                }
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+                btn.querySelector('.arrow').textContent = '↕';
+            }
+        });
+        
+        currentSort.field = field;
+        
+        if (allResults.length) {
+            allResults.sort((a, b) => {
+                let valueA, valueB;
+                
+                if (field === 'id') {
+                    valueA = Array.isArray(a) ? a[0] : (a.seating_no || a.id || '');
+                    valueB = Array.isArray(b) ? b[0] : (b.seating_no || b.id || '');
+                } else if (field === 'name') {
+                    valueA = Array.isArray(a) ? a[1] : (a.arabic_name || a.name || '');
+                    valueB = Array.isArray(b) ? b[1] : (b.arabic_name || b.name || '');
+                } else if (field === 'score') {
+                    valueA = Array.isArray(a) ? Number(a[2]) : Number(a.total_degree || a.score || 0);
+                    valueB = Array.isArray(b) ? Number(b[2]) : Number(b.total_degree || b.score || 0);
+                    return currentSort.direction === 'asc' ? valueA - valueB : valueB - valueA;
+                }
+                
+                if (currentSort.direction === 'asc') {
+                    return valueA > valueB ? 1 : -1;
+                } else {
+                    return valueA < valueB ? 1 : -1;
+                }
+            });
+            
+            displayResults();
+        }
+    }
+    function showError(element, message) {
+        element.innerHTML = `
+            <div class="error-message">
+                <i>❌</i>
+                <p>${message}</p>
+            </div>
+        `;
+    }
+
+    function showLoading(element) {
+        element.innerHTML = `
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>جاري البحث...</p>
+            </div>
+        `;
+    }
+
+    function showStudent(element, student) {
+        let name = '', id = '', score = '', status = '';
+        
+        if (Array.isArray(student)) {
+            name = student[1];
+            id = student[0];
+            score = student[2];
+            status = student[3];
+        } else {
+            name = student.arabic_name || student.name || student['اسم'] || '';
+            id = student.seating_no || student.id || student['رقم الجلوس'] || '';
+            score = student.total_degree || student.score || student['درجة'] || '';
+            status = student.student_case_desc || student.status || student['الحالة'] || '';
+        }
+
+        const stats = getScoreStatistics(score);
+        
+        element.innerHTML = `
+            <div class="student-card">
+                <div class="student-info">
+                    <h3>${name}</h3>
+                    <div class="info-row">
+                        <span class="label">رقم الجلوس:</span>
+                        <span class="value">${id}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">الدرجة:</span>
+                        <span class="value">${score} / ${MAX_SCORE}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">الحالة:</span>
+                        <span class="value">${status}</span>
+                    </div>
+                    ${stats ? `
+                        <div class="info-row">
+                            <span class="label">نفس الدرجة:</span>
+                            <span class="value">${stats.equal} طالب</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">أعلى من الدرجة:</span>
+                            <span class="value">${stats.more} طالب</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">يساوي أو أكثر:</span>
+                            <span class="value">${stats.equal_or_more} طالب</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">من ضمن أفضل (top%)</span>
+                            <span class="value">${stats.percentage}%</span>
+                        </div>
+                    ` : ''}
+                </div>
+                <div class="score-visualization">
+                    ${createScoreCircle(score, MAX_SCORE)}
+                </div>
+            </div>
+        `;
+    }
+
+    function showResults(element, results) {
+        if (results.length === 0) {
+            showError(element, 'لا توجد نتائج');
+            return;
+        }
+
+        // Clear any previous pagination
+        document.getElementById('pagination').innerHTML = '';
+
+        const renderCard = (student) => {
+            let name = '', id = '', score = '', status = '';
+
+            if (Array.isArray(student)) {
+                name = student[1];
+                id = student[0];
+                score = student[2];
+                status = student[3];
+            } else {
+                name = student.arabic_name || student.name || student['اسم'] || '';
+                id = student.seating_no || student.id || student['رقم الجلوس'] || '';
+                score = student.total_degree || student.score || student['درجة'] || '';
+                status = student.student_case_desc || student.status || student['الحالة'] || '';
+            }
+
+            const stats = getScoreStatistics(score);
+
+            return `
+                <div class="student-card">
+                    <div class="student-info">
+                        <h3>${name}</h3>
+                        <div class="info-row">
+                            <span class="label">رقم الجلوس:</span>
+                            <span class="value">${id}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">الدرجة:</span>
+                            <span class="value">${score} / ${MAX_SCORE}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="label">الحالة:</span>
+                            <span class="value">${status}</span>
+                        </div>
+                        ${stats ? `
+                            <div class="info-row">
+                                <span class="label">نفس الدرجة:</span>
+                                <span class="value">${stats.equal} طالب</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">أعلى من الدرجة:</span>
+                                <span class="value">${stats.more} طالب</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">يساوي أو أكثر:</span>
+                                <span class="value">${stats.equal_or_more} طالب</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">النسبة المئوية:</span>
+                                <span class="value">${stats.percentage}%</span>
+                            </div>
+                        ` : ''}
+                    </div>
+                    <div class="score-visualization">
+                        ${createScoreCircle(score, MAX_SCORE)}
+                    </div>
+                </div>
+            `;
+        };
+
+        if (results.length > Config.RESULTS_PER_PAGE) {
+            setupPagination(results, renderCard);
+            displayResults();
+        } else {
+            element.innerHTML = results.map(renderCard).join('');
+        }
+    }
+
+
+    function setupEventListeners() {
+        // Tab switching
+        document.getElementById('searchTab').addEventListener('click', () => switchTab('search'));
+        document.getElementById('statsTab').addEventListener('click', () => switchTab('stats'));
+        
+        // Search type switching
+        document.getElementById('idSearchBtn').addEventListener('click', () => switchSearchType('id'));
+        document.getElementById('nameSearchBtn').addEventListener('click', () => switchSearchType('name'));
+        
+        // Enter key support
+        document.getElementById('idInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') searchById();
+        });
+        document.getElementById('nameInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') searchByName();
+        });
+    }
+
+    function switchTab(tabName) {
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.remove('active');
+        });
+        document.querySelectorAll('.tabs button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        if (tabName === 'search') {
+            document.getElementById('searchTab').classList.add('active');
+            document.getElementById('searchContent').classList.add('active');
+        } else {
+            document.getElementById('statsTab').classList.add('active');
+            document.getElementById('statsContent').classList.add('active');
+            // Delay chart setup to ensure DOM is ready
+            setTimeout(setupCharts, 100);
+        }
+    }
+
+    function switchSearchType(type) {
+        document.getElementById('idSearchBtn').classList.remove('active');
+        document.getElementById('nameSearchBtn').classList.remove('active');
+        document.getElementById('idSearchSection').style.display = 'none';
+        document.getElementById('nameSearchSection').style.display = 'none';
+        
+        if (type === 'id') {
+            document.getElementById('idSearchBtn').classList.add('active');
+            document.getElementById('idSearchSection').style.display = 'block';
+            document.getElementById('idInput').focus();
+        } else {
+            document.getElementById('nameSearchBtn').classList.add('active');
+            document.getElementById('nameSearchSection').style.display = 'block';
+            document.getElementById('nameInput').focus();
+        }
+        
+        document.getElementById('searchResults').innerHTML = '';
+        document.getElementById('pagination').innerHTML = '';
+    }
+    
+    function updateStatistics() {
+        if (!STATISTICS) return;
+        
+        document.getElementById('totalStudents').textContent = STATISTICS.total_students || 0;
+        document.getElementById('maxScore').textContent = STATISTICS.max_score || MAX_SCORE;
+        document.getElementById('avgScore').textContent = (STATISTICS.average_score || 0).toFixed(2);
+    }
+    
+    // Normalize Arabic text (JavaScript version)
+    function normalizeArabic(text) {
+        if (!text) return '';
+        let normalized = String(text).trim();
+        
+        // Replace various Alefs
+        normalized = normalized.replace(/[إأآٱ]/g, 'ا');
+        // Replace Yaa forms
+        normalized = normalized.replace(/[ىی]/g, 'ي');
+        // Replace Taa Marbuta
+        normalized = normalized.replace(/ة/g, 'ه');
+        // Replace Hamza forms
+        normalized = normalized.replace(/ؤ/g, 'و');
+        normalized = normalized.replace(/ئ/g, 'ي');
+        // Remove diacritics and tatweel
+        normalized = normalized.replace(/[ ٓ ْ ٌ ٍ ً ُ ِ َ ّ]/g, '');
+        // Remove extra spaces
+        normalized = normalized.replace(/\s+/g, '');
+        
+        return normalized.toLowerCase();
+    }
+    
+    // Get hex codes of first two letters (JavaScript version)
+    function getFirstTwoLettersHex(text) {
+        console.log("Input text:", text);
+        const normalized = normalizeArabic(text);
+        console.log("Normalized:", normalized);
+        
+        if (!normalized) return ['#', '#'];
+        
+        const char1 = normalized.charAt(0);
+        const char2 = normalized.charAt(1);
+        
+        // PAD TO 4 DIGITS!
+        const hex1 = char1 ? char1.charCodeAt(0).toString(16).padStart(4, '0').toUpperCase() : '#';
+        const hex2 = char2 ? char2.charCodeAt(0).toString(16).padStart(4, '0').toUpperCase() : '#';
+        
+        console.log("Hex codes:", hex1, hex2);
+        return [hex1, hex2];
+    }
+    
+        
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', function() {
+            setupEventListeners();
+            updateStatistics();
+            document.getElementById('gradeTableContainer').innerHTML = generateGradeDistributionTable();
+            // Don't initialize charts on page load (only when stats tab is opened)
+        });
+    </script>
 </body>
 </html>
